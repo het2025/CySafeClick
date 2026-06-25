@@ -45,8 +45,8 @@ export class JobScamDetectorComponent {
 
   getProgressBarColor(): string {
     if (!this.result) return '#e2e8f0';
-    if (this.result.score >= 60) return 'var(--safeclick-danger, #ef4444)';
-    if (this.result.score >= 30) return 'var(--safeclick-warn, #f59e0b)';
-    return 'var(--safeclick-safe, #22c55e)';
+    if (this.result.score >= 60) return 'var(--Cycysafeclick-danger, #ef4444)';
+    if (this.result.score >= 30) return 'var(--Cycysafeclick-warn, #f59e0b)';
+    return 'var(--Cycysafeclick-safe, #22c55e)';
   }
 }

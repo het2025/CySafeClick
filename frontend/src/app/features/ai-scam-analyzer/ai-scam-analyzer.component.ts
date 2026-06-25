@@ -51,7 +51,7 @@ import { FormsModule } from '@angular/forms';
 
             <div style="margin-top: 32px; padding: 16px; background: rgba(255,153,51,0.1); border-left: 4px solid var(--accent-saffron); text-align: left; border-radius: 0 8px 8px 0; font-size: 0.9rem; line-height: 1.5;">
                 <strong>⚠️ Important Notice</strong><br>
-                This AI analysis is meant to help you stay aware — it is not always accurate. AI can sometimes make mistakes or miss context. Please do not rely solely on this result. Always verify from official sources and use your own judgement before taking any action. SafeClick is not responsible for decisions made based on this analysis.
+                This AI analysis is meant to help you stay aware — it is not always accurate. AI can sometimes make mistakes or miss context. Please do not rely solely on this result. Always verify from official sources and use your own judgement before taking any action. Cycysafeclick is not responsible for decisions made based on this analysis.
             </div>
         </div>
     </div>

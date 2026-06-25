@@ -87,7 +87,7 @@ export class DeepfakeAwarenessComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const saved = localStorage.getItem('safeclick_safe_word');
+    const saved = localStorage.getItem('Cycysafeclick_safe_word');
     if (saved) {
       this.familySafeWord = saved;
       this.isSafeWordSaved = true;
@@ -96,7 +96,7 @@ export class DeepfakeAwarenessComponent implements OnInit {
 
   saveSafeWord(): void {
     if (this.familySafeWord.trim()) {
-      localStorage.setItem('safeclick_safe_word', this.familySafeWord.trim());
+      localStorage.setItem('Cycysafeclick_safe_word', this.familySafeWord.trim());
       this.isSafeWordSaved = true;
     }
   }

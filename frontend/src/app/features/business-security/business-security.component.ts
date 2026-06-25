@@ -65,7 +65,7 @@ export class BusinessSecurityComponent {
 ____________________________
 हस्ताक्षर और दिनांक
 ` : `
-SafeClick TEMPLATE: SMALL BUSINESS SECURITY POLICY
+Cycysafeclick TEMPLATE: SMALL BUSINESS SECURITY POLICY
 
 1. ACCESS & PASSWORDS
 - Every employee must have a unique login. No sharing passwords.

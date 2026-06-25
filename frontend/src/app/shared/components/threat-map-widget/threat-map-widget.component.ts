@@ -4,7 +4,7 @@ import { RouterModule, Router } from '@angular/router';
 import { ThreatMapService, MergedStateData, NationalStats } from '../../../features/threat-map/threat-map.service';
 
 @Component({
-  selector: 'safeclick-threat-map-widget',
+  selector: 'Cycysafeclick-threat-map-widget',
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `

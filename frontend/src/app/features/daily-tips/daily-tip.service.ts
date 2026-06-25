@@ -19,7 +19,7 @@ export interface DailyTip {
 
 @Injectable({ providedIn: 'root' })
 export class DailyTipService {
-  private completedTipsKey = 'safeclick-completed-tips';
+  private completedTipsKey = 'Cycysafeclick-completed-tips';
 
   constructor(private http: HttpClient, private storage: LocalStorageService) {}
 

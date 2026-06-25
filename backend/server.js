@@ -47,7 +47,7 @@ app.use(generalLimiter);
 app.get('/api/health', (req, res) => {
   res.json({
     success: true,
-    message: 'SafeClick Backend is running',
+    message: 'CySafeClick Backend is running',
     timestamp: new Date().toISOString(),
     environment: process.env.NODE_ENV,
     dbStatus: getDbStatus()
@@ -87,7 +87,7 @@ app.use(errorHandler);
 
 // ─── Start Server ────────────────────────────────────────
 app.listen(PORT, () => {
-  console.log(`\n🛡️  SafeClick Backend Server`);
+  console.log(`\n🛡️  CySafeClick Backend Server`);
   console.log(`   Port:        ${PORT}`);
   console.log(`   Environment: ${process.env.NODE_ENV}`);
   console.log(`   Frontend:    ${process.env.FRONTEND_URL}`);

@@ -7,9 +7,9 @@ export interface LocationState {
 }
 
 export const initialLocationState: LocationState = {
-  userStateId: localStorage.getItem('safeclick_user_state') || null,
-  userCityId: localStorage.getItem('safeclick_user_city') || null,
-  hasOnboarded: localStorage.getItem('safeclick_location_onboarded') === 'true'
+  userStateId: localStorage.getItem('cysafeclick_user_state') || null,
+  userCityId: localStorage.getItem('cysafeclick_user_city') || null,
+  hasOnboarded: localStorage.getItem('cysafeclick_location_onboarded') === 'true'
 };
 
 // Actions
@@ -26,22 +26,22 @@ export const completeOnboarding = createAction('[Location] Complete Onboarding')
 export const locationReducer = createReducer(
   initialLocationState,
   on(setLocation, (state, { stateId, cityId }) => {
-    localStorage.setItem('safeclick_user_state', stateId);
+    localStorage.setItem('cysafeclick_user_state', stateId);
     if (cityId) {
-      localStorage.setItem('safeclick_user_city', cityId);
+      localStorage.setItem('cysafeclick_user_city', cityId);
     } else {
-      localStorage.removeItem('safeclick_user_city');
+      localStorage.removeItem('cysafeclick_user_city');
     }
-    localStorage.setItem('safeclick_location_onboarded', 'true');
+    localStorage.setItem('cysafeclick_location_onboarded', 'true');
     return { ...state, userStateId: stateId, userCityId: cityId || null, hasOnboarded: true };
   }),
   on(clearLocation, (state) => {
-    localStorage.removeItem('safeclick_user_state');
-    localStorage.removeItem('safeclick_user_city');
+    localStorage.removeItem('cysafeclick_user_state');
+    localStorage.removeItem('cysafeclick_user_city');
     return { ...state, userStateId: null, userCityId: null };
   }),
   on(completeOnboarding, (state) => {
-    localStorage.setItem('safeclick_location_onboarded', 'true');
+    localStorage.setItem('cysafeclick_location_onboarded', 'true');
     return { ...state, hasOnboarded: true };
   })
 );

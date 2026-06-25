@@ -66,7 +66,7 @@ export class QrToolsComponent {
     if (!this.generatedQRDataUrl) return;
     const link = document.createElement('a');
     link.href = this.generatedQRDataUrl;
-    link.download = 'safeclick-safe-qr.png';
+    link.download = 'Cycysafeclick-safe-qr.png';
     link.click();
   }
 

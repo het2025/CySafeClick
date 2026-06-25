@@ -1,10 +1,10 @@
-# VAJRA (वज्र) — Cyber Safety Awareness Mission for India
+# CySafeClick — Cyber Safety Awareness Platform for India
 
-VAJRA is a dedicated **Cyber Awareness Initiative** designed to empower Indian citizens with the knowledge and tools to protect themselves against the growing threat of cybercrime. This is an educational platform, not a commercial software installation.
+CySafeClick is a dedicated **Cyber Awareness Initiative** designed to empower Indian citizens with the knowledge and tools to protect themselves against the growing threat of cybercrime. This is an educational platform, not a commercial software installation.
 
 ## 🇮🇳 Our Mission
 
-To provide every Indian user with a "Vajra" (indestructible shield) of knowledge. We focus on:
+To provide every Indian user with a powerful shield of knowledge. We focus on:
 - **Demystifying Scams:** Explaining complex frauds like UPI-collect, Sextortion, and KYC-traps in simple terms.
 - **Language Inclusivity:** Providing content in both Hindi and English.
 - **Real-time Detection:** Offering a browser extension to guard against phishing as you browse.
@@ -22,15 +22,15 @@ This project is intended as a public awareness resource.
 
 ### For Users / Learners
 - **Browse the Site:** Simply open `index.html` (or the hosted URL) to access all awareness modules.
-- **Install the Guard:** Add the `vajra-extension` to your browser for real-time safety warnings.
+- **Install the Guard:** Add the `cysafeclick-extension` to your browser for real-time safety warnings.
 
 ### For Developers / Contributors
 If you wish to host this platform or contribute to its development:
 
 1. **Clone the repository.**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/VAJRA.git
-   cd VAJRA
+   git clone https://github.com/YOUR_USERNAME/CySafeClick.git
+   cd CySafeClick
    ```
 
 2. **Set up environment variables** *(required before running the backend)*:

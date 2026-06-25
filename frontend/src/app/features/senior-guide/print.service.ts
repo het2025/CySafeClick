@@ -6,13 +6,13 @@ import { Injectable } from '@angular/core';
 export class PrintService {
 
   printHindi(): void {
-    document.title = 'SafeClick Senior Guide Hindi';
+    document.title = 'Cycysafeclick Senior Guide Hindi';
     this.applyPrintStyles('hi');
     window.print();
   }
 
   printEnglish(): void {
-    document.title = 'SafeClick Senior Guide English';
+    document.title = 'Cycysafeclick Senior Guide English';
     this.applyPrintStyles('en');
     window.print();
   }
@@ -37,7 +37,7 @@ export class PrintService {
 
 🚨 Cyber Crime हो जाए तो: 1930
 
-पूरी guide यहां: safeclick.in/learn/senior-guide
+पूरी guide यहां: Cycysafeclick.in/learn/senior-guide
 (Print करके घर में लगाएं)`;
   }
 }

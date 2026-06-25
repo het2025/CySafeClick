@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--safeclick-navy, #0A1628);
+  color: var(--Cycysafeclick-navy, #0A1628);
 }
 
 .page-header {
@@ -54,7 +54,7 @@
 }
 
 .tabs button.active {
-  color: var(--safeclick-navy, #0A1628);
+  color: var(--Cycysafeclick-navy, #0A1628);
 }
 
 .tabs button.active::after {
@@ -64,7 +64,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--safeclick-saffron, #FF9933);
+  background: var(--Cycysafeclick-saffron, #FF9933);
 }
 
 .gen-type-selector {
@@ -107,7 +107,7 @@
 
 .primary-btn {
   width: 100%;
-  background: var(--safeclick-navy, #0A1628);
+  background: var(--Cycysafeclick-navy, #0A1628);
   color: white;
   border: none;
   padding: 1rem;
@@ -119,11 +119,11 @@
 }
 
 .primary-btn:hover {
-  background: var(--safeclick-saffron, #FF9933);
+  background: var(--Cycysafeclick-saffron, #FF9933);
 }
 
 .error-msg {
-  color: var(--safeclick-danger, #ef4444);
+  color: var(--Cycysafeclick-danger, #ef4444);
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -155,8 +155,8 @@
 
 .secondary-btn {
   background: transparent;
-  border: 2px solid var(--safeclick-navy, #0A1628);
-  color: var(--safeclick-navy, #0A1628);
+  border: 2px solid var(--Cycysafeclick-navy, #0A1628);
+  color: var(--Cycysafeclick-navy, #0A1628);
   padding: 0.75rem 1.5rem;
   font-weight: bold;
   border-radius: 8px;
@@ -191,7 +191,7 @@
   width: 40px;
   height: 40px;
   border: 4px solid #f1f5f9;
-  border-top: 4px solid var(--safeclick-saffron, #FF9933);
+  border-top: 4px solid var(--Cycysafeclick-saffron, #FF9933);
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 2rem auto;
@@ -282,7 +282,7 @@
 
 .edu-card h2 {
   margin-top: 0;
-  color: var(--safeclick-danger, #ef4444);
+  color: var(--Cycysafeclick-danger, #ef4444);
   font-size: 1.3rem;
   border-bottom: 2px solid #fecaca;
   padding-bottom: 0.5rem;
@@ -312,7 +312,7 @@
 }
 
 .critical-rule {
-  background: var(--safeclick-danger, #ef4444);
+  background: var(--Cycysafeclick-danger, #ef4444);
   color: white;
   padding: 1rem;
   border-radius: 8px;

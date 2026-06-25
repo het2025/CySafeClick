@@ -11,7 +11,7 @@ import { AppState } from '../../../store';
 import * as QRCode from 'qrcode';
 
 @Component({
-  selector: 'safeclick-weekly-digest-page',
+  selector: 'Cycysafeclick-weekly-digest-page',
   standalone: true,
   imports: [CommonModule, RouterModule, TranslatePipe, PatternDetailComponent],
   template: `
@@ -70,18 +70,18 @@ import * as QRCode from 'qrcode';
         </div>
 
         <div class="patterns-list">
-          <safeclick-pattern-detail 
+          <Cycysafeclick-pattern-detail 
             *ngFor="let pattern of sortedPatterns(digest)" 
             [pattern]="pattern"
             class="pattern-block">
-          </safeclick-pattern-detail>
+          </Cycysafeclick-pattern-detail>
         </div>
         
         <div class="print-footer show-print-only">
           <hr>
           <div class="footer-content">
-            <p><strong>SafeClick Digital Safety Platform</strong> | Government of India initiative</p>
-            <p>Stay updated with live alerts at <strong>safeclick.in</strong> or call <strong>1930</strong></p>
+            <p><strong>Cycysafeclick Digital Safety Platform</strong> | Government of India initiative</p>
+            <p>Stay updated with live alerts at <strong>Cycysafeclick.in</strong> or call <strong>1930</strong></p>
             <div class="qr-container">
               <canvas id="qr-code-canvas"></canvas>
             </div>
@@ -115,7 +115,7 @@ import * as QRCode from 'qrcode';
       border: 1px solid #e2e8f0;
     }
     
-    .archive-nav h3 { margin: 0 0 1rem 0; font-size: 1.1rem; color: var(--safeclick-navy); }
+    .archive-nav h3 { margin: 0 0 1rem 0; font-size: 1.1rem; color: var(--Cycysafeclick-navy); }
     
     .archive-list {
       list-style: none;
@@ -136,7 +136,7 @@ import * as QRCode from 'qrcode';
     }
     
     .archive-list li:hover { background: #e2e8f0; }
-    .archive-list li.active { background: var(--safeclick-navy); color: white; }
+    .archive-list li.active { background: var(--Cycysafeclick-navy); color: white; }
     .archive-list li.active .week-name { color: white; }
     .archive-list li.active .date { color: #cbd5e1; }
     
@@ -156,7 +156,7 @@ import * as QRCode from 'qrcode';
       display: block;
       text-align: center;
       background: #f1f5f9;
-      color: var(--safeclick-navy);
+      color: var(--Cycysafeclick-navy);
       padding: 12px;
       border-radius: 6px;
       text-decoration: none;
@@ -202,7 +202,7 @@ import * as QRCode from 'qrcode';
     
     .page-header h1 {
       font-size: 2.5rem;
-      color: var(--safeclick-navy);
+      color: var(--Cycysafeclick-navy);
       margin: 0 0 2rem 0;
       font-weight: 900;
       line-height: 1.2;
@@ -219,7 +219,7 @@ import * as QRCode from 'qrcode';
     }
     
     .stat-item { flex: 1; display: flex; flex-direction: column; }
-    .stat-item .value { font-size: 1.8rem; font-weight: 800; color: var(--safeclick-saffron); }
+    .stat-item .value { font-size: 1.8rem; font-weight: 800; color: var(--Cycysafeclick-saffron); }
     .stat-item .label { font-size: 0.9rem; color: #475569; text-transform: uppercase; font-weight: 600; margin-top: 0.25rem; }
     
     .editor-note {
@@ -227,7 +227,7 @@ import * as QRCode from 'qrcode';
       line-height: 1.6;
       color: #334155;
       padding-left: 1rem;
-      border-left: 4px solid var(--safeclick-navy);
+      border-left: 4px solid var(--Cycysafeclick-navy);
     }
     
     .patterns-list {

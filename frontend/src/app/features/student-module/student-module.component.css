@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--safeclick-navy, #0A1628);
+  color: var(--Cycysafeclick-navy, #0A1628);
 }
 
 .page-header {
@@ -34,7 +34,7 @@
 
 .topic-card:hover {
   transform: translateY(-5px);
-  border-color: var(--safeclick-saffron, #FF9933);
+  border-color: var(--Cycysafeclick-saffron, #FF9933);
 }
 
 .topic-card .icon {
@@ -44,7 +44,7 @@
 
 .topic-card h3 {
   margin-top: 0;
-  color: var(--safeclick-navy, #0A1628);
+  color: var(--Cycysafeclick-navy, #0A1628);
 }
 
 .topic-card p {
@@ -57,7 +57,7 @@
   background: #f8fafc;
   padding: 1rem;
   border-radius: 8px;
-  border-left: 4px solid var(--safeclick-danger, #ef4444);
+  border-left: 4px solid var(--Cycysafeclick-danger, #ef4444);
   font-size: 0.9rem;
   color: #1e293b;
 }
@@ -127,13 +127,13 @@
 
 .opt-btn.correct {
   background: #dcfce7;
-  border-color: var(--safeclick-safe, #22c55e);
+  border-color: var(--Cycysafeclick-safe, #22c55e);
   color: #166534;
 }
 
 .opt-btn.wrong {
   background: #fef2f2;
-  border-color: var(--safeclick-danger, #ef4444);
+  border-color: var(--Cycysafeclick-danger, #ef4444);
   color: #991b1b;
 }
 
@@ -149,11 +149,11 @@
   font-size: 1.2rem;
 }
 
-.feedback-box h4.safe { color: var(--safeclick-safe, #22c55e); }
-.feedback-box h4.danger { color: var(--safeclick-danger, #ef4444); }
+.feedback-box h4.safe { color: var(--Cycysafeclick-safe, #22c55e); }
+.feedback-box h4.danger { color: var(--Cycysafeclick-danger, #ef4444); }
 
 .next-btn {
-  background: var(--safeclick-navy, #0A1628);
+  background: var(--Cycysafeclick-navy, #0A1628);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -174,14 +174,14 @@
 .results-box .score {
   font-size: 4rem;
   font-weight: bold;
-  color: var(--safeclick-saffron, #FF9933);
+  color: var(--Cycysafeclick-saffron, #FF9933);
   margin: 1rem 0;
 }
 
 /* Builder */
 .rules-builder-section {
   background: white;
-  border: 2px solid var(--safeclick-navy, #0A1628);
+  border: 2px solid var(--Cycysafeclick-navy, #0A1628);
   padding: 2rem;
   border-radius: 16px;
   text-align: center;
@@ -250,7 +250,7 @@
 
 .print-btn {
   width: 100%;
-  background: var(--safeclick-saffron, #FF9933);
+  background: var(--Cycysafeclick-saffron, #FF9933);
   color: white;
   border: none;
   padding: 1rem;

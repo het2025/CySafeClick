@@ -66,7 +66,7 @@ export class ScamStoriesComponent implements OnInit {
 
   shareStory(story: ScamStory) {
     const text = `Read this anonymized scam awareness story and learn how to prevent similar frauds.`;
-    const url = `whatsapp://send?text=${encodeURIComponent(text + ' - SafeClick Shield: ' + window.location.href)}`;
+    const url = `whatsapp://send?text=${encodeURIComponent(text + ' - Cycysafeclick Shield: ' + window.location.href)}`;
     window.open(url, '_blank');
   }
 }

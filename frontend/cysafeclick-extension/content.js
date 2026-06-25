@@ -49,10 +49,10 @@ function analyzePage() {
 }
 
 function showWarningBanner(status, reason) {
-  if (document.getElementById('safeclick-guard-banner')) return;
+  if (document.getElementById('cysafeclick-guard-banner')) return;
 
   const banner = document.createElement('div');
-  banner.id = 'safeclick-guard-banner';
+  banner.id = 'cysafeclick-guard-banner';
   banner.style.position = 'fixed';
   banner.style.top = '0';
   banner.style.left = '0';
@@ -66,10 +66,10 @@ function showWarningBanner(status, reason) {
   
   if (status === 'dangerous') {
     banner.style.backgroundColor = '#ef4444';
-    banner.innerText = `⚠️ SafeClick DANGER: ${reason} Do not enter any details.`;
+    banner.innerText = `⚠️ CySafeClick DANGER: ${reason} Do not enter any details.`;
   } else {
     banner.style.backgroundColor = '#f59e0b';
-    banner.innerText = `⚠️ SafeClick WARNING: ${reason} Proceed with caution.`;
+    banner.innerText = `⚠️ CySafeClick WARNING: ${reason} Proceed with caution.`;
   }
 
   const closeBtn = document.createElement('span');
@@ -90,7 +90,7 @@ function detectUPIIframes() {
       const warning = document.createElement('div');
       warning.style.color = '#ef4444';
       warning.style.fontWeight = 'bold';
-      warning.innerText = '⚠️ SafeClick: Hidden UPI Collect Request detected here!';
+      warning.innerText = '⚠️ CySafeClick: Hidden UPI Collect Request detected here!';
       iframe.parentNode.insertBefore(warning, iframe);
     }
   });
@@ -101,7 +101,7 @@ function interceptFormSubmissions(pageStatus) {
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {
       form.addEventListener('submit', (e) => {
-        if (!confirm("SafeClick GUARD: This site is highly suspicious. Are you sure you want to submit your data?")) {
+        if (!confirm("CySafeClick GUARD: This site is highly suspicious. Are you sure you want to submit your data?")) {
           e.preventDefault();
         }
       });
@@ -113,7 +113,7 @@ document.addEventListener('mouseover', (e) => {
   if (e.target && e.target.tagName === 'A') {
     const href = e.target.getAttribute('href');
     if (href && !href.startsWith('/') && !href.includes(window.location.hostname)) {
-      e.target.title = `SafeClick: Links to external site -> ${href}`;
+      e.target.title = `CySafeClick: Links to external site -> ${href}`;
       e.target.style.outline = '1px dashed #f59e0b';
     }
   }
@@ -127,10 +127,10 @@ document.addEventListener('mouseout', (e) => {
 
 // ─── Real-Time Scanning with MutationObserver ─────────────────
 // Debounce to avoid excessive scans during rapid DOM changes
-let _safeclickScanTimer = null;
+let _cysafeclickScanTimer = null;
 function debouncedScan() {
-  if (_safeclickScanTimer) clearTimeout(_safeclickScanTimer);
-  _safeclickScanTimer = setTimeout(() => {
+  if (_cysafeclickScanTimer) clearTimeout(_cysafeclickScanTimer);
+  _cysafeclickScanTimer = setTimeout(() => {
     analyzePage();
   }, 800);
 }
@@ -143,12 +143,12 @@ if (document.readyState === 'loading') {
 }
 
 // Watch for dynamically loaded content (WhatsApp Web, Facebook, etc.)
-const safeclickObserver = new MutationObserver((mutations) => {
+const cysafeclickObserver = new MutationObserver((mutations) => {
   let shouldScan = false;
   for (const mutation of mutations) {
     if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
       for (const node of mutation.addedNodes) {
-        if (node.nodeType === Node.ELEMENT_NODE && !node.closest('#safeclick-guard-banner')) {
+        if (node.nodeType === Node.ELEMENT_NODE && !node.closest('#cysafeclick-guard-banner')) {
           shouldScan = true;
           break;
         }
@@ -159,7 +159,7 @@ const safeclickObserver = new MutationObserver((mutations) => {
   if (shouldScan) debouncedScan();
 });
 
-safeclickObserver.observe(document.body || document.documentElement, {
+cysafeclickObserver.observe(document.body || document.documentElement, {
   childList: true,
   subtree: true
 });

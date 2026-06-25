@@ -1,5 +1,5 @@
 /**
- * SafeClick Database Seed Script
+ * CySafeClick Database Seed Script
  * 
  * Reads approved JSON data files from the frontend assets and imports them into MongoDB.
  * Run with: npm run seed (or: node seeds/seed.js)
@@ -174,7 +174,7 @@ async function seedCrimeStats() {
 
 // ─── Main Seed Runner ────────────────────────────────────
 async function runSeed() {
-  console.log('\n🌱 SafeClick Database Seeder');
+  console.log('\n🌱 CySafeClick Database Seeder');
   console.log('========================\n');
 
   try {

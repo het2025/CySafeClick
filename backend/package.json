@@ -1,7 +1,7 @@
 {
-  "name": "safeclick-backend",
+  "name": "cysafeclick-backend",
   "version": "1.0.0",
-  "description": "SafeClick Cybersecurity Platform — Backend API Server",
+  "description": "CySafeClick Cybersecurity Platform — Backend API Server",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,7 +9,7 @@
     "seed": "node seeds/seed.js"
   },
   "keywords": [
-    "safeclick",
+    "cysafeclick",
     "cybersecurity",
     "backend",
     "api"

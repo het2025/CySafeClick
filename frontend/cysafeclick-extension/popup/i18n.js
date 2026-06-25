@@ -1,5 +1,5 @@
 /**
- * SafeClick Translation System for Chrome Extension
+ * CySafeClick Translation System for Chrome Extension
  */
 
 class ExtensionTranslator {
@@ -89,6 +89,6 @@ class ExtensionTranslator {
 
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    window.safeclickTranslator = new ExtensionTranslator();
+    window.cysafeclickTranslator = new ExtensionTranslator();
     document.dispatchEvent(new CustomEvent('translatorReady'));
 });

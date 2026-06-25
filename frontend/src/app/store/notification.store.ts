@@ -82,11 +82,11 @@ export class NotificationEffects {
     map(() => {
       const status = this.pushService.getSubscriptionStatus();
       const p = 'Notification' in window ? Notification.permission : 'default';
-      let freq = localStorage.getItem('safeclick_alert_freq') as 'realtime' | 'daily' | 'weekly';
+      let freq = localStorage.getItem('cysafeclick_alert_freq') as 'realtime' | 'daily' | 'weekly';
       if (!freq) freq = 'realtime';
       
       let unread = 0;
-      try { unread = parseInt(localStorage.getItem('safeclick_unread') || '0', 10); } catch(e){}
+      try { unread = parseInt(localStorage.getItem('cysafeclick_unread') || '0', 10); } catch(e){}
 
       return { p, cats: status.subscribedCategories, freq, unread };
     }),
@@ -102,7 +102,7 @@ export class NotificationEffects {
     ofType(updateCategories, updateFrequency),
     withLatestFrom(this.store.select(selectNotificationState)),
     tap(([action, state]) => {
-      localStorage.setItem('safeclick_alert_freq', state.alertFrequency);
+      localStorage.setItem('cysafeclick_alert_freq', state.alertFrequency);
       this.pushService.subscribeToAlerts(state.subscribedCategories);
     })
   ), { dispatch: false });
@@ -111,7 +111,7 @@ export class NotificationEffects {
     ofType(receiveNewAlert, markAllRead),
     withLatestFrom(this.store.select(selectNotificationState)),
     tap(([action, state]) => {
-      localStorage.setItem('safeclick_unread', state.unreadCount.toString());
+      localStorage.setItem('cysafeclick_unread', state.unreadCount.toString());
     })
   ), { dispatch: false });
 

@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Wait for translator
-  if (window.safeclickTranslator) {
+  if (window.cysafeclickTranslator) {
     init();
   } else {
     document.addEventListener('translatorReady', init);
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         files: ['content.js']
       });
     });
-    const t = window.safeclickTranslator;
+    const t = window.cysafeclickTranslator;
     statusTitle.innerText = t ? t.translate('EXTENSION.RESCANNING') : "Re-scanning...";
     setTimeout(() => window.close(), 1000);
   });
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       color = '#f59e0b';
     }
 
-    const t = window.safeclickTranslator;
+    const t = window.cysafeclickTranslator;
     statusTitle.innerText = t ? t.translate(statusKey) : statusKey;
     statusTitle.style.color = color;
     riskFill.style.width = risk + '%';
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateTip() {
-    const t = window.safeclickTranslator;
+    const t = window.cysafeclickTranslator;
     if (!t) return;
     
     // Simple rotation based on date

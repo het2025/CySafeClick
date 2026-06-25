@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "SafeClick Guard — Cyber Safety for India",
+  "name": "CySafeClick Guard — Cyber Safety for India",
   "version": "1.0.0",
   "description": "User-initiated cyber-safety checks and education for Indian users",
   "permissions": ["activeTab", "storage", "alarms", "scripting"],
   "background": {"service_worker": "background.js"},
   "action": {
     "default_popup": "popup/popup.html",
-    "default_title": "SafeClick Guard"
+    "default_title": "CySafeClick Guard"
   }
 }

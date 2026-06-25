@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--safeclick-navy, #0A1628);
+  color: var(--Cycysafeclick-navy, #0A1628);
 }
 
 .vault-header {
@@ -23,7 +23,7 @@
 }
 
 .lock-btn {
-  background: var(--safeclick-danger, #ef4444);
+  background: var(--Cycysafeclick-danger, #ef4444);
   color: white;
   border: none;
   padding: 0.5rem 1.5rem;
@@ -97,7 +97,7 @@
 }
 
 .error-msg {
-  color: var(--safeclick-danger, #ef4444);
+  color: var(--Cycysafeclick-danger, #ef4444);
   text-align: center;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -105,7 +105,7 @@
 
 .primary-btn {
   width: 100%;
-  background: var(--safeclick-navy, #0A1628);
+  background: var(--Cycysafeclick-navy, #0A1628);
   color: white;
   border: none;
   padding: 1rem;
@@ -117,7 +117,7 @@
 }
 
 .primary-btn:hover {
-  background: var(--safeclick-saffron, #FF9933);
+  background: var(--Cycysafeclick-saffron, #FF9933);
 }
 
 /* List View */
@@ -238,7 +238,7 @@
 }
 
 .save-btn {
-  background: var(--safeclick-safe, #22c55e);
+  background: var(--Cycysafeclick-safe, #22c55e);
   color: white;
   border: none;
 }
@@ -274,7 +274,7 @@
   position: absolute;
   top: -12px;
   left: 20px;
-  background: var(--safeclick-safe, #22c55e);
+  background: var(--Cycysafeclick-safe, #22c55e);
   color: white;
   padding: 0.2rem 1rem;
   border-radius: 999px;
@@ -287,7 +287,7 @@
   width: 100%;
   padding: 2rem 1.5rem 1.5rem;
   font-size: 1.1rem;
-  border: 2px solid var(--safeclick-safe, #22c55e);
+  border: 2px solid var(--Cycysafeclick-safe, #22c55e);
   border-radius: 8px;
   font-family: monospace;
   box-sizing: border-box;

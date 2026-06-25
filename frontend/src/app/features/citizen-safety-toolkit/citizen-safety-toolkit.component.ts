@@ -547,13 +547,13 @@ export class CitizenSafetyToolkitComponent {
     const record: ComplaintRecord = { id: Date.now().toString(), ...this.trackerForm };
     const records = [record, ...this.complaintRecords()].slice(0, 10);
     this.complaintRecords.set(records);
-    localStorage.setItem('safeclick_complaint_tracker', JSON.stringify(records));
+    localStorage.setItem('Cycysafeclick_complaint_tracker', JSON.stringify(records));
     this.trackerForm = { acknowledgement: '', bankTicket: '', policeContact: '', followUpDate: '', note: '' };
   }
 
   private loadComplaintRecords(): ComplaintRecord[] {
     try {
-      const raw = localStorage.getItem('safeclick_complaint_tracker');
+      const raw = localStorage.getItem('Cycysafeclick_complaint_tracker');
       return raw ? JSON.parse(raw) : [];
     } catch {
       return [];

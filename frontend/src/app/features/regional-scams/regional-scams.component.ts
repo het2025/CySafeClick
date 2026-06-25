@@ -9,7 +9,7 @@ import { selectUserLocation } from '../../store/location.store';
 import { LocationOnboardingComponent } from '../../shared/components/location-onboarding/location-onboarding.component';
 
 @Component({
-  selector: 'safeclick-regional-scams',
+  selector: 'Cycysafeclick-regional-scams',
   standalone: true,
   imports: [CommonModule, FormsModule, TranslatePipe, LocationOnboardingComponent],
   template: `
@@ -120,9 +120,9 @@ import { LocationOnboardingComponent } from '../../shared/components/location-on
       </div>
     </div>
 
-    <safeclick-location-onboarding *ngIf="showOnboarding || (!userLocation().stateId && !hasSkippedOnboarding)"
+    <Cycysafeclick-location-onboarding *ngIf="showOnboarding || (!userLocation().stateId && !hasSkippedOnboarding)"
       (completed)="onboardingCompleted()">
-    </safeclick-location-onboarding>
+    </Cycysafeclick-location-onboarding>
   `,
   styleUrls: ['./regional-scams.component.scss']
 })
@@ -233,7 +233,7 @@ export class RegionalScamsComponent implements OnInit {
   }
 
   shareScam(scam: RegionalScam) {
-    const text = `⚠️ BEWARE OF THIS SCAM: ${scam.title}\n\n${scam.description}\n\nPrevention: ${scam.prevention}\n\nLearn more at SafeClick Regional Scams.`;
+    const text = `⚠️ BEWARE OF THIS SCAM: ${scam.title}\n\n${scam.description}\n\nPrevention: ${scam.prevention}\n\nLearn more at Cycysafeclick Regional Scams.`;
     const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
   }

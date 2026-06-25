@@ -17,7 +17,7 @@ export const tickerConfig = {
 };
 
 @Component({
-  selector: 'safeclick-fraud-ticker',
+  selector: 'Cycysafeclick-fraud-ticker',
   standalone: true,
   imports: [CommonModule, FormsModule, TranslatePipe, TickerDetailDrawerComponent],
   template: `
@@ -68,11 +68,11 @@ export const tickerConfig = {
       </div>
     </ng-template>
 
-    <safeclick-ticker-detail-drawer 
+    <Cycysafeclick-ticker-detail-drawer 
       [item]="selectedItem()" 
       [isOpen]="isDrawerOpen()" 
       (close)="closeDrawer()">
-    </safeclick-ticker-detail-drawer>
+    </Cycysafeclick-ticker-detail-drawer>
   `,
   styleUrls: ['./fraud-ticker.component.scss']
 })
@@ -176,20 +176,20 @@ export class FraudTickerComponent implements OnInit, OnDestroy {
   dismissTicker() {
     this.isDismissed.set(true);
     if (this.isBrowser) {
-      localStorage.setItem('safeclick_ticker_dismissed', Date.now().toString());
+      localStorage.setItem('Cycysafeclick_ticker_dismissed', Date.now().toString());
     }
   }
 
   private checkDismissedStatus() {
     if (!this.isBrowser) return;
-    const dismissedAt = localStorage.getItem('safeclick_ticker_dismissed');
+    const dismissedAt = localStorage.getItem('Cycysafeclick_ticker_dismissed');
     if (dismissedAt) {
       const dismissTime = parseInt(dismissedAt, 10);
       const hoursSince = (Date.now() - dismissTime) / (1000 * 60 * 60);
       if (hoursSince < tickerConfig.dismissDurationHours) {
         this.isDismissed.set(true);
       } else {
-        localStorage.removeItem('safeclick_ticker_dismissed');
+        localStorage.removeItem('Cycysafeclick_ticker_dismissed');
       }
     }
   }

@@ -7,7 +7,7 @@ import { Component, input } from '@angular/core';
     <div class="share-card-wrapper" id="share-card-container">
       <div class="share-card">
         <div class="header">
-          <span class="logo">SafeClick Shield</span>
+          <span class="logo">Cycysafeclick Shield</span>
         </div>
         <div class="content">
           <h3>{{ title() }}</h3>
@@ -37,7 +37,7 @@ export class ShareCardComponent {
   share() {
     if (navigator.share) {
       navigator.share({
-        title: 'SafeClick Security Awareness',
+        title: 'Cycysafeclick Security Awareness',
         text: `${this.title()} - ${this.description()}`,
         url: window.location.href
       }).catch(console.error);

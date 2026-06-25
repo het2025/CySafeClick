@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--safeclick-navy, #0A1628);
+  color: var(--Cycysafeclick-navy, #0A1628);
 }
 
 .page-header {
@@ -52,7 +52,7 @@
 }
 
 .tabs button.active {
-  color: var(--safeclick-navy, #0A1628);
+  color: var(--Cycysafeclick-navy, #0A1628);
 }
 
 .tabs button.active::after {
@@ -62,7 +62,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--safeclick-saffron, #FF9933);
+  background: var(--Cycysafeclick-saffron, #FF9933);
 }
 
 .tab-pane label {
@@ -85,7 +85,7 @@ textarea {
 
 .primary-btn {
   width: 100%;
-  background: var(--safeclick-navy, #0A1628);
+  background: var(--Cycysafeclick-navy, #0A1628);
   color: white;
   border: none;
   padding: 1rem;
@@ -97,7 +97,7 @@ textarea {
 }
 
 .primary-btn:hover:not([disabled]) {
-  background: var(--safeclick-saffron, #FF9933);
+  background: var(--Cycysafeclick-saffron, #FF9933);
 }
 
 .primary-btn:disabled {
@@ -128,19 +128,19 @@ textarea {
 .score-banner.critical {
   background: #fef2f2;
   color: #991b1b;
-  border: 2px solid var(--safeclick-danger, #ef4444);
+  border: 2px solid var(--Cycysafeclick-danger, #ef4444);
 }
 
 .score-banner.warning {
   background: #fffbeb;
   color: #b45309;
-  border: 2px solid var(--safeclick-warn, #f59e0b);
+  border: 2px solid var(--Cycysafeclick-warn, #f59e0b);
 }
 
 .score-banner.safe {
   background: #f0fdf4;
   color: #166534;
-  border: 2px solid var(--safeclick-safe, #22c55e);
+  border: 2px solid var(--Cycysafeclick-safe, #22c55e);
 }
 
 .red-flag-list {
@@ -154,7 +154,7 @@ textarea {
   padding: 0.75rem;
   border-radius: 6px;
   margin-bottom: 0.5rem;
-  border-left: 4px solid var(--safeclick-danger, #ef4444);
+  border-left: 4px solid var(--Cycysafeclick-danger, #ef4444);
 }
 
 .safe-text {
@@ -211,7 +211,7 @@ textarea {
 
 .verification-guide h2 {
   margin-top: 0;
-  border-bottom: 2px solid var(--safeclick-saffron, #FF9933);
+  border-bottom: 2px solid var(--Cycysafeclick-saffron, #FF9933);
   padding-bottom: 0.5rem;
 }
 
@@ -224,7 +224,7 @@ textarea {
 
 .guide-step h3 {
   margin-top: 0;
-  color: var(--safeclick-navy, #0A1628);
+  color: var(--Cycysafeclick-navy, #0A1628);
 }
 
 .guide-step p {
@@ -234,7 +234,7 @@ textarea {
 }
 
 .critical-warning {
-  background: var(--safeclick-danger, #ef4444);
+  background: var(--Cycysafeclick-danger, #ef4444);
   color: white;
   padding: 1.5rem;
   border-radius: 8px;
@@ -254,7 +254,7 @@ textarea {
 
 .report-link {
   display: inline-block;
-  background: var(--safeclick-navy, #0A1628);
+  background: var(--Cycysafeclick-navy, #0A1628);
   color: white;
   text-decoration: none;
   padding: 0.75rem 1.5rem;

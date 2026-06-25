@@ -48,7 +48,7 @@ export class QuizChampionshipService {
   }
 
   getQuizHistory(): QuizHistory {
-    const saved = localStorage.getItem('safeclick_quiz_history');
+    const saved = localStorage.getItem('Cycysafeclick_quiz_history');
     if (saved) {
       return JSON.parse(saved);
     }
@@ -69,7 +69,7 @@ export class QuizChampionshipService {
        history.history.push({ week: currentWeek, score });
     }
 
-    localStorage.setItem('safeclick_quiz_history', JSON.stringify(history));
+    localStorage.setItem('Cycysafeclick_quiz_history', JSON.stringify(history));
   }
 
   getLeaderboard() {

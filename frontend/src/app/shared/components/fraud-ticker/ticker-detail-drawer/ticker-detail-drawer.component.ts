@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { TickerItem, FraudTickerService } from '../../../../core/services/fraud-ticker.service';
 
 @Component({
-  selector: 'safeclick-ticker-detail-drawer',
+  selector: 'Cycysafeclick-ticker-detail-drawer',
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
@@ -71,8 +71,8 @@ import { TickerItem, FraudTickerService } from '../../../../core/services/fraud-
     .drawer-container {
       position: fixed;
       bottom: 0; left: 0; right: 0;
-      background: var(--safeclick-navy, #0A1628);
-      border-top: 2px solid var(--safeclick-saffron, #FF9933);
+      background: var(--Cycysafeclick-navy, #0A1628);
+      border-top: 2px solid var(--Cycysafeclick-saffron, #FF9933);
       padding: 24px;
       transform: translateY(100%);
       transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -141,11 +141,11 @@ import { TickerItem, FraudTickerService } from '../../../../core/services/fraud-
     
     .action-section {
       background: rgba(255, 153, 51, 0.1);
-      border-left: 4px solid var(--safeclick-saffron, #FF9933);
+      border-left: 4px solid var(--Cycysafeclick-saffron, #FF9933);
       padding: 16px;
       margin-bottom: 24px;
       
-      h4 { margin: 0 0 8px 0; color: var(--safeclick-saffron, #FF9933); }
+      h4 { margin: 0 0 8px 0; color: var(--Cycysafeclick-saffron, #FF9933); }
       p { margin: 0; color: #ddd; font-size: 14px; }
     }
     
@@ -163,7 +163,7 @@ import { TickerItem, FraudTickerService } from '../../../../core/services/fraud-
         font-family: inherit;
       }
       
-      .btn-primary { background: var(--safeclick-saffron, #FF9933); color: #000; }
+      .btn-primary { background: var(--Cycysafeclick-saffron, #FF9933); color: #000; }
       .btn-secondary { background: rgba(255,255,255,0.1); color: #fff; }
       .btn-share { background: #25D366; color: white; }
     }
@@ -201,7 +201,7 @@ export class TickerDetailDrawerComponent {
 
   shareWarning() {
     if (!this.item) return;
-    const text = `🚨 SafeClick SCAM ALERT 🚨\n\n${this.item.text}\n\n${this.item.textHindi}\n\nCheck live alerts on SafeClick App.`;
+    const text = `🚨 Cycysafeclick SCAM ALERT 🚨\n\n${this.item.text}\n\n${this.item.textHindi}\n\nCheck live alerts on Cycysafeclick App.`;
     window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
   }
 }

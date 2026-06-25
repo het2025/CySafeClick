@@ -23,7 +23,7 @@ export interface TickerItem {
 })
 export class FraudTickerService {
   private readonly JSON_URL = `${environment.apiUrl}/news/alerts`;
-  private readonly STATE_KEY = 'safeclick_user_state';
+  private readonly STATE_KEY = 'Cycysafeclick_user_state';
   private refreshIntervalId: any = null;
 
   public activeState$ = new BehaviorSubject<string>(this.getUserState() || 'All India');

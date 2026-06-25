@@ -20,7 +20,7 @@ import { RouterLink } from '@angular/router';
       </section>
 
       <section class="notice">
-        <strong>Important:</strong> SafeClick gives educational guidance only. Complaints are officially filed through 1930, cybercrime.gov.in, your bank, or your local police station.
+        <strong>Important:</strong> Cycysafeclick gives educational guidance only. Complaints are officially filed through 1930, cybercrime.gov.in, your bank, or your local police station.
       </section>
 
       <section class="quick-flow">

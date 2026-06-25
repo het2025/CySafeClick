@@ -32,7 +32,7 @@ export const roadmapReducer = createReducer(
     if (day === 1 && !newBadges.includes('First Step')) newBadges.push('First Step');
     if (newStreak >= 7 && !newBadges.includes('Week Warrior')) newBadges.push('Week Warrior');
     if (newStreak >= 15 && !newBadges.includes('Halfway Hero')) newBadges.push('Halfway Hero');
-    if (state.completedDays.length === 29 && !newBadges.includes('SafeClick Shield')) newBadges.push('SafeClick Shield');
+    if (state.completedDays.length === 29 && !newBadges.includes('CySafeClick Shield')) newBadges.push('CySafeClick Shield');
 
     return {
       ...state,

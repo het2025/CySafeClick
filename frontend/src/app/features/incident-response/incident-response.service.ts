@@ -37,15 +37,15 @@ export class IncidentResponseService {
   }
 
   getCompletedSteps(playbookId: string): number[] {
-    const data = localStorage.getItem(`safeclick_pb_${playbookId}`);
+    const data = localStorage.getItem(`Cycysafeclick_pb_${playbookId}`);
     return data ? JSON.parse(data) : [];
   }
 
   saveCompletedSteps(playbookId: string, steps: number[]): void {
-    localStorage.setItem(`safeclick_pb_${playbookId}`, JSON.stringify(steps));
+    localStorage.setItem(`Cycysafeclick_pb_${playbookId}`, JSON.stringify(steps));
   }
 
   clearProgress(playbookId: string): void {
-    localStorage.removeItem(`safeclick_pb_${playbookId}`);
+    localStorage.removeItem(`Cycysafeclick_pb_${playbookId}`);
   }
 }

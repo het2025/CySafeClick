@@ -31,7 +31,7 @@
   },
   "NOTIFICATIONS": {
     "TITLE": "Live Scam Alert Notifications",
-    "ENABLE_CTA": "Enable SafeClick Alerts",
+    "ENABLE_CTA": "Enable CyCycysafeclick Alerts",
     "ENABLE_DESC": "Get notified when new scams are targeting Indians. We never spam — only genuine security alerts.",
     "ENABLE_BTN": "Enable Notifications",
     "ACTIVE": "Notifications Active",
@@ -63,7 +63,7 @@
     "MARK_ALL_READ": "Mark all as read",
     "VIEW_ALL": "View all alerts",
     "NO_ALERTS": "No new alerts",
-    "PRIVACY": "SafeClick notifications are generated entirely on your device. We do not have a server that pushes notifications to you. Alerts are loaded from our data file and shown using your browser's notification system."
+    "PRIVACY": "CyCycysafeclick notifications are generated entirely on your device. We do not have a server that pushes notifications to you. Alerts are loaded from our data file and shown using your browser's notification system."
   },
   "HERO": {
     "TITLE": "Is Your Digital Life Safe?",
@@ -147,7 +147,7 @@
     "ROADMAP": "30-Day Security Roadmap"
   },
   "LOGO": {
-    "NAME": "SafeClick",
+    "NAME": "CyCycysafeclick",
     "TAGLINE": "\"Apni Digital Suraksha, Apne Haath Mein\""
   },
   "SCAM_AWARENESS": {
@@ -229,7 +229,7 @@
     "NOT_TO_DO": "⚠️ What NOT to do"
   },
   "SENIOR": {
-    "TITLE": "SafeClick Senior Safe Mode",
+    "TITLE": "CyCycysafeclick Senior Safe Mode",
     "ON": "Turn On Safe Mode",
     "OFF": "Turn Off Safe Mode",
     "HELP_TEXT": "For Cyber Fraud Help",
@@ -501,7 +501,7 @@
       "EXCELLENT": "Excellent! This is a very strong password."
     },
     "INDIAN_WORDS": ["india", "bharat", "sachin", "dhoni", "ipl", "rahul", "priya", "delhi", "mumbai", "kolkata", "chennai", "bangalore", "hyderabad", "pune", "jaipur", "virat", "rohit", "cricket", "diwali", "ganesh", "shiva", "krishna", "ram", "sita", "paytm", "phonepe", "gpay", "vanakkam", "namaste"],
-    "VARIANT_WORDS": ["Mera", "Apna", "Suraksha", "SafeClick", "Sher"],
+    "VARIANT_WORDS": ["Mera", "Apna", "Suraksha", "CyCycysafeclick", "Sher"],
     "PASSPHRASE_WORDS": ["apple", "mountain", "river", "delta", "tiger"],
     "VARIANTS": {
       "ADD_SYMBOL": "Add Number + Symbol",
@@ -601,11 +601,11 @@
     "SCORE": "Score: {{ score }}",
     "TIME_OUT": "Time Out!",
     "COMPLETED": "Challenge Completed!",
-    "CERT_TITLE": "SafeClick Cyber Champion",
+    "CERT_TITLE": "CyCycysafeclick Cyber Champion",
     "CERT_SUB": "This certifies that scored points in the Weekly Cyber Championship.",
     "NAME_PLACEHOLDER": "Enter name for certificate",
     "CERT_BTN": "Download Certificate",
-    "ENCOURAGEMENT": "Good effort! Read more SafeClick safety tips and try again next week to earn your certificate (Requires 80+ points).",
+    "ENCOURAGEMENT": "Good effort! Read more CyCycysafeclick safety tips and try again next week to earn your certificate (Requires 80+ points).",
     "BACK_BTN": "Back to Leaderboard"
   },
   "FACT": {
@@ -842,7 +842,7 @@
     "TOTAL": "Total Reports",
     "PHONE": "Phone Scams",
     "UPI": "UPI IDs Flagged",
-    "DISCLAIMER": "SafeClick does not collect, publish, verify, or rank alleged scammer identifiers. Use official channels and preserve evidence privately.",
+    "DISCLAIMER": "CyCycysafeclick does not collect, publish, verify, or rank alleged scammer identifiers. Use official channels and preserve evidence privately.",
     "SEARCH": "Public search disabled",
     "REPORT_BTN": "Open official reporting guide",
     "FORM_TITLE": "Public submissions disabled",
@@ -853,7 +853,7 @@
   "STATS": {
     "TITLE": "India Cybercrime Statistics Dashboard",
     "SUBTITLE": "Data from NCRB Annual Reports, MHA cybercrime data, and RBI reports.",
-    "IMPACT_TITLE": "SafeClick Impact (Live)",
+    "IMPACT_TITLE": "CyCycysafeclick Impact (Live)",
     "TOOLS": "Tools Used",
     "PASSWORDS": "Passwords Tested",
     "PHISHING": "Phishing URLs Scanned",
@@ -883,7 +883,7 @@
   },
   "MITRA": {
     "SUBTITLE": "Your digital safety advisor",
-    "VOICE_WAKE": "Say \"SafeClick, am I being scammed?\"",
+    "VOICE_WAKE": "Say \"CyCycysafeclick, am I being scammed?\"",
     "PLACEHOLDER": "Type your question or use voice...",
     "SEND": "Send",
     "CLEAR_HISTORY": "Are you sure you want to clear the conversation history?",
@@ -893,7 +893,7 @@
     "CONFIRM_HEARING": "Did I hear you correctly?",
     "SAY_YES_NO": "Say Yes to continue, No to cancel",
     "SUGGESTIONS": {
-      "SCAMMED": "SafeClick, am I being scammed?",
+      "SCAMMED": "CyCycysafeclick, am I being scammed?",
       "OTP": "Someone asked for my OTP — what should I do?",
       "UPI": "How do I report UPI fraud?",
       "HACKED": "My phone got hacked — help!",
@@ -901,7 +901,7 @@
     }
   },
   "EXTENSION": {
-    "GUARD_TITLE": "SafeClick Guard",
+    "GUARD_TITLE": "CyCycysafeclick Guard",
     "ACTIVE": "Active",
     "ANALYZING": "Analyzing Site...",
     "STATUS_SAFE": "Safe Website",
@@ -909,7 +909,7 @@
     "STATUS_DANGER": "DANGEROUS SITE",
     "RESCANNING": "Re-scanning...",
     "SCAN_BTN": "Force Re-Scan Page",
-    "WEB_APP_BTN": "Open SafeClick Web App",
+    "WEB_APP_BTN": "Open CyCycysafeclick Web App",
     "TIP_TITLE": "💡 Today's Security Tip"
   },
   "FOOTER": {

@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--safeclick-navy, #0A1628);
+  color: var(--Cycysafeclick-navy, #0A1628);
 }
 
 .page-header {
@@ -39,7 +39,7 @@
 .tool-card h2 {
   margin-top: 0;
   font-size: 1.5rem;
-  color: var(--safeclick-navy, #0A1628);
+  color: var(--Cycysafeclick-navy, #0A1628);
 }
 
 .tool-desc {
@@ -61,7 +61,7 @@ textarea {
 
 .primary-btn {
   width: 100%;
-  background: var(--safeclick-navy, #0A1628);
+  background: var(--Cycysafeclick-navy, #0A1628);
   color: white;
   border: none;
   padding: 1rem;
@@ -73,7 +73,7 @@ textarea {
 }
 
 .primary-btn:hover:not([disabled]) {
-  background: var(--safeclick-saffron, #FF9933);
+  background: var(--Cycysafeclick-saffron, #FF9933);
 }
 
 .primary-btn:disabled {
@@ -87,7 +87,7 @@ textarea {
 
 .safe-box {
   background: #f0fdf4;
-  border: 2px solid var(--safeclick-safe, #22c55e);
+  border: 2px solid var(--Cycysafeclick-safe, #22c55e);
   padding: 1rem;
   border-radius: 8px;
   color: #166534;
@@ -95,7 +95,7 @@ textarea {
 
 .danger-box {
   background: #fef2f2;
-  border: 2px solid var(--safeclick-danger, #ef4444);
+  border: 2px solid var(--Cycysafeclick-danger, #ef4444);
   padding: 1rem;
   border-radius: 8px;
   color: #991b1b;
@@ -144,16 +144,16 @@ textarea {
 
 .ponzi-results.is-scam {
   background: #fef2f2;
-  border-color: var(--safeclick-danger, #ef4444);
+  border-color: var(--Cycysafeclick-danger, #ef4444);
 }
 
 .ponzi-results h3 {
   margin-top: 0;
-  color: var(--safeclick-navy, #0A1628);
+  color: var(--Cycysafeclick-navy, #0A1628);
 }
 
 .ponzi-results.is-scam h3 {
-  color: var(--safeclick-danger, #ef4444);
+  color: var(--Cycysafeclick-danger, #ef4444);
 }
 
 .verdict-box {
@@ -207,7 +207,7 @@ textarea {
 }
 
 .scam-type h3 {
-  color: var(--safeclick-danger, #ef4444);
+  color: var(--Cycysafeclick-danger, #ef4444);
   margin-top: 0;
 }
 
@@ -221,7 +221,7 @@ textarea {
   background: white;
   padding: 2rem;
   border-radius: 12px;
-  border: 2px solid var(--safeclick-navy, #0A1628);
+  border: 2px solid var(--Cycysafeclick-navy, #0A1628);
 }
 
 .verification-guide h2 {

@@ -13,8 +13,8 @@ export interface SubscriptionStatus {
   providedIn: 'root'
 })
 export class PushNotificationService {
-  private readonly CATEGORIES_KEY = 'safeclick_alert_categories';
-  private readonly STATS_KEY = 'safeclick_alert_stats';
+  private readonly CATEGORIES_KEY = 'Cycysafeclick_alert_categories';
+  private readonly STATS_KEY = 'Cycysafeclick_alert_stats';
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 

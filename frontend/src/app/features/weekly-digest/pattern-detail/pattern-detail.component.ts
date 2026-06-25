@@ -5,7 +5,7 @@ import { TranslationService } from '../../../core/services/translation.service';
 import { TranslatePipe } from '../../../core/pipes/translate.pipe';
 
 @Component({
-  selector: 'safeclick-pattern-detail',
+  selector: 'Cycysafeclick-pattern-detail',
   standalone: true,
   imports: [CommonModule, TranslatePipe],
   template: `
@@ -109,7 +109,7 @@ import { TranslatePipe } from '../../../core/pipes/translate.pipe';
   styles: [`
     .pattern-detail {
       font-family: 'Inter', sans-serif;
-      color: var(--safeclick-navy);
+      color: var(--Cycysafeclick-navy);
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -145,7 +145,7 @@ import { TranslatePipe } from '../../../core/pipes/translate.pipe';
     .pill { background: #e2e8f0; font-size: 0.85rem; padding: 2px 8px; border-radius: 12px; }
     .loss-amount { font-size: 1.2rem; font-weight: 700; color: #b91c1c; }
     
-    .section h3 { font-size: 1.25rem; font-weight: 700; border-bottom: 2px solid var(--safeclick-saffron); padding-bottom: 0.5rem; margin-bottom: 1rem; display: inline-block; }
+    .section h3 { font-size: 1.25rem; font-weight: 700; border-bottom: 2px solid var(--Cycysafeclick-saffron); padding-bottom: 0.5rem; margin-bottom: 1rem; display: inline-block; }
     
     .how-it-works .steps { display: flex; flex-direction: column; gap: 1rem; }
     .step { display: flex; gap: 1rem; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0; }
@@ -154,12 +154,12 @@ import { TranslatePipe } from '../../../core/pipes/translate.pipe';
       display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
       flex-shrink: 0;
     }
-    .step-num { font-size: 0.85rem; font-weight: 700; color: var(--safeclick-saffron); text-transform: uppercase; }
+    .step-num { font-size: 0.85rem; font-weight: 700; color: var(--Cycysafeclick-saffron); text-transform: uppercase; }
     .step p { margin: 0.25rem 0 0 0; line-height: 1.5; }
     
     .real-script .script-card {
       background: #1e293b; color: #f8fafc;
-      padding: 1.5rem; border-left: 6px solid var(--safeclick-saffron);
+      padding: 1.5rem; border-left: 6px solid var(--Cycysafeclick-saffron);
       border-radius: 4px; margin: 0; font-family: 'Courier New', Courier, monospace;
       font-size: 1.05rem; line-height: 1.6;
     }
@@ -168,7 +168,7 @@ import { TranslatePipe } from '../../../core/pipes/translate.pipe';
     .red-flags .sub { margin-bottom: 1rem; color: #dc2626; font-weight: 600; }
     .checklist { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; }
     .check-item { display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; }
-    .check-item input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--safeclick-saffron); }
+    .check-item input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--Cycysafeclick-saffron); }
     .check-item .text { line-height: 1.5; }
     
     .action-box { display: flex; flex-direction: column; gap: 1rem; background: #fef2f2; border: 1px solid #fca5a5; padding: 1.5rem; border-radius: 8px; }
@@ -207,7 +207,7 @@ export class PatternDetailComponent {
   whatToDo = computed(() => this.lang() === 'hi' && this.pattern.whatToDoHindi ? this.pattern.whatToDoHindi : this.pattern.whatToDo);
   
   shareLink = computed(() => {
-    const text = `⚠️ SafeClick Alert: ${this.title()}.\n${this.summary()}\nApne parivaar ko batayein. safeclick.in/digest`;
+    const text = `⚠️ Cycysafeclick Alert: ${this.title()}.\n${this.summary()}\nApne parivaar ko batayein. Cycysafeclick.in/digest`;
     return `https://wa.me/?text=${encodeURIComponent(text)}`;
   });
 

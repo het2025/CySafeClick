@@ -12,27 +12,27 @@ export const routes: Routes = [
   {
     path: 'ai-tools',
     loadComponent: () => import('./features/ai-tools-hub/ai-tools-hub.component').then(m => m.AiToolsHubComponent),
-    title: 'SafeClick AI Tools Hub'
+    title: 'Cycysafeclick AI Tools Hub'
   },
   {
     path: 'ai-tools/scam-analyzer',
     loadComponent: () => import('./features/ai-scam-analyzer/ai-scam-analyzer.component').then(m => m.AiScamAnalyzerComponent),
-    title: 'AI Scam Analyzer — SafeClick'
+    title: 'AI Scam Analyzer — Cycysafeclick'
   },
   {
     path: 'ai-tools/transaction-risk',
     loadComponent: () => import('./features/ai-transaction-risk/ai-transaction-risk.component').then(m => m.AiTransactionRiskComponent),
-    title: 'AI Transaction Risk — SafeClick'
+    title: 'AI Transaction Risk — Cycysafeclick'
   },
   {
     path: 'privacy',
     loadComponent: () => import('./features/privacy-policy/privacy-policy.component').then(m => m.PrivacyPolicyComponent),
-    title: 'Privacy Policy — SafeClick'
+    title: 'Privacy Policy — Cycysafeclick'
   },
   {
     path: 'terms',
     loadComponent: () => import('./features/terms-of-use/terms-of-use.component').then(m => m.TermsOfUseComponent),
-    title: 'Terms of Use — SafeClick'
+    title: 'Terms of Use — Cycysafeclick'
   },
   { 
     path: 'phishing-detector', 
@@ -121,7 +121,7 @@ export const routes: Routes = [
   {
     path: 'tools/citizen-safety-toolkit',
     loadComponent: () => import('./features/citizen-safety-toolkit/citizen-safety-toolkit.component').then(m => m.CitizenSafetyToolkitComponent),
-    title: 'Citizen Cyber Safety Toolkit — SafeClick'
+    title: 'Citizen Cyber Safety Toolkit — Cycysafeclick'
   },
   {
     path: 'stats',
@@ -190,22 +190,22 @@ export const routes: Routes = [
   {
     path: 'map',
     loadComponent: () => import('./features/threat-map/threat-map.component').then(c => c.ThreatMapComponent),
-    title: 'India Cyber Threat Map — SafeClick'
+    title: 'India Cyber Threat Map — Cycysafeclick'
   },
   {
     path: 'learn/weekly-digest',
     loadComponent: () => import('./features/weekly-digest/weekly-digest-page/weekly-digest-page.component').then(c => c.WeeklyDigestPageComponent),
-    title: 'This Week in Cybercrime — SafeClick'
+    title: 'This Week in Cybercrime — Cycysafeclick'
   },
   {
     path: 'learn/senior-guide',
     loadComponent: () => import('./features/senior-guide/senior-guide.component').then(c => c.SeniorGuideComponent),
-    title: 'Senior Parents Cyber Safety Guide — SafeClick'
+    title: 'Senior Parents Cyber Safety Guide — Cycysafeclick'
   },
   {
     path: 'learn/regional-scams',
     loadComponent: () => import('./features/regional-scams/regional-scams.component').then(c => c.RegionalScamsComponent),
-    title: 'Regional Scam Patterns — SafeClick'
+    title: 'Regional Scam Patterns — Cycysafeclick'
   },
   // Redirect legacy routes if any
   { path: 'safety-score', redirectTo: 'tools/safety-score', pathMatch: 'full' }
