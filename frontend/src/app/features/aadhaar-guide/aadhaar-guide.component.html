@@ -1,0 +1,118 @@
+<div class="container aadhaar-page">
+  <div class="header-section text-center">
+    <h1>Aadhaar Safety Guide</h1>
+    <p>Your Aadhaar is your digital identity. Learn how to protect it from misuse.</p>
+  </div>
+
+  <div class="page-layout">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar-nav">
+      <h3>In this guide</h3>
+      <ul>
+        <li><a (click)="scrollToSection('masked-aadhaar')">1. Masked Aadhaar</a></li>
+        <li><a (click)="scrollToSection('biometric-lock')">2. Biometric Lock</a></li>
+        <li><a (click)="scrollToSection('auth-history')">3. Authentication History</a></li>
+        <li><a (click)="scrollToSection('virtual-id')">4. Virtual ID (VID)</a></li>
+        <li><a (click)="scrollToSection('ekyc-usage')">5. eKYC Usage</a></li>
+        <li><a (click)="scrollToSection('what-not-to-do')">6. What NOT to Do</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      
+      <section id="masked-aadhaar" class="guide-section card">
+        <h2>1. Masked Aadhaar</h2>
+        <p>A Masked Aadhaar hides the first 8 digits of your Aadhaar number, showing only the last 4 digits (e.g., xxxx-xxxx-1234). It is legally valid for identity proof but prevents scammers from knowing your full number.</p>
+        
+        <div class="how-to-box">
+          <h3>How to download Masked Aadhaar:</h3>
+          <ol>
+            <li>Go to the official UIDAI portal: <a href="https://myaadhaar.uidai.gov.in/" target="_blank">myaadhaar.uidai.gov.in</a></li>
+            <li>Log in using your Aadhaar number and OTP.</li>
+            <li>Click on <strong>"Download Aadhaar"</strong>.</li>
+            <li>Check the box that says <strong>"Do you want a masked Aadhaar?"</strong></li>
+            <li>Click <strong>"Download"</strong>.</li>
+          </ol>
+        </div>
+        <p class="pro-tip"><strong>When to use:</strong> Use Masked Aadhaar for hotels, flights, and general ID checks. Only give your full Aadhaar when specifically required by a bank or government service.</p>
+      </section>
+
+      <section id="biometric-lock" class="guide-section card">
+        <h2>2. Biometric Lock</h2>
+        <p>Scammers can clone fingerprints from property registration documents to bypass Aadhaar Enabled Payment System (AePS) and steal money from your bank account. Locking your biometrics prevents this.</p>
+        
+        <div class="how-to-box">
+          <h3>How to lock your biometrics:</h3>
+          <ol>
+            <li>Log in to <a href="https://myaadhaar.uidai.gov.in/" target="_blank">myaadhaar.uidai.gov.in</a></li>
+            <li>Click on <strong>"Lock/Unlock Biometrics"</strong>.</li>
+            <li>Follow the on-screen instructions to Lock.</li>
+          </ol>
+        </div>
+        <div class="alert-box warning">
+          <strong>Important:</strong> When you need to use your fingerprint (e.g., at a bank or ration shop), you can temporarily "Unlock" it from the same portal. It will automatically lock again after 10 minutes.
+        </div>
+      </section>
+
+      <section id="auth-history" class="guide-section card">
+        <h2>3. Check Aadhaar Authentication History</h2>
+        <p>You can see a detailed log of every time your Aadhaar was used for OTP or biometric authentication.</p>
+        
+        <div class="how-to-box">
+          <h3>How to check your history:</h3>
+          <ol>
+            <li>Log in to <a href="https://myaadhaar.uidai.gov.in/" target="_blank">myaadhaar.uidai.gov.in</a></li>
+            <li>Click on <strong>"Authentication History"</strong>.</li>
+            <li>Select the date range (up to 6 months) and fetch the records.</li>
+            <li>Review the list. If you see an authentication you didn't authorize, report it immediately to UIDAI (1947).</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="virtual-id" class="guide-section card">
+        <h2>4. Virtual ID (VID)</h2>
+        <p>A Virtual ID (VID) is a temporary, revocable 16-digit random number mapped to your Aadhaar. You can give a VID instead of your Aadhaar number. If you feel it's compromised, you can generate a new one.</p>
+        
+        <div class="how-to-box">
+          <h3>How to generate a VID:</h3>
+          <ol>
+            <li>Log in to <a href="https://myaadhaar.uidai.gov.in/" target="_blank">myaadhaar.uidai.gov.in</a></li>
+            <li>Click on <strong>"Generate Virtual ID"</strong>.</li>
+            <li>Choose to generate a new VID or retrieve an existing one.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="ekyc-usage" class="guide-section card">
+        <h2>5. eKYC Usage</h2>
+        <p>Sometimes, telecom operators or NBFCs retain access to your eKYC. You can check and revoke these permissions if you no longer use their services.</p>
+        <p>Check the <strong>"Aadhaar Services"</strong> section on the UIDAI portal to manage which agencies have done offline or online eKYC with your details.</p>
+      </section>
+
+      <section id="what-not-to-do" class="guide-section card danger-card">
+        <h2>6. What NOT to Do</h2>
+        <ul class="donts-list">
+          <li><span class="cross">✗</span> Never share your 12-digit Aadhaar number on public platforms, social media, or WhatsApp groups.</li>
+          <li><span class="cross">✗</span> Never share the Aadhaar OTP with anyone calling you on the phone.</li>
+          <li><span class="cross">✗</span> Never give a blank photocopy of your Aadhaar. Always write "Submitted to [Organization Name] on [Date] for [Purpose]" across the copy.</li>
+          <li><span class="cross">✗</span> Never use an internet cafe computer to download your Aadhaar without deleting the file and clearing the browser history afterwards.</li>
+        </ul>
+      </section>
+
+      <div class="checklist-section card">
+        <h3><i class="icon-shield"></i> Aadhaar Safety Checklist</h3>
+        <label class="checklist-item">
+          <input type="checkbox"> I have downloaded a Masked Aadhaar.
+        </label>
+        <label class="checklist-item">
+          <input type="checkbox"> My Aadhaar biometrics are locked.
+        </label>
+        <label class="checklist-item">
+          <input type="checkbox"> I have checked my authentication history recently.
+        </label>
+      </div>
+
+    </div>
+  </div>
+</div>

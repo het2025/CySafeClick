@@ -1,0 +1,95 @@
+<div class="container advisor-page">
+  <div class="header-section">
+    <h1>Two-Factor Authentication (2FA) Advisor</h1>
+    <p>Secure your most important accounts by upgrading from weak passwords to strong 2FA.</p>
+  </div>
+
+  <app-stepper [steps]="steps" [currentStep]="currentStep()" (stepChange)="onStepChange($event)">
+    <!-- STEP 1: SELECT PLATFORMS -->
+    <div *ngIf="currentStep() === 0" class="step-container">
+      <h3>Which platforms do you use?</h3>
+      <p class="subtitle">Select the apps and services where you have an account.</p>
+
+      <div class="search-bar">
+        <input type="text" [ngModel]="searchQuery()" (ngModelChange)="searchQuery.set($event)" placeholder="Search platforms (e.g., WhatsApp, SBI)..." class="form-input" aria-label="Search platforms">
+      </div>
+
+      <div class="platform-grid">
+        <div *ngFor="let platform of filteredPlatforms()" class="platform-card" [class.selected]="selectedPlatformIds().has(platform.id)" (click)="togglePlatformSelection(platform.id)">
+          <div class="platform-info">
+            <strong>{{ platform.name }}</strong>
+            <span class="category-badge">{{ platform.category }}</span>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" [checked]="selectedPlatformIds().has(platform.id)" (click)="$event.stopPropagation(); togglePlatformSelection(platform.id)" [attr.aria-label]="'Select ' + platform.name">
+          </div>
+        </div>
+      </div>
+      <div *ngIf="filteredPlatforms().length === 0" class="no-results">
+        No platforms found matching your search.
+      </div>
+    </div>
+
+    <!-- STEP 2: CURRENT STATUS -->
+    <div *ngIf="currentStep() === 1" class="step-container">
+      <h3>What is your current 2FA status?</h3>
+      <p class="subtitle">For each platform, select the security method you are currently using.</p>
+
+      <div class="status-list">
+        <div *ngFor="let platform of selectedPlatforms()" class="status-card">
+          <div class="status-header">
+            <h4>{{ platform.name }}</h4>
+            <span class="category-badge">{{ platform.category }}</span>
+          </div>
+          
+          <div class="method-selector">
+            <label *ngFor="let method of platform.supportedMethods" class="radio-label" [class.selected]="currentMethods().get(platform.id) === method">
+              <input type="radio" [name]="'method_' + platform.id" [value]="method" [checked]="currentMethods().get(platform.id) === method" (change)="setMethod(platform.id, method)">
+              {{ getMethodName(method) }}
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 3: RESULTS & UPGRADE PATH -->
+    <div *ngIf="currentStep() === 2" class="step-container">
+      <h3>Your 2FA Upgrade Plan</h3>
+      
+      <div class="india-note" *ngIf="selectedPlatforms().length > 0">
+        <strong>⚠️ Note on SMS OTPs:</strong> In India, SMS OTP is the most common 2FA but also the most targeted by scammers. Over 70% of Indian cyber fraud involves OTP theft. Upgrading to an authenticator app significantly reduces your risk.
+      </div>
+
+      <div class="results-list">
+        <div *ngFor="let platform of results()" class="result-card" [ngClass]="getRiskLevel(platform.id)">
+          <div class="result-header">
+            <div>
+              <h4>{{ platform.name }}</h4>
+              <p class="current-status">Current: <strong>{{ getMethodName(currentMethods().get(platform.id) || 'none') }}</strong></p>
+            </div>
+            <app-risk-badge [level]="getRiskLevel(platform.id)"></app-risk-badge>
+          </div>
+
+          <div class="risk-info" *ngIf="getRiskLevel(platform.id) !== 'safe'">
+            <p><strong>Risk if compromised:</strong> {{ platform.riskIfCompromised }}</p>
+            <p *ngIf="platform.indianSpecificNote" class="indian-specific">{{ platform.indianSpecificNote }}</p>
+          </div>
+
+          <div class="upgrade-action" *ngIf="getMethodRank(currentMethods().get(platform.id) || 'none') < getMethodRank(platform.recommendedMethod)">
+            <app-accordion [title]="'How to upgrade to ' + getMethodName(platform.recommendedMethod)">
+              <div class="instructions">
+                <ol>
+                  <li *ngFor="let step of platform.setupInstructions[platform.recommendedMethod]">{{ step }}</li>
+                </ol>
+              </div>
+            </app-accordion>
+          </div>
+          
+          <div class="all-good" *ngIf="getMethodRank(currentMethods().get(platform.id) || 'none') >= getMethodRank(platform.recommendedMethod)">
+            <p>✅ You are using strong security for this platform. Great job!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </app-stepper>
+</div>

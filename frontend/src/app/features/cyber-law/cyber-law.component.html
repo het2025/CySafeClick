@@ -1,0 +1,79 @@
+<div class="container cyber-law-page">
+  <div class="header-section">
+    <h1>Cyber Law Knowledge Base</h1>
+    <p>Understand your digital rights under the Indian IT Act 2000 and DPDP Act 2023 in plain language.</p>
+  </div>
+
+  <div class="actions-bar">
+    <div class="search-filters">
+      <input 
+        type="text" 
+        [ngModel]="searchQuery()" 
+        (ngModelChange)="searchQuery.set($event)" 
+        placeholder="Search laws, sections, or keywords..." 
+        class="form-input search-box"
+      >
+      <select [ngModel]="selectedCategory()" (ngModelChange)="selectedCategory.set($event)" class="form-select">
+        <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
+      </select>
+    </div>
+    <button class="btn-primary" (click)="showFlowchart.set(!showFlowchart())">
+      {{ showFlowchart() ? 'Hide Flowchart' : 'Am I Protected? (Flowchart)' }}
+    </button>
+  </div>
+
+  <div class="flowchart-section card" *ngIf="showFlowchart()">
+    <h3>"Am I Protected?" Decision Tree</h3>
+    <div class="tree-container">
+      <div class="tree-node">Did someone access your account without permission? 
+        <span class="arrow">→ Section 43 (Compensation) / 66 (Prison)</span>
+      </div>
+      <div class="tree-node">Did someone pretend to be you to cheat others? 
+        <span class="arrow">→ Section 66C & 66D (Impersonation)</span>
+      </div>
+      <div class="tree-node">Did someone share your private photos without consent? 
+        <span class="arrow">→ Section 66E (Privacy Violation) / 67 (Obscenity)</span>
+      </div>
+      <div class="tree-node">Did a company leak your personal data? 
+        <span class="arrow">→ DPDP Act 2023 / IT Act Sec 43A</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="laws-grid">
+    <div class="law-card" *ngFor="let law of filteredLaws()">
+      <div class="law-header">
+        <div>
+          <span class="act-name">{{ law.act }}</span>
+          <h2 class="section-title">{{ law.sectionNumber }}: {{ law.title }}</h2>
+        </div>
+        <app-risk-badge [level]="getSeverityBadgeLevel(law.severity)"></app-risk-badge>
+      </div>
+
+      <div class="law-body">
+        <div class="info-block">
+          <strong>What it means:</strong>
+          <p>{{ law.explanation }}</p>
+        </div>
+        
+        <div class="info-block example-block">
+          <strong>When does this apply?</strong>
+          <p><em>Example:</em> {{ law.example }}</p>
+        </div>
+
+        <div class="info-block penalty-block">
+          <strong>Maximum Punishment:</strong>
+          <p>{{ law.punishment }}</p>
+        </div>
+      </div>
+
+      <div class="law-footer" *ngIf="law.reportLink">
+        <a [href]="law.reportLink" class="btn-report">If this happened to you → Report Here</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="no-results" *ngIf="filteredLaws().length === 0">
+    <p>No laws found matching your search.</p>
+  </div>
+</div>

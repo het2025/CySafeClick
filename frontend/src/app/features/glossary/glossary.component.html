@@ -1,0 +1,99 @@
+<div class="container glossary-page">
+  <div class="header-section">
+    <h1>Cyber Security Glossary</h1>
+    <p>A dictionary of digital safety terms explained simply.</p>
+  </div>
+
+  <div class="search-bar">
+    <div class="search-input-wrapper">
+      <i class="icon-search"></i>
+      <input 
+        type="text" 
+        [ngModel]="searchQuery()" 
+        (ngModelChange)="searchQuery.set($event)" 
+        placeholder="Search for a term (e.g. Phishing, Malware)..." 
+        class="form-input search-box"
+      >
+    </div>
+    
+    <div class="filters">
+      <select [ngModel]="selectedCategory()" (ngModelChange)="selectedCategory.set($event)" class="form-select">
+        <option value="">All Categories</option>
+        <option *ngFor="let cat of categories" [value]="cat">{{ cat | titlecase }}</option>
+      </select>
+      
+      <select [ngModel]="selectedDifficulty()" (ngModelChange)="selectedDifficulty.set($event)" class="form-select">
+        <option value="">All Difficulties</option>
+        <option *ngFor="let diff of difficulties" [value]="diff">{{ diff | titlecase }}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="alphabet-index">
+    <button *ngFor="let letter of alphabet" (click)="scrollToLetter(letter)" class="letter-btn">
+      {{ letter }}
+    </button>
+  </div>
+
+  <div class="glossary-content">
+    <div *ngIf="groupedTerms().length === 0" class="no-results">
+      <p>No terms found. Try adjusting your search or filters.</p>
+      <button class="btn-secondary" (click)="searchQuery.set(''); selectedCategory.set(''); selectedDifficulty.set('');">Clear Filters</button>
+    </div>
+
+    <div *ngFor="let group of groupedTerms()" class="letter-group" [id]="'letter-' + group.letter">
+      <h2 class="letter-header">{{ group.letter }}</h2>
+      
+      <div class="terms-list">
+        <div *ngFor="let term of group.terms" class="term-card">
+          <app-accordion [title]="term.term">
+            <div class="term-details">
+              <div class="term-meta">
+                <span class="badge badge-hindi">{{ term.hindiTerm }}</span>
+                <span class="badge badge-category">{{ term.category }}</span>
+                <span class="badge badge-difficulty">{{ term.difficulty }}</span>
+              </div>
+              
+              <div class="definition-block">
+                <strong>Simple Definition:</strong>
+                <p>{{ term.simpleDefinition }}</p>
+              </div>
+
+              <div class="definition-block">
+                <strong>In detail:</strong>
+                <p>{{ term.detailedExplanation }}</p>
+              </div>
+
+              <div class="analogy-box">
+                <div class="analogy-item">
+                  <strong><i class="icon-bulb"></i> Analogy:</strong>
+                  <span>{{ term.indianAnalogy }}</span>
+                </div>
+                <div class="analogy-item">
+                  <strong><i class="icon-alert"></i> Real-world example:</strong>
+                  <span>{{ term.realWorldExample }}</span>
+                </div>
+              </div>
+
+              <div class="prevention-block">
+                <strong>How to protect yourself:</strong>
+                <p>{{ term.preventionTip }}</p>
+              </div>
+
+              <div class="related-terms" *ngIf="term.relatedTerms.length > 0">
+                <strong>Related:</strong>
+                <div class="related-chips">
+                  <button class="chip" *ngFor="let rel of term.relatedTerms" (click)="selectTerm(rel)">{{ rel }}</button>
+                </div>
+              </div>
+
+              <div class="actions">
+                <button class="btn-copy" (click)="copyDefinition(term)">Copy Definition</button>
+              </div>
+            </div>
+          </app-accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

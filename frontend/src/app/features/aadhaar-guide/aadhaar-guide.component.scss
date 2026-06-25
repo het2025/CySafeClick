@@ -1,0 +1,120 @@
+.aadhaar-page {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center { text-align: center; }
+
+.header-section {
+  margin-bottom: 40px;
+  h1 { color: var(--primary); margin-bottom: 8px; }
+  p { color: var(--muted); font-size: 1.1rem; }
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 32px;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar-nav {
+  position: sticky;
+  top: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  align-self: flex-start;
+  
+  h3 { margin-top: 0; margin-bottom: 16px; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+  
+  ul {
+    list-style: none; padding: 0; margin: 0;
+    
+    li {
+      margin-bottom: 12px;
+      
+      a {
+        color: var(--muted); text-decoration: none; font-weight: 500; cursor: pointer; transition: color 0.2s;
+        &:hover { color: var(--primary); }
+      }
+    }
+  }
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  
+  h2 { margin-top: 0; margin-bottom: 16px; color: var(--primary); }
+  p { line-height: 1.6; color: var(--text); margin-bottom: 16px; }
+}
+
+.how-to-box {
+  background: var(--bg);
+  border-left: 4px solid var(--accent-saffron);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+  
+  h3 { margin-top: 0; margin-bottom: 12px; font-size: 1.1rem; }
+  ol { margin: 0; padding-left: 20px; li { margin-bottom: 8px; line-height: 1.5; } }
+}
+
+.pro-tip {
+  background: rgba(34, 197, 94, 0.05);
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--safe);
+  color: var(--text);
+  strong { color: var(--safe); }
+}
+
+.alert-box {
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+  line-height: 1.5;
+  
+  &.warning { background: rgba(245, 158, 11, 0.1); border: 1px solid var(--warning); color: var(--text); strong { color: var(--warning); } }
+}
+
+.danger-card {
+  border-color: var(--danger);
+  h2 { color: var(--danger); }
+}
+
+.donts-list {
+  list-style: none; padding: 0; margin: 0;
+  
+  li {
+    display: flex; gap: 12px; margin-bottom: 16px; line-height: 1.5; font-weight: 500;
+    .cross { color: var(--danger); font-weight: bold; font-size: 1.2rem; }
+  }
+}
+
+.checklist-section {
+  background: linear-gradient(135deg, var(--bg) 0%, var(--surface) 100%);
+  border-color: var(--primary);
+  
+  h3 { margin-top: 0; margin-bottom: 20px; color: var(--primary); display: flex; align-items: center; gap: 8px; }
+  
+  .checklist-item {
+    display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; background: var(--surface); font-weight: 500; cursor: pointer; transition: all 0.2s;
+    &:hover { border-color: var(--primary); }
+    input[type="checkbox"] { width: 20px; height: 20px; cursor: pointer; accent-color: var(--safe); }
+  }
+}

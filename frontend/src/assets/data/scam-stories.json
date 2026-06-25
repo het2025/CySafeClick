@@ -1,0 +1,245 @@
+[
+  {
+    "id": "s1",
+    "title": "The KYC Update Trap",
+    "subtitle": "A simple phone call that cost Radha her savings.",
+    "victim": {
+      "firstName": "Radha",
+      "city": "Pune",
+      "age": 47,
+      "occupation": "Homemaker"
+    },
+    "scamType": "upi-collect",
+    "amountLost": 230000,
+    "howItStarted": "Radha received a phone call from someone claiming to be a Paytm executive. They told her that her KYC was pending and her account would be blocked in 24 hours.",
+    "howItUnfolded": "The caller instructed Radha to download an app called 'AnyDesk' to help her complete the process online. Unbeknownst to her, this app gave the caller full access to her phone screen. They then asked her to open her banking app and send a 'test payment' of ₹10. Because they could see her screen, they recorded her UPI PIN. Within minutes, multiple transactions were made, draining ₹2.3 lakh from her linked bank accounts.",
+    "redFlags": [
+      "The caller created artificial urgency ('blocked in 24 hours').",
+      "She was asked to download a screen-sharing app (AnyDesk).",
+      "She was asked to enter her UPI PIN while sharing her screen."
+    ],
+    "howItEnded": "Radha realized she was scammed when the SMS alerts kept pouring in. She rushed to her bank, but the money had already been moved through multiple mule accounts.",
+    "lesson": "Never download screen-sharing apps like AnyDesk, TeamViewer, or QuickSupport at the request of 'customer care'.",
+    "couldHaveBeenPrevented": "If she had disconnected and called the official bank helpline to verify the KYC claim.",
+    "wasMoneyRecovered": false,
+    "recoverySteps": "Reported to 1930 and local cyber cell, but the funds were untraceable."
+  },
+  {
+    "id": "s2",
+    "title": "The Fake Security Deposit",
+    "subtitle": "A desperate job hunt ends in fraud.",
+    "victim": {
+      "firstName": "Arun",
+      "city": "Chennai",
+      "age": 23,
+      "occupation": "Engineering Student"
+    },
+    "scamType": "job-scam",
+    "amountLost": 45000,
+    "howItStarted": "Arun found a lucrative job posting on a popular portal for a major IT firm. After applying, he quickly received an offer letter via WhatsApp.",
+    "howItUnfolded": "The 'HR manager' told Arun that he was selected but needed to pay a refundable security deposit of ₹15,000 for a company laptop. After paying, he was told there was an 'insurance fee' of ₹30,000. Desperate for the job, Arun borrowed money from friends to pay it. The scammers then demanded more money for 'training fees', at which point Arun realized it was a scam.",
+    "redFlags": [
+      "The offer letter was sent via WhatsApp, not an official corporate email.",
+      "He was asked to pay money to get a job.",
+      "The demands for money kept escalating."
+    ],
+    "howItEnded": "Arun lost ₹45,000 and the 'HR manager' blocked his number. The job never existed.",
+    "lesson": "Legitimate companies never ask candidates to pay money for laptops, training, or security deposits.",
+    "couldHaveBeenPrevented": "If he had checked the company's official career page or contacted their real HR department.",
+    "wasMoneyRecovered": false,
+    "recoverySteps": "Filed a complaint on cybercrime.gov.in."
+  },
+  {
+    "id": "s3",
+    "title": "The Income Tax Refund Lure",
+    "subtitle": "A phishing link that stole more than tax.",
+    "victim": {
+      "firstName": "Meena",
+      "city": "Lucknow",
+      "age": 58,
+      "occupation": "Retired Teacher"
+    },
+    "scamType": "phishing",
+    "amountLost": 180000,
+    "howItStarted": "Meena received an SMS stating her income tax refund of ₹25,000 was approved and asked her to click a link to claim it.",
+    "howItUnfolded": "The link took her to a website that looked exactly like the official Income Tax portal. She entered her PAN, Aadhaar, and net banking login details. The site then asked for an OTP, which she provided. Scammers used these details to log into her actual bank account, add themselves as a beneficiary, and transfer ₹1.8 lakh.",
+    "redFlags": [
+      "The SMS contained a link with a suspicious URL (e.g., incometax-refund-claim.in).",
+      "She was asked to enter her net banking password on a non-bank website."
+    ],
+    "howItEnded": "Meena lost her retirement savings. The scammers had bypassed her bank's security by tricking her into giving the OTP.",
+    "lesson": "Never click on links in SMS or WhatsApp claiming to offer refunds or prizes.",
+    "couldHaveBeenPrevented": "If she had manually typed the official URL (incometax.gov.in) into her browser.",
+    "wasMoneyRecovered": false,
+    "recoverySteps": "Reported to the bank and cyber police."
+  },
+  {
+    "id": "s4",
+    "title": "The Telegram Investment Mirage",
+    "subtitle": "High returns promised, all capital lost.",
+    "victim": {
+      "firstName": "Suresh",
+      "city": "Surat",
+      "age": 35,
+      "occupation": "Small Business Owner"
+    },
+    "scamType": "investment-scam",
+    "amountLost": 500000,
+    "howItStarted": "Suresh was added to a Telegram group promising daily returns of 5% on crypto investments. The group was full of people sharing screenshots of massive profits.",
+    "howItUnfolded": "Suresh started small with ₹10,000 and actually saw his 'dashboard' show a ₹12,000 balance. He even withdrew ₹2,000 successfully. Encouraged, he invested ₹5 lakh. When he tried to withdraw his large profits, the app demanded a 20% 'tax fee' before withdrawal. He refused, and his account was immediately deleted.",
+    "redFlags": [
+      "Promising guaranteed high returns (5% daily is impossible).",
+      "Using a Telegram group to solicit investments.",
+      "Demanding a 'tax fee' to withdraw his own money."
+    ],
+    "howItEnded": "Suresh realized the initial successful withdrawal was just bait. The other group members were bots or accomplices.",
+    "lesson": "If an investment promises guaranteed high returns with zero risk, it is a scam.",
+    "couldHaveBeenPrevented": "If he had researched the 'app' and only invested through SEBI-registered brokers.",
+    "wasMoneyRecovered": false,
+    "recoverySteps": "Filed an FIR, but the crypto was traced to overseas wallets."
+  },
+  {
+    "id": "s5",
+    "title": "Sextortion Thwarted",
+    "subtitle": "Knowledge is power against blackmail.",
+    "victim": {
+      "firstName": "Pooja",
+      "city": "Bengaluru",
+      "age": 29,
+      "occupation": "Software Engineer"
+    },
+    "scamType": "romance",
+    "amountLost": 0,
+    "howItStarted": "Pooja accepted a video call from an unknown number on WhatsApp. The screen showed an inappropriate video, and a few seconds later, the call cut.",
+    "howItUnfolded": "Almost immediately, she received messages threatening to share a morphed video of her face superimposed on the inappropriate content with all her social media contacts unless she paid ₹50,000.",
+    "redFlags": [
+      "Receiving a video call from an unknown number.",
+      "Immediate blackmail demands."
+    ],
+    "howItEnded": "Because Pooja had read about this scam, she didn't panic. She did not pay. Instead, she took screenshots, blocked the number, and temporarily deactivated her social media accounts to prevent them from finding her friends.",
+    "lesson": "Scammers prey on fear. Never pay a blackmailer—they will only demand more. Block and ignore.",
+    "couldHaveBeenPrevented": "She handled it perfectly, but ignoring video calls from unknown numbers is the best prevention.",
+    "wasMoneyRecovered": true,
+    "recoverySteps": "No money was lost."
+  },
+  {
+    "id": "s6",
+    "title": "The Fake Customer Care Number",
+    "subtitle": "Googling for help led to a trap.",
+    "victim": {
+      "firstName": "Ravi",
+      "city": "Hyderabad",
+      "age": 67,
+      "occupation": "Retired Bank Employee"
+    },
+    "scamType": "tech-support",
+    "amountLost": 320000,
+    "howItStarted": "Ravi had an issue with a failed UPI transaction. He Googled 'SBI customer care number' and called the first number that appeared in the search results.",
+    "howItUnfolded": "The person on the other end was polite and professional. They asked Ravi to download an 'SBI Quick Support' app (which was actually a remote access tool). They then asked him to verify his debit card by entering the card number and CVV on a link they sent. The scammers intercepted the OTP and drained his account.",
+    "redFlags": [
+      "The customer care number was a mobile number (starting with 9), not a toll-free 1800 number.",
+      "He was asked to download a third-party app for support.",
+      "He was asked for his CVV and OTP."
+    ],
+    "howItEnded": "Ravi lost a significant portion of his savings to a fake number planted in Google Ads by scammers.",
+    "lesson": "Always get customer care numbers directly from the official bank website or the back of your debit card, never from Google search results.",
+    "couldHaveBeenPrevented": "If he had used the official banking app to contact support.",
+    "wasMoneyRecovered": false,
+    "recoverySteps": "Reported to the bank, but transaction was authorized by OTP."
+  },
+  {
+    "id": "s7",
+    "title": "The Aadhaar Identity Theft",
+    "subtitle": "A photocopy in the wrong hands.",
+    "victim": {
+      "firstName": "Deepa",
+      "city": "Mumbai",
+      "age": 42,
+      "occupation": "Doctor"
+    },
+    "scamType": "aadhaar",
+    "amountLost": 0,
+    "howItStarted": "Deepa started receiving calls from loan recovery agents for a personal loan she never took.",
+    "howItUnfolded": "She discovered that someone had used a photocopy of her Aadhaar card and PAN (which she had given to a local shop for a SIM card months ago) to take out an instant loan via a rogue lending app. The scammers had morphed the photo but kept her details.",
+    "redFlags": [
+      "Giving unmarked photocopies of ID proofs to unverified vendors."
+    ],
+    "howItEnded": "Her CIBIL score took a hit. It took months of filing police complaints and disputing the loan with credit bureaus to clear her name.",
+    "lesson": "Always use a 'Masked Aadhaar' and self-attest photocopies by writing the purpose and date across the document.",
+    "couldHaveBeenPrevented": "If she had used a Masked Aadhaar and locked her biometrics on the UIDAI portal.",
+    "wasMoneyRecovered": true,
+    "recoverySteps": "Disputed the loan with CIBIL and the lender; eventually cleared."
+  },
+  {
+    "id": "s8",
+    "title": "The Golden Hour Recovery",
+    "subtitle": "Fast action saved Ankit's money.",
+    "victim": {
+      "firstName": "Ankit",
+      "city": "Jaipur",
+      "age": 20,
+      "occupation": "College Student"
+    },
+    "scamType": "upi-collect",
+    "amountLost": 15000,
+    "howItStarted": "Ankit tried to sell an old bicycle on OLX. A buyer agreed to his price immediately and sent a QR code via WhatsApp, claiming Ankit needed to scan it to 'receive' the money.",
+    "howItUnfolded": "Ankit scanned the code, entered his PIN, and ₹15,000 was deducted from his account. He realized his mistake instantly.",
+    "redFlags": [
+      "The buyer agreed without negotiating or seeing the item.",
+      "Scanning a QR code and entering a PIN is for SENDING money, not receiving."
+    ],
+    "howItEnded": "Ankit acted fast. Within 15 minutes, he called the National Cyber Crime Helpline (1930) and reported the transaction details. The authorities froze the scammer's bank account before the money could be withdrawn.",
+    "lesson": "Time is critical. Reporting fraud to 1930 within the 'Golden Hour' (first 1-2 hours) drastically increases the chance of recovering funds.",
+    "couldHaveBeenPrevented": "If he remembered that receiving money never requires a PIN.",
+    "wasMoneyRecovered": true,
+    "recoverySteps": "Called 1930 immediately; funds were frozen and reversed after 2 weeks."
+  },
+  {
+    "id": "s9",
+    "title": "The Hacked WhatsApp Scam",
+    "subtitle": "A friend in need was actually a hacker in disguise.",
+    "victim": {
+      "firstName": "Sunita",
+      "city": "Kolkata",
+      "age": 33,
+      "occupation": "Nurse"
+    },
+    "scamType": "otp-theft",
+    "amountLost": 20000,
+    "howItStarted": "Sunita received a WhatsApp message from a close colleague saying, 'I accidentally sent my 6-digit SMS code to your phone, can you tell me what it is?'",
+    "howItUnfolded": "Trusting her friend, Sunita forwarded the SMS code she had just received. That code was actually her own WhatsApp verification code. The hacker instantly logged into Sunita's WhatsApp on another device, locking her out. They then messaged all of Sunita's contacts asking for urgent medical funds. Several friends sent money before Sunita could warn them.",
+    "redFlags": [
+      "Forwarding an OTP to anyone, even a known contact.",
+      "The sudden, urgent request for money from 'her'."
+    ],
+    "howItEnded": "Sunita's friends lost ₹20,000. It took her 24 hours to recover her WhatsApp account via email verification.",
+    "lesson": "Never share a 6-digit WhatsApp code. If a friend asks for money via chat, call them directly to verify.",
+    "couldHaveBeenPrevented": "If she had enabled Two-Step Verification (PIN) on WhatsApp.",
+    "wasMoneyRecovered": false,
+    "recoverySteps": "Friends could not recover the UPI transfers."
+  },
+  {
+    "id": "s10",
+    "title": "The Fake Invoice Trap",
+    "subtitle": "A simple email spoof cost a business dearly.",
+    "victim": {
+      "firstName": "Manish",
+      "city": "Delhi",
+      "age": 45,
+      "occupation": "Chartered Accountant"
+    },
+    "scamType": "phishing",
+    "amountLost": 800000,
+    "howItStarted": "Manish's firm regularly paid a specific vendor. He received an email from the vendor's email address stating their bank account details had changed.",
+    "howItUnfolded": "The email looked authentic. The domain was slightly misspelled (e.g., @vend0r.com instead of @vendor.com), but Manish didn't notice. He updated the bank details in his system and processed the next invoice for ₹8 lakh to the new account.",
+    "redFlags": [
+      "The slight misspelling in the sender's email address.",
+      "A sudden change in bank details requested via email only."
+    ],
+    "howItEnded": "The real vendor called a week later asking for payment. The money had been sent to a scammer's corporate account and immediately withdrawn.",
+    "lesson": "Always verify any change in payment details by calling the vendor on a known, trusted phone number before transferring funds.",
+    "couldHaveBeenPrevented": "If he had implemented a 'two-step verification' process for changing vendor bank details.",
+    "wasMoneyRecovered": false,
+    "recoverySteps": "Police investigation ongoing, but corporate mule accounts are hard to trace."
+  }
+]

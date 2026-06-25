@@ -1,0 +1,117 @@
+<div class="senior-container">
+  <header class="senior-header">
+    <div class="header-content">
+      <h1>{{ t.translate('SENIOR.TITLE') }}</h1>
+      <button class="toggle-btn" (click)="seniorService.toggleMode()">
+        {{ seniorService.isActive() ? t.translate('SENIOR.OFF') : t.translate('SENIOR.ON') }}
+      </button>
+    </div>
+    
+    <div class="emergency-action" *ngIf="seniorService.isActive()">
+      <a href="tel:1930" class="call-1930-btn">
+        <span class="icon">📞</span>
+        <div class="call-text">
+          <strong>CALL 1930 NOW</strong>
+          <span>{{ t.translate('SENIOR.HELP_TEXT') }}</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <div class="senior-content" *ngIf="seniorService.isActive()">
+    
+    <!-- Senior Guide CTA -->
+    <section class="guide-cta-section">
+      <div class="guide-card">
+        <div class="guide-icon">📄</div>
+        <div class="guide-info">
+          <h3>{{ t.translate('SENIOR.GUIDE_TITLE') || 'Cyber Safety Guide for Parents' }}</h3>
+          <p>{{ t.translate('SENIOR.GUIDE_DESC') || 'A simple one-page guide to print and keep at home.' }}</p>
+        </div>
+        <a routerLink="/learn/senior-guide" class="view-guide-btn">{{ t.translate('SENIOR.VIEW_GUIDE') || 'View Guide' }}</a>
+      </div>
+    </section>
+
+    <!-- Scam Checker -->
+    <section class="scam-checker-section">
+      <div class="section-title-bar">
+        <h2>{{ t.translate('SENIOR.IS_SCAM') }}</h2>
+        <button class="speaker-btn" (click)="readAloud('SENIOR.INPUT_DESC')">🔊 {{ t.translate('SENIOR.READ') }}</button>
+      </div>
+      <p class="instruction">{{ t.translate('SENIOR.INPUT_DESC') }}</p>
+      
+      <textarea [(ngModel)]="scamInput" 
+                rows="4" 
+                [placeholder]="t.translate('SENIOR.PLACEHOLDER')"
+                class="large-input"></textarea>
+                
+      <button class="check-btn" (click)="checkScam()">{{ t.translate('SENIOR.CHECK_BTN') }}</button>
+
+      <div class="result-box" *ngIf="scamResult === 'scam'" class="result-box scam">
+        <h3>{{ t.translate('SENIOR.SCAM_FOUND') }}</h3>
+        <p>{{ t.translate('SENIOR.SCAM_SUB') }}</p>
+        <button class="speaker-btn" (click)="readAloud('SENIOR.SCAM_FOUND')">🔊 {{ t.translate('SENIOR.LISTEN') }}</button>
+        <a href="tel:1930" class="action-btn red">Call 1930</a>
+      </div>
+
+      <div class="result-box" *ngIf="scamResult === 'safe'" class="result-box safe">
+        <h3>{{ t.translate('SENIOR.SAFE_FOUND') }}</h3>
+        <p>{{ t.translate('SENIOR.SAFE_SUB') }}</p>
+        <button class="speaker-btn" (click)="readAloud('SENIOR.SAFE_FOUND')">🔊 {{ t.translate('SENIOR.LISTEN') }}</button>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section">
+      <div class="section-title-bar">
+        <h2>{{ t.translate('SENIOR.COMMON_TITLE') }}</h2>
+      </div>
+
+      <div class="scam-card">
+        <div class="scam-card-header">
+          <h3>{{ t.translate('SENIOR.SCAMS.BANK.TITLE') }}</h3>
+          <button class="speaker-btn" (click)="readAloud('SENIOR.SCAMS.BANK.SAY')">🔊 {{ t.translate('SENIOR.READ') }}</button>
+        </div>
+        <p><strong>{{ t.translate('SENIOR.SCAMS.BANK.SAY') }}</strong></p>
+        <p class="action"><strong>{{ t.translate('SENIOR.SCAMS.BANK.DO') }}</strong></p>
+      </div>
+
+      <div class="scam-card">
+        <div class="scam-card-header">
+          <h3>{{ t.translate('SENIOR.SCAMS.PENSION.TITLE') }}</h3>
+          <button class="speaker-btn" (click)="readAloud('SENIOR.SCAMS.PENSION.SAY')">🔊 {{ t.translate('SENIOR.READ') }}</button>
+        </div>
+        <p><strong>{{ t.translate('SENIOR.SCAMS.PENSION.SAY') }}</strong></p>
+        <p class="action"><strong>{{ t.translate('SENIOR.SCAMS.PENSION.DO') }}</strong></p>
+      </div>
+
+      <div class="scam-card">
+        <div class="scam-card-header">
+          <h3>{{ t.translate('SENIOR.SCAMS.BILL.TITLE') }}</h3>
+          <button class="speaker-btn" (click)="readAloud('SENIOR.SCAMS.BILL.SAY')">🔊 {{ t.translate('SENIOR.READ') }}</button>
+        </div>
+        <p><strong>{{ t.translate('SENIOR.SCAMS.BILL.SAY') }}</strong></p>
+        <p class="action"><strong>{{ t.translate('SENIOR.SCAMS.BILL.DO') }}</strong></p>
+      </div>
+
+      <div class="scam-card">
+        <div class="scam-card-header">
+          <h3>{{ t.translate('SENIOR.SCAMS.GRANDCHILD.TITLE') }}</h3>
+          <button class="speaker-btn" (click)="readAloud('SENIOR.SCAMS.GRANDCHILD.SAY')">🔊 {{ t.translate('SENIOR.READ') }}</button>
+        </div>
+        <p><strong>{{ t.translate('SENIOR.SCAMS.GRANDCHILD.SAY') }}</strong></p>
+        <p class="action"><strong>{{ t.translate('SENIOR.SCAMS.GRANDCHILD.DO') }}</strong></p>
+      </div>
+
+      <div class="scam-card">
+        <div class="scam-card-header">
+          <h3>{{ t.translate('SENIOR.SCAMS.MEDICINE.TITLE') }}</h3>
+          <button class="speaker-btn" (click)="readAloud('SENIOR.SCAMS.MEDICINE.SAY')">🔊 {{ t.translate('SENIOR.READ') }}</button>
+        </div>
+        <p><strong>{{ t.translate('SENIOR.SCAMS.MEDICINE.SAY') }}</strong></p>
+        <p class="action"><strong>{{ t.translate('SENIOR.SCAMS.MEDICINE.DO') }}</strong></p>
+      </div>
+    </section>
+
+  </div>
+</div>

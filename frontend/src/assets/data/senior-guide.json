@@ -1,0 +1,206 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "May 2024",
+  "familyNote": "Please print this guide and keep it near your phone or on the fridge. It contains essential rules to stay safe from online fraud.",
+  "familyNoteHindi": "कृपया इस गाइड को प्रिंट करके अपने फोन के पास या फ्रिज पर रखें। इसमें ऑनलाइन धोखाधड़ी से बचने के लिए जरूरी नियम हैं।",
+  "rules": [
+    {
+      "id": 1,
+      "icon": "icon-otp-lock",
+      "ruleShort": "OTP किसी को मत बताओ",
+      "ruleShortHindi": "OTP किसी को मत बताओ",
+      "ruleDetail": "One-Time Password is like a key to your bank locker. No bank, no company, no government officer will ever ask for it.",
+      "ruleDetailHindi": "OTP आपके बैंक लॉकर की चाबी जैसा है। कोई भी बैंक, कंपनी या सरकारी अधिकारी OTP कभी नहीं मांगेगा।",
+      "exampleHindi": "अगर कोई कहे 'Sir main SBI se hun, aapka OTP bataiye' — तुरंत फोन काट दें।",
+      "severity": "critical"
+    },
+    {
+      "id": 2,
+      "icon": "icon-caller-warning",
+      "ruleShort": "अनजान नंबर से डरो मत, पर सावधान रहो",
+      "ruleShortHindi": "अनजान नंबर से डरो मत, पर सावधान रहो",
+      "ruleDetail": "If an unknown caller claims to be from police, CBI, income tax or TRAI — hang up. Real officials never demand money on calls.",
+      "ruleDetailHindi": "अगर कोई अनजान कॉल करने वाला खुद को पुलिस, सीबीआई, आयकर या ट्राई से होने का दावा करता है - तो फोन काट दें। असली अधिकारी कभी भी कॉल पर पैसे की मांग नहीं करते हैं।",
+      "exampleHindi": "'Aapka number illegal activity mein use hua hai, abhi ₹5000 bhejiye' — yeh scam hai।",
+      "severity": "critical"
+    },
+    {
+      "id": 3,
+      "icon": "icon-upi-warning",
+      "ruleShort": "UPI में पैसे लेने को Accept मत करो",
+      "ruleShortHindi": "UPI में पैसे लेने को Accept मत करो",
+      "ruleDetail": "In UPI, a Collect Request means money LEAVES your account. Never accept collect requests from unknown sources.",
+      "ruleDetailHindi": "UPI में, कलेक्ट रिक्वेस्ट का मतलब है कि आपके खाते से पैसे निकल रहे हैं। अनजान स्रोतों से कलेक्ट रिक्वेस्ट कभी भी स्वीकार न करें।",
+      "exampleHindi": "'Main aapko ₹5000 bhej raha hun, sirf Accept dabao' — yeh scam hai, paisa aapka jayega, ayega nahi।",
+      "severity": "critical"
+    },
+    {
+      "id": 4,
+      "icon": "icon-card-info",
+      "ruleShort": "बैंक का नंबर Card पर देखो, Google पर नहीं",
+      "ruleShortHindi": "बैंक का नंबर Card पर देखो, Google पर नहीं",
+      "ruleDetail": "Scammers create fake customer care numbers that appear on Google searches. Always use the number printed on your debit card.",
+      "ruleDetailHindi": "स्कैमर्स नकली कस्टमर केयर नंबर बनाते हैं जो गूगल सर्च पर दिखाई देते हैं। हमेशा अपने डेबिट कार्ड पर छपे नंबर का ही इस्तेमाल करें।",
+      "exampleHindi": "Google par 'SBI helpline' search karne par fake number aa sakta hai। Card ke peeche ka number hi use karein।",
+      "severity": "critical"
+    },
+    {
+      "id": 5,
+      "icon": "icon-aadhaar-shield",
+      "ruleShort": "Aadhaar की photo WhatsApp पर मत भेजो",
+      "ruleShortHindi": "Aadhaar की photo WhatsApp पर मत भेजो",
+      "ruleDetail": "Your Aadhaar number can be used to take loans or SIM cards in your name. Never share it on WhatsApp or email.",
+      "ruleDetailHindi": "आपके आधार नंबर का इस्तेमाल आपके नाम पर लोन या सिम कार्ड लेने के लिए किया जा सकता है। इसे कभी भी व्हाट्सएप या ईमेल पर साझा न करें।",
+      "exampleHindi": "'Main bank se bol raha hun, KYC ke liye Aadhaar photo bhejiye' — yeh khatarnak hai, mat bhejein।",
+      "severity": "important"
+    },
+    {
+      "id": 6,
+      "icon": "icon-lottery-gift",
+      "ruleShort": "अचानक lottery जीतना impossible है",
+      "ruleShortHindi": "अचानक lottery जीतना impossible है",
+      "ruleDetail": "You cannot win a lottery you never entered. Any call about prize money requiring a 'processing fee' is a scam.",
+      "ruleDetailHindi": "आप वह लॉटरी कभी नहीं जीत सकते जिसमें आपने कभी हिस्सा ही नहीं लिया। 'प्रोसेसिंग फीस' मांगने वाले इनामी राशि के बारे में कोई भी कॉल स्कैम है।",
+      "exampleHindi": "'Aap BSNL lucky draw mein ₹25 lakh jeete hain, sirf ₹1500 ka tax bharein' — bilkul scam hai।",
+      "severity": "important"
+    },
+    {
+      "id": 7,
+      "icon": "icon-family-talk",
+      "ruleShort": "पैसे भेजने से पहले बच्चों को बताओ",
+      "ruleShortHindi": "पैसे भेजने से पहले बच्चों को बताओ",
+      "ruleDetail": "Before sending any money to an unknown person or account, tell your son, daughter or a trusted family member first.",
+      "ruleDetailHindi": "किसी अनजान व्यक्ति या खाते में पैसे भेजने से पहले, अपने बेटे, बेटी या परिवार के किसी भरोसेमंद सदस्य को जरूर बताएं।",
+      "exampleHindi": "Paisa bhejne ki jaldi na karein, pehle ghar mein kisi se baat karein।",
+      "severity": "important"
+    },
+    {
+      "id": 8,
+      "icon": "icon-video-call",
+      "ruleShort": "Video call पर भी डरो मत",
+      "ruleShortHindi": "Video call पर भी डरो मत",
+      "ruleDetail": "Fake police officers now use video calls to threaten 'digital arrest'. Real government agencies never conduct proceedings over WhatsApp video call.",
+      "ruleDetailHindi": "नकली पुलिस अधिकारी अब 'डिजिटल अरेस्ट' की धमकी देने के लिए वीडियो कॉल का उपयोग करते हैं। असली सरकारी एजेंसियां व्हाट्सएप वीडियो कॉल पर कभी कार्यवाही नहीं करती हैं।",
+      "exampleHindi": "'Aap digital arrest mein hain, camera ke saamne baithe rahein aur paise bhejein' — yeh bilkul scam hai।",
+      "severity": "critical"
+    },
+    {
+      "id": 9,
+      "icon": "icon-screen-share",
+      "ruleShort": "Phone की screen kisi ko mat dikhao",
+      "ruleShortHindi": "फोन की स्क्रीन किसी को मत दिखाओ",
+      "ruleDetail": "Scammers ask you to install AnyDesk or TeamViewer to 'help' you. This gives them full control of your phone.",
+      "ruleDetailHindi": "स्कैमर आपकी 'मदद' करने के लिए आपको AnyDesk या TeamViewer इंस्टॉल करने के लिए कहते हैं। इससे उन्हें आपके फोन पर पूरा नियंत्रण मिल जाता है।",
+      "exampleHindi": "'Main technical support se hun, yeh App install karein' — kabhi na karein, yeh aapka phone hack kar lenge।",
+      "severity": "important"
+    },
+    {
+      "id": 10,
+      "icon": "icon-emergency-1930",
+      "ruleShort": "Suspicious लगे तो 1930 पर Call करो",
+      "ruleShortHindi": "Suspicious लगे तो 1930 पर Call करो",
+      "ruleDetail": "The National Cyber Crime Helpline 1930 is available 24x7. Call immediately if you think you have been scammed.",
+      "ruleDetailHindi": "राष्ट्रीय साइबर अपराध हेल्पलाइन 1930 24x7 उपलब्ध है। यदि आपको लगता है कि आपके साथ धोखाधड़ी हुई है तो तुरंत कॉल करें।",
+      "exampleHindi": "Paise katne par deri na karein, turant 1930 milayein।",
+      "severity": "good-habit"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "name": "National Cyber Crime Helpline",
+      "nameHindi": "राष्ट्रीय साइबर अपराध हेल्पलाइन",
+      "number": "1930",
+      "when": "Call immediately if money is stolen online",
+      "whenHindi": "ऑनलाइन पैसे चोरी होने पर तुरंत कॉल करें",
+      "available": "24x7"
+    },
+    {
+      "name": "TRAI Do Not Disturb (Spam Report)",
+      "nameHindi": "ट्राई डू नॉट डिस्टर्ब (स्पैम रिपोर्ट)",
+      "number": "1909",
+      "when": "To report spam SMS or calls",
+      "whenHindi": "स्पैम एसएमएस या कॉल की रिपोर्ट करने के लिए",
+      "available": "24x7"
+    },
+    {
+      "name": "Cyber Crime Website",
+      "nameHindi": "साइबर अपराध वेबसाइट",
+      "number": "cybercrime.gov.in",
+      "when": "To file an online complaint",
+      "whenHindi": "ऑनलाइन शिकायत दर्ज करने के लिए",
+      "available": "24x7"
+    },
+    {
+      "name": "National Consumer Helpline",
+      "nameHindi": "राष्ट्रीय उपभोक्ता हेल्पलाइन",
+      "number": "1800-11-4000",
+      "when": "For online shopping fraud",
+      "whenHindi": "ऑनलाइन शॉपिंग धोखाधड़ी के लिए",
+      "available": "Monday to Saturday, 9:30AM–5:30PM"
+    }
+  ],
+  "bankHelplines": [
+    { "bank": "State Bank of India (SBI)", "number": "1800 11 2211", "tollFree": true },
+    { "bank": "HDFC Bank", "number": "1800 202 6161", "tollFree": true },
+    { "bank": "ICICI Bank", "number": "1800 1020", "tollFree": true },
+    { "bank": "Axis Bank", "number": "1800 419 5959", "tollFree": true },
+    { "bank": "Punjab National Bank (PNB)", "number": "1800 180 2222", "tollFree": true },
+    { "bank": "Kotak Mahindra Bank", "number": "1860 266 2666", "tollFree": false },
+    { "bank": "Bank of Baroda", "number": "1800 5700", "tollFree": true },
+    { "bank": "Canara Bank", "number": "1800 425 0018", "tollFree": true },
+    { "bank": "Union Bank of India", "number": "1800 22 2244", "tollFree": true },
+    { "bank": "IndusInd Bank", "number": "1860 500 5004", "tollFree": false },
+    { "bank": "Yes Bank", "number": "1800 1200", "tollFree": true },
+    { "bank": "IDFC First Bank", "number": "1800 10 888", "tollFree": true },
+    { "bank": "Federal Bank", "number": "1800 420 1199", "tollFree": true },
+    { "bank": "RBL Bank", "number": "1800 123 8040", "tollFree": true },
+    { "bank": "Paytm Payments Bank", "number": "0120 4456 456", "tollFree": false }
+  ],
+  "scamScripts": [
+    {
+      "title": "Digital Arrest",
+      "titleHindi": "डिजिटल अरेस्ट",
+      "whatScammerSays": "Namaste, main Inspector Rajan Singh CBI headquarters Delhi se bol raha hun. Aapka Aadhaar number ek drug money transaction mein use hua hai. Aapko digital arrest mein liya ja raha hai. Camera ke saamne baithe rahiye aur ₹50,000 iss account mein transfer karein.",
+      "truth": "CBI never arrests anyone on WhatsApp video call. This is 100% a scam script.",
+      "truthHindi": "CBI कभी भी व्हाट्सएप वीडियो कॉल पर किसी को गिरफ्तार नहीं करती है। यह 100% एक स्कैम स्क्रिप्ट है।",
+      "doThis": "Hang up immediately. Tell an elder or family member. Call 1930.",
+      "doThisHindi": "फोन तुरंत काट दें। घर के किसी बड़े या परिवार के सदस्य को बताएं। 1930 पर कॉल करें।"
+    },
+    {
+      "title": "Fake Bank Call",
+      "titleHindi": "नकली बैंक कॉल",
+      "whatScammerSays": "Hello, main aapke bank se Manager bol raha hun. Security reasons ki wajah se aapka account block ho gaya hai. Dobara chalu karne ke liye mobile par aaya OTP bataiye.",
+      "truth": "Banks NEVER ask for OTP. They can fix account issues without your password.",
+      "truthHindi": "बैंक कभी भी ओटीपी नहीं मांगते हैं। वे आपके पासवर्ड के बिना भी अकाउंट की समस्याओं को ठीक कर सकते हैं।",
+      "doThis": "Don't share anything. Go to your local bank branch if worried.",
+      "doThisHindi": "कुछ भी साझा न करें। अगर आपको चिंता है तो अपनी स्थानीय बैंक शाखा में जाएं।"
+    },
+    {
+      "title": "KYC Update Scam",
+      "titleHindi": "KYC अपडेट स्कैम",
+      "whatScammerSays": "Aapka KYC expire ho gaya hai. Agar aaj update nahi kiya toh aapka Net Banking band ho jayega. Iss link par click karke details bhariye.",
+      "truth": "Links sent via SMS to update KYC are almost always fake and lead to phishing sites.",
+      "truthHindi": "केवाईसी अपडेट करने के लिए एसएमएस के जरिए भेजे गए लिंक लगभग हमेशा नकली होते हैं और फिशिंग साइटों की ओर ले जाते हैं।",
+      "doThis": "Never click on such links. Always use the official bank app or website.",
+      "doThisHindi": "ऐसे लिंक पर कभी क्लिक न करें। हमेशा आधिकारिक बैंक ऐप या वेबसाइट का उपयोग करें।"
+    },
+    {
+      "title": "Lottery/KBC Winner",
+      "titleHindi": "लॉटरी/केबीसी विजेता",
+      "whatScammerSays": "Badhai ho! Aapne KBC Lucky Draw mein ₹25 Lakh jeete hain. Paisa pane ke liye ₹2500 registration fee iss account mein jama karein.",
+      "truth": "Real lotteries deduct tax FROM the winnings; they never ask you to pay fee first.",
+      "truthHindi": "असली लॉटरी जीतने वाली राशि में से टैक्स काटती है; वे आपसे पहले कभी शुल्क नहीं मांगते।",
+      "doThis": "Block the number. You can't win if you didn't buy a ticket.",
+      "doThisHindi": "नंबर ब्लॉक कर दें। अगर आपने टिकट नहीं खरीदा है तो आप जीत नहीं सकते।"
+    },
+    {
+      "title": "Electricity Bill Scam",
+      "titleHindi": "बिजली बिल स्कैम",
+      "whatScammerSays": "Aapka pichle mahine ka bill jama nahi hua hai. Aaj raat 9 baje aapki bijli kaat di jayegi. Turant payment karne ke liye iss helpline par call karein.",
+      "truth": "Electricity boards never threaten immediate disconnection via SMS. They follow a formal process.",
+      "truthHindi": "बिजली बोर्ड कभी भी एसएमएस के जरिए तुरंत कनेक्शन काटने की धमकी नहीं देते। वे एक औपचारिक प्रक्रिया का पालन करते हैं।",
+      "doThis": "Check your official electricity board website or app for pending bills.",
+      "doThisHindi": "पेंडिंग बिलों के लिए अपने आधिकारिक बिजली बोर्ड की वेबसाइट या ऐप देखें।"
+    }
+  ]
+}

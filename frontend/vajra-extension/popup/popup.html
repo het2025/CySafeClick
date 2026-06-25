@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">🛡️</div>
+    <div class="title-area">
+      <h1 data-i18n="EXTENSION.GUARD_TITLE">SafeClick Guard</h1>
+      <div style="display: flex; align-items: center; gap: 5px;">
+        <span class="status-dot safe" id="status-indicator"></span> 
+        <span data-i18n="EXTENSION.ACTIVE">Active</span>
+      </div>
+    </div>
+    <button id="lang-toggle" style="margin-left: auto; padding: 2px 8px; font-size: 0.7rem; cursor: pointer; border-radius: 4px; border: 1px solid #ccc; background: white;">हिंदी</button>
+  </div>
+
+  <div class="card">
+    <h2 id="site-status-title" data-i18n="EXTENSION.ANALYZING">Analyzing Site...</h2>
+    <p id="site-url" class="url-text"></p>
+    <p class="privacy-note" style="color: #f59e0b; font-size: 0.8rem; margin-top: 5px;">⚠️ <strong>Privacy Notice:</strong> Clicking "Force Re-Scan Page" will read the full text of the current page to check for phishing patterns locally.</p>
+    <div class="progress-bar" id="risk-meter">
+      <div class="progress-fill" id="risk-fill"></div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="scan-btn" class="primary-btn" data-i18n="EXTENSION.SCAN_BTN">Force Re-Scan Page</button>
+    <a href="https://safeclick-safe.web.app" target="_blank" class="secondary-btn" data-i18n="EXTENSION.WEB_APP_BTN">Open SafeClick Web App</a>
+  </div>
+
+  <div class="tip-card">
+    <h3 data-i18n="EXTENSION.TIP_TITLE">💡 Today's Security Tip</h3>
+    <p id="tip-text"></p>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

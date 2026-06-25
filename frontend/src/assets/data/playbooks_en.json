@@ -1,0 +1,598 @@
+{
+  "playbooks": [
+    {
+      "id": "PB-1",
+      "category": "Financial Incidents",
+      "title": "Money stolen via UPI",
+      "urgency": "CRITICAL",
+      "estimatedTime": "Takes 20-30 minutes",
+      "steps": [
+        {
+          "title": "Note the transaction ID (UTR number)",
+          "action": "Open PhonePe/GPay/Paytm → History → Find the transaction → Note the 12-15 digit UTR number starting with letters.",
+          "why": "This is your case reference number for every complaint you file.",
+          "time": "0-5 minutes"
+        },
+        {
+          "title": "Call Cyber Crime Helpline 1930 NOW",
+          "action": "Call 1930 immediately. Say: 'I am reporting a UPI fraud. Transaction UTR: [number]. Amount: ₹[X]. Happened at [time].'",
+          "why": "They can initiate a hold on the transaction if called within 1-2 hours.",
+          "time": "0-5 minutes"
+        },
+        {
+          "title": "Call your bank's 24x7 fraud helpline",
+          "action": "SBI: 1800 11 2211 | HDFC: 1800 202 6161 | ICICI: 1800 1020 | Axis: 1800 419 5959 | PNB: 1800 180 2222 | BOB: 1800 258 4455 | Kotak: 1800 209 0000 | Yes Bank: 1800 1200 | Union Bank: 1800 22 22 44 | IDFC: 1800 419 4332. Ask them to block your account/UPI and report the fraudulent UTR.",
+          "why": "Banks can try to stop the fund transfer and protect the rest of your funds.",
+          "time": "5-15 minutes"
+        },
+        {
+          "title": "File complaint on cybercrime.gov.in",
+          "action": "Go to cybercrime.gov.in → Click 'File a Complaint' → 'Financial Fraud' → Fill in UTR, bank details, and scammer details.",
+          "why": "This is required for legal tracking and potential fund recovery.",
+          "time": "15-30 minutes"
+        },
+        {
+          "title": "Visit your bank branch with documents",
+          "action": "Bring: Aadhaar, PAN, bank statement, transaction screenshot, UTR number, complaint number from 1930. Submit a written complaint.",
+          "why": "Banks require physical documentation for their investigation process.",
+          "time": "30-60 minutes"
+        },
+        {
+          "title": "File FIR at nearest police station",
+          "action": "Take the cybercrime.gov.in acknowledgment and request a cybercrime FIR specifically. They may redirect you to a cyber cell.",
+          "why": "FIR is legally required for bank insurance claims in some cases.",
+          "time": "within 24 hours"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't post on social media yet",
+        "Don't contact the scammer again",
+        "Don't try to 'recover' money via another service (this is a recovery scam)"
+      ]
+    },
+    {
+      "id": "PB-2",
+      "category": "Financial Incidents",
+      "title": "Credit/debit card fraudulent transaction",
+      "urgency": "CRITICAL",
+      "estimatedTime": "Takes 15-20 minutes",
+      "steps": [
+        {
+          "title": "Block the card immediately",
+          "action": "Open your mobile banking app, navigate to 'Cards' section, and select 'Block/Hotlist Card'. Alternatively, call your bank's toll-free number.",
+          "why": "Prevents any further unauthorized transactions.",
+          "time": "0-2 minutes"
+        },
+        {
+          "title": "Call bank helpline to report fraud",
+          "action": "SBI: 1800 11 2211 | HDFC: 1800 202 6161 | ICICI: 1800 1020. Report the exact transaction amount and time.",
+          "why": "Banks must register the fraud complaint to initiate a chargeback.",
+          "time": "2-10 minutes"
+        },
+        {
+          "title": "Note down the transaction details",
+          "action": "Record the amount, merchant name (if visible), and the reference number from the SMS/email alert.",
+          "why": "Needed for filing the cybercrime complaint.",
+          "time": "10-15 minutes"
+        },
+        {
+          "title": "File complaint on cybercrime.gov.in",
+          "action": "Register the fraud under 'Financial Fraud' on the national portal.",
+          "why": "Official record required by banks for dispute resolution.",
+          "time": "15-30 minutes"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't wait to see if the money comes back",
+        "Don't share the card details with anyone calling to 'help'"
+      ]
+    },
+    {
+      "id": "PB-3",
+      "category": "Financial Incidents",
+      "title": "Online banking login compromised",
+      "urgency": "CRITICAL",
+      "estimatedTime": "Takes 20 minutes",
+      "steps": [
+        {
+          "title": "Call customer care to freeze account",
+          "action": "Call your bank's emergency helpline immediately and request a complete freeze on your net banking and account.",
+          "why": "Stops the attacker from transferring funds.",
+          "time": "0-5 minutes"
+        },
+        {
+          "title": "Change passwords if still accessible",
+          "action": "If you can still log in, change your net banking password and UPI PIN immediately.",
+          "why": "Locks out the attacker if they don't have secondary authentication.",
+          "time": "5-10 minutes"
+        },
+        {
+          "title": "Review recent transactions",
+          "action": "Check your account statement for any unauthorized payees added or funds transferred.",
+          "why": "To report exact losses if any occurred.",
+          "time": "10-15 minutes"
+        },
+        {
+          "title": "Scan device for malware",
+          "action": "Run a full scan on your phone/computer using a reputed antivirus.",
+          "why": "The compromise might be due to a keylogger or spyware.",
+          "time": "15-30 minutes"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't use the same password on other accounts",
+        "Don't ignore the breach even if no money is lost yet"
+      ]
+    },
+    {
+      "id": "PB-4",
+      "category": "Financial Incidents",
+      "title": "Loan taken in my name (identity theft)",
+      "urgency": "HIGH",
+      "estimatedTime": "Takes days to resolve",
+      "steps": [
+        {
+          "title": "Check your CIBIL/Credit Report",
+          "action": "Download your free credit report from CIBIL, Experian, or CRIF High Mark to identify the fraudulent loan account.",
+          "why": "Identifies which bank/NBFC issued the fake loan.",
+          "time": "Day 1"
+        },
+        {
+          "title": "Contact the loan provider",
+          "action": "Contact the grievance officer of the bank/app that issued the loan. State it is a case of identity theft.",
+          "why": "They must flag the account as disputed.",
+          "time": "Day 1"
+        },
+        {
+          "title": "File an FIR for Identity Theft",
+          "action": "Visit the police station and file an FIR under IT Act Section 66C (Identity Theft).",
+          "why": "Financial institutions require an FIR to clear your name.",
+          "time": "Day 1-2"
+        },
+        {
+          "title": "Raise a dispute with Credit Bureaus",
+          "action": "Submit a dispute on the CIBIL website attaching the FIR and communication with the lender.",
+          "why": "To get the fraudulent loan removed from your credit history.",
+          "time": "Day 2-3"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't pay the EMI of the fraudulent loan out of fear",
+        "Don't ignore collection calls (inform them of the fraud)"
+      ]
+    },
+    {
+      "id": "PB-5",
+      "category": "Account Incidents",
+      "title": "Gmail/Google account hacked",
+      "urgency": "HIGH",
+      "estimatedTime": "Takes 15-30 minutes",
+      "steps": [
+        {
+          "title": "Go to Google Account Recovery",
+          "action": "Visit accounts.google.com/signin/recovery and enter your email.",
+          "why": "Google's official process to reclaim accounts.",
+          "time": "0-5 minutes"
+        },
+        {
+          "title": "Use alternate recovery methods",
+          "action": "If the password is changed, use 'Try another way' to get an OTP on your recovery email or phone number.",
+          "why": "Bypasses the changed password.",
+          "time": "5-10 minutes"
+        },
+        {
+          "title": "Force sign-out all devices",
+          "action": "Once logged in, go to Security → Your devices → Manage all devices → Sign out of unfamiliar ones.",
+          "why": "Kicks the hacker out of your account immediately.",
+          "time": "10-15 minutes"
+        },
+        {
+          "title": "Check forwarding rules",
+          "action": "Open Gmail settings → Forwarding and POP/IMAP. Remove any unknown forwarding addresses.",
+          "why": "Hackers set this up to steal your future emails/OTPs.",
+          "time": "15-20 minutes"
+        },
+        {
+          "title": "Enable 2-Step Verification",
+          "action": "Go to Security → 2-Step Verification and turn it on.",
+          "why": "Prevents future hacks even if the password is stolen.",
+          "time": "20-25 minutes"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't trust emails claiming to be Google Support asking for your password",
+        "Don't delay—hacked emails lead to hacked bank accounts"
+      ]
+    },
+    {
+      "id": "PB-6",
+      "category": "Account Incidents",
+      "title": "Instagram account hacked",
+      "urgency": "HIGH",
+      "estimatedTime": "Takes 20 minutes",
+      "steps": [
+        {
+          "title": "Check email for changes",
+          "action": "Look for an email from security@mail.instagram.com saying your email was changed. Click 'Secure my account' if you find it.",
+          "why": "Reverses the hacker's email change instantly.",
+          "time": "0-5 minutes"
+        },
+        {
+          "title": "Request a login link",
+          "action": "On the login screen, tap 'Get help logging in' (Android) or 'Forgot password' (iPhone). Enter your username and choose your phone number.",
+          "why": "Sends a secure link to your original device/number.",
+          "time": "5-10 minutes"
+        },
+        {
+          "title": "Submit a video selfie",
+          "action": "If standard recovery fails, tap 'Need more help?' → choose 'I can't access this email/phone'. Follow prompts to submit a video selfie.",
+          "why": "Instagram uses this to verify you are the real owner.",
+          "time": "10-15 minutes"
+        },
+        {
+          "title": "Warn your contacts",
+          "action": "Tell friends on WhatsApp/other apps that your account is hacked and they shouldn't send money or click links from it.",
+          "why": "Hackers often run crypto or emergency scams on your followers.",
+          "time": "15-20 minutes"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't pay 'recovery hackers' on Twitter/Google—they are scams",
+        "Don't create a new account until you've tried recovering this one"
+      ]
+    },
+    {
+      "id": "PB-7",
+      "category": "Account Incidents",
+      "title": "Facebook account hacked",
+      "urgency": "HIGH",
+      "estimatedTime": "Takes 20 minutes",
+      "steps": [
+        {
+          "title": "Go to the compromised page",
+          "action": "Visit facebook.com/hacked on a browser.",
+          "why": "This is Facebook's dedicated portal for compromised accounts.",
+          "time": "0-5 minutes"
+        },
+        {
+          "title": "Identify your account",
+          "action": "Search by your phone number, email, or profile name.",
+          "why": "Locates the account even if the hacker changed the name.",
+          "time": "5-10 minutes"
+        },
+        {
+          "title": "Use old passwords",
+          "action": "Enter a previous password you remember. Facebook allows recovery if it recognizes an old password.",
+          "why": "Proves your identity prior to the hack.",
+          "time": "10-15 minutes"
+        },
+        {
+          "title": "Review linked accounts",
+          "action": "Check if your Instagram or Meta Ads accounts were also compromised and secure them.",
+          "why": "Hackers often exploit linked business accounts to run ads.",
+          "time": "15-20 minutes"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't trust any links sent by friends if their accounts might be hacked too"
+      ]
+    },
+    {
+      "id": "PB-8",
+      "category": "Account Incidents",
+      "title": "WhatsApp account hacked/taken over",
+      "urgency": "CRITICAL",
+      "estimatedTime": "Takes 10 minutes",
+      "steps": [
+        {
+          "title": "Re-register your number immediately",
+          "action": "Open WhatsApp, enter your phone number, and verify with the SMS code you receive.",
+          "why": "Logging in on your phone automatically logs the hacker out.",
+          "time": "0-2 minutes"
+        },
+        {
+          "title": "Wait 7 days if PIN is asked",
+          "action": "If the hacker set up a 2-Step PIN, you must wait 7 days to reset it. But they are already logged out from step 1.",
+          "why": "Protects the account from being re-accessed by the hacker.",
+          "time": "2-5 minutes"
+        },
+        {
+          "title": "Inform your contacts via SMS/Call",
+          "action": "Tell family and friends your WhatsApp was compromised and to ignore requests for money.",
+          "why": "Hackers message contacts asking for urgent UPI transfers.",
+          "time": "5-10 minutes"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't ever share a WhatsApp registration SMS code with anyone",
+        "Don't ignore it if you randomly get a WhatsApp registration code"
+      ]
+    },
+    {
+      "id": "PB-9",
+      "category": "Account Incidents",
+      "title": "Email account compromised + 2FA lost",
+      "urgency": "HIGH",
+      "estimatedTime": "Takes days to resolve",
+      "steps": [
+        {
+          "title": "Start Account Recovery",
+          "action": "Go to the provider's recovery page and select 'I don't have my phone' or 'I lost my 2FA device'.",
+          "why": "Initiates the manual review process.",
+          "time": "Day 1"
+        },
+        {
+          "title": "Provide backup codes (if any)",
+          "action": "Use the 8-digit backup codes you saved when setting up 2FA.",
+          "why": "This is exactly what they are for.",
+          "time": "Day 1"
+        },
+        {
+          "title": "Fill out identity verification forms",
+          "action": "Answer questions about when you created the account, frequent contacts, and previous passwords.",
+          "why": "Helps the provider verify you are the real owner.",
+          "time": "Day 1"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't submit multiple recovery requests in a row, it flags you as spam"
+      ]
+    },
+    {
+      "id": "PB-10",
+      "category": "Device Incidents",
+      "title": "Phone stolen (with all banking apps)",
+      "urgency": "CRITICAL",
+      "estimatedTime": "Takes 1-2 hours",
+      "steps": [
+        {
+          "title": "Block your SIM card immediately",
+          "action": "Call your telecom provider (Jio, Airtel, Vi) from another phone and block the SIM.",
+          "why": "Prevents the thief from receiving OTPs to reset your bank passwords.",
+          "time": "0-10 minutes"
+        },
+        {
+          "title": "Remotely wipe the device",
+          "action": "Go to android.com/find (Android) or icloud.com/find (iPhone) and select 'Erase Device'.",
+          "why": "Deletes all your personal data, photos, and apps.",
+          "time": "10-20 minutes"
+        },
+        {
+          "title": "De-link UPI and Bank accounts",
+          "action": "Call your bank and ask them to disable UPI and mobile banking for your account.",
+          "why": "Extra safety in case the SIM block was delayed.",
+          "time": "20-40 minutes"
+        },
+        {
+          "title": "Block the phone via CEIR",
+          "action": "File a police complaint, then visit ceir.gov.in to block the IMEI number of the phone.",
+          "why": "Makes the phone completely useless across all Indian networks.",
+          "time": "Within 24 hours"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't try to track and confront the thief yourself",
+        "Don't delay blocking the SIM—it is the key to all your accounts"
+      ]
+    },
+    {
+      "id": "PB-11",
+      "category": "Device Incidents",
+      "title": "Ransomware — files encrypted",
+      "urgency": "HIGH",
+      "estimatedTime": "Takes days",
+      "steps": [
+        {
+          "title": "Disconnect from Network/WiFi",
+          "action": "Unplug the ethernet cable and turn off WiFi immediately.",
+          "why": "Stops the ransomware from spreading to other computers on the same network.",
+          "time": "0-2 minutes"
+        },
+        {
+          "title": "Do not reboot or pay",
+          "action": "Leave the computer on. Do not pay the ransom.",
+          "why": "Paying funds criminals, and there's no guarantee you'll get your files back.",
+          "time": "Immediate"
+        },
+        {
+          "title": "Report to CERT-In",
+          "action": "Report the incident to the Indian Computer Emergency Response Team at cert-in.org.in.",
+          "why": "Official reporting for severe cyber incidents.",
+          "time": "Within hours"
+        },
+        {
+          "title": "Check NoMoreRansom.org",
+          "action": "Visit nomoreransom.org on a safe device to see if a free decryption tool exists for your specific ransomware.",
+          "why": "Security researchers release free tools for many ransomware variants.",
+          "time": "Within a day"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't plug in any USB drives or external hard drives",
+        "Don't pay the ransom"
+      ]
+    },
+    {
+      "id": "PB-12",
+      "category": "Device Incidents",
+      "title": "Suspected spyware/stalkerware on device",
+      "urgency": "HIGH",
+      "estimatedTime": "Takes 1 hour",
+      "steps": [
+        {
+          "title": "Turn on Airplane Mode",
+          "action": "Enable Airplane mode immediately.",
+          "why": "Stops the spyware from sending your data to the attacker.",
+          "time": "0-2 minutes"
+        },
+        {
+          "title": "Check Device Admins (Android)",
+          "action": "Go to Settings → Security → Device admin apps. Turn off access for anything suspicious.",
+          "why": "Spyware often hides as a device administrator.",
+          "time": "5-10 minutes"
+        },
+        {
+          "title": "Review Installed Apps",
+          "action": "Look through your full app list for apps you don't recognize. Delete them.",
+          "why": "Removes the malicious application.",
+          "time": "10-20 minutes"
+        },
+        {
+          "title": "Factory Reset (Safest Option)",
+          "action": "Backup only photos/contacts, then perform a complete Factory Data Reset.",
+          "why": "The only guaranteed way to remove deep-rooted spyware.",
+          "time": "30-60 minutes"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't restore apps from a backup after a factory reset, reinstall them manually"
+      ]
+    },
+    {
+      "id": "PB-13",
+      "category": "Privacy Incidents",
+      "title": "Personal photos/videos leaked online",
+      "urgency": "HIGH",
+      "estimatedTime": "Takes days",
+      "steps": [
+        {
+          "title": "Preserve Evidence",
+          "action": "Take screenshots of where the photos are posted, including URLs and user profiles.",
+          "why": "Needed for police and platform reports.",
+          "time": "Day 1"
+        },
+        {
+          "title": "Report to the Platform",
+          "action": "Use the report button on Instagram/Facebook/Twitter and select 'Non-consensual intimate imagery (NCII)'.",
+          "why": "Platforms prioritize removing this type of content quickly.",
+          "time": "Day 1"
+        },
+        {
+          "title": "Submit to StopNCII.org",
+          "action": "Go to stopncii.org and generate a hash of your images/videos.",
+          "why": "This global initiative prevents the images from being shared on major social media platforms.",
+          "time": "Day 1"
+        },
+        {
+          "title": "File Police Complaint",
+          "action": "Report on cybercrime.gov.in under 'Crime Against Women/Children' or file an FIR under IT Act Section 66E.",
+          "why": "Legal action against the perpetrator.",
+          "time": "Day 1-2"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't interact with trolls or the person who posted it",
+        "Don't blame yourself"
+      ]
+    },
+    {
+      "id": "PB-14",
+      "category": "Privacy Incidents",
+      "title": "Being sextorted (intimate images threat)",
+      "urgency": "CRITICAL",
+      "estimatedTime": "Takes hours",
+      "steps": [
+        {
+          "title": "DO NOT PAY",
+          "action": "Stop all communication. Do not send money.",
+          "why": "Paying guarantees they will ask for more. It never stops the extortion.",
+          "time": "Immediate"
+        },
+        {
+          "title": "Screenshot Everything",
+          "action": "Save the chat logs, threats, phone numbers, and payment details requested.",
+          "why": "Crucial evidence for the police.",
+          "time": "0-10 minutes"
+        },
+        {
+          "title": "Deactivate Social Media",
+          "action": "Temporarily deactivate Facebook/Instagram and tighten privacy settings.",
+          "why": "Prevents the scammer from finding and messaging your family/friends.",
+          "time": "10-20 minutes"
+        },
+        {
+          "title": "Report to Police",
+          "action": "Call 1930 or file a report on cybercrime.gov.in immediately.",
+          "why": "Law enforcement can trace the extortionists.",
+          "time": "20-60 minutes"
+        }
+      ],
+      "whatNotToDo": [
+        "DO NOT PAY the ransom",
+        "Do not delete the chat history until you have screenshots"
+      ]
+    },
+    {
+      "id": "PB-15",
+      "category": "Privacy Incidents",
+      "title": "Personal information posted without consent (doxxing)",
+      "urgency": "HIGH",
+      "estimatedTime": "Takes hours",
+      "steps": [
+        {
+          "title": "Screenshot the post",
+          "action": "Capture the post, the user's handle, and the URL.",
+          "why": "Evidence before it gets deleted.",
+          "time": "0-5 minutes"
+        },
+        {
+          "title": "Report to platform",
+          "action": "Report the post for 'Sharing personal information' or 'Harassment'.",
+          "why": "Platforms violate terms of service for doxxing.",
+          "time": "5-15 minutes"
+        },
+        {
+          "title": "Secure your accounts",
+          "action": "Ensure all social media accounts are private and 2FA is enabled.",
+          "why": "Doxxing often leads to targeted hacking attempts.",
+          "time": "15-30 minutes"
+        },
+        {
+          "title": "Warn family/employer",
+          "action": "If your home address or workplace was shared, inform your family and HR department.",
+          "why": "Safety precaution against physical harassment.",
+          "time": "30-60 minutes"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't engage with the person who doxed you"
+      ]
+    },
+    {
+      "id": "PB-16",
+      "category": "Privacy Incidents",
+      "title": "Aadhaar number misused / fake SIM issued",
+      "urgency": "HIGH",
+      "estimatedTime": "Takes days",
+      "steps": [
+        {
+          "title": "Check active SIM cards",
+          "action": "Visit tafcop.sancharsaathi.gov.in, enter your mobile number, and check all numbers registered to your Aadhaar.",
+          "why": "Identifies if someone took a SIM in your name.",
+          "time": "Day 1"
+        },
+        {
+          "title": "Report unauthorized numbers",
+          "action": "On the TAFCOP portal, select 'This is not my number' for any unrecognized numbers and report them.",
+          "why": "Telecom dept will disconnect the fake SIMs.",
+          "time": "Day 1"
+        },
+        {
+          "title": "Lock Aadhaar Biometrics",
+          "action": "Download mAadhaar app or go to uidai.gov.in to lock your biometrics.",
+          "why": "Prevents unauthorized fingerprint/iris authentication.",
+          "time": "Day 1"
+        },
+        {
+          "title": "Check Aadhaar Authentication History",
+          "action": "On the UIDAI portal, view your authentication history for the last 6 months.",
+          "why": "To see exactly where and when your Aadhaar was misused.",
+          "time": "Day 2"
+        }
+      ],
+      "whatNotToDo": [
+        "Don't ignore unknown numbers listed under your Aadhaar on TAFCOP"
+      ]
+    }
+  ]
+}

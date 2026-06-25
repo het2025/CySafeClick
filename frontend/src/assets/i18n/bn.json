@@ -1,0 +1,43 @@
+{
+  "NAV": {
+    "HOME": "হোম",
+    "TOOLS": "টুলস",
+    "LEARN": "শিখুন",
+    "REPORT": "রিপোর্ট"
+  },
+  "MODULES": {
+    "PASSWORD_LAB": "পাসওয়ার্ড ল্যাব",
+    "PHISHING_DETECTOR": "ফিশিং ডিটেক্টর",
+    "DATA_BREACH": "ডেটা ব্রিচ চেক",
+    "SAFETY_SCORE": "নিরাপত্তা স্কোর",
+    "SCAM_AWARENESS": "স্ক্যাম সচেতনতা",
+    "REPORT_CYBERCRIME": "সাইবার অপরাধ রিপোর্ট করুন",
+    "UPI_SCANNER": "ইউপিআই স্ক্যানার",
+    "TWO_FACTOR": "2FA উপদেষ্টা",
+    "PRIVACY_AUDIT": "গোপনীয়তা অডিট",
+    "EMAIL_HEADER": "ইমেল হেডার বিশ্লেষক",
+    "APP_PERMISSIONS": "অ্যাপ পারমিশন চেকার",
+    "WIFI_SAFETY": "ওয়াইফাই নিরাপত্তা",
+    "THREAT_FEED": "হুমকি ফিড",
+    "CYBER_LAW": "সাইবার আইন",
+    "DAILY_TIPS": "দৈনিক টিপস",
+    "SCAM_STORIES": "স্ক্যামের গল্প",
+    "AADHAAR_GUIDE": "আধার নিরাপত্তা",
+    "OSINT_CHECK": "OSINT চেক",
+    "ROADMAP": "৩০ দিনের পরিকল্পনা",
+    "GLOSSARY": "শব্দকোষ"
+  },
+  "COMMON": {
+    "SAFE": "নিরাপদ",
+    "SUSPICIOUS": "সন্দেহজনক",
+    "DANGEROUS": "বিপজ্জনক",
+    "SCAN": "স্ক্যান করুন",
+    "NEXT": "পরবর্তী",
+    "BACK": "ফিরে যান",
+    "SHARE": "শেয়ার করুন",
+    "COPY": "কপি করুন",
+    "DONE": "সম্পন্ন",
+    "ERROR": "একটি ত্রুটি ঘটেছে।",
+    "LOADING": "লোড হচ্ছে..."
+  }
+}

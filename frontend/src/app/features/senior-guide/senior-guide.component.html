@@ -1,0 +1,184 @@
+<div class="senior-guide-page" [class.print-mode]="viewMode() === 'print'">
+  
+  <!-- View Mode Toggle (Hidden in real print) -->
+  <div class="view-controls no-print">
+    <div class="toggle-group">
+      <button [class.active]="viewMode() === 'digital'" (click)="toggleViewMode('digital')">Digital View</button>
+      <button [class.active]="viewMode() === 'print'" (click)="toggleViewMode('print')">Print Preview</button>
+    </div>
+    
+    <div class="action-buttons" *ngIf="viewMode() === 'digital'">
+      <button class="btn-print hi" (click)="print('hi')">Print in Hindi</button>
+      <button class="btn-print en" (click)="print('en')">Print in English</button>
+      <button class="btn-share" (click)="shareOnWhatsApp()">Share on WhatsApp</button>
+    </div>
+  </div>
+
+  <!-- DIGITAL VIEW -->
+  <div class="digital-container no-print" *ngIf="viewMode() === 'digital'">
+    <header class="hero-section">
+      <h1>माँ-बाप के लिए Cyber Safety Guide</h1>
+      <p class="subtitle">बड़ों को सुरक्षित रखने के लिए यह गाइड उनके साथ शेयर करें या प्रिंट करके घर में लगाएं।</p>
+    </header>
+
+    <section class="rules-section">
+      <h2 class="section-title">सुरक्षा के नियम</h2>
+      <div class="rules-grid">
+        <div *ngFor="let rule of guideData()?.rules" 
+             class="rule-card" 
+             [ngClass]="rule.severity">
+          <div class="rule-header">
+            <div class="rule-icon"><i [class]="rule.icon"></i></div>
+            <h3 class="rule-title">{{ language() === 'hi' ? rule.ruleShortHindi : rule.ruleShort }}</h3>
+          </div>
+          <div class="rule-body">
+            <p class="rule-detail">{{ language() === 'hi' ? rule.ruleDetailHindi : rule.ruleDetail }}</p>
+            <blockquote class="rule-example">
+              <strong>उदाहरण:</strong> {{ rule.exampleHindi }}
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scripts-section">
+      <h2 class="section-title">इन Scripts से सावधान रहें</h2>
+      <div class="scripts-list">
+        <div *ngFor="let script of guideData()?.scamScripts; let i = index" 
+             class="script-card" 
+             [class.expanded]="expandedScript() === i">
+          <div class="script-header" (click)="toggleScript(i)">
+            <h3>{{ language() === 'hi' ? script.titleHindi : script.title }}</h3>
+            <span class="expand-icon">{{ expandedScript() === i ? '−' : '+' }}</span>
+          </div>
+          <div class="script-content" *ngIf="expandedScript() === i">
+            <div class="scammer-box">
+              <strong>स्कैमर क्या कहता है:</strong>
+              <p>{{ script.whatScammerSays }}</p>
+            </div>
+            <div class="truth-box">
+              <strong>सच्चाई:</strong>
+              <p>{{ language() === 'hi' ? script.truthHindi : script.truth }}</p>
+            </div>
+            <div class="action-box">
+              <strong>क्या करें:</strong>
+              <p>{{ language() === 'hi' ? script.doThisHindi : script.doThis }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts-section">
+      <h2 class="section-title">जरूरी हेल्पलाइन नंबर</h2>
+      
+      <div class="emergency-tiles">
+        <div *ngFor="let contact of guideData()?.emergencyContacts" 
+             class="contact-tile"
+             [class.highlight]="contact.number === '1930'">
+          <h3>{{ language() === 'hi' ? contact.nameHindi : contact.name }}</h3>
+          <div class="phone-number">{{ contact.number }}</div>
+          <p class="when-call">{{ language() === 'hi' ? contact.whenHindi : contact.when }}</p>
+          <span class="availability">{{ contact.available }}</span>
+        </div>
+      </div>
+
+      <div class="bank-helplines">
+        <h3>बैंक हेल्पलाइन नंबर</h3>
+        <div class="search-box">
+          <input type="text" 
+                 placeholder="बैंक का नाम खोजें..." 
+                 [ngModel]="bankSearch()" 
+                 (ngModelChange)="bankSearch.set($event)">
+        </div>
+        <div class="banks-grid">
+          <div *ngFor="let bank of filteredBanks()" class="bank-card">
+            <span class="bank-name">{{ bank.bank }}</span>
+            <div class="bank-actions">
+              <a [href]="'tel:' + bank.number" class="btn-call">{{ bank.number }}</a>
+              <span class="toll-free" *ngIf="bank.tollFree">Toll Free</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- PRINT PREVIEW (and actual Print layout) -->
+  <div class="print-preview-container" [class.visible]="viewMode() === 'print'">
+    <div class="print-page A4">
+      <header class="print-header">
+        <div class="logo-area">
+          <span class="logo-text">🛡️ SafeClick</span>
+        </div>
+        <div class="title-area">
+          <h1>{{ language() === 'hi' ? 'साइबर सुरक्षा गाइड' : 'Cyber Safety Guide' }}</h1>
+          <p>{{ language() === 'hi' ? 'माँ-बाप के लिए विशेष' : 'Special for Parents' }}</p>
+        </div>
+      </header>
+
+      <div class="print-content">
+        <!-- TOP RULES (CRITICAL) -->
+        <section class="print-section critical-box">
+          <h2 class="section-heading red">{{ language() === 'hi' ? '❌ ये कभी न करें' : '❌ NEVER DO THESE' }}</h2>
+          <div class="print-rules-list">
+            <div *ngFor="let rule of criticalRules() | slice:0:4" class="print-rule">
+              <span class="rule-num">{{ rule.id }}.</span>
+              <span class="rule-text-large">{{ language() === 'hi' ? rule.ruleShortHindi : rule.ruleShort }}</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SCAM WARNINGS -->
+        <section class="print-section warning-box">
+          <h2 class="section-heading">{{ language() === 'hi' ? '⚠️ स्कैम कॉल (वे क्या कहते हैं)' : '⚠️ SCAM CALLS (What they say)' }}</h2>
+          <ul class="scam-scripts-summary">
+            <li>"Main CBI/Police/Bank se hun..." = <strong>SCAM</strong></li>
+            <li>"Aapka Aadhaar block ho raha hai" = <strong>SCAM</strong></li>
+            <li>"Lottery jeeti hai, fee bhejiye" = <strong>SCAM</strong></li>
+            <li>"Bijli cut jayegi, link pe click karein" = <strong>SCAM</strong></li>
+          </ul>
+        </section>
+
+        <!-- EMERGENCY NUMBERS -->
+        <section class="print-section emergency-box">
+          <h2 class="section-heading">{{ language() === 'hi' ? '📞 जरूरी हेल्पलाइन नंबर' : '📞 EMERGENCY NUMBERS' }}</h2>
+          <div class="main-helpline">
+            <span class="label">{{ language() === 'hi' ? 'राष्ट्रीय साइबर अपराध हेल्पलाइन:' : 'National Cyber Crime Helpline:' }}</span>
+            <span class="number">1930</span>
+          </div>
+          <div class="fill-line">
+            <span class="label">{{ language() === 'hi' ? 'आपका बैंक:' : 'Your Bank:' }}</span>
+            <span class="blank">__________________________</span>
+            <span class="label">{{ language() === 'hi' ? 'नंबर:' : 'Number:' }}</span>
+            <span class="blank">_________________</span>
+          </div>
+        </section>
+
+        <!-- BANK GRID (Compact) -->
+        <section class="print-section banks-box">
+          <h3 class="sub-heading">{{ language() === 'hi' ? 'प्रमुख बैंकों के नंबर:' : 'Major Bank Helplines:' }}</h3>
+          <div class="print-banks-grid">
+            <div *ngFor="let bank of guideData()?.bankHelplines" class="print-bank-item">
+              <strong>{{ bank.bank.split(' ')[0] }}:</strong> {{ bank.number }}
+            </div>
+          </div>
+        </section>
+
+        <footer class="print-footer">
+          <div class="footer-left">
+            <p>{{ language() === 'hi' ? 'अंतिम सत्यापित:' : 'Last Verified:' }} {{ guideData()?.lastUpdated }}</p>
+            <p>{{ language() === 'hi' ? 'इसे अपने फोन के पास रखें।' : 'Keep this near your phone.' }}</p>
+          </div>
+          <div class="footer-right">
+            <div class="qr-placeholder" *ngIf="qrCodeDataUrl()">
+              <img [src]="qrCodeDataUrl()" alt="QR Code" class="print-qr-img">
+              <span>safeclick.in</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+</div>

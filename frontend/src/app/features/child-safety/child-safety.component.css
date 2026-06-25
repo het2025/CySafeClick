@@ -1,0 +1,260 @@
+.child-safety-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--safeclick-navy, #0A1628);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.edu-section {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.edu-section h2 {
+  margin-top: 0;
+  border-bottom: 2px solid var(--safeclick-saffron, #FF9933);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.age-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.age-card {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+.age-card h3 {
+  margin-top: 0;
+  color: var(--safeclick-navy, #0A1628);
+}
+
+.age-card ul {
+  padding-left: 1.5rem;
+  color: #334155;
+  margin-bottom: 0;
+}
+
+.os-guides {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.os-guide {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-top: 4px solid var(--safeclick-navy, #0A1628);
+}
+
+.os-guide h3 { margin-top: 0; }
+.os-guide ol, .os-guide ul {
+  padding-left: 1.5rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.danger-section {
+  border-color: #fca5a5;
+  background: #fffafa;
+}
+
+.danger-section h2 {
+  border-bottom-color: var(--safeclick-danger, #ef4444);
+  color: var(--safeclick-danger, #ef4444);
+}
+
+.sensitive-warning {
+  font-weight: bold;
+  color: #991b1b;
+}
+
+.signs-list {
+  background: #fef2f2;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.signs-list ul {
+  color: #7f1d1d;
+  margin: 0;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.action-box {
+  background: white;
+  border: 2px solid var(--safeclick-danger, #ef4444);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.action-box h3 { margin-top: 0; color: var(--safeclick-danger, #ef4444); }
+.action-box p { margin-bottom: 0.5rem; }
+
+.gaming-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tip {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--safeclick-saffron, #FF9933);
+}
+
+.tip h3 { margin-top: 0; }
+.tip p { margin-bottom: 0; line-height: 1.5; color: #334155; }
+
+.info-section {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+.info-section h2 { border-bottom-color: var(--safeclick-safe, #22c55e); }
+.info-section ul { line-height: 1.8; }
+
+/* Agreement Section */
+.agreement-intro {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.agreement-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.agreement-inputs input {
+  padding: 0.75rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.primary-btn {
+  background: var(--safeclick-navy, #0A1628);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.primary-btn:hover { background: var(--safeclick-saffron, #FF9933); }
+
+/* Printable Document Styles */
+.printable-document {
+  background: white;
+  border: 2px solid #cbd5e1;
+  padding: 3rem;
+  margin-top: 2rem;
+  display: block; 
+}
+
+.doc-header {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.doc-header h1 {
+  margin-top: 0;
+  font-family: serif;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.doc-header p {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.doc-body h3 {
+  font-family: serif;
+  font-size: 1.5rem;
+  color: #000;
+  margin-top: 1.5rem;
+}
+
+.doc-body ul {
+  font-family: serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.signatures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.sig-line {
+  border-top: 2px solid #000;
+  width: 40%;
+  text-align: center;
+  padding-top: 0.5rem;
+  font-family: serif;
+  font-style: italic;
+}
+
+.doc-footer {
+  margin-top: 2rem;
+  font-family: serif;
+}
+
+/* Print Specific CSS */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .printable-area {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .printable-document {
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  body {
+    background: white;
+  }
+}

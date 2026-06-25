@@ -1,0 +1,84 @@
+<div class="business-container">
+  <header class="page-header">
+    <h1>{{ t.translate('BUSINESS.TITLE') }}</h1>
+    <p>{{ t.translate('BUSINESS.SUBTITLE') }}</p>
+  </header>
+
+  <div class="tabs">
+    <button [class.active]="activeTab === 'guide'" (click)="activeTab = 'guide'">{{ t.translate('BUSINESS.TAB_GUIDE') }}</button>
+    <button [class.active]="activeTab === 'score'" (click)="activeTab = 'score'">{{ t.translate('BUSINESS.TAB_SCORE') }}</button>
+    <button [class.active]="activeTab === 'template'" (click)="activeTab = 'template'">{{ t.translate('BUSINESS.TAB_TEMPLATE') }}</button>
+  </div>
+
+  <div class="tab-content" *ngIf="activeTab === 'guide'">
+    
+    <section class="edu-section">
+      <h2>{{ t.translate('BUSINESS.S1.TITLE') }}</h2>
+      <p>{{ t.translate('BUSINESS.S1.DESC') }}</p>
+    </section>
+
+    <section class="edu-section">
+      <h2>{{ t.translate('BUSINESS.S2.TITLE') }}</h2>
+      <p>{{ t.translate('BUSINESS.S2.DESC') }}</p>
+    </section>
+
+    <section class="edu-section">
+      <h2>{{ t.translate('BUSINESS.S3.TITLE') }}</h2>
+      <p>{{ t.translate('BUSINESS.S3.DESC') }}</p>
+    </section>
+
+    <section class="edu-section">
+      <h2>{{ t.translate('BUSINESS.S4.TITLE') }}</h2>
+      <p>{{ t.translate('BUSINESS.S4.DESC') }}</p>
+    </section>
+
+    <section class="edu-section">
+      <h2>{{ t.translate('BUSINESS.S5.TITLE') }}</h2>
+      <p>{{ t.translate('BUSINESS.S5.DESC') }}</p>
+    </section>
+  </div>
+
+  <div class="tab-content" *ngIf="activeTab === 'score'">
+    <div class="score-card">
+      <h2>{{ t.translate('BUSINESS.QUIZ.TITLE') }}</h2>
+      <p>{{ t.translate('BUSINESS.QUIZ.SUB') }}</p>
+      
+      <div class="quiz-item" *ngFor="let q of quizQuestions; let i = index">
+        <p><strong>{{ i + 1 }}.</strong> {{ q.text }}</p>
+        <div class="radio-options">
+          <label><input type="radio" [(ngModel)]="questionValues[i]" [value]="10"> {{ t.currentLang() === 'hi' ? 'हाँ' : 'Yes' }} (+10)</label>
+          <label><input type="radio" [(ngModel)]="questionValues[i]" [value]="0"> {{ t.currentLang() === 'hi' ? 'नहीं' : 'No' }} (0)</label>
+        </div>
+      </div>
+
+      <button class="primary-btn" (click)="calculateScore()">{{ t.translate('BUSINESS.TAB_SCORE') }}</button>
+
+      <div class="result-banner" *ngIf="quizScore !== null" [ngClass]="{'good': quizScore >= 80, 'medium': quizScore >= 50 && quizScore < 80, 'bad': quizScore < 50}">
+        <h3>{{ t.translate('BUSINESS.QUIZ.SCORE_BANNER') }}: {{ quizScore }}/100</h3>
+        <p *ngIf="quizScore >= 80">{{ t.translate('BUSINESS.QUIZ.GOOD') }}</p>
+        <p *ngIf="quizScore >= 50 && quizScore < 80">{{ t.translate('BUSINESS.QUIZ.MED') }}</p>
+        <p *ngIf="quizScore < 50">{{ t.translate('BUSINESS.QUIZ.BAD') }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" *ngIf="activeTab === 'template'">
+    <div class="template-card">
+      <h2>{{ t.translate('BUSINESS.TEMPLATE.TITLE') }}</h2>
+      <p>{{ t.translate('BUSINESS.TEMPLATE.SUB') }}</p>
+      
+      <div class="preview-box">
+        <h3>Preview:</h3>
+        <ul>
+          <li>Mandatory 2FA for all critical accounts.</li>
+          <li>Verbal verification for vendor bank detail changes.</li>
+          <li>Reporting procedures for suspicious emails.</li>
+          <li>Daily checks for physical QR code tampering.</li>
+        </ul>
+      </div>
+
+      <button class="download-btn" (click)="downloadPolicy()">{{ t.translate('BUSINESS.TEMPLATE.BTN') }}</button>
+    </div>
+  </div>
+
+</div>

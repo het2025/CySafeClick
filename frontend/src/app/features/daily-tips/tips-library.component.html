@@ -1,0 +1,74 @@
+<div class="container tips-library-page">
+  <div class="header-section">
+    <div class="title-area">
+      <h1>Cyber Security Tips Library</h1>
+      <p>Browse our collection of actionable security advice.</p>
+    </div>
+    
+    <div class="progress-area" *ngIf="allTips().length > 0">
+      <app-progress-ring [progress]="progressPercent()" [size]="80" [strokeWidth]="8">
+        <span class="progress-text">{{ completedTipIds().length }}/{{ allTips().length }}</span>
+      </app-progress-ring>
+      <p class="progress-label">Tips Completed</p>
+    </div>
+  </div>
+
+  <div class="filters-section">
+    <div class="search-box">
+      <input 
+        type="text" 
+        [ngModel]="searchQuery()" 
+        (ngModelChange)="searchQuery.set($event)" 
+        placeholder="Search tips, tags, or keywords..." 
+        class="form-input"
+        aria-label="Search tips"
+      >
+    </div>
+    
+    <div class="filter-controls">
+      <div class="filter-group">
+        <label>Category:</label>
+        <select [ngModel]="selectedCategory()" (ngModelChange)="selectedCategory.set($event)" class="form-select">
+          <option value="">All Categories</option>
+          <option *ngFor="let cat of categories()" [value]="cat">{{ cat }}</option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <label>Difficulty:</label>
+        <select [ngModel]="selectedDifficulty()" (ngModelChange)="selectedDifficulty.set($event)" class="form-select">
+          <option value="">All Levels</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+      
+      <button class="btn-clear" *ngIf="searchQuery() || selectedCategory() || selectedDifficulty()" (click)="clearFilters()">
+        Clear Filters
+      </button>
+    </div>
+  </div>
+
+  <div class="tips-grid">
+    <div class="tip-wrapper" *ngFor="let tip of filteredTips()">
+      <app-daily-tip-card [tip]="tip"></app-daily-tip-card>
+      
+      <div class="tip-actions">
+        <button 
+          class="btn-done" 
+          [class.completed]="isCompleted(tip.id)" 
+          (click)="markAsDone(tip.id)"
+          [disabled]="isCompleted(tip.id)"
+        >
+          <span class="icon">✓</span> {{ isCompleted(tip.id) ? 'Marked as Read' : 'Mark as Read' }}
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="no-results" *ngIf="filteredTips().length === 0">
+    <p>No tips found matching your criteria. Try clearing some filters.</p>
+    <button class="btn-primary" (click)="clearFilters()">Clear Filters</button>
+  </div>
+</div>

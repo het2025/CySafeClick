@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://safeclick.gov.in/sitemap.xml
+
+# Block admin/API paths
+Disallow: /api/
+Disallow: /admin/

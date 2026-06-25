@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Cybercrime - SafeClick</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .emergency-box {
+            background: var(--danger);
+            color: white;
+            padding: var(--space-4);
+            border-radius: 12px;
+            text-align: center;
+            margin: var(--space-4) 0;
+        }
+        .emergency-box h2 { font-size: 3rem; margin: 10px 0; }
+        
+        .guide-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-4);
+            margin-top: var(--space-5);
+        }
+        @media (max-width: 768px) { .guide-section { grid-template-columns: 1fr; } }
+        
+        .guide-card {
+            background: var(--surface);
+            padding: var(--space-3);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .step-list { list-style: none; counter-reset: step; }
+        .step-list li {
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        .step-list li::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background: var(--accent-saffron);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .contact-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: var(--space-4);
+            font-size: 0.9rem;
+        }
+        .contact-table th, .contact-table td {
+            padding: 12px;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+        .contact-table th { background: var(--bg); }
+
+        .checklist-box {
+            background: #fffbeb;
+            border: 2px dashed #f59e0b;
+            padding: var(--space-3);
+            border-radius: 12px;
+            color: #92400e;
+        }
+        [data-theme="dark"] .checklist-box { background: #451a03; color: #fbbf24; }
+
+        @media print {
+            header, footer, .btn-cta, .controls { display: none !important; }
+            .container { width: 100% !important; max-width: none !important; }
+            .checklist-box { border: 1px solid black; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" data-i18n="LOGO.NAME">SafeClick</a>
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="NAV.HOME">Home</a>
+                <a href="index.html#tools" data-i18n="NAV.TOOLS">Tools</a>
+                <a href="scam-awareness.html" data-i18n="NAV.LEARN">Learn</a>
+                <a href="report-cybercrime.html" data-i18n="NAV.REPORT">Report</a>
+            </nav>
+            <div class="controls">
+                <button id="lang-toggle" class="btn-lang">हिंदी</button>
+                <button id="theme-toggle" class="btn-icon">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="emergency-box">
+            <p data-i18n="REPORT_CYBERCRIME.EMERGENCY_LABEL">IMMEDIATE FINANCIAL FRAUD HELPLINE</p>
+            <h2>📞 1930</h2>
+            <p data-i18n="REPORT_CYBERCRIME.AVAILABILITY">Available 24/7 across all States/UTs</p>
+            <a href="https://cybercrime.gov.in" target="_blank" class="btn-cta" style="background: white; margin-top: 15px;" data-i18n="REPORT_CYBERCRIME.OFFICIAL_CTA">File Official Complaint Online</a>
+        </div>
+
+        <div class="guide-section">
+            <div class="guide-card">
+                <h3 data-i18n="REPORT_CYBERCRIME.STEPS_TITLE">Steps to File Complaint</h3>
+                <ul class="step-list">
+                    <li>
+                        <strong data-i18n="REPORT_CYBERCRIME.STEPS.0.TITLE">Visit Official Portal</strong>
+                        <p data-i18n="REPORT_CYBERCRIME.STEPS.0.DESC">Go to cybercrime.gov.in and click on 'File a Complaint'.</p>
+                    </li>
+                    <li>
+                        <strong data-i18n="REPORT_CYBERCRIME.STEPS.1.TITLE">Select Category</strong>
+                        <p data-i18n="REPORT_CYBERCRIME.STEPS.1.DESC">Choose between 'Financial Fraud', 'Women/Child Related Crime', or 'Other Cyber Crimes'.</p>
+                    </li>
+                    <li>
+                        <strong data-i18n="REPORT_CYBERCRIME.STEPS.2.TITLE">Fill Details</strong>
+                        <p data-i18n="REPORT_CYBERCRIME.STEPS.2.DESC">Provide your mobile number, OTP, and details of the incident.</p>
+                    </li>
+                    <li>
+                        <strong data-i18n="REPORT_CYBERCRIME.STEPS.3.TITLE">Upload Evidence</strong>
+                        <p data-i18n="REPORT_CYBERCRIME.STEPS.3.DESC">Attach screenshots of messages, transaction receipts, and URLs.</p>
+                    </li>
+                    <li>
+                        <strong data-i18n="REPORT_CYBERCRIME.STEPS.4.TITLE">Submit & Save</strong>
+                        <p data-i18n="REPORT_CYBERCRIME.STEPS.4.DESC">Submit and note down the Acknowledgement Number for future tracking.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="checklist-box">
+                <h3 data-i18n="REPORT_CYBERCRIME.CHECKLIST_TITLE">Evidence Checklist</h3>
+                <p data-i18n="REPORT_CYBERCRIME.CHECKLIST_INTRO">Gather these before you start reporting:</p>
+                <ul style="margin-top: 15px;">
+                    <li><input type="checkbox"> <span data-i18n="REPORT_CYBERCRIME.CHECKLIST_ITEMS.0">Screenshots of the scam message/call log</span></li>
+                    <li><input type="checkbox"> <span data-i18n="REPORT_CYBERCRIME.CHECKLIST_ITEMS.1">Transaction ID / UTR Number (for money theft)</span></li>
+                    <li><input type="checkbox"> <span data-i18n="REPORT_CYBERCRIME.CHECKLIST_ITEMS.2">Bank statement showing unauthorized debit</span></li>
+                    <li><input type="checkbox"> <span data-i18n="REPORT_CYBERCRIME.CHECKLIST_ITEMS.3">Phone number of the scammer</span></li>
+                    <li><input type="checkbox"> <span data-i18n="REPORT_CYBERCRIME.CHECKLIST_ITEMS.4">Website URL or App name used</span></li>
+                    <li><input type="checkbox"> <span data-i18n="REPORT_CYBERCRIME.CHECKLIST_ITEMS.5">Date and exact time of incident</span></li>
+                </ul>
+                <button onclick="window.print()" class="btn-action" style="margin-top: 20px; background: #92400e; color: white;" data-i18n="REPORT_CYBERCRIME.PRINT_BTN">🖨️ Print Checklist</button>
+            </div>
+        </div>
+
+        <div style="margin-top: var(--space-6);">
+            <h3 data-i18n="REPORT_CYBERCRIME.CONTACTS_TITLE">State-wise Cyber Cell Contacts</h3>
+            <p style="font-size: 0.9rem; color: var(--danger); margin-bottom: 10px;">
+                <em>Note: These numbers were last verified on May 2026. Please verify with your local police station as government phone numbers may change.</em>
+            </p>
+            <table class="contact-table">
+                <thead>
+                    <tr>
+                        <th data-i18n="REPORT_CYBERCRIME.TABLE.STATE">State / UT</th>
+                        <th data-i18n="REPORT_CYBERCRIME.TABLE.CONTACT">Helpline / Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.DELHI">Delhi</td><td>011-20892633</td></tr>
+                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.MAHARASHTRA">Maharashtra</td><td>022-22160080</td></tr>
+                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.KARNATAKA">Karnataka</td><td>080-22343232</td></tr>
+                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.TAMIL_NADU">Tamil Nadu</td><td>044-28447701</td></tr>
+                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.TELANGANA">Telangana</td><td>040-23148421</td></tr>
+                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.GUJARAT">Gujarat</td><td>079-23210914</td></tr>
+                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.UTTAR_PRADESH">Uttar Pradesh</td><td>0522-2236162</td></tr>
+                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.RAJASTHAN">Rajasthan</td><td>0141-2309859</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-bottom">
+            <p data-i18n="REPORT_CYBERCRIME.FOOTER_SOURCE">Source: cybercrime.gov.in | National Cyber Crime Reporting Portal</p>
+            <p class="legal-links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,860 @@
+[
+  {
+    "weekId": "2026-W19",
+    "weekLabel": "Week of May 04–10, 2026",
+    "weekLabelHindi": "सप्ताह: 04–10 मई 2026",
+    "publishedAt": "2026-05-11T00:00:00.000Z",
+    "editorNote": "A major surge in sophisticated video call impersonation and AI-driven frauds.",
+    "editorNoteHindi": "वीडियो कॉल प्रतिरूपण और एआई-संचालित धोखाधड़ी में एक बड़ी वृद्धि।",
+    "topPatterns": [
+      {
+        "rank": 1,
+        "title": "CBI Digital Arrest Targeting IT Professionals",
+        "titleHindi": "आईटी पेशेवरों को लक्षित कर सीबीआई डिजिटल अरेस्ट",
+        "category": "Impersonation Fraud",
+        "isNew": false,
+        "isTrending": true,
+        "summary": "Scammers pose as CBI or Customs officials on Skype/WhatsApp video calls. They claim illegal items were found in a parcel under the victim's name. They demand a 'security deposit' to avoid immediate digital arrest.",
+        "summaryHindi": "स्कैमर स्काइप/व्हाट्सएप वीडियो कॉल पर सीबीआई या सीमा शुल्क अधिकारी होने का नाटक करते हैं। वे दावा करते हैं कि पीड़ित के नाम के एक पार्सल में अवैध वस्तुएं मिली हैं।",
+        "howItWorks": "1. Victim receives a call from 'FedEx' or 'Customs'. 2. Call transferred to 'Cyber Crime Police'. 3. Scammer initiates a Skype video call wearing a fake uniform. 4. Victim is 'digitally arrested' and ordered to stay on camera. 5. Victim transfers funds to a 'safe RBI account' for verification.",
+        "howItWorksHindi": "1. पीड़ित को 'फेडेक्स' या 'सीमा शुल्क' से कॉल आता है। 2. कॉल 'साइबर क्राइम पुलिस' को ट्रांसफर की जाती है। 3. नकली वर्दी में स्कैमर स्काइप वीडियो कॉल करता है। 4. पीड़ित को 'डिजिटल रूप से गिरफ्तार' किया जाता है। 5. सत्यापन के लिए पैसे 'सुरक्षित आरबीआई खाते' में ट्रांसफर कराए जाते हैं।",
+        "redFlags": [
+          "Police or CBI will NEVER interrogate you on Skype/WhatsApp.",
+          "Officials NEVER ask for money to be transferred to 'safe accounts'.",
+          "Threats of immediate arrest without a physical warrant.",
+          "Scammers use fake ID cards and official-looking backgrounds."
+        ],
+        "redFlagsHindi": [
+          "पुलिस या सीबीआई कभी भी स्काइप/व्हाट्सएप पर आपसे पूछताछ नहीं करेगी।",
+          "अधिकारी कभी भी 'सुरक्षित खातों' में पैसे ट्रांसफर करने के लिए नहीं कहते हैं।",
+          "बिना वारंट के तत्काल गिरफ्तारी की धमकी।",
+          "नकली आईडी कार्ड और आधिकारिक दिखने वाले बैकग्राउंड।"
+        ],
+        "whatToDo": "Disconnect the call immediately. Do not transfer any funds. Report the number on cybercrime.gov.in and block the contact.",
+        "whatToDoHindi": "तुरंत कॉल काट दें। कोई फंड ट्रांसफर न करें। cybercrime.gov.in पर नंबर की रिपोर्ट करें और संपर्क को ब्लॉक करें।",
+        "targetedStates": ["Karnataka", "Maharashtra", "Delhi"],
+        "targetedAgeGroup": "25-45 (Working Professionals)",
+        "estimatedLossThisWeek": 450,
+        "realExampleScript": "Sir, main Andheri Cyber Crime Branch se Inspector Sharma bol raha hun. Aapke naam se ek parcel Taiwan ja raha tha jisme 5 fake passports aur drugs mile hain. Aap abhi Skype download karke humse connect kariye, warna humari team abhi aapke office aake arrest karegi."
+      },
+      {
+        "rank": 2,
+        "title": "Fake Mutual Fund App Credential Theft",
+        "titleHindi": "फर्जी म्यूचुअल फंड ऐप क्रेडेंशियल चोरी",
+        "category": "Phishing & Malware",
+        "isNew": true,
+        "isTrending": true,
+        "summary": "Fraudsters send links to download fake trading apps that look exactly like Zerodha or Groww. Once logged in, the app steals credentials and OTPs, allowing scammers to hijack the victim's real portfolio.",
+        "summaryHindi": "धोखेबाज फर्जी ट्रेडिंग ऐप डाउनलोड करने के लिए लिंक भेजते हैं जो बिल्कुल ज़ेरोधा या ग्रो ऐप की तरह दिखते हैं। लॉगिन करने पर, ऐप क्रेडेंशियल और ओटीपी चुरा लेता है।",
+        "howItWorks": "1. Victim receives SMS/WhatsApp about a 'major portfolio update'. 2. Link directs to a fake Play Store page or APK download. 3. Victim installs and enters login details. 4. App reads incoming OTPs via SMS permissions. 5. Scammers empty the victim's real investment accounts.",
+        "howItWorksHindi": "1. पीड़ित को 'पोर्टफोलियो अपडेट' के बारे में व्हाट्सएप मिलता है। 2. लिंक एक फर्जी प्ले स्टोर पेज पर ले जाता है। 3. पीड़ित इंस्टॉल करता है और लॉगिन विवरण दर्ज करता है। 4. ऐप एसएमएस अनुमतियों के माध्यम से ओटीपी पढ़ता है। 5. स्कैमर निवेश खाते खाली कर देते हैं।",
+        "redFlags": [
+          "App links shared via WhatsApp or SMS instead of direct App Store search.",
+          "App demands unnecessary permissions like SMS reading.",
+          "The login screen URL does not match the official broker's website."
+        ],
+        "redFlagsHindi": [
+          "व्हाट्सएप या एसएमएस के माध्यम से साझा किए गए ऐप लिंक।",
+          "ऐप एसएमएस पढ़ने जैसी अनावश्यक अनुमतियां मांगता है।",
+          "लॉगिन स्क्रीन यूआरएल आधिकारिक वेबसाइट से मेल नहीं खाता है।"
+        ],
+        "whatToDo": "Uninstall the fake app immediately. Change your broker password from a secure device. Call your broker's official helpline to freeze the account.",
+        "whatToDoHindi": "फर्जी ऐप को तुरंत अनइंस्टॉल करें। सुरक्षित डिवाइस से अपना ब्रोकर पासवर्ड बदलें। खाते को फ्रीज करने के लिए अपने ब्रोकर की आधिकारिक हेल्पलाइन पर कॉल करें।",
+        "targetedStates": ["Gujarat", "Maharashtra", "Tamil Nadu"],
+        "targetedAgeGroup": "30-55",
+        "estimatedLossThisWeek": 210,
+        "realExampleScript": "Dear Investor, Zerodha platform is migrating to a new server. Download the V2 app here to prevent portfolio block: bit.ly/zerodha-v2-update"
+      },
+      {
+        "rank": 3,
+        "title": "Wrong Number Romance & Investment Trap",
+        "titleHindi": "गलत नंबर रोमांस और निवेश जाल (पिग बुचरिंग)",
+        "category": "Investment Fraud",
+        "isNew": false,
+        "isTrending": false,
+        "summary": "A sophisticated 'Pig Butchering' variant where a scammer 'accidentally' messages a victim. Over weeks, they build a romantic or friendly relationship before introducing them to a fake high-yield crypto investment platform.",
+        "summaryHindi": "स्कैमर 'गलती से' पीड़ित को संदेश भेजता है। हफ्तों में, वे फर्जी क्रिप्टो निवेश प्लेटफॉर्म से परिचित कराने से पहले एक रोमांटिक या मैत्रीपूर्ण संबंध बनाते हैं।",
+        "howItWorks": "1. Victim gets a 'Hi, is this Dr. Rahul?' WhatsApp message. 2. Scammer apologizes for the wrong number but keeps chatting. 3. Over weeks, scammer shares photos of a luxurious lifestyle. 4. Scammer introduces a 'secret trading platform'. 5. Victim invests, sees fake profits, but cannot withdraw funds.",
+        "howItWorksHindi": "1. पीड़ित को 'नमस्ते, क्या यह डॉ. राहुल हैं?' व्हाट्सएप संदेश मिलता है। 2. स्कैमर गलत नंबर के लिए माफी मांगता है लेकिन चैटिंग जारी रखता है। 3. स्कैमर शानदार जीवन शैली की तस्वीरें साझा करता है। 4. स्कैमर एक 'गुप्त ट्रेडिंग प्लेटफॉर्म' पेश करता है। 5. पीड़ित निवेश करता है, नकली मुनाफा देखता है, लेकिन पैसे नहीं निकाल सकता।",
+        "redFlags": [
+          "Attractive strangers messaging out of the blue from international or virtual numbers.",
+          "Quick transition from casual chat to crypto or stock investments.",
+          "Pressure to use unknown trading apps not listed on official stores.",
+          "Refusal to do live video calls."
+        ],
+        "redFlagsHindi": [
+          "अंतरराष्ट्रीय नंबरों से अचानक आकर्षक अजनबियों का संदेश।",
+          "आकस्मिक चैट से क्रिप्टो या स्टॉक निवेश में त्वरित संक्रमण।",
+          "आधिकारिक स्टोर पर सूचीबद्ध नहीं अज्ञात ट्रेडिंग ऐप्स का उपयोग करने का दबाव।",
+          "लाइव वीडियो कॉल करने से इनकार।"
+        ],
+        "whatToDo": "Never take investment advice from strangers online. Do not transfer crypto to unknown platforms. Block the contact immediately.",
+        "whatToDoHindi": "ऑनलाइन अजनबियों से कभी निवेश सलाह न लें। अज्ञात प्लेटफॉर्म पर क्रिप्टो ट्रांसफर न करें। संपर्क को तुरंत ब्लॉक करें।",
+        "targetedStates": ["Pan India"],
+        "targetedAgeGroup": "25-50",
+        "estimatedLossThisWeek": 320,
+        "realExampleScript": "Oh sorry, I thought this was my interior designer's number. By the way, you seem like a polite person. I am Megha from Singapore, dealing in crypto analysis. Let's be friends?"
+      }
+    ],
+    "statOfTheWeek": {
+      "headline": "Digital Arrest Extortions Hit Peak",
+      "headlineHindi": "डिजिटल अरेस्ट रंगदारी चरम पर",
+      "value": "₹120 Crore",
+      "context": "Reported losses to 'Digital Arrest' impersonation scams across India in just the first quarter of the year.",
+      "contextHindi": "इस वर्ष की पहली तिमाही में पूरे भारत में 'डिजिटल अरेस्ट' प्रतिरूपण घोटालों में रिपोर्ट किया गया नुकसान।",
+      "source": "I4C Cybercrime Update"
+    },
+    "safetyReminder": "Law enforcement agencies like CBI, ED, or Police never conduct interrogations or 'digital arrests' over Skype or WhatsApp.",
+    "safetyReminderHindi": "सीबीआई, ईडी या पुलिस जैसी एजेंसियां कभी भी स्काइप या व्हाट्सएप पर पूछताछ या 'डिजिटल अरेस्ट' नहीं करती हैं।",
+    "reportedThisWeek": 14250,
+    "totalLossThisWeek": 18.5,
+    "risingState": "Karnataka"
+  },
+  {
+    "weekId": "2026-W18",
+    "weekLabel": "Week of Apr 27–May 03, 2026",
+    "weekLabelHindi": "सप्ताह: 27 अप्रैल–03 मई 2026",
+    "publishedAt": "2026-05-04T00:00:00.000Z",
+    "editorNote": "A spike in daily utility and travel refund phishing targeting the middle class.",
+    "editorNoteHindi": "मध्यम वर्ग को लक्षित करने वाले दैनिक उपयोगिता और यात्रा रिफंड फ़िशिंग में वृद्धि।",
+    "topPatterns": [
+      {
+        "rank": 1,
+        "title": "IRCTC Refund Phishing SMS",
+        "titleHindi": "आईआरसीटीसी रिफंड फ़िशिंग एसएमएस",
+        "category": "Phishing",
+        "isNew": false,
+        "isTrending": true,
+        "summary": "Victims receive an SMS claiming their cancelled train ticket refund failed. It contains a malicious link to a fake IRCTC portal that steals banking details.",
+        "summaryHindi": "पीड़ितों को एक एसएमएस मिलता है जिसमें दावा किया जाता है कि उनके रद्द किए गए ट्रेन टिकट का रिफंड विफल हो गया। इसमें फर्जी आईआरसीटीसी पोर्टल का एक दुर्भावनापूर्ण लिंक है।",
+        "howItWorks": "1. SMS arrives: 'Your IRCTC refund of ₹1250 is pending'. 2. Victim clicks the link out of urgency. 3. Fake site asks for debit card details to 'process refund'. 4. Site asks for OTP. 5. Scammers debit money instead of refunding.",
+        "howItWorksHindi": "1. एसएमएस आता है: 'आपका ₹1250 का आईआरसीटीसी रिफंड लंबित है'। 2. पीड़ित लिंक पर क्लिक करता है। 3. नकली साइट 'रिफंड' के लिए डेबिट कार्ड का विवरण मांगती है। 4. साइट ओटीपी मांगती है। 5. स्कैमर रिफंड करने के बजाय पैसे निकाल लेते हैं।",
+        "redFlags": [
+          "IRCTC refunds are processed automatically; they never require you to fill a form via SMS link.",
+          "SMS from a personal 10-digit number instead of an official sender ID like VZ-IRCTC.",
+          "Asking for card PIN or OTP to receive money."
+        ],
+        "redFlagsHindi": [
+          "आईआरसीटीसी रिफंड स्वचालित रूप से संसाधित होते हैं; एसएमएस लिंक के माध्यम से फॉर्म भरने की आवश्यकता नहीं है।",
+          "आधिकारिक प्रेषक आईडी के बजाय व्यक्तिगत 10-अंकीय नंबर से एसएमएस।",
+          "पैसे प्राप्त करने के लिए कार्ड पिन या ओटीपी मांगना।"
+        ],
+        "whatToDo": "Ignore the SMS. Check your refund status directly on the official IRCTC app or website.",
+        "whatToDoHindi": "एसएमएस पर ध्यान न दें। आधिकारिक आईआरसीटीसी ऐप या वेबसाइट पर सीधे अपनी रिफंड स्थिति जांचें।",
+        "targetedStates": ["Uttar Pradesh", "Bihar", "West Bengal"],
+        "targetedAgeGroup": "All Ages",
+        "estimatedLossThisWeek": 85,
+        "realExampleScript": "Dear user, your IRCTC ticket refund of Rs.1540 failed due to bank server issue. Update details here to receive refund instantly: http://irctc-refund-portal.info"
+      },
+      {
+        "rank": 2,
+        "title": "QR Code Stickers at Dhabas & Small Shops",
+        "titleHindi": "ढाबों और छोटी दुकानों पर क्यूआर कोड स्टिकर स्कैम",
+        "category": "Physical Fraud",
+        "isNew": true,
+        "isTrending": true,
+        "summary": "Scammers are pasting their own UPI QR code stickers over the legitimate merchant QR codes at highway dhabas, petrol pumps, and small vendors.",
+        "summaryHindi": "स्कैमर हाईवे ढाबों, पेट्रोल पंपों पर असली मर्चेंट क्यूआर कोड के ऊपर अपने स्वयं के यूपीआई क्यूआर कोड स्टिकर चिपका रहे हैं।",
+        "howItWorks": "1. Scammer secretly pastes a fake QR sticker over the shop's real QR stand. 2. Customer scans and pays for their purchase. 3. Payment goes to the scammer's account. 4. Shop owner never receives the money. 5. Dispute occurs between customer and shopkeeper.",
+        "howItWorksHindi": "1. स्कैमर दुकान के असली क्यूआर के ऊपर फर्जी स्टिकर चिपकाता है। 2. ग्राहक स्कैन करके भुगतान करता है। 3. भुगतान स्कैमर के खाते में जाता है। 4. दुकानदार को कभी पैसे नहीं मिलते। 5. ग्राहक और दुकानदार के बीच विवाद होता है।",
+        "redFlags": [
+          "The QR sticker looks newly pasted or misaligned.",
+          "The name displayed on your UPI app after scanning does not match the shop or owner's name."
+        ],
+        "redFlagsHindi": [
+          "क्यूआर स्टिकर नया चिपकाया हुआ या टेढ़ा दिखता है।",
+          "स्कैन करने के बाद आपके यूपीआई ऐप पर प्रदर्शित नाम दुकान के नाम से मेल नहीं खाता है।"
+        ],
+        "whatToDo": "Always verify the name on your screen with the shopkeeper before entering your UPI PIN. Merchants should physically check their QR codes daily.",
+        "whatToDoHindi": "अपना यूपीआई पिन दर्ज करने से पहले हमेशा दुकानदार से स्क्रीन पर नाम सत्यापित करें। व्यापारियों को प्रतिदिन अपने क्यूआर कोड की भौतिक जांच करनी चाहिए।",
+        "targetedStates": ["Punjab", "Haryana", "Rajasthan"],
+        "targetedAgeGroup": "All Ages",
+        "estimatedLossThisWeek": 40,
+        "realExampleScript": "(No direct script - physical action of pasting sticker. When paying, app shows 'Rahul Kumar' instead of 'Sharma Dhaba')"
+      },
+      {
+        "rank": 3,
+        "title": "MBA Fresher Fake Internship Scam",
+        "titleHindi": "एमबीए फ्रेशर फेक इंटर्नशिप स्कैम",
+        "category": "Job Fraud",
+        "isNew": false,
+        "isTrending": false,
+        "summary": "Targeting fresh graduates, scammers offer high-paying virtual internships at reputed MNCs but demand a 'laptop security deposit' or 'training fee' upfront.",
+        "summaryHindi": "नए स्नातकों को लक्षित करते हुए, स्कैमर प्रतिष्ठित बहुराष्ट्रीय कंपनियों में इंटर्नशिप की पेशकश करते हैं लेकिन पहले 'लैपटॉप सुरक्षा जमा' की मांग करते हैं।",
+        "howItWorks": "1. Scammer contacts student via LinkedIn or email claiming to be HR from Amazon/Deloitte. 2. Conducts a fake telephonic interview and sends an 'offer letter'. 3. Demands ₹10,000 as a refundable deposit for a company laptop. 4. Once paid, the scammer blocks the student.",
+        "howItWorksHindi": "1. स्कैमर अमेज़ॅन/डेलॉइट से एचआर होने का दावा करके लिंक्डइन के माध्यम से छात्र से संपर्क करता है। 2. फोन पर फर्जी साक्षात्कार करता है। 3. कंपनी लैपटॉप के लिए जमा राशि के रूप में ₹10,000 की मांग करता है। 4. भुगतान होने के बाद, स्कैमर छात्र को ब्लॉक कर देता है।",
+        "redFlags": [
+          "Real companies never ask for a security deposit for laptops or training.",
+          "Offer letter contains grammatical errors or blurry logos.",
+          "Communication from generic email domains (e.g., hr-amazon@gmail.com)."
+        ],
+        "redFlagsHindi": [
+          "असली कंपनियां कभी भी लैपटॉप या प्रशिक्षण के लिए सुरक्षा जमा नहीं मांगती हैं।",
+          "प्रस्ताव पत्र में व्याकरण संबंधी त्रुटियां या धुंधले लोगो होते हैं।",
+          "सामान्य ईमेल डोमेन (जैसे, hr-amazon@gmail.com) से संचार।"
+        ],
+        "whatToDo": "Do not pay any upfront fees for a job. Cross-check the HR contact via the official company LinkedIn page or career portal.",
+        "whatToDoHindi": "नौकरी के लिए कोई अग्रिम शुल्क न दें। आधिकारिक कंपनी लिंक्डइन पेज या करियर पोर्टल के माध्यम से एचआर संपर्क की जांच करें।",
+        "targetedStates": ["Delhi NCR", "Tamil Nadu"],
+        "targetedAgeGroup": "20-25 (Students)",
+        "estimatedLossThisWeek": 65,
+        "realExampleScript": "Congratulations on your selection at our firm for the Summer Analyst role. To process your Macbook dispatch, please transfer ₹15,500 refundable deposit to the vendor account."
+      }
+    ],
+    "statOfTheWeek": {
+      "headline": "QR Scams Hit Small Businesses",
+      "headlineHindi": "क्यूआर घोटालों ने छोटे व्यवसायों को प्रभावित किया",
+      "value": "20% Rise",
+      "context": "Increase in physical QR replacement scams at tier-2 city merchant locations over the last month.",
+      "contextHindi": "पिछले महीने टियर-2 शहरों के व्यापारिक स्थानों पर भौतिक क्यूआर प्रतिस्थापन घोटालों में वृद्धि।",
+      "source": "Local Police Reports"
+    },
+    "safetyReminder": "Verify the receiver's name on your UPI app aloud with the merchant before hitting the 'Pay' button.",
+    "safetyReminderHindi": "'पे' बटन दबाने से पहले व्यापारी के साथ जोर से अपने यूपीआई ऐप पर प्राप्तकर्ता का नाम सत्यापित करें।",
+    "reportedThisWeek": 11050,
+    "totalLossThisWeek": 12.8,
+    "risingState": "Punjab"
+  },
+  {
+    "weekId": "2026-W17",
+    "weekLabel": "Week of Apr 20–26, 2026",
+    "weekLabelHindi": "सप्ताह: 20–26 अप्रैल 2026",
+    "publishedAt": "2026-04-27T00:00:00.000Z",
+    "editorNote": "Deepfake voice clones and basic utility threats are heavily targeting parents and senior citizens.",
+    "editorNoteHindi": "डीपफेक वॉयस क्लोन और उपयोगिता के खतरे माता-पिता और वरिष्ठ नागरिकों को भारी निशाना बना रहे हैं।",
+    "topPatterns": [
+      {
+        "rank": 1,
+        "title": "AI Voice Clone Emergency Scam",
+        "titleHindi": "एआई वॉयस क्लोन आपातकालीन घोटाला",
+        "category": "Deepfake Fraud",
+        "isNew": true,
+        "isTrending": true,
+        "summary": "Scammers clone the voice of a son or daughter using AI tools. They call the parents claiming to be in an accident or arrested, crying and begging for immediate money transfer.",
+        "summaryHindi": "स्कैमर एआई का उपयोग करके बेटे या बेटी की आवाज को क्लोन करते हैं। वे माता-पिता को दुर्घटनाग्रस्त होने या गिरफ्तार होने का दावा करते हुए रोते हुए कॉल करते हैं।",
+        "howItWorks": "1. Scammer gets a 3-second audio clip of the victim's child from social media. 2. Uses AI to clone the voice. 3. Calls parents from an unknown number saying 'Maa, mera phone toot gaya hai, accident ho gaya'. 4. A fake 'police officer' takes the phone and demands bail money via UPI. 5. Panicked parents transfer funds immediately.",
+        "howItWorksHindi": "1. स्कैमर सोशल मीडिया से बच्चे की 3-सेकंड की ऑडियो क्लिप लेता है। 2. एआई का उपयोग करके आवाज को क्लोन करता है। 3. 'मां, मेरा फोन टूट गया है' कहकर कॉल करता है। 4. फर्जी पुलिसकर्मी यूपीआई के जरिए जमानत के पैसे मांगता है। 5. घबराए हुए माता-पिता तुरंत फंड ट्रांसफर कर देते हैं।",
+        "redFlags": [
+          "Call comes from an unknown number, not the child's saved contact.",
+          "High urgency and emotional manipulation (crying, screaming).",
+          "Refusal to answer personal family questions that an AI wouldn't know."
+        ],
+        "redFlagsHindi": [
+          "कॉल अज्ञात नंबर से आती है, बच्चे के सहेजे गए संपर्क से नहीं।",
+          "अत्यधिक जल्दबाजी और भावनात्मक हेरफेर (रोना, चिल्लाना)।",
+          "उन व्यक्तिगत पारिवारिक प्रश्नों का उत्तर देने से इनकार करना जो एआई को नहीं पता होंगे।"
+        ],
+        "whatToDo": "Hang up and immediately call your child on their real phone number. Establish a secret 'family safe word' to verify identities during emergencies.",
+        "whatToDoHindi": "फोन काट दें और तुरंत अपने बच्चे को उनके असली फोन नंबर पर कॉल करें। आपात स्थिति के दौरान पहचान सत्यापित करने के लिए एक 'फैमिली सेफ वर्ड' स्थापित करें।",
+        "targetedStates": ["Gujarat", "Delhi NCR"],
+        "targetedAgeGroup": "50-70 (Parents)",
+        "estimatedLossThisWeek": 180,
+        "realExampleScript": "Papa, main Rahul bol raha hun. Mera doston ke sath accident ho gaya hai police station mein hun. Police wala 50,000 maang raha hai warna FIR likh dega. Please iss number pe GPay kardo jaldi..."
+      },
+      {
+        "rank": 2,
+        "title": "Electricity Board Disconnection Threat",
+        "titleHindi": "बिजली बोर्ड कनेक्शन काटने की धमकी",
+        "category": "Impersonation",
+        "isNew": false,
+        "isTrending": true,
+        "summary": "Victims receive calls or SMS claiming their electricity bill from the previous month wasn't updated, and power will be cut tonight at 9:30 PM.",
+        "summaryHindi": "पीड़ितों को कॉल या एसएमएस प्राप्त होता है जिसमें दावा किया जाता है कि पिछले महीने का उनका बिजली बिल अपडेट नहीं हुआ था, और आज रात 9:30 बजे बिजली काट दी जाएगी।",
+        "howItWorks": "1. SMS arrives warning of power cut at 9:30 PM. 2. Victim calls the provided 'helpline' number. 3. Scammer says bill is paid but 'system update' is pending. 4. Asks victim to download AnyDesk or TeamViewer screen sharing app. 5. Scammer views victim's screen and steals OTPs while they make a '₹10 test payment'.",
+        "howItWorksHindi": "1. एसएमएस रात 9:30 बजे बिजली कटौती की चेतावनी देता है। 2. पीड़ित 'हेल्पलाइन' नंबर पर कॉल करता है। 3. स्कैमर 'सिस्टम अपडेट' लंबित होने की बात कहता है। 4. AnyDesk या TeamViewer डाउनलोड करने के लिए कहता है। 5. स्कैमर स्क्रीन देखकर ओटीपी चुरा लेता है।",
+        "redFlags": [
+          "Electricity boards never threaten immediate disconnection via SMS from a 10-digit mobile number.",
+          "Requests to download screen-sharing apps like AnyDesk.",
+          "Asking to make a nominal ₹10 or ₹5 payment for 'system verification'."
+        ],
+        "redFlagsHindi": [
+          "बिजली बोर्ड कभी भी 10-अंकीय मोबाइल नंबर से एसएमएस के माध्यम से बिजली काटने की धमकी नहीं देते हैं।",
+          "AnyDesk जैसे स्क्रीन-शेयरिंग ऐप डाउनलोड करने का अनुरोध।",
+          "'सिस्टम सत्यापन' के लिए ₹10 या ₹5 का मामूली भुगतान करने के लिए कहना।"
+        ],
+        "whatToDo": "Ignore the message completely. Verify your bill status only on your official state electricity board app or trusted UPI apps.",
+        "whatToDoHindi": "संदेश को पूरी तरह से अनदेखा करें। अपने बिल की स्थिति केवल अपने आधिकारिक राज्य बिजली बोर्ड ऐप या विश्वसनीय यूपीआई ऐप पर सत्यापित करें।",
+        "targetedStates": ["Maharashtra", "Uttar Pradesh"],
+        "targetedAgeGroup": "40+",
+        "estimatedLossThisWeek": 120,
+        "realExampleScript": "Dear Customer, your electricity power will be disconnected tonight at 9.30 PM from electricity office because your previous month bill was not update. Contact our electricity officer 9876543210 immediately."
+      },
+      {
+        "rank": 3,
+        "title": "Instagram Crypto Trading DMs",
+        "titleHindi": "इंस्टाग्राम क्रिप्टो ट्रेडिंग डीएम",
+        "category": "Investment Fraud",
+        "isNew": false,
+        "isTrending": false,
+        "summary": "Hackers take over verified Instagram accounts and post stories showing huge profits from crypto trading. They then message followers to 'help' them invest.",
+        "summaryHindi": "हैकर्स सत्यापित इंस्टाग्राम खातों पर कब्जा कर लेते हैं और क्रिप्टो ट्रेडिंग से भारी मुनाफा दिखाने वाली कहानियां पोस्ट करते हैं। फिर वे अनुयायियों को निवेश में 'मदद' करने के लिए संदेश भेजते हैं।",
+        "howItWorks": "1. Your friend's Instagram account gets hacked. 2. Hacker posts a story: 'I just made 5 lakh in 2 days from crypto! Ask me how'. 3. You reply to the story. 4. 'Friend' directs you to a fake trading website and asks you to deposit ₹10,000. 5. The platform shows fake profits, but demands high 'withdrawal fees' when you try to cash out.",
+        "howItWorksHindi": "1. आपके दोस्त का इंस्टाग्राम अकाउंट हैक हो जाता है। 2. हैकर एक कहानी पोस्ट करता है: 'मैंने क्रिप्टो से 2 दिनों में 5 लाख कमाए!'। 3. आप कहानी का उत्तर देते हैं। 4. 'दोस्त' आपको फर्जी वेबसाइट पर निर्देशित करता है। 5. प्लेटफॉर्म नकली मुनाफा दिखाता है, लेकिन निकासी शुल्क मांगता है।",
+        "redFlags": [
+          "A friend suddenly talking about massive crypto wealth out of character.",
+          "Guaranteed high returns with zero risk.",
+          "Pressure to invest quickly before 'the window closes'."
+        ],
+        "redFlagsHindi": [
+          "एक दोस्त अचानक चरित्र के विपरीत बड़े पैमाने पर क्रिप्टो धन के बारे में बात कर रहा है।",
+          "शून्य जोखिम के साथ गारंटीकृत उच्च रिटर्न।",
+          "'विंडो बंद होने' से पहले जल्दी निवेश करने का दबाव।"
+        ],
+        "whatToDo": "Call your friend on the phone to check if their account was hacked. Do not send money to any unverified trading platform. Report the compromised account.",
+        "whatToDoHindi": "अपने दोस्त को फोन पर कॉल करके देखें कि क्या उनका अकाउंट हैक हो गया था। किसी असत्यापित ट्रेडिंग प्लेटफॉर्म पर पैसे न भेजें।",
+        "targetedStates": ["Pan India"],
+        "targetedAgeGroup": "18-30",
+        "estimatedLossThisWeek": 95,
+        "realExampleScript": "Bro, I hired this expert trader and he turned my 10k into 50k in 3 hours. It's totally legit. Want me to introduce you? Just register on this link."
+      }
+    ],
+    "statOfTheWeek": {
+      "headline": "AI Scams Rising Sharply",
+      "headlineHindi": "एआई घोटालों में तेजी से वृद्धि",
+      "value": "200+ Cases",
+      "context": "Reported deepfake and AI voice clone scams this week across metro cities.",
+      "contextHindi": "इस सप्ताह मेट्रो शहरों में डीपफेक और एआई वॉयस क्लोन घोटालों की रिपोर्ट की गई।",
+      "source": "Cyber Crime Portal Data"
+    },
+    "safetyReminder": "If a loved one calls from an unknown number in an emergency, ask them a personal question only they would know.",
+    "safetyReminderHindi": "यदि कोई प्रियजन आपात स्थिति में किसी अज्ञात नंबर से कॉल करता है, तो उनसे एक व्यक्तिगत प्रश्न पूछें जो केवल वे ही जानते हों।",
+    "reportedThisWeek": 13100,
+    "totalLossThisWeek": 15.2,
+    "risingState": "Gujarat"
+  },
+  {
+    "weekId": "2026-W16",
+    "weekLabel": "Week of Apr 13–19, 2026",
+    "weekLabelHindi": "सप्ताह: 13–19 अप्रैल 2026",
+    "publishedAt": "2026-04-20T00:00:00.000Z",
+    "editorNote": "Tax season triggers highly convincing Income Tax notice frauds and malicious Android apps.",
+    "editorNoteHindi": "कर का मौसम अत्यधिक आश्वस्त करने वाले आयकर नोटिस धोखाधड़ी और दुर्भावनापूर्ण एंड्रॉइड ऐप को ट्रिगर करता है।",
+    "topPatterns": [
+      {
+        "rank": 1,
+        "title": "Fake Income Tax Notice PDF",
+        "titleHindi": "फर्जी आयकर नोटिस पीडीएफ",
+        "category": "Phishing & Extortion",
+        "isNew": false,
+        "isTrending": true,
+        "summary": "With tax season approaching, scammers email realistic-looking PDF notices claiming tax evasion. They demand an immediate 'processing fee' or penalty to avoid court.",
+        "summaryHindi": "टैक्स का मौसम आते ही, स्कैमर टैक्स चोरी का दावा करने वाले यथार्थवादी दिखने वाले पीडीएफ नोटिस ईमेल करते हैं।",
+        "howItWorks": "1. Email arrives pretending to be from Income Tax Dept. 2. Attached is a fake 'Notice Section 143(1)' PDF. 3. Notice claims a tax discrepancy and a ₹15,000 penalty. 4. Victim clicks the link inside the PDF to 'pay penalty'. 5. Fake portal collects credit card details.",
+        "howItWorksHindi": "1. आयकर विभाग का नाटक करने वाला ईमेल आता है। 2. एक फर्जी 'नोटिस सेक्शन 143(1)' पीडीएफ संलग्न है। 3. नोटिस में टैक्स विसंगति का दावा किया गया है। 4. पीड़ित पीडीएफ के अंदर के लिंक पर क्लिक करता है। 5. फर्जी पोर्टल क्रेडिट कार्ड का विवरण एकत्र करता है।",
+        "redFlags": [
+          "Email sent from a generic domain (e.g., incometax-india@gmail.com) instead of @incometax.gov.in.",
+          "Notice demands payment to an individual's UPI ID or personal bank account.",
+          "Threats of immediate legal action without prior communication."
+        ],
+        "redFlagsHindi": [
+          "आधिकारिक के बजाय सामान्य डोमेन (जैसे, incometax-india@gmail.com) से भेजा गया ईमेल।",
+          "नोटिस किसी व्यक्ति के यूपीआई आईडी या व्यक्तिगत बैंक खाते में भुगतान की मांग करता है।",
+          "पूर्व संचार के बिना तत्काल कानूनी कार्रवाई की धमकी।"
+        ],
+        "whatToDo": "Do not reply or click links. Log in directly to the official Income Tax e-filing portal (incometax.gov.in) to check for genuine notices.",
+        "whatToDoHindi": "उत्तर न दें या लिंक पर क्लिक न करें। वास्तविक नोटिस की जांच करने के लिए सीधे आधिकारिक ई-फाइलिंग पोर्टल (incometax.gov.in) पर लॉग इन करें।",
+        "targetedStates": ["Pan India"],
+        "targetedAgeGroup": "30+",
+        "estimatedLossThisWeek": 110,
+        "realExampleScript": "Notice under section 143(1). Dear Taxpayer, an anomaly of Rs. 45,000 has been detected in your ITR. To avoid prosecution and account freeze, pay the penalty of Rs. 5000 immediately via the link below."
+      },
+      {
+        "rank": 2,
+        "title": "Bank Update APK Malware",
+        "titleHindi": "बैंक अपडेट एपीके मैलवेयर",
+        "category": "Malware",
+        "isNew": true,
+        "isTrending": true,
+        "summary": "Scammers send WhatsApp messages disguised as your bank, asking you to install a mandatory 'Security Update APK'. The app actually forwards all your OTPs to the scammer.",
+        "summaryHindi": "स्कैमर आपके बैंक के रूप में प्रच्छन्न व्हाट्सएप संदेश भेजते हैं, जिसमें एक 'सिक्योरिटी अपडेट एपीके' इंस्टॉल करने के लिए कहा जाता है। ऐप वास्तव में आपके सभी ओटीपी को स्कैमर को फॉरवर्ड करता है।",
+        "howItWorks": "1. Message on WhatsApp: 'Your HDFC net banking is blocked. Install new security app'. 2. Victim downloads the attached 'HDFC_Security_Update.apk'. 3. Android warns about installing from unknown sources, but victim bypasses it. 4. App asks for SMS permission. 5. Scammers initiate massive transfers, the app hides the incoming OTPs and forwards them.",
+        "howItWorksHindi": "1. व्हाट्सएप पर संदेश: 'आपका एचडीएफसी नेट बैंकिंग ब्लॉक है'। 2. पीड़ित संलग्न एपीके डाउनलोड करता है। 3. ऐप एसएमएस अनुमति मांगता है। 4. स्कैमर भारी स्थानान्तरण शुरू करते हैं, ऐप आने वाले ओटीपी को छुपाता है और उन्हें फॉरवर्ड करता है।",
+        "redFlags": [
+          "Banks NEVER send app updates via WhatsApp or Telegram as APK files.",
+          "The app asks for permission to 'View and Send SMS'.",
+          "App is not available on the official Google Play Store."
+        ],
+        "redFlagsHindi": [
+          "बैंक कभी भी एपीके फ़ाइलों के रूप में व्हाट्सएप के माध्यम से ऐप अपडेट नहीं भेजते हैं।",
+          "ऐप 'एसएमएस देखने और भेजने' की अनुमति मांगता है।",
+          "ऐप आधिकारिक Google Play Store पर उपलब्ध नहीं है।"
+        ],
+        "whatToDo": "Never install APK files sent on WhatsApp. Only download apps from the Google Play Store or Apple App Store. If installed, do a factory reset of your phone.",
+        "whatToDoHindi": "व्हाट्सएप पर भेजी गई एपीके फाइलों को कभी इंस्टॉल न करें। केवल Google Play Store या Apple App Store से ऐप डाउनलोड करें। यदि इंस्टॉल हो गया है, तो अपने फोन को फ़ैक्टरी रीसेट करें।",
+        "targetedStates": ["Delhi NCR", "Haryana", "Rajasthan"],
+        "targetedAgeGroup": "All Ages",
+        "estimatedLossThisWeek": 340,
+        "realExampleScript": "Dear Customer, PAN link mandate failed. Your account is put on hold. Kindly install the attached KYC Support App and complete verification to unblock: [HDFC_KYC_Support_v2.apk]"
+      },
+      {
+        "rank": 3,
+        "title": "Matrimonial NRI Romance Scam",
+        "titleHindi": "मैट्रिमोनियल एनआरआई रोमांस स्कैम",
+        "category": "Romance Fraud",
+        "isNew": false,
+        "isTrending": false,
+        "summary": "Fraudsters create fake profiles of 'NRI Doctors/Engineers' on matrimonial sites. After gaining trust, they claim to send expensive gifts but ask victims to pay customs clearance fees.",
+        "summaryHindi": "धोखेबाज वैवाहिक साइटों पर 'एनआरआई डॉक्टरों/इंजीनियरों' की फर्जी प्रोफाइल बनाते हैं। विश्वास हासिल करने के बाद, वे कस्टम क्लीयरेंस शुल्क का भुगतान करने के लिए कहते हैं।",
+        "howItWorks": "1. Scammer contacts woman on Shaadi/Jeevansathi as a wealthy UK doctor. 2. Chats on WhatsApp for a month, building deep emotional trust. 3. Says he is sending a surprise package with gold/iPhones. 4. Fake 'Customs Officer' calls saying the parcel is held at Delhi airport. 5. Victim is coerced into paying lakhs in 'taxes and bribes' to clear the parcel.",
+        "howItWorksHindi": "1. स्कैमर एक धनी यूके डॉक्टर के रूप में महिला से संपर्क करता है। 2. एक महीने तक व्हाट्सएप पर चैट करता है। 3. कहता है कि वह सोने/आईफ़ोन के साथ एक सरप्राइज पैकेज भेज रहा है। 4. फर्जी 'कस्टम अधिकारी' कॉल करता है। 5. पीड़ित को पार्सल क्लियर करने के लिए 'कर' में लाखों रुपये देने के लिए मजबूर किया जाता है।",
+        "redFlags": [
+          "Profile pictures look like models (stolen images).",
+          "The person refuses video calls due to 'bad network' or 'busy hospital shifts'.",
+          "Sudden expensive gifts arriving from abroad requiring 'customs fees' to a personal Indian bank account."
+        ],
+        "redFlagsHindi": [
+          "प्रोफ़ाइल चित्र मॉडल जैसे दिखते हैं (चोरी की गई छवियां)।",
+          "व्यक्ति वीडियो कॉल करने से इनकार करता है।",
+          "विदेश से आने वाले महंगे उपहार जिनके लिए 'सीमा शुल्क' की आवश्यकता होती है।"
+        ],
+        "whatToDo": "Never send money to someone you have only met online. Stop communicating immediately if they ask for money. Report the profile to the matrimonial site.",
+        "whatToDoHindi": "ऑनलाइन मिले व्यक्ति को कभी पैसे न भेजें। अगर वे पैसे मांगते हैं तो तुरंत संवाद करना बंद कर दें। मैट्रिमोनियल साइट पर प्रोफ़ाइल की रिपोर्ट करें।",
+        "targetedStates": ["Tamil Nadu", "Kerala", "Karnataka"],
+        "targetedAgeGroup": "28-45 (Women)",
+        "estimatedLossThisWeek": 280,
+        "realExampleScript": "Hello dear, the courier company just told me the gold jewelry and the iPhone I sent you is stuck at Delhi customs. They need ₹55,000 clearance tax. I can't pay from UK, please pay it, I will reimburse you when I fly to India next month."
+      }
+    ],
+    "statOfTheWeek": {
+      "headline": "APK Malware Infections Surge",
+      "headlineHindi": "एपीके मैलवेयर संक्रमण में वृद्धि",
+      "value": "15,000+ Devices",
+      "context": "Estimated number of Android phones infected by OTP-stealing malware this month.",
+      "contextHindi": "इस महीने ओटीपी-चोरी करने वाले मैलवेयर से संक्रमित एंड्रॉइड फोन की अनुमानित संख्या।",
+      "source": "Cybersecurity Threat Intel"
+    },
+    "safetyReminder": "Disable 'Install from Unknown Sources' in your Android settings to prevent accidental malware installation.",
+    "safetyReminderHindi": "दुर्घटनाग्रस्त मैलवेयर स्थापना को रोकने के लिए अपनी एंड्रॉइड सेटिंग्स में 'अज्ञात स्रोतों से इंस्टॉल करें' को अक्षम करें।",
+    "reportedThisWeek": 12800,
+    "totalLossThisWeek": 16.4,
+    "risingState": "Haryana"
+  },
+  {
+    "weekId": "2026-W15",
+    "weekLabel": "Week of Apr 06–12, 2026",
+    "weekLabelHindi": "सप्ताह: 06–12 अप्रैल 2026",
+    "publishedAt": "2026-04-13T00:00:00.000Z",
+    "editorNote": "Scammers are exploiting government services like Aadhaar and RBI announcements to create panic.",
+    "editorNoteHindi": "स्कैमर आधार और आरबीआई की घोषणाओं जैसी सरकारी सेवाओं का शोषण करके दहशत पैदा कर रहे हैं।",
+    "topPatterns": [
+      {
+        "rank": 1,
+        "title": "Fake Aadhaar Update Portal",
+        "titleHindi": "फर्जी आधार अपडेट पोर्टल",
+        "category": "Identity Theft",
+        "isNew": true,
+        "isTrending": true,
+        "summary": "Fake websites mimicking UIDAI are promoted via WhatsApp, claiming citizens must update their biometric data online to avoid Aadhaar deactivation.",
+        "summaryHindi": "यूआईडीएआई की नकल करने वाली फर्जी वेबसाइटों को व्हाट्सएप के माध्यम से प्रचारित किया जाता है, जिसमें दावा किया जाता है कि आधार निष्क्रिय होने से बचने के लिए नागरिकों को अपना बायोमेट्रिक डेटा ऑनलाइन अपडेट करना होगा।",
+        "howItWorks": "1. Message warns: 'Aadhaar will be blocked. Update document free'. 2. Link opens a site looking exactly like myaadhaar.uidai.gov.in. 3. Victim enters Aadhaar number, PAN, and uploads ID proofs. 4. Scammer steals this data to open fake bank accounts or take loans. 5. The site may also ask for a ₹50 'processing fee', stealing card details.",
+        "howItWorksHindi": "1. संदेश चेतावनी देता है: 'आधार ब्लॉक कर दिया जाएगा। 2. लिंक myaadhaar.uidai.gov.in जैसी दिखने वाली साइट खोलता है। 3. पीड़ित आधार नंबर, पैन दर्ज करता है और आईडी प्रूफ अपलोड करता है। 4. स्कैमर इस डेटा को चुरा लेता है। 5. साइट कार्ड विवरण चुराते हुए 'प्रोसेसिंग शुल्क' भी मांग सकती है।",
+        "redFlags": [
+          "Official UIDAI URLs always end in .gov.in (never .in, .com, or .org).",
+          "Biometrics (fingerprints/iris) CANNOT be updated online; you must visit an Aadhaar center.",
+          "High-pressure 'last warning' messages."
+        ],
+        "redFlagsHindi": [
+          "आधिकारिक UIDAI यूआरएल हमेशा .gov.in पर समाप्त होते हैं।",
+          "बायोमेट्रिक्स ऑनलाइन अपडेट नहीं किए जा सकते; आपको आधार केंद्र जाना होगा।",
+          "दबाव वाले 'अंतिम चेतावनी' संदेश।"
+        ],
+        "whatToDo": "Only use myaadhaar.uidai.gov.in. Lock your biometrics using the official mAadhaar app to prevent misuse.",
+        "whatToDoHindi": "केवल myaadhaar.uidai.gov.in का उपयोग करें। दुरुपयोग को रोकने के लिए आधिकारिक एमआधार ऐप का उपयोग करके अपने बायोमेट्रिक्स को लॉक करें।",
+        "targetedStates": ["Pan India"],
+        "targetedAgeGroup": "All Ages",
+        "estimatedLossThisWeek": 60,
+        "realExampleScript": "UIDAI ALERT: Dear citizen, your Aadhaar document update is pending for 10 years. Failure to update by tonight will result in bank account freeze. Click here to update free: https://uidai-update-portal.in"
+      },
+      {
+        "rank": 2,
+        "title": "Lucky Draw & Tax Clearance Scam",
+        "titleHindi": "लकी ड्रा और टैक्स क्लीयरेंस स्कैम",
+        "category": "Advance Fee Fraud",
+        "isNew": false,
+        "isTrending": false,
+        "summary": "Victims receive a call or physical letter with a scratch card claiming they have won a Tata Safari or ₹25 Lakhs from a shopping portal like Naaptol/Snapdeal.",
+        "summaryHindi": "पीड़ितों को एक स्क्रैच कार्ड के साथ कॉल या पत्र मिलता है जिसमें दावा किया जाता है कि उन्होंने एक शॉपिंग पोर्टल से टाटा सफारी या ₹25 लाख जीते हैं।",
+        "howItWorks": "1. Victim scratches a card received in the mail, showing a jackpot win. 2. Calls the 'Toll Free' number on the card. 3. Fake executive confirms the win but says the victim must pay 1% TDS (Tax) to claim it. 4. Victim pays ₹25,000. 5. Scammer demands more for 'RTO registration' or 'processing', then vanishes.",
+        "howItWorksHindi": "1. पीड़ित मेल में प्राप्त कार्ड को स्क्रैच करता है, जिसमें जीत दिखाई देती है। 2. 'टोल फ्री' नंबर पर कॉल करता है। 3. नकली कार्यकारी जीत की पुष्टि करता है लेकिन कहता है कि 1% टीडीएस का भुगतान करना होगा। 4. पीड़ित ₹25,000 का भुगतान करता है। 5. स्कैमर और पैसे मांगता है, फिर गायब हो जाता है।",
+        "redFlags": [
+          "You won a contest you never entered.",
+          "You must pay money to receive money (genuine taxes are deducted from the prize, not paid upfront).",
+          "Poorly printed letters with fake government stamps."
+        ],
+        "redFlagsHindi": [
+          "आपने एक ऐसी प्रतियोगिता जीती है जिसमें आपने कभी भाग नहीं लिया।",
+          "पैसे प्राप्त करने के लिए आपको पैसे देने होंगे।",
+          "फर्जी सरकारी टिकटों के साथ खराब मुद्रित पत्र।"
+        ],
+        "whatToDo": "Tear up the scratch card. Do not call the numbers provided. Remember, if you have to pay to get a prize, it is a scam.",
+        "whatToDoHindi": "स्क्रैच कार्ड फाड़ दें। दिए गए नंबरों पर कॉल न करें। याद रखें, यदि आपको पुरस्कार प्राप्त करने के लिए भुगतान करना है, तो यह एक घोटाला है।",
+        "targetedStates": ["Madhya Pradesh", "Rajasthan", "Bihar"],
+        "targetedAgeGroup": "40+",
+        "estimatedLossThisWeek": 45,
+        "realExampleScript": "Namaskar sir, main Snapdeal head office se bol raha hun. Aapka number lucky draw mein 1st prize jeeta hai - Tata Safari. Gadi dispatch karne ke liye RTO aur TDS tax ka 35,000 deposit karna hoga."
+      },
+      {
+        "rank": 3,
+        "title": "Fake RBI Interest Rate Alert",
+        "titleHindi": "फर्जी आरबीआई ब्याज दर अलर्ट",
+        "category": "Phishing",
+        "isNew": false,
+        "isTrending": true,
+        "summary": "Exploiting recent news about RBI policies, scammers send SMS claiming your FD interest rate has been changed and you need to update your KYC to retain the old rate.",
+        "summaryHindi": "आरबीआई नीतियों के बारे में हालिया खबरों का फायदा उठाते हुए, स्कैमर एसएमएस भेजते हैं जिसमें दावा किया जाता है कि आपकी एफडी ब्याज दर बदल दी गई है।",
+        "howItWorks": "1. SMS claims: 'RBI mandate: FD rates dropping. Update KYC to lock current rate'. 2. Link goes to a fake banking portal. 3. Victim enters internet banking ID, password, and OTP. 4. Scammers use these to liquidate the victim's FDs and transfer funds out.",
+        "howItWorksHindi": "1. एसएमएस का दावा: 'आरबीआई जनादेश: एफडी दरें गिर रही हैं। केवाईसी अपडेट करें'। 2. लिंक नकली बैंकिंग पोर्टल पर जाता है। 3. पीड़ित नेट बैंकिंग आईडी, पासवर्ड और ओटीपी दर्ज करता है। 4. स्कैमर पीड़ित की एफडी को तोड़ देते हैं।",
+        "redFlags": [
+          "RBI never communicates directly with retail citizens via SMS regarding their personal bank accounts.",
+          "Urgency to 'lock' an interest rate online.",
+          "Links that do not match your bank's official URL."
+        ],
+        "redFlagsHindi": [
+          "आरबीआई कभी भी व्यक्तिगत बैंक खातों के संबंध में एसएमएस के माध्यम से खुदरा नागरिकों से सीधे संवाद नहीं करता है।",
+          "ऑनलाइन ब्याज दर 'लॉक' करने की जल्दबाजी।",
+          "ऐसे लिंक जो आपके बैंक के आधिकारिक यूआरएल से मेल नहीं खाते।"
+        ],
+        "whatToDo": "Do not click. Log in to your bank's official app to check your FD status. RBI does not manage personal accounts.",
+        "whatToDoHindi": "क्लिक न करें। अपनी एफडी स्थिति की जांच करने के लिए अपने बैंक के आधिकारिक ऐप पर लॉग इन करें।",
+        "targetedStates": ["Maharashtra", "Karnataka"],
+        "targetedAgeGroup": "45-65 (Seniors & Retirees)",
+        "estimatedLossThisWeek": 220,
+        "realExampleScript": "RBI ALERT: Interest rates for senior citizen FDs are reduced effective tonight. To maintain your 7.5% rate, verify your PAN here immediately: http://rbi-kyc-verify.com"
+      }
+    ],
+    "statOfTheWeek": {
+      "headline": "Identity Theft on the Rise",
+      "headlineHindi": "पहचान की चोरी में वृद्धि",
+      "value": "8,500+",
+      "context": "Complaints regarding stolen PAN/Aadhaar data used to open fraudulent bank accounts.",
+      "contextHindi": "फर्जी बैंक खाते खोलने के लिए इस्तेमाल किए गए चोरी हुए पैन/आधार डेटा के संबंध में शिकायतें।",
+      "source": "Financial Intelligence Unit"
+    },
+    "safetyReminder": "Use the mAadhaar app to 'Lock' your biometrics. You can easily unlock them temporarily when you need to use them.",
+    "safetyReminderHindi": "अपने बायोमेट्रिक्स को 'लॉक' करने के लिए एमआधार ऐप का उपयोग करें। जब आपको उनका उपयोग करने की आवश्यकता हो तो आप उन्हें अस्थायी रूप से अनलॉक कर सकते हैं।",
+    "reportedThisWeek": 11500,
+    "totalLossThisWeek": 10.5,
+    "risingState": "Madhya Pradesh"
+  },
+  {
+    "weekId": "2026-W14",
+    "weekLabel": "Week of Mar 30–Apr 05, 2026",
+    "weekLabelHindi": "सप्ताह: 30 मार्च–05 अप्रैल 2026",
+    "publishedAt": "2026-04-06T00:00:00.000Z",
+    "editorNote": "Logistics and education-themed scams dominate as academic sessions begin.",
+    "editorNoteHindi": "शैक्षणिक सत्र शुरू होते ही लॉजिस्टिक्स और शिक्षा-थीम वाले घोटालों का बोलबाला है।",
+    "topPatterns": [
+      {
+        "rank": 1,
+        "title": "FedEx/Customs Drug Parcel Scam",
+        "titleHindi": "फेडेक्स/कस्टम ड्रग पार्सल स्कैम",
+        "category": "Impersonation Extortion",
+        "isNew": false,
+        "isTrending": true,
+        "summary": "A highly organized extortion scam where victims are terrified into believing a courier package sent in their name contains illegal drugs or fake passports.",
+        "summaryHindi": "एक अत्यधिक संगठित जबरन वसूली घोटाला जहां पीड़ितों को यह विश्वास दिलाने के लिए डराया जाता है कि उनके नाम से भेजे गए एक कूरियर पैकेज में अवैध दवाएं हैं।",
+        "howItWorks": "1. Call from 'FedEx automated system' asking to press 1. 2. Fake executive says a parcel to Taiwan in your name was intercepted by customs with MDMA/Passports. 3. Call transferred to 'Mumbai Cyber Police'. 4. Fake police officer demands an immediate 'security deposit' to RBI to clear your name. 5. Money is lost forever.",
+        "howItWorksHindi": "1. 'फेडेक्स' से 1 दबाने के लिए कॉल। 2. कार्यकारी का कहना है कि ताइवान जाने वाले आपके पार्सल को कस्टम ने ड्रग्स के साथ रोक लिया है। 3. कॉल 'मुंबई साइबर पुलिस' को ट्रांसफर। 4. फर्जी पुलिस अधिकारी नाम साफ़ करने के लिए आरबीआई में 'सुरक्षा जमा' की मांग करता है। 5. पैसा हमेशा के लिए खो जाता है।",
+        "redFlags": [
+          "Law enforcement does not interrogate or clear names over phone/Skype.",
+          "Demanding money transferred to personal bank accounts to 'verify' funds.",
+          "The scammer tells you not to cut the call or tell your family."
+        ],
+        "redFlagsHindi": [
+          "कानून प्रवर्तन फोन/स्काइप पर पूछताछ नहीं करता है।",
+          "फंड को 'सत्यापित' करने के लिए व्यक्तिगत बैंक खातों में पैसा स्थानांतरित करने की मांग करना।",
+          "स्कैमर आपको कॉल न काटने या अपने परिवार को न बताने के लिए कहता है।"
+        ],
+        "whatToDo": "Cut the call immediately. Real police will issue a physical notice or visit your address, they do not ask for bail money on GPay.",
+        "whatToDoHindi": "तुरंत कॉल काट दें। असली पुलिस एक भौतिक नोटिस जारी करेगी या आपके पते पर आएगी, वे जीपे पर जमानत के पैसे नहीं मांगते हैं।",
+        "targetedStates": ["Maharashtra", "Telangana", "Karnataka"],
+        "targetedAgeGroup": "25-60",
+        "estimatedLossThisWeek": 550,
+        "realExampleScript": "Sir, FedEx customer service here. A parcel booked under your Aadhaar number to Taiwan has been seized by Andheri Customs. It contains 5 expired passports and 200g MDMA. I am transferring your call to Narcotics Bureau now."
+      },
+      {
+        "rank": 2,
+        "title": "Fake College Admission Portals",
+        "titleHindi": "फर्जी कॉलेज प्रवेश पोर्टल",
+        "category": "Phishing & Fraud",
+        "isNew": true,
+        "isTrending": true,
+        "summary": "Targeting anxious students and parents during admission season, scammers create exact replicas of prominent university websites to collect 'application fees'.",
+        "summaryHindi": "प्रवेश के मौसम के दौरान छात्रों और अभिभावकों को लक्षित करते हुए, स्कैमर 'आवेदन शुल्क' एकत्र करने के लिए प्रमुख विश्वविद्यालयों की वेबसाइटों की सटीक प्रतिकृतियां बनाते हैं।",
+        "howItWorks": "1. Scammer runs Google Ads for top colleges (e.g., 'Christ University Direct Admission'). 2. Student clicks ad and visits a visually identical fake site. 3. Fills out a lengthy application form (giving away personal data). 4. Pays ₹2,000-₹5,000 application fee via UPI. 5. Never receives an acknowledgment.",
+        "howItWorksHindi": "1. स्कैमर शीर्ष कॉलेजों के लिए Google विज्ञापन चलाता है। 2. छात्र विज्ञापन पर क्लिक करता है और एक फर्जी साइट पर जाता है। 3. लंबा आवेदन फॉर्म भरता है। 4. यूपीआई के माध्यम से ₹2,000-₹5,000 आवेदन शुल्क का भुगतान करता है। 5. कभी कोई पावती नहीं मिलती।",
+        "redFlags": [
+          "Site accessed via a 'Sponsored' Google Ad link.",
+          "URL has slight misspellings (e.g., christ-university-admissions.in instead of christuniversity.in).",
+          "Payment gateway asks for transfer to an individual's name rather than the institution."
+        ],
+        "redFlagsHindi": [
+          "'प्रायोजित' (Sponsored) विज्ञापन लिंक के माध्यम से एक्सेस की गई साइट।",
+          "यूआरएल में मामूली गलत वर्तनी है।",
+          "भुगतान गेटवे संस्थान के बजाय किसी व्यक्ति के नाम पर स्थानांतरण के लिए कहता है।"
+        ],
+        "whatToDo": "Type the college's official URL directly into your browser. Check the university's Wikipedia page or official AICTE/UGC listings for the correct domain.",
+        "whatToDoHindi": "सीधे अपने ब्राउज़र में कॉलेज का आधिकारिक यूआरएल टाइप करें। सही डोमेन के लिए विश्वविद्यालय का विकिपीडिया पेज जांचें।",
+        "targetedStates": ["Delhi", "Karnataka", "Tamil Nadu"],
+        "targetedAgeGroup": "17-21 (Students & Parents)",
+        "estimatedLossThisWeek": 75,
+        "realExampleScript": "Admissions open for B.Tech 2026 batch. Limited management quota seats available. Fill the application form and pay Rs.2500 registration fee to secure your slot."
+      },
+      {
+        "rank": 3,
+        "title": "EPFO Pension Helpline Fraud",
+        "titleHindi": "ईपीएफओ पेंशन हेल्पलाइन धोखाधड़ी",
+        "category": "Customer Care Fraud",
+        "isNew": false,
+        "isTrending": false,
+        "summary": "Senior citizens searching Google for 'EPFO helpline' call fake numbers planted by scammers, who then steal their life savings under the guise of 'PF release processing'.",
+        "summaryHindi": "वरिष्ठ नागरिक 'ईपीएफओ हेल्पलाइन' के लिए Google पर खोज कर स्कैमर्स द्वारा डाले गए फर्जी नंबरों पर कॉल करते हैं, जो फिर उनकी जीवन भर की बचत चुरा लेते हैं।",
+        "howItWorks": "1. Retiree searches Google for EPFO customer care. 2. Calls a fake number listed in a Google Maps review or ad. 3. Scammer says PF is stuck due to KYC failure. 4. Sends a link to download a screen-sharing app to 'help'. 5. Steals OTPs and empties bank accounts.",
+        "howItWorksHindi": "1. सेवानिवृत्त व्यक्ति ईपीएफओ कस्टमर केयर को गूगल करता है। 2. गूगल मैप्स रिव्यू में सूचीबद्ध एक फर्जी नंबर पर कॉल करता है। 3. स्कैमर कहता है कि पीएफ केवाईसी के कारण फंस गया है। 4. 'मदद' के लिए स्क्रीन-शेयरिंग ऐप डाउनलोड करने का लिंक भेजता है। 5. बैंक खाते खाली कर देता है।",
+        "redFlags": [
+          "Customer care numbers that look like personal 10-digit mobile numbers.",
+          "Officials asking you to download apps like AnyDesk, TeamViewer, or RustDesk.",
+          "Asking for your ATM PIN or CVV."
+        ],
+        "redFlagsHindi": [
+          "कस्टमर केयर नंबर जो व्यक्तिगत 10-अंकीय मोबाइल नंबरों की तरह दिखते हैं।",
+          "अधिकारी आपसे AnyDesk जैसे ऐप डाउनलोड करने के लिए कह रहे हैं।",
+          "आपका एटीएम पिन या सीवीवी मांगना।"
+        ],
+        "whatToDo": "Never search for customer care numbers on Google. Only find them on the official epfindia.gov.in website. Never install screen-sharing apps.",
+        "whatToDoHindi": "कभी भी गूगल पर कस्टमर केयर नंबर न खोजें। उन्हें केवल आधिकारिक epfindia.gov.in वेबसाइट पर खोजें। कभी भी स्क्रीन-शेयरिंग ऐप इंस्टॉल न करें।",
+        "targetedStates": ["Pan India"],
+        "targetedAgeGroup": "55+ (Retirees)",
+        "estimatedLossThisWeek": 140,
+        "realExampleScript": "Sir aapka PF claim reject ho gaya hai server error ki wajah se. Main AnyDesk app pe aapko process samjha deta hun, aapka paisa 10 minute mein account mein aa jayega."
+      }
+    ],
+    "statOfTheWeek": {
+      "headline": "Search Engine Poisoning",
+      "headlineHindi": "सर्च इंजन पॉइज़निंग",
+      "value": "Top 3 Results",
+      "context": "Fake customer care numbers often appear in the top 3 Google search results due to SEO manipulation.",
+      "contextHindi": "एसईओ हेरफेर के कारण फर्जी कस्टमर केयर नंबर अक्सर शीर्ष 3 Google खोज परिणामों में दिखाई देते हैं।",
+      "source": "Cyber Threat Report"
+    },
+    "safetyReminder": "If you are downloading an app while on a phone call with a 'customer care executive', you are almost certainly being scammed.",
+    "safetyReminderHindi": "यदि आप 'कस्टमर केयर एक्जीक्यूटिव' के साथ फोन कॉल पर कोई ऐप डाउनलोड कर रहे हैं, तो आपके साथ घोटाला हो रहा है।",
+    "reportedThisWeek": 10500,
+    "totalLossThisWeek": 14.1,
+    "risingState": "Telangana"
+  },
+  {
+    "weekId": "2026-W13",
+    "weekLabel": "Week of Mar 23–29, 2026",
+    "weekLabelHindi": "सप्ताह: 23–29 मार्च 2026",
+    "publishedAt": "2026-03-30T00:00:00.000Z",
+    "editorNote": "Sophisticated corporate attacks and rural-targeted government scheme frauds.",
+    "editorNoteHindi": "परिष्कृत कॉर्पोरेट हमले और ग्रामीण-लक्षित सरकारी योजना धोखाधड़ी।",
+    "topPatterns": [
+      {
+        "rank": 1,
+        "title": "Business Email Compromise (BEC)",
+        "titleHindi": "बिजनेस ईमेल कॉम्प्रोमाइज (BEC)",
+        "category": "Corporate Fraud",
+        "isNew": false,
+        "isTrending": true,
+        "summary": "Scammers spoof the email address of a company's CEO or Director, ordering the finance team to make an urgent, secret wire transfer to a 'new vendor'.",
+        "summaryHindi": "स्कैमर कंपनी के सीईओ के ईमेल पते को स्पूफ करते हैं, वित्त टीम को एक 'नए विक्रेता' को तत्काल, गुप्त वायर ट्रांसफर करने का आदेश देते हैं।",
+        "howItWorks": "1. Scammer registers a lookalike domain (e.g., @reliance-ltd.com instead of @reliance.com). 2. Emails the CFO posing as the CEO. 3. Claims they are in a confidential acquisition meeting. 4. Orders an urgent transfer of ₹50 Lakhs to a provided account. 5. Stresses secrecy, preventing the CFO from calling to verify.",
+        "howItWorksHindi": "1. स्कैमर एक समान डोमेन पंजीकृत करता है। 2. सीईओ बनकर सीएफओ को ईमेल करता है। 3. दावा करता है कि वे एक गोपनीय बैठक में हैं। 4. प्रदान किए गए खाते में ₹50 लाख के तत्काल हस्तांतरण का आदेश देता है। 5. गोपनीयता पर जोर देता है, सीएफओ को कॉल करने से रोकता है।",
+        "redFlags": [
+          "Urgent request for money bypassing normal procurement protocols.",
+          "Instructions to keep the transaction strictly confidential.",
+          "Slight alteration in the sender's email address domain."
+        ],
+        "redFlagsHindi": [
+          "सामान्य खरीद प्रोटोकॉल को दरकिनार करते हुए पैसे का तत्काल अनुरोध।",
+          "लेनदेन को सख्ती से गोपनीय रखने के निर्देश।",
+          "प्रेषक के ईमेल पते के डोमेन में मामूली बदलाव।"
+        ],
+        "whatToDo": "Implement a strict policy: any transfer request via email, even from the CEO, MUST be verified with a phone call or in-person conversation.",
+        "whatToDoHindi": "एक सख्त नीति लागू करें: ईमेल के माध्यम से कोई भी स्थानांतरण अनुरोध, यहां तक कि सीईओ से भी, फोन कॉल के साथ सत्यापित किया जाना चाहिए।",
+        "targetedStates": ["Maharashtra", "Karnataka", "Delhi NCR"],
+        "targetedAgeGroup": "Corporate Finance Teams",
+        "estimatedLossThisWeek": 1200,
+        "realExampleScript": "Ravi, I am in an urgent board meeting and cannot take calls. We are acquiring a new logistics partner. Wire Rs. 45 Lakhs to this account immediately so the deal goes through today. Keep this strictly confidential."
+      },
+      {
+        "rank": 2,
+        "title": "PM-KISAN Fake SMS Phishing",
+        "titleHindi": "पीएम-किसान फर्जी एसएमएस फ़िशिंग",
+        "category": "Phishing",
+        "isNew": false,
+        "isTrending": false,
+        "summary": "Targeting farmers expecting government subsidy transfers, scammers send SMS with links claiming their PM-KISAN installment is stuck due to KYC issues.",
+        "summaryHindi": "सरकारी सब्सिडी की उम्मीद कर रहे किसानों को लक्षित करते हुए, स्कैमर लिंक के साथ एसएमएस भेजते हैं जिसमें दावा किया जाता है कि उनकी पीएम-किसान किस्त केवाईसी के कारण फंस गई है।",
+        "howItWorks": "1. Farmer receives SMS in local language about ₹2,000 PM-KISAN installment. 2. Clicks link to update 'Aadhaar linking'. 3. Fake portal asks for Aadhaar and Bank account details. 4. Prompts to download an app or enter OTP. 5. Scammer withdraws funds from the farmer's account.",
+        "howItWorksHindi": "1. किसान को स्थानीय भाषा में एसएमएस मिलता है। 2. लिंक पर क्लिक करता है। 3. फर्जी पोर्टल आधार और बैंक खाता विवरण मांगता है। 4. ऐप डाउनलोड करने या ओटीपी दर्ज करने के लिए कहता है। 5. स्कैमर किसान के खाते से पैसे निकाल लेता है।",
+        "redFlags": [
+          "SMS sent from a personal mobile number.",
+          "Link looks like a random string instead of pmkisan.gov.in.",
+          "Asking for ATM PIN or online banking passwords."
+        ],
+        "redFlagsHindi": [
+          "व्यक्तिगत मोबाइल नंबर से भेजा गया एसएमएस।",
+          "लिंक pmkisan.gov.in के बजाय एक यादृच्छिक स्ट्रिंग (random string) जैसा दिखता है।",
+          "एटीएम पिन या ऑनलाइन बैंकिंग पासवर्ड मांगना।"
+        ],
+        "whatToDo": "Check PM-KISAN status only at the nearest CSC (Common Service Centre) or the official gov.in website. Ignore SMS links.",
+        "whatToDoHindi": "पीएम-किसान स्थिति की जांच केवल निकटतम सीएससी (कॉमन सर्विस सेंटर) या आधिकारिक gov.in वेबसाइट पर करें। एसएमएस लिंक पर ध्यान न दें।",
+        "targetedStates": ["Uttar Pradesh", "Bihar", "Rajasthan"],
+        "targetedAgeGroup": "Farmers / Rural areas",
+        "estimatedLossThisWeek": 35,
+        "realExampleScript": "Priya Kisan, aapka PM-KISAN ka 2000 rupaye KYC na hone ke karan rok diya gaya hai. Aaj hi is link par click karke update karein: bit.ly/pm-kisan-kyc"
+      },
+      {
+        "rank": 3,
+        "title": "Online Gaming Subscription Trap",
+        "titleHindi": "ऑनलाइन गेमिंग सदस्यता जाल",
+        "category": "Subscription Trap",
+        "isNew": true,
+        "isTrending": true,
+        "summary": "Teens playing mobile games see ads offering a free iPhone or gaming console for completing basic tasks. The final step tricks them into a recurring monthly subscription.",
+        "summaryHindi": "मोबाइल गेम खेलने वाले किशोर बुनियादी कार्यों को पूरा करने के लिए मुफ्त आईफोन की पेशकश करने वाले विज्ञापन देखते हैं। अंतिम चरण उन्हें आवर्ती मासिक सदस्यता में फंसाता है।",
+        "howItWorks": "1. Ad shows 'Spin the wheel to win iPhone 15'. 2. Teen spins and 'wins'. 3. Directed to a site asking for shipping details. 4. Site says 'Pay ₹50 shipping fee'. 5. Teen uses parents' card. 6. Fine print actually subscribes them to a ₹3,000/month useless service.",
+        "howItWorksHindi": "1. विज्ञापन दिखाता है 'आईफोन 15 जीतने के लिए स्पिन करें'। 2. किशोर स्पिन करता है और 'जीतता' है। 3. साइट '₹50 शिपिंग शुल्क' का भुगतान करने के लिए कहती है। 4. किशोर माता-पिता के कार्ड का उपयोग करता है। 5. बढ़िया प्रिंट वास्तव में उन्हें ₹3,000/माह की बेकार सेवा की सदस्यता दिलाता है।",
+        "redFlags": [
+          "Winning high-value prizes for doing absolutely nothing.",
+          "Asking for credit card details for a tiny 'shipping' fee.",
+          "Tiny, almost invisible terms and conditions at the bottom."
+        ],
+        "redFlagsHindi": [
+          "कुछ भी न करने के लिए उच्च मूल्य के पुरस्कार जीतना।",
+          "मामूली 'शिपिंग' शुल्क के लिए क्रेडिट कार्ड का विवरण मांगना।",
+          "नीचे छोटे, लगभग अदृश्य नियम और शर्तें।"
+        ],
+        "whatToDo": "Never give your credit/debit card to children for online games. Set transaction limits on your cards. If charged, dispute immediately with your bank.",
+        "whatToDoHindi": "ऑनलाइन गेम के लिए बच्चों को कभी भी अपना क्रेडिट/डेबिट कार्ड न दें। अपने कार्ड पर लेनदेन की सीमा निर्धारित करें। यदि शुल्क लिया जाता है, तो तुरंत बैंक के साथ विवाद करें।",
+        "targetedStates": ["Pan India"],
+        "targetedAgeGroup": "12-18 (Teens)",
+        "estimatedLossThisWeek": 25,
+        "realExampleScript": "(Found on Game Ad popup) Congratulations! You are the 100th visitor today. Claim your free iPhone 15 Pro Max now. Just pay ₹49 for courier charges using a credit card."
+      }
+    ],
+    "statOfTheWeek": {
+      "headline": "Corporate Phishing Costs",
+      "headlineHindi": "कॉर्पोरेट फ़िशिंग लागत",
+      "value": "₹350 Crore+",
+      "context": "Annual estimated loss for Indian MSMEs due to Business Email Compromise (BEC) attacks.",
+      "contextHindi": "बिजनेस ईमेल कॉम्प्रोमाइज (BEC) हमलों के कारण भारतीय MSME के लिए अनुमानित वार्षिक नुकसान।",
+      "source": "Corporate Security Audit"
+    },
+    "safetyReminder": "In corporate finance, implement 'Maker-Checker' systems. The person who inputs a transfer must be different from the person who approves it.",
+    "safetyReminderHindi": "कॉर्पोरेट वित्त में, 'मेकर-चेकर' सिस्टम लागू करें। जो व्यक्ति ट्रांसफर दर्ज करता है, वह उसे स्वीकृत करने वाले व्यक्ति से अलग होना चाहिए।",
+    "reportedThisWeek": 9800,
+    "totalLossThisWeek": 22.5,
+    "risingState": "Maharashtra"
+  },
+  {
+    "weekId": "2026-W12",
+    "weekLabel": "Week of Mar 16–22, 2026",
+    "weekLabelHindi": "सप्ताह: 16–22 मार्च 2026",
+    "publishedAt": "2026-03-23T00:00:00.000Z",
+    "editorNote": "Classic technical scams mixed with seasonal exam-time frauds.",
+    "editorNoteHindi": "मौसमी परीक्षा के समय की धोखाधड़ी के साथ मिश्रित क्लासिक तकनीकी घोटाले।",
+    "topPatterns": [
+      {
+        "rank": 1,
+        "title": "SIM Swap Fraud",
+        "titleHindi": "सिम स्वैप फ्रॉड",
+        "category": "Account Takeover",
+        "isNew": false,
+        "isTrending": false,
+        "summary": "Fraudsters collect your details, create a fake ID, and visit a telecom store to get a duplicate SIM card. Once active, your old SIM dies, and they receive all your banking OTPs.",
+        "summaryHindi": "धोखेबाज एक नकली आईडी बनाते हैं, और एक डुप्लिकेट सिम कार्ड प्राप्त करने के लिए टेलीकॉम स्टोर पर जाते हैं। एक बार सक्रिय होने पर, उन्हें आपके सभी बैंकिंग ओटीपी प्राप्त होते हैं।",
+        "howItWorks": "1. Scammer gathers your Aadhaar and banking info via phishing. 2. Calls you pretending to be from telecom, saying 'press 1' or send SMS to upgrade to 5G. 3. This initiates SIM swap. 4. Scammer uses fake ID at physical store to collect new SIM. 5. Your phone loses network; scammer empties bank account using OTPs.",
+        "howItWorksHindi": "1. स्कैमर आपकी जानकारी इकट्ठा करता है। 2. टेलीकॉम से होने का नाटक करते हुए कॉल करता है। 3. सिम स्वैप शुरू करता है। 4. भौतिक स्टोर पर नई सिम एकत्र करने के लिए नकली आईडी का उपयोग करता है। 5. आपके फोन का नेटवर्क चला जाता है; स्कैमर ओटीपी का उपयोग करके बैंक खाता खाली कर देता है।",
+        "redFlags": [
+          "Unexpected loss of mobile network signal for hours.",
+          "Receiving an SMS saying a request for a new SIM has been initiated.",
+          "Calls asking you to forward a specific SMS to a 121 / 198 number."
+        ],
+        "redFlagsHindi": [
+          "घंटों तक मोबाइल नेटवर्क सिग्नल का अप्रत्याशित नुकसान।",
+          "एसएमएस प्राप्त होना जिसमें कहा गया हो कि नए सिम के लिए अनुरोध शुरू कर दिया गया है।",
+          "कॉल में आपसे एक विशिष्ट एसएमएस को 121 / 198 नंबर पर अग्रेषित करने के लिए कहा जाता है।"
+        ],
+        "whatToDo": "If your phone loses signal unexpectedly for a long time, check from another phone. If SIM swap is suspected, immediately block your bank accounts and call your telecom provider.",
+        "whatToDoHindi": "यदि आपके फोन का सिग्नल अप्रत्याशित रूप से लंबे समय तक चला जाता है, तो तुरंत अपने बैंक खातों को ब्लॉक करें और अपने टेलीकॉम प्रदाता को कॉल करें।",
+        "targetedStates": ["Delhi NCR", "West Bengal"],
+        "targetedAgeGroup": "High Net-Worth Individuals",
+        "estimatedLossThisWeek": 260,
+        "realExampleScript": "Sir, your Airtel SIM will be deactivated in 2 hours for 5G network upgrade. To stop deactivation, please forward the SMS we just sent you back to 121."
+      },
+      {
+        "rank": 2,
+        "title": "Tech Support Pop-up Scam",
+        "titleHindi": "टेक सपोर्ट पॉप-अप स्कैम",
+        "category": "Tech Support Fraud",
+        "isNew": false,
+        "isTrending": false,
+        "summary": "While browsing the internet, a loud, unclosable warning pops up claiming your computer is infected with a virus, directing you to call a 'Toll-Free Microsoft Support' number.",
+        "summaryHindi": "इंटरनेट ब्राउज़ करते समय, एक चेतावनी पॉप अप होती है जिसमें दावा किया जाता है कि आपका कंप्यूटर वायरस से संक्रमित है, और 'Microsoft समर्थन' नंबर पर कॉल करने का निर्देश देता है।",
+        "howItWorks": "1. Victim visits a compromised website. 2. Browser goes full screen with red warnings and loud beeping. 3. Message says 'Windows Defender detected Trojan. Call 1800-xxx immediately'. 4. Victim calls. 5. Scammer charges ₹5000 to 'remove the virus' using AnyDesk.",
+        "howItWorksHindi": "1. ब्राउज़र लाल चेतावनियों के साथ पूर्ण स्क्रीन पर चला जाता है। 2. संदेश कहता है 'वायरस का पता चला है। 1800-xxx पर कॉल करें'। 3. पीड़ित कॉल करता है। 4. स्कैमर AnyDesk का उपयोग करके 'वायरस को हटाने' के लिए ₹5000 का शुल्क लेता है।",
+        "redFlags": [
+          "Browser locks up in full screen mode.",
+          "Microsoft or Apple NEVER put phone numbers in error messages.",
+          "Loud, alarming computer-generated voice."
+        ],
+        "redFlagsHindi": [
+          "ब्राउज़र फुल स्क्रीन मोड में लॉक हो जाता है।",
+          "Microsoft या Apple कभी भी त्रुटि संदेशों में फोन नंबर नहीं डालते हैं।",
+          "जोरदार, खतरनाक कंप्यूटर जनित आवाज।"
+        ],
+        "whatToDo": "Do not call the number. Simply press Alt+F4 (Windows) or Force Quit the browser (Mac). Restart your computer if necessary.",
+        "whatToDoHindi": "नंबर पर कॉल न करें। बस Alt+F4 दबाएं या ब्राउज़र को फोर्स क्विट करें। यदि आवश्यक हो तो अपने कंप्यूटर को पुनरारंभ करें।",
+        "targetedStates": ["Pan India"],
+        "targetedAgeGroup": "Seniors & Non-tech savvy users",
+        "estimatedLossThisWeek": 90,
+        "realExampleScript": "(Computer Voice) CRITICAL ALERT. Your computer is infected with Zeus virus. Do not turn off your computer or your data will be destroyed. Call Microsoft Support at the toll-free number on your screen immediately."
+      },
+      {
+        "rank": 3,
+        "title": "Fake Scholarship Portals",
+        "titleHindi": "फर्जी छात्रवृत्ति (स्कॉलरशिप) पोर्टल",
+        "category": "Data Theft",
+        "isNew": true,
+        "isTrending": true,
+        "summary": "Timed around board exams and college results, scammers advertise fake government 'merit scholarships' on WhatsApp to harvest Aadhaar and bank details of students.",
+        "summaryHindi": "बोर्ड परीक्षाओं के आस-पास, स्कैमर व्हाट्सएप पर छात्रों के आधार और बैंक विवरण प्राप्त करने के लिए फर्जी सरकारी 'मेरिट स्कॉलरशिप' का विज्ञापन करते हैं।",
+        "howItWorks": "1. WhatsApp forward claims 'PM Vidyarthi Yojna giving ₹15,000 to all students above 70%'. 2. Link goes to a fake site. 3. Students upload marks card, Aadhaar, and bank account for 'direct transfer'. 4. Site asks for a ₹250 'processing fee'. 5. Scammers steal data and fee.",
+        "howItWorksHindi": "1. व्हाट्सएप फॉरवर्ड का दावा है 'पीएम विद्यार्थी योजना ₹15,000 दे रही है'। 2. लिंक एक फर्जी साइट पर जाता है। 3. छात्र अंक कार्ड, आधार और बैंक खाता अपलोड करते हैं। 4. साइट ₹250 'प्रोसेसिंग शुल्क' मांगती है। 5. स्कैमर डेटा और शुल्क चुराते हैं।",
+        "redFlags": [
+          "Government scholarships are managed through the official National Scholarship Portal (scholarships.gov.in).",
+          "Asking for an upfront 'processing fee' to disburse a scholarship.",
+          "Viral WhatsApp links ending in .xyz or .blogspot."
+        ],
+        "redFlagsHindi": [
+          "सरकारी छात्रवृत्तियां आधिकारिक राष्ट्रीय छात्रवृत्ति पोर्टल (scholarships.gov.in) के माध्यम से प्रबंधित की जाती हैं।",
+          "छात्रवृत्ति वितरित करने के लिए अग्रिम 'प्रसंस्करण शुल्क' मांगना।",
+          ".xyz या .blogspot पर समाप्त होने वाले वायरल व्हाट्सएप लिंक।"
+        ],
+        "whatToDo": "Only apply for scholarships on the official National Scholarship Portal (NSP) or your State Government's official educational portals.",
+        "whatToDoHindi": "केवल आधिकारिक राष्ट्रीय छात्रवृत्ति पोर्टल (NSP) या अपने राज्य सरकार के आधिकारिक शैक्षिक पोर्टलों पर छात्रवृत्ति के लिए आवेदन करें।",
+        "targetedStates": ["Uttar Pradesh", "Bihar", "Jharkhand"],
+        "targetedAgeGroup": "15-20 (Students)",
+        "estimatedLossThisWeek": 30,
+        "realExampleScript": "Free Laptop and Rs. 15,000 Scholarship for all students who scored above 65% in 10th/12th board. Register today before the deadline closes! Click here: pradhanmantri-laptop-yojna.in"
+      }
+    ],
+    "statOfTheWeek": {
+      "headline": "Student Data Harvesting",
+      "headlineHindi": "छात्र डेटा हार्वेस्टिंग",
+      "value": "2 Million+",
+      "context": "Estimated number of student records collected by fake scholarship portals this month.",
+      "contextHindi": "इस महीने फर्जी स्कॉलरशिप पोर्टल्स द्वारा एकत्र किए गए छात्र रिकॉर्ड की अनुमानित संख्या।",
+      "source": "Cyber Threat Intel"
+    },
+    "safetyReminder": "If your phone suddenly loses network for several hours while others around you have signal, it could be a SIM swap attack.",
+    "safetyReminderHindi": "यदि आपके फोन का नेटवर्क अचानक कई घंटों के लिए चला जाता है जबकि आपके आस-पास के अन्य लोगों के पास सिग्नल है, तो यह एक सिम स्वैप हमला हो सकता है।",
+    "reportedThisWeek": 8200,
+    "totalLossThisWeek": 11.2,
+    "risingState": "Delhi NCR"
+  }
+]

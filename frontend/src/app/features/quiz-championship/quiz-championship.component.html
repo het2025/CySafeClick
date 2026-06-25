@@ -1,0 +1,101 @@
+<div class="quiz-container">
+  <!-- Intro Screen -->
+  <div class="intro-screen" *ngIf="quizState === 'intro'">
+    <header class="quiz-header">
+      <h1>{{ t.translate('QUIZ.TITLE') }}</h1>
+      <p>{{ t.translate('QUIZ.DESC') }}</p>
+    </header>
+
+    <div class="rules-card">
+      <h2>{{ t.translate('QUIZ.RULES_TITLE') }}</h2>
+      <ul>
+        <li *ngFor="let rule of t.translateData('QUIZ.RULES_LIST')">{{ rule }}</li>
+      </ul>
+      
+      <div class="attempt-status">
+        <p *ngIf="!canAttempt()" class="text-danger">{{ t.translate('QUIZ.ALREADY_DONE') }}</p>
+        <button class="start-btn" (click)="startQuiz()" [disabled]="!canAttempt() || questions.length === 0">
+          {{ questions.length > 0 ? t.translate('QUIZ.START_BTN') : t.translate('QUIZ.LOADING') }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Leaderboard Preview -->
+    <div class="leaderboard-section">
+      <h2>{{ t.translate('QUIZ.LEADERBOARD_TITLE') }}</h2>
+      <div class="lb-table">
+        <div class="lb-row" *ngFor="let entry of leaderboard" [class.highlight]="entry.isUser">
+          <span class="lb-rank">#{{ entry.rank }}</span>
+          <span class="lb-name">{{ entry.name }}</span>
+          <span class="lb-score">{{ entry.score }} pts</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Active Quiz Screen -->
+  <div class="active-screen" *ngIf="quizState === 'active'">
+    <div class="quiz-top-bar">
+      <span class="q-progress">
+        {{ t.translate('QUIZ.PROGRESS').replace('{{ current }}', (currentIndex + 1).toString()) }}
+      </span>
+      <span class="q-score">
+        {{ t.translate('QUIZ.SCORE').replace('{{ score }}', score.toString()) }}
+      </span>
+      <span class="q-timer" [class.danger]="timer < 10">⏱️ {{ timer }}s</span>
+    </div>
+
+    <div class="question-card" *ngIf="questions[currentIndex] as q">
+      <span class="category-badge">{{ q.category }}</span>
+      <h2>{{ q.question }}</h2>
+      
+      <div class="options-grid">
+        <button class="opt-btn" 
+                *ngFor="let opt of q.options; let i = index"
+                [disabled]="selectedOption !== null"
+                [class.selected]="selectedOption === i"
+                [class.correct]="selectedOption !== null && i === q.correctIndex"
+                [class.wrong]="selectedOption === i && i !== q.correctIndex"
+                (click)="selectOption(i)">
+          {{ opt }}
+        </button>
+      </div>
+      
+      <!-- Explanation shown after answering -->
+      <div class="explanation-box" *ngIf="selectedOption !== null">
+        <h4 [class.text-safe]="selectedOption === q.correctIndex" [class.text-danger]="selectedOption !== q.correctIndex">
+          {{ selectedOption === q.correctIndex ? t.translate('COMMON.DONE') : (selectedOption === -1 ? t.translate('QUIZ.TIME_OUT') : t.translate('COMMON.ERROR')) }}
+        </h4>
+        <p>{{ q.explanation }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Screen -->
+  <div class="result-screen" *ngIf="quizState === 'result'">
+    <div class="trophy-icon">🏆</div>
+    <h1>{{ t.translate('QUIZ.COMPLETED') }}</h1>
+    
+    <div class="score-card">
+      <div class="final-score">{{ score }}</div>
+      <p>Total Points Earned</p>
+    </div>
+
+    <div class="certificate-section" *ngIf="score >= 80">
+      <div class="cert-preview">
+        <h3>{{ t.translate('QUIZ.CERT_TITLE') }}</h3>
+        <p>{{ t.translate('QUIZ.CERT_SUB').replace('scored', 'scored ' + score) }} <strong>{{ userName }}</strong></p>
+      </div>
+      <div class="cert-form">
+        <input type="text" [(ngModel)]="userName" [placeholder]="t.translate('QUIZ.NAME_PLACEHOLDER')">
+        <button class="cert-btn" (click)="downloadCertificate()">{{ t.translate('QUIZ.CERT_BTN') }}</button>
+      </div>
+    </div>
+
+    <div class="encouragement" *ngIf="score < 80">
+      <p>{{ t.translate('QUIZ.ENCOURAGEMENT') }}</p>
+    </div>
+
+    <button class="home-btn" (click)="quizState = 'intro'">{{ t.translate('QUIZ.BACK_BTN') }}</button>
+  </div>
+</div>

@@ -1,0 +1,86 @@
+<div class="safeclick-container number-lookup-page">
+  <header class="page-header text-center">
+    <h1>Number Safety Check</h1>
+    <p class="subtitle">Educational guidance only. SafeClick does not publish a public scam-number database.</p>
+    <p class="subtitle">We do not store or transmit numbers to our servers.</p>
+  </header>
+
+  <section class="search-section">
+    <div class="search-box">
+      <div class="input-wrapper">
+        <span class="icon">🔍</span>
+        <input
+          type="text"
+          [ngModel]="searchInput()"
+          (ngModelChange)="searchInput.set($event); formatInput()"
+          (keyup.enter)="search()"
+          placeholder="Enter any format: 9876543210 or +91-98765-43210"
+          autofocus
+        />
+        <button class="btn-primary" (click)="search()" [disabled]="isLoading()">
+          {{ isLoading() ? 'Checking...' : 'Check' }}
+        </button>
+      </div>
+
+      <div class="error-msg" *ngIf="validationError()">
+        {{ validationError() }}
+      </div>
+    </div>
+  </section>
+
+  <section class="result-section" *ngIf="lookupResult() as result">
+    <div class="result-card state-unknown">
+      <div class="card-header bg-safe">
+        <h2>ℹ️ No public database</h2>
+      </div>
+      <div class="card-body">
+        <p class="caution-text">{{ result.message }}</p>
+        <p class="caution-text"><strong>{{ result.suggestedAction }}</strong></p>
+        <ul class="meta-list">
+          <li><strong>Approx. Telecom:</strong> {{service.getTelecomFromNumber(searchInput())}}</li>
+          <li><strong>Approx. Region:</strong> {{service.getStateFromNumber(searchInput())}}</li>
+        </ul>
+        
+        <div class="suggestion-boxes">
+          <a href="https://www.truecaller.com/search/in/{{service.normalizeNumber(searchInput())}}" target="_blank" class="suggest-box" rel="noopener">
+            Check on Truecaller →
+          </a>
+          <a href="https://cybercrime.gov.in" target="_blank" class="suggest-box" rel="noopener">
+            Report on Cybercrime Portal →
+          </a>
+          <a href="tel:1930" class="suggest-box">
+            Call 1930 (Financial Fraud)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dashboard-section" *ngIf="!lookupResult()">
+    <div class="protection-tips">
+      <h3>How to protect yourself</h3>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="icon">📵</div>
+          <p>Never answer calls from unknown numbers if you're not expecting them.</p>
+        </div>
+        <div class="tip-card">
+          <div class="icon">💸</div>
+          <p>Any call demanding immediate money or KYC updates is a scam.</p>
+        </div>
+        <div class="tip-card">
+          <div class="icon">🏛️</div>
+          <p>Government agencies don't call asking for UPI payment or "digital arrest".</p>
+        </div>
+        <div class="tip-card">
+          <div class="icon">🛡️</div>
+          <p>Use DND (Do Not Disturb) — SMS <strong>START</strong> to 1909.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    <p>This tool is for awareness only. For verified action, use official channels like 1930 and cybercrime.gov.in.</p>
+  </div>
+</div>

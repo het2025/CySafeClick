@@ -1,0 +1,93 @@
+<div class="fact-checker-container">
+  <header class="page-header">
+    <h1>Misinformation Risk Checker</h1>
+    <p>This tool flags suspicious patterns in forwards, claims, and links. It does not prove whether a claim is true; verify with the trusted sources listed below.</p>
+  </header>
+
+  <div class="checker-layout">
+    
+    <!-- Main Tool -->
+    <div class="tool-section">
+      <div class="tabs">
+        <button [class.active]="activeTab === 'text'" (click)="switchTab('text')">{{ t.translate('FACT.TAB_MSG') }}</button>
+        <button [class.active]="activeTab === 'claim'" (click)="switchTab('claim')">{{ t.translate('FACT.TAB_CLAIM') }}</button>
+        <button [class.active]="activeTab === 'url'" (click)="switchTab('url')">{{ t.translate('FACT.TAB_URL') }}</button>
+      </div>
+
+      <div class="input-area">
+        <label *ngIf="activeTab === 'text'">{{ t.translate('FACT.LABEL_MSG') }}</label>
+        <label *ngIf="activeTab === 'claim'">{{ t.translate('FACT.LABEL_CLAIM') }}</label>
+        <label *ngIf="activeTab === 'url'">{{ t.translate('FACT.LABEL_URL') }}</label>
+
+        <textarea [(ngModel)]="inputText" rows="6" [placeholder]="t.translate('FACT.PLACEHOLDER')"></textarea>
+        
+        <button class="primary-btn" (click)="checkFact()" [disabled]="!inputText.trim() || isChecking">
+          {{ isChecking ? t.translate('FACT.ANALYZING') : t.translate('FACT.CHECK_BTN') }}
+        </button>
+      </div>
+
+      <!-- Results Area -->
+      <div class="results-area" *ngIf="result && !isChecking">
+        <div class="verdict-banner" [ngClass]="getVerdictClass()">
+          <h2>{{ getVerdictText() }}</h2>
+          <p>{{ t.translate('FACT.SCORE') }}: {{ result.credibilityScore }}/100</p>
+          <p class="verdict-note">Use this as a triage score only. Confirm important claims with official or reputable sources before sharing.</p>
+        </div>
+
+        <div class="flags-grid">
+          <div class="red-flags-card" *ngIf="result.redFlags.length > 0">
+            <h3>{{ t.translate('FACT.RED_FLAGS') }}</h3>
+            <ul>
+              <li *ngFor="let flag of result.redFlags">{{ flag }}</li>
+            </ul>
+          </div>
+          <div class="green-flags-card" *ngIf="result.greenFlags.length > 0">
+            <h3>{{ t.translate('FACT.GREEN_FLAGS') }}</h3>
+            <ul>
+              <li *ngFor="let flag of result.greenFlags">{{ flag }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tips-card">
+          <h3>{{ t.translate('FACT.TIPS_TITLE') }}</h3>
+          <ul>
+            <li *ngFor="let tip of result.checkingTips">{{ tip }}</li>
+          </ul>
+        </div>
+        
+        <button class="secondary-btn" (click)="reset()">{{ t.translate('COMMON.SCAN') }}</button>
+      </div>
+    </div>
+
+    <!-- Verification Resources Sidebar -->
+    <aside class="sidebar-section">
+      <div class="resources-card">
+        <h2>{{ t.translate('FACT.RESOURCES_TITLE') }}</h2>
+        <p>{{ t.translate('FACT.RESOURCES_SUB') }}</p>
+        
+        <ul class="resource-list">
+          <li><a href="https://pib.gov.in/factcheck" target="_blank"><strong>PIB Fact Check</strong><br>Official Govt of India</a></li>
+          <li><a href="https://www.vishvasnews.com/" target="_blank"><strong>Vishvas News</strong><br>Certified Indian fact-checker</a></li>
+          <li><a href="https://www.altnews.in/" target="_blank"><strong>Alt News</strong><br>Independent fact-checking</a></li>
+          <li><a href="https://www.boomlive.in/" target="_blank"><strong>Boom Live</strong><br>Digital journalism</a></li>
+          <li><a href="https://factly.in/" target="_blank"><strong>Factly</strong><br>Data journalism</a></li>
+        </ul>
+
+        <div class="whatsapp-helpline">
+          <h3>{{ t.translate('FACT.WA_HELPLINE') }}</h3>
+          <p>{{ t.translate('FACT.WA_SUB') }}</p>
+          <a href="https://wa.me/918799711259" target="_blank" class="wa-btn">💬 +91-8799711259</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <h2>{{ t.translate('FACT.GUIDE_TITLE') }}</h2>
+        <ol>
+          <li *ngFor="let step of t.translateData('FACT.GUIDE_STEPS')">{{ step }}</li>
+        </ol>
+      </div>
+    </aside>
+
+  </div>
+</div>

@@ -1,0 +1,102 @@
+<div class="job-scam-container">
+  <header class="page-header">
+    <h1>{{ t.translate('JOB_SCAM.TITLE') }}</h1>
+    <p>{{ t.translate('JOB_SCAM.SUBTITLE') }}</p>
+  </header>
+
+  <div class="main-content">
+    <!-- Analyzer Tool -->
+    <div class="analyzer-card">
+      <div class="input-section" *ngIf="!result && !isAnalyzing">
+        <label for="jobPost">{{ t.translate('JOB_SCAM.LABEL') }}</label>
+        <textarea id="jobPost" 
+                  [(ngModel)]="jobPostText" 
+                  rows="6" 
+                  [placeholder]="t.translate('JOB_SCAM.PLACEHOLDER')"></textarea>
+        <button class="analyze-btn" (click)="analyzePost()" [disabled]="!jobPostText.trim()">{{ t.translate('JOB_SCAM.ANALYZE_BTN') }}</button>
+      </div>
+
+      <div class="analyzing-state" *ngIf="isAnalyzing">
+        <div class="spinner"></div>
+        <p>{{ t.translate('JOB_SCAM.ANALYZING') }}</p>
+      </div>
+
+      <div class="result-section" *ngIf="result && !isAnalyzing">
+        <div class="result-header">
+          <h2 [ngClass]="getScoreColorClass()">{{ result.verdict }}</h2>
+          <div class="score-display">
+            <span class="score-number" [ngClass]="getScoreColorClass()">{{ result.score }}</span>
+            <span class="score-max">/ 100 {{ t.translate('JOB_SCAM.RISK_SCORE') }}</span>
+          </div>
+        </div>
+        
+        <div class="progress-bar">
+          <div class="progress-fill" 
+               [style.width]="result.score + '%'"
+               [style.backgroundColor]="getProgressBarColor()"></div>
+        </div>
+
+        <div class="flags-container">
+          <div class="red-flags" *ngIf="result.redFlags.length > 0">
+            <h3>{{ t.translate('JOB_SCAM.RED_FLAGS') }}</h3>
+            <ul>
+              <li *ngFor="let flag of result.redFlags">{{ flag }}</li>
+            </ul>
+          </div>
+
+          <div class="legit-signals" *ngIf="result.legitSignals.length > 0">
+            <h3>{{ t.translate('JOB_SCAM.LEGIT_SIGNALS') }}</h3>
+            <ul>
+              <li *ngFor="let signal of result.legitSignals">{{ signal }}</li>
+            </ul>
+          </div>
+          
+          <div class="no-flags" *ngIf="result.redFlags.length === 0 && result.legitSignals.length === 0">
+            <p>{{ t.translate('JOB_SCAM.NO_SIGNALS') }}</p>
+          </div>
+        </div>
+
+        <div class="verification-steps">
+          <h3>{{ t.translate('JOB_SCAM.VERIFY_TITLE') }}</h3>
+          <ul>
+            <li *ngFor="let rule of t.translateData('JOB_SCAM.RULES')">
+               <span [innerHTML]="rule"></span>
+            </li>
+          </ul>
+        </div>
+
+        <button class="reset-btn" (click)="reset()">{{ t.translate('JOB_SCAM.RESET_BTN') }}</button>
+      </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="education-section">
+      <h2>{{ t.translate('JOB_SCAM.EDU_TITLE') }}</h2>
+      
+      <div class="scam-type">
+        <h3>{{ t.translate('JOB_SCAM.TYPES.DATA.TITLE') }}</h3>
+        <p>{{ t.translate('JOB_SCAM.TYPES.DATA.DESC') }}</p>
+      </div>
+
+      <div class="scam-type">
+        <h3>{{ t.translate('JOB_SCAM.TYPES.TASK.TITLE') }}</h3>
+        <p>{{ t.translate('JOB_SCAM.TYPES.TASK.DESC') }}</p>
+      </div>
+
+      <div class="scam-type">
+        <h3>{{ t.translate('JOB_SCAM.TYPES.BPO.TITLE') }}</h3>
+        <p>{{ t.translate('JOB_SCAM.TYPES.BPO.DESC') }}</p>
+      </div>
+
+      <div class="scam-type">
+        <h3>{{ t.translate('JOB_SCAM.TYPES.FOREIGN.TITLE') }}</h3>
+        <p>{{ t.translate('JOB_SCAM.TYPES.FOREIGN.DESC') }}</p>
+      </div>
+
+      <div class="scam-type">
+        <h3>{{ t.translate('JOB_SCAM.TYPES.MLM.TITLE') }}</h3>
+        <p>{{ t.translate('JOB_SCAM.TYPES.MLM.DESC') }}</p>
+      </div>
+    </div>
+  </div>
+</div>

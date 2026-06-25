@@ -1,0 +1,21 @@
+{
+  "name": "vajra-monorepo",
+  "version": "1.0.0",
+  "description": "VAJRA - A dedicated Cyber Awareness Initiative for India",
+  "scripts": {
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "seed:db": "npm run seed --prefix backend"
+  },
+  "keywords": [
+    "cybersecurity",
+    "india",
+    "safety",
+    "awareness"
+  ],
+  "author": "",
+  "license": "MIT"
+}

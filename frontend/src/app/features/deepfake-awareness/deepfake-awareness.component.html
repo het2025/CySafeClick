@@ -1,0 +1,144 @@
+<div class="deepfake-container">
+  <header class="page-header">
+    <h1>{{ t.translate('DEEPFAKE.TITLE') }}</h1>
+    <p>{{ t.translate('DEEPFAKE.SUBTITLE') }}</p>
+  </header>
+
+  <!-- Section 1: What is a deepfake? -->
+  <section class="content-section">
+    <h2>{{ t.translate('DEEPFAKE.S1.TITLE') }}</h2>
+    <div class="explanation-box">
+      <p>{{ t.translate('DEEPFAKE.S1.P1') }}</p>
+      <p>{{ t.translate('DEEPFAKE.S1.P2') }}</p>
+    </div>
+  </section>
+
+  <!-- Section 2: How deepfake scams target Indians -->
+  <section class="content-section">
+    <h2>{{ t.translate('DEEPFAKE.S2.TITLE') }}</h2>
+    <div class="scam-grid">
+      <div class="scam-card">
+        <h3>{{ t.translate('DEEPFAKE.S2.SCAMS.VIDEO.TITLE') }}</h3>
+        <p>{{ t.translate('DEEPFAKE.S2.SCAMS.VIDEO.DESC') }}</p>
+      </div>
+      <div class="scam-card">
+        <h3>{{ t.translate('DEEPFAKE.S2.SCAMS.AUDIO.TITLE') }}</h3>
+        <p>{{ t.translate('DEEPFAKE.S2.SCAMS.AUDIO.DESC') }}</p>
+      </div>
+      <div class="scam-card">
+        <h3>{{ t.translate('DEEPFAKE.S2.SCAMS.CEO.TITLE') }}</h3>
+        <p>{{ t.translate('DEEPFAKE.S2.SCAMS.CEO.DESC') }}</p>
+      </div>
+      <div class="scam-card">
+        <h3>{{ t.translate('DEEPFAKE.S2.SCAMS.CELEB.TITLE') }}</h3>
+        <p>{{ t.translate('DEEPFAKE.S2.SCAMS.CELEB.DESC') }}</p>
+      </div>
+      <div class="scam-card">
+        <h3>{{ t.translate('DEEPFAKE.S2.SCAMS.SEX.TITLE') }}</h3>
+        <p>{{ t.translate('DEEPFAKE.S2.SCAMS.SEX.DESC') }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Spotting Checklist -->
+  <section class="content-section spotting-section">
+    <h2>{{ t.translate('DEEPFAKE.S3.TITLE') }}</h2>
+    <div class="spotting-split">
+      <div class="spotting-list">
+        <h3>{{ t.translate('DEEPFAKE.S3.VIDEO') }}</h3>
+        <ul>
+          <li *ngFor="let item of t.translateData('DEEPFAKE.S3.V_LIST')">
+            <span class="check-box">□</span> <strong>{{ item }}</strong>
+          </li>
+        </ul>
+      </div>
+      <div class="spotting-list">
+        <h3>{{ t.translate('DEEPFAKE.S3.AUDIO') }}</h3>
+        <ul>
+          <li *ngFor="let item of t.translateData('DEEPFAKE.S3.A_LIST')">
+            <span class="check-box">□</span> <strong>{{ item }}</strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Safe Word System -->
+  <section class="content-section safe-word-section">
+    <h2>{{ t.translate('DEEPFAKE.S4.TITLE') }}</h2>
+    <p>{{ t.translate('DEEPFAKE.S4.DESC') }}</p>
+    
+    <div class="safe-word-card">
+      <ng-container *ngIf="!isSafeWordSaved">
+        <p>{{ t.translate('DEEPFAKE.S4.INPUT_LABEL') }}</p>
+        <input type="text" [(ngModel)]="familySafeWord" [placeholder]="t.translate('DEEPFAKE.S4.INPUT_LABEL')" class="sw-input">
+        <button (click)="saveSafeWord()" class="sw-btn" [disabled]="!familySafeWord">{{ t.translate('DEEPFAKE.S4.SAVE_BTN') }}</button>
+        <p class="sw-note">{{ t.translate('DEEPFAKE.S4.NOTE') }}</p>
+      </ng-container>
+      
+      <ng-container *ngIf="isSafeWordSaved">
+        <div class="sw-display">
+          <h3>{{ t.translate('DEEPFAKE.S4.DISPLAY_TITLE') }}</h3>
+          <div class="sw-secret">{{ familySafeWord }}</div>
+          <p>{{ t.translate('DEEPFAKE.S4.SHARE_TIP') }}</p>
+          <button (click)="editSafeWord()" class="sw-btn-secondary">{{ t.translate('DEEPFAKE.S4.CHANGE_BTN') }}</button>
+        </div>
+      </ng-container>
+    </div>
+  </section>
+
+  <!-- Section 5: What to do if victim -->
+  <section class="content-section">
+    <h2>{{ t.translate('DEEPFAKE.S5.TITLE') }}</h2>
+    <div class="action-steps">
+      <div class="step" *ngFor="let step of t.translateData('DEEPFAKE.S5.STEPS'); let i = index">
+        <div class="step-num">{{ i + 1 }}</div>
+        <p><strong>{{ step }}</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Quiz -->
+  <section class="content-section quiz-section">
+    <h2>{{ t.translate('DEEPFAKE.QUIZ.TITLE') }}</h2>
+    
+    <div class="quiz-container" *ngIf="!quizFinished">
+      <div class="quiz-progress">Question {{ currentQuizQuestion + 1 }} of {{ quizQuestions.length }}</div>
+      <div class="quiz-question">
+        <h3>{{ quizQuestions[currentQuizQuestion].question }}</h3>
+      </div>
+      
+      <div class="quiz-options">
+        <button *ngFor="let opt of quizQuestions[currentQuizQuestion].options; let i = index" 
+                class="quiz-opt-btn"
+                [class.selected]="selectedOption === i"
+                [class.correct]="showExplanation && i === quizQuestions[currentQuizQuestion].correctIndex"
+                [class.wrong]="showExplanation && selectedOption === i && i !== quizQuestions[currentQuizQuestion].correctIndex"
+                [disabled]="showExplanation"
+                (click)="selectQuizOption(i)">
+          {{ opt }}
+        </button>
+      </div>
+
+      <div class="quiz-explanation" *ngIf="showExplanation">
+        <h4 [class.text-safe]="selectedOption === quizQuestions[currentQuizQuestion].correctIndex" 
+            [class.text-danger]="selectedOption !== quizQuestions[currentQuizQuestion].correctIndex">
+          {{ selectedOption === quizQuestions[currentQuizQuestion].correctIndex ? '✅ Correct!' : '❌ Incorrect' }}
+        </h4>
+        <p>{{ quizQuestions[currentQuizQuestion].explanation }}</p>
+        <button class="next-btn" (click)="nextQuizQuestion()">Next Question →</button>
+      </div>
+    </div>
+
+    <div class="quiz-results" *ngIf="quizFinished">
+      <h3>{{ t.translate('DEEPFAKE.QUIZ.COMPLETE') }}</h3>
+      <div class="score-circle">
+        {{ quizScore }} / {{ quizQuestions.length }}
+      </div>
+      <p *ngIf="quizScore === quizQuestions.length">{{ t.translate('DEEPFAKE.QUIZ.EXCELLENT') }}</p>
+      <p *ngIf="quizScore < quizQuestions.length">{{ t.translate('DEEPFAKE.QUIZ.REVIEW') }}</p>
+      <button class="next-btn" (click)="resetQuiz()">{{ t.translate('DEEPFAKE.QUIZ.RETAKE') }}</button>
+    </div>
+  </section>
+
+</div>

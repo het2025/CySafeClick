@@ -1,0 +1,170 @@
+[
+  {
+    "id": "gmail",
+    "name": "Gmail / Google",
+    "category": "email",
+    "supportedMethods": ["none", "sms", "app", "hardware"],
+    "recommendedMethod": "app",
+    "setupInstructions": {
+      "app": [
+        "Go to your Google Account (myaccount.google.com).",
+        "Select 'Security' from the left navigation panel.",
+        "Under 'Signing in to Google', select '2-Step Verification'.",
+        "Scroll down and click 'Authenticator app'.",
+        "Follow the on-screen steps to scan the QR code."
+      ],
+      "hardware": [
+        "Go to your Google Account Security settings.",
+        "Select '2-Step Verification'.",
+        "Click 'Security Key' and follow the prompts to register your physical key."
+      ]
+    },
+    "riskIfCompromised": "High: Hackers can reset passwords for almost all your other accounts linked to this email.",
+    "indianSpecificNote": "Many Indians link their bank accounts to their primary Gmail. Securing it is critical."
+  },
+  {
+    "id": "facebook",
+    "name": "Facebook",
+    "category": "social",
+    "supportedMethods": ["none", "sms", "app", "hardware"],
+    "recommendedMethod": "app",
+    "setupInstructions": {
+      "app": [
+        "Go to Settings & Privacy > Settings.",
+        "Click on 'Accounts Center' > 'Password and security'.",
+        "Select 'Two-factor authentication' and choose your account.",
+        "Select 'Authentication app' and follow the setup instructions."
+      ]
+    },
+    "riskIfCompromised": "Medium: Scammers can message friends asking for money or run fake ads."
+  },
+  {
+    "id": "whatsapp",
+    "name": "WhatsApp",
+    "category": "social",
+    "supportedMethods": ["none", "sms", "app"],
+    "recommendedMethod": "app",
+    "setupInstructions": {
+      "app": [
+        "Open WhatsApp > Settings.",
+        "Tap 'Account' > 'Two-step verification'.",
+        "Tap 'Turn on' and enter a 6-digit PIN.",
+        "Provide an email address for backup."
+      ]
+    },
+    "riskIfCompromised": "High: Attackers can hijack your account to ask contacts for money or access private chats.",
+    "indianSpecificNote": "WhatsApp hijacking via call-forwarding (*401* scam) is very common in India. The 6-digit PIN prevents this."
+  },
+  {
+    "id": "instagram",
+    "name": "Instagram",
+    "category": "social",
+    "supportedMethods": ["none", "sms", "app"],
+    "recommendedMethod": "app",
+    "setupInstructions": {
+      "app": [
+        "Go to your profile > Menu > Settings and privacy.",
+        "Go to 'Accounts Center' > 'Password and security'.",
+        "Tap 'Two-factor authentication' > select your account.",
+        "Choose 'Authentication app (recommended)' and follow the prompts."
+      ]
+    },
+    "riskIfCompromised": "Medium: Loss of personal photos, scammers impersonating you."
+  },
+  {
+    "id": "linkedin",
+    "name": "LinkedIn",
+    "category": "social",
+    "supportedMethods": ["none", "sms", "app"],
+    "recommendedMethod": "app",
+    "setupInstructions": {
+      "app": [
+        "Click your profile icon > Settings & Privacy.",
+        "Select 'Sign in & security' > 'Two-step verification'.",
+        "Click 'Set up' and choose 'Authenticator App'.",
+        "Scan the QR code to finish setup."
+      ]
+    },
+    "riskIfCompromised": "Medium: Reputational damage, fake job offers to contacts."
+  },
+  {
+    "id": "twitter",
+    "name": "Twitter / X",
+    "category": "social",
+    "supportedMethods": ["none", "sms", "app", "hardware"],
+    "recommendedMethod": "app",
+    "setupInstructions": {
+      "app": [
+        "Go to Settings and Support > Settings and privacy.",
+        "Select 'Security and account access' > 'Security'.",
+        "Tap 'Two-factor authentication'.",
+        "Check the box for 'Authentication app' and follow instructions."
+      ]
+    },
+    "riskIfCompromised": "Low-Medium: Can be used to post crypto scams or phishing links."
+  },
+  {
+    "id": "sbi_yono",
+    "name": "SBI YONO / NetBanking",
+    "category": "banking",
+    "supportedMethods": ["none", "sms", "app"],
+    "recommendedMethod": "app",
+    "setupInstructions": {
+      "app": [
+        "Banks in India mostly rely on SMS OTPs.",
+        "Never share your OTP with anyone.",
+        "Avoid downloading any screen sharing apps like AnyDesk when prompted by 'customer care'."
+      ]
+    },
+    "riskIfCompromised": "Critical: Direct loss of funds.",
+    "indianSpecificNote": "Most Indian banks still enforce SMS OTP. Do not forward OTPs to anyone, even if they claim to be from the bank."
+  },
+  {
+    "id": "paytm",
+    "name": "Paytm",
+    "category": "payment",
+    "supportedMethods": ["none", "sms", "app"],
+    "recommendedMethod": "app",
+    "setupInstructions": {
+      "app": [
+        "Paytm uses mobile number and OTP/password.",
+        "Enable device lock (Pattern/Biometric) in the app settings.",
+        "Go to Profile > Security Settings to manage."
+      ]
+    },
+    "riskIfCompromised": "High: Scammers can misuse wallet or linked accounts."
+  },
+  {
+    "id": "zerodha",
+    "name": "Zerodha (Kite)",
+    "category": "investment",
+    "supportedMethods": ["none", "app"],
+    "recommendedMethod": "app",
+    "setupInstructions": {
+      "app": [
+        "Login to Kite web.",
+        "Go to 'My Profile' > 'Password & Security'.",
+        "Click on 'Enable 2FA TOTP'.",
+        "Scan the QR code using Google Authenticator or Authy."
+      ]
+    },
+    "riskIfCompromised": "High: Unauthorized trades or liquidation of assets.",
+    "indianSpecificNote": "SEBI now mandates TOTP or biometrics for trading apps in India. Set it up!"
+  },
+  {
+    "id": "aadhaar",
+    "name": "Aadhaar Portal (UIDAI)",
+    "category": "government",
+    "supportedMethods": ["sms"],
+    "recommendedMethod": "sms",
+    "setupInstructions": {
+      "sms": [
+        "UIDAI primarily uses SMS OTP to your linked mobile number.",
+        "Keep your linked number active.",
+        "Never share Aadhaar OTP."
+      ]
+    },
+    "riskIfCompromised": "High: Identity theft, taking out loans in your name.",
+    "indianSpecificNote": "Ensure your biometrics are locked via the UIDAI portal to prevent unauthorized fingerprint access."
+  }
+]

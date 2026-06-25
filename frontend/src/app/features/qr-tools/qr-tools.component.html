@@ -1,0 +1,130 @@
+<div class="qr-tools-container">
+  <header class="page-header">
+    <h1>Safe QR Code Tools</h1>
+    <p>Generate safe UPI payment codes or inspect suspicious QR codes before scanning.</p>
+  </header>
+
+  <div class="main-layout">
+    <div class="tools-card">
+      <div class="tabs">
+        <button [class.active]="activeTab === 'generate'" (click)="switchTab('generate')">Generate Safe QR</button>
+        <button [class.active]="activeTab === 'verify'" (click)="switchTab('verify')">Verify a QR Code</button>
+      </div>
+
+      <!-- GENERATOR TAB -->
+      <div class="tab-content" *ngIf="activeTab === 'generate'">
+        <div class="gen-type-selector">
+          <label><input type="radio" [(ngModel)]="genType" value="upi"> UPI Payment</label>
+          <label><input type="radio" [(ngModel)]="genType" value="url"> Website URL</label>
+          <label><input type="radio" [(ngModel)]="genType" value="text"> Plain Text</label>
+        </div>
+
+        <div class="form-group" *ngIf="genType === 'upi'">
+          <label>UPI ID (pa)*</label>
+          <input type="text" [(ngModel)]="upiId" placeholder="e.g., 9876543210@paytm">
+          
+          <label>Payee Name (pn)*</label>
+          <input type="text" [(ngModel)]="upiName" placeholder="e.g., Ramesh Shop">
+          
+          <label>Amount (am) - Optional</label>
+          <input type="number" [(ngModel)]="upiAmount" placeholder="e.g., 500">
+          
+          <label>Note (tn) - Optional</label>
+          <input type="text" [(ngModel)]="upiNote" placeholder="e.g., Grocery bill">
+        </div>
+
+        <div class="form-group" *ngIf="genType === 'url'">
+          <label>Website URL</label>
+          <input type="text" [(ngModel)]="genUrl" placeholder="https://example.com">
+        </div>
+
+        <div class="form-group" *ngIf="genType === 'text'">
+          <label>Text Message</label>
+          <textarea [(ngModel)]="genText" rows="3" placeholder="Enter text to encode..."></textarea>
+        </div>
+
+        <p class="error-msg" *ngIf="genError">{{ genError }}</p>
+        <button class="primary-btn" (click)="generateCode()">Generate QR Code</button>
+
+        <div class="qr-preview-section" *ngIf="generatedQRDataUrl">
+          <h3>Your QR Code</h3>
+          <img [src]="generatedQRDataUrl" alt="Generated QR Code" class="qr-image">
+          <p class="info-text" *ngIf="genType === 'upi'">This QR code will send money <strong>TO</strong> you when scanned.</p>
+          <div class="qr-actions">
+            <button class="secondary-btn" (click)="downloadQR()">⬇️ Download PNG</button>
+          </div>
+          
+          <div class="anti-tamper-tip">
+            <strong>Anti-tamper tip:</strong> Print the QR on a surface that tears if someone tries to stick another QR over it. Always verify it works by scanning it yourself before displaying to customers.
+          </div>
+        </div>
+      </div>
+
+      <!-- VERIFIER TAB -->
+      <div class="tab-content" *ngIf="activeTab === 'verify'">
+        <div class="upload-section">
+          <h3>Upload a QR Code Image</h3>
+          <p>Take a photo of a suspicious QR code and upload it here to safely decode what's inside without opening the link.</p>
+          <input type="file" accept="image/*" (change)="onFileSelected($event)" class="file-input">
+        </div>
+
+        <div class="spinner" *ngIf="isVerifying"></div>
+        <p class="error-msg" *ngIf="verifyError">❌ {{ verifyError }}</p>
+
+        <div class="decoded-result" *ngIf="decodedResult">
+          <h3>Decoded Content:</h3>
+          
+          <!-- UPI Result -->
+          <div class="result-box upi" *ngIf="decodedResult.type === 'upi'">
+            <h4>✅ This is a UPI Payment Link</h4>
+            <p>Scanning this will open your payment app to send money.</p>
+            <div class="detail-row"><span>Payee UPI ID:</span> <strong>{{ decodedResult.upiDetails?.pa }}</strong></div>
+            <div class="detail-row"><span>Payee Name:</span> <strong>{{ decodedResult.upiDetails?.pn }}</strong></div>
+            <div class="detail-row" *ngIf="decodedResult.upiDetails?.am"><span>Amount Requested:</span> <strong>₹{{ decodedResult.upiDetails?.am }}</strong></div>
+            <div class="warning-alert">Ensure you know this person before entering your UPI PIN.</div>
+          </div>
+
+          <!-- URL Result -->
+          <div class="result-box url" *ngIf="decodedResult.type === 'url'">
+            <h4>🔗 This is a Website Link</h4>
+            <div class="raw-data">{{ decodedResult.raw }}</div>
+            <p class="action-hint">Copy this link and use our Phishing Detector to ensure it is safe.</p>
+          </div>
+
+          <!-- Text Result -->
+          <div class="result-box text" *ngIf="decodedResult.type === 'text'">
+            <h4>📝 Plain Text</h4>
+            <div class="raw-data">{{ decodedResult.raw }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Educational Sidebar -->
+    <aside class="education-sidebar">
+      <div class="edu-card">
+        <h2>QR Code Sticker Scam</h2>
+        <p><strong>How it works:</strong> Scammers print their own UPI QR codes on stickers and place them directly over the legitimate QR codes at petrol pumps, restaurants, or parking meters.</p>
+        <p>When you scan it, the money goes to the scammer instead of the shopkeeper.</p>
+        
+        <div class="prevention">
+          <h3>Prevention Tips:</h3>
+          <ul>
+            <li>Always check the <strong>Payee Name</strong> on your phone screen before entering your UPI PIN. Does it match the shop's name?</li>
+            <li>Look closely at the physical stand. Is there a sticker peeling off?</li>
+            <li>Show the confirmation screen to the shopkeeper.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <h2>The "Receive Money" Scam</h2>
+        <p>A scammer on OLX/Quikr says they want to buy your item and sends you a QR code, saying "Scan this to receive your payment".</p>
+        <div class="critical-rule">
+          You NEVER need to scan a QR code or enter your UPI PIN to receive money. Scanning a QR code only SENDS money.
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>

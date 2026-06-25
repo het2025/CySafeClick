@@ -1,0 +1,43 @@
+{
+  "NAV": {
+    "HOME": "હોમ",
+    "TOOLS": "ટૂલ્સ",
+    "LEARN": "શીખો",
+    "REPORT": "રિપોર્ટ કરો"
+  },
+  "MODULES": {
+    "PASSWORD_LAB": "પાસવર્ડ લેબ",
+    "PHISHING_DETECTOR": "ફિશિંગ ડિટેક્ટર",
+    "DATA_BREACH": "ડેટા બ્રીચ ચેક",
+    "SAFETY_SCORE": "સેફ્ટી સ્કોર",
+    "SCAM_AWARENESS": "સ્કેમ જાગૃતિ",
+    "REPORT_CYBERCRIME": "સાયબર ક્રાઇમ રિપોર્ટ કરો",
+    "UPI_SCANNER": "યુપીઆઈ સ્કેનર",
+    "TWO_FACTOR": "2FA સલાહકાર",
+    "PRIVACY_AUDIT": "ગોપનીયતા ઓડિટ",
+    "EMAIL_HEADER": "ઈમેલ હેડર વિશ્લેષક",
+    "APP_PERMISSIONS": "એપ્લિકેશન પરમિશન ચેકર",
+    "WIFI_SAFETY": "વાઇફાઇ સુરક્ષા",
+    "THREAT_FEED": "થ્રેટ ફીડ",
+    "CYBER_LAW": "સાયબર કાયદો",
+    "DAILY_TIPS": "દૈનિક ટિપ્સ",
+    "SCAM_STORIES": "સ્કેમની વાર્તાઓ",
+    "AADHAAR_GUIDE": "આધાર સુરક્ષા",
+    "OSINT_CHECK": "OSINT ચેક",
+    "ROADMAP": "30-દિવસની યોજના",
+    "GLOSSARY": "શબ્દકોશ"
+  },
+  "COMMON": {
+    "SAFE": "સલામત",
+    "SUSPICIOUS": "શંકાસ્પદ",
+    "DANGEROUS": "ખતરનાક",
+    "SCAN": "સ્કેન કરો",
+    "NEXT": "આગળ",
+    "BACK": "પાછા",
+    "SHARE": "શેર કરો",
+    "COPY": "કોપી કરો",
+    "DONE": "પૂર્ણ",
+    "ERROR": "એક ભૂલ આવી.",
+    "LOADING": "લોડ થઈ રહ્યું છે..."
+  }
+}

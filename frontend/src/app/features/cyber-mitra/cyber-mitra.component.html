@@ -1,0 +1,107 @@
+<div class="chat-wrapper">
+  <!-- Voice Not Supported Banner -->
+  <div class="voice-warning" *ngIf="!voiceSupported">
+    {{ 'MITRA.VOICE_NOT_SUPPORTED' | translate }}
+  </div>
+
+  <!-- Header -->
+  <header class="chat-header">
+    <div class="bot-info">
+      <div class="avatar-container">
+        <div class="avatar">🛡️</div>
+        <span class="online-dot"></span>
+      </div>
+      <div class="bot-text">
+        <h2>{{ 'TOOLS.CYBER_MITRA' | translate }}</h2>
+        <p>{{ 'MITRA.SUBTITLE' | translate }}</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="voice-toggle" (click)="speakResponses = !speakResponses" [title]="speakResponses ? 'Mute' : 'Unmute'">
+        {{ speakResponses ? '🔊' : '🔇' }}
+      </button>
+      <button class="clear-btn" (click)="clearChat()" [title]="'MITRA.CLEAR_HISTORY' | translate">🗑️</button>
+    </div>
+  </header>
+
+  <!-- Chat Area -->
+  <div class="chat-container" #chatContainer>
+    
+    <!-- Suggested questions on first load -->
+    <div class="suggested-chips" *ngIf="messages.length <= 1">
+      <button class="chip" *ngFor="let q of suggestedQuestions" (click)="sendMessage(t.translate(q))">
+        {{ q | translate }}
+      </button>
+    </div>
+
+    <!-- Messages -->
+    <div class="message-row" *ngFor="let msg of messages" [ngClass]="msg.role">
+      
+      <div class="message-bubble">
+        <p style="white-space: pre-wrap;">{{ msg.content }}</p>
+        
+        <!-- Action Buttons inside Bot Message -->
+        <div class="action-buttons" *ngIf="msg.actionButtons">
+          <a *ngFor="let btn of msg.actionButtons" [routerLink]="btn.route" class="action-btn">
+            {{ btn.icon }} {{ btn.label }}
+          </a>
+        </div>
+
+        <!-- Quick Replies inside Bot Message -->
+        <div class="quick-replies" *ngIf="msg.quickReplies && msg === messages[messages.length-1] && !isTyping">
+          <button class="qr-btn" *ngFor="let qr of msg.quickReplies" (click)="sendMessage(qr)">
+            {{ qr }}
+          </button>
+        </div>
+
+        <div class="message-meta">
+          <span class="time">{{ msg.timestamp | date:'shortTime' }}</span>
+          
+          <div class="bot-tools" *ngIf="msg.role === 'assistant'">
+            <button class="tool-icon" (click)="copyText(msg.content)" title="Copy text">📋</button>
+            <button class="tool-icon" [class.active]="msg.helpfulState === 'up'" (click)="rateHelpful(msg, 'up')">👍</button>
+            <button class="tool-icon" [class.active]="msg.helpfulState === 'down'" (click)="rateHelpful(msg, 'down')">👎</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typing Indicator -->
+    <div class="message-row assistant" *ngIf="isTyping">
+      <div class="message-bubble typing-bubble">
+        <div class="typing-indicator">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Input Area -->
+  <div class="input-area">
+    <div class="escalation-bar">
+      <a href="tel:1930" class="escalation-btn">{{ 'MITRA.SPEAK_HELPLINE' | translate }}</a>
+    </div>
+    <div class="input-container">
+      <button class="mic-btn large-mic" [class.recording]="isRecording" [disabled]="!voiceSupported" (click)="toggleRecording()" title="Voice input">
+        <span *ngIf="!isRecording">🎤</span>
+        <span *ngIf="isRecording" class="recording-icon">⏹️</span>
+      </button>
+      
+      <input type="text" 
+             [(ngModel)]="userInput" 
+             (keyup.enter)="sendMessage()" 
+             [placeholder]="'MITRA.PLACEHOLDER' | translate" 
+             [disabled]="isRecording"
+             class="chat-input" />
+             
+      <button class="send-btn" (click)="sendMessage()" [disabled]="!userInput.trim() || isRecording">
+        ➤
+      </button>
+    </div>
+    
+    <div class="waveform" *ngIf="isRecording">
+      <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    </div>
+  </div>
+</div>

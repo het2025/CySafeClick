@@ -1,0 +1,77 @@
+<div class="container threat-feed-page">
+  <div class="header-section">
+    <h1>Cyber Threat Live Feed</h1>
+    <p>Latest advisories, vulnerabilities, and active scams reported by Indian cyber authorities.</p>
+  </div>
+
+  <div class="critical-banner" *ngIf="hasNewCritical()">
+    <strong>🚨 CRITICAL ALERT:</strong> A high-severity threat has been issued recently. Please review the feed below and take necessary action.
+  </div>
+
+  <div class="controls-bar">
+    <div class="filters">
+      <input type="text" [ngModel]="searchQuery()" (ngModelChange)="searchQuery.set($event)" placeholder="Search alerts..." class="form-input search-box">
+      
+      <select [ngModel]="selectedSeverity()" (ngModelChange)="selectedSeverity.set($event)" class="form-select">
+        <option value="">All Severities</option>
+        <option value="critical">Critical</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+
+      <select [ngModel]="selectedType()" (ngModelChange)="selectedType.set($event)" class="form-select">
+        <option value="">All Types</option>
+        <option *ngFor="let type of types()" [value]="type">{{ type | titlecase }}</option>
+      </select>
+    </div>
+
+    <div class="refresh-info">
+      <span class="last-updated" *ngIf="lastUpdated()">Last updated: {{ lastUpdated() | date:'medium' }}</span>
+      <button class="btn-refresh" (click)="refreshFeed()" [disabled]="isLoading()">
+        {{ isLoading() ? 'Updating...' : 'Refresh' }}
+      </button>
+    </div>
+  </div>
+
+  <div class="loading-state" *ngIf="isLoading()">
+    <p>Fetching latest threats...</p>
+  </div>
+
+  <div class="feed-list" *ngIf="!isLoading()">
+    <div class="alert-card" *ngFor="let alert of filteredAlerts()" [ngClass]="'severity-' + alert.severity">
+      <div class="alert-header">
+        <div class="meta">
+          <span class="date">{{ alert.date | date:'MMM d, yyyy • h:mm a' }}</span>
+          <span class="source-tag">{{ alert.source }}</span>
+        </div>
+        <app-risk-badge [level]="getSeverityLevel(alert.severity)"></app-risk-badge>
+      </div>
+
+      <div class="alert-body">
+        <h2>{{ alert.title }}</h2>
+        <span class="type-tag">{{ alert.type }}</span>
+        <p class="summary">{{ alert.summary }}</p>
+        
+        <div class="affected-systems" *ngIf="alert.affectedSystems.length > 0">
+          <strong>Affected:</strong>
+          <ul>
+            <li *ngFor="let sys of alert.affectedSystems">{{ sys }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="alert-footer">
+        <div class="action-required">
+          <strong>What this means for you:</strong>
+          <p>{{ alert.actionRequired }}</p>
+        </div>
+        <button class="btn-read-more" (click)="openReference(alert.referenceUrl)">Read Official Source →</button>
+      </div>
+    </div>
+
+    <div class="no-results" *ngIf="filteredAlerts().length === 0">
+      <p>No active threats found matching your criteria.</p>
+    </div>
+  </div>
+</div>

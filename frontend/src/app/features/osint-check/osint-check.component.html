@@ -1,0 +1,97 @@
+<div class="container osint-page">
+  <div class="header-section text-center">
+    <h1>Personal OSINT Check</h1>
+    <p>OSINT (Open Source Intelligence) is how hackers gather data about you. Let's see what's out there.</p>
+  </div>
+
+  <app-stepper [steps]="steps" [currentStep]="currentStep()" (stepChange)="onStepChange($event)">
+    
+    <!-- STEP 1: Google -->
+    <div *ngIf="currentStep() === 0" class="step-content card">
+      <h2>Step 1: Google Yourself</h2>
+      <p>Google is the first tool a scammer uses. Open a private/incognito window and perform these searches.</p>
+      
+      <div class="checklist">
+        <label class="check-item" *ngFor="let item of googleChecks()">
+          <input type="checkbox" [checked]="item.checked" (change)="toggleCheck('google', item.id)">
+          <span>{{ item.label }}</span>
+        </label>
+      </div>
+
+      <div class="info-box">
+        <strong>Why?</strong> If your phone number and address are easily found on Google, you are a prime target for targeted phishing attacks (Spear Phishing).
+      </div>
+    </div>
+
+    <!-- STEP 2: Truecaller -->
+    <div *ngIf="currentStep() === 1" class="step-content card">
+      <h2>Step 2: Check Truecaller</h2>
+      <p>Truecaller crowd-sources contacts. Even if you never installed it, someone else might have uploaded your name and number.</p>
+      
+      <div class="checklist">
+        <label class="check-item" *ngFor="let item of truecallerChecks()">
+          <input type="checkbox" [checked]="item.checked" (change)="toggleCheck('truecaller', item.id)">
+          <span>{{ item.label }}</span>
+        </label>
+      </div>
+
+      <div class="info-box warning">
+        <strong>Risk:</strong> Scammers use Truecaller to find your full name. When they call you and use your full name, it builds false trust.
+      </div>
+    </div>
+
+    <!-- STEP 3: Social Media -->
+    <div *ngIf="currentStep() === 2" class="step-content card">
+      <h2>Step 3: Social Media Exposure</h2>
+      <p>Review the public visibility of your social profiles. View your profiles as a "Public" user.</p>
+      
+      <div class="checklist">
+        <label class="check-item" *ngFor="let item of socialChecks()">
+          <input type="checkbox" [checked]="item.checked" (change)="toggleCheck('social', item.id)">
+          <span>{{ item.label }}</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- STEP 4: Data Brokers -->
+    <div *ngIf="currentStep() === 3" class="step-content card">
+      <h2>Step 4: Data Broker Sites</h2>
+      <p>Sites like JustDial, Sulekha, and other business directories often list personal numbers if you ever registered a small business or sold something online.</p>
+      
+      <div class="checklist">
+        <label class="check-item" *ngFor="let item of brokerChecks()">
+          <input type="checkbox" [checked]="item.checked" (change)="toggleCheck('broker', item.id)">
+          <span>{{ item.label }}</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- STEP 5: Results -->
+    <div *ngIf="currentStep() === 4" class="step-content card text-center">
+      <h2>Your OSINT Audit Results</h2>
+      
+      <div class="score-display">
+        <app-progress-ring [progress]="exposureScore()" [size]="150" [strokeWidth]="12" [color]="exposureScore() >= 80 ? '#22c55e' : (exposureScore() >= 50 ? '#f59e0b' : '#ef4444')">
+          <span class="score-value">{{ exposureScore() }}%</span>
+        </app-progress-ring>
+        <p class="mt-3"><strong>Audit Completion Score</strong></p>
+      </div>
+
+      <div class="recommendations" *ngIf="exposureScore() < 100">
+        <h3>Keep going!</h3>
+        <p>You haven't completed all the checks. Scammers rely on the stones you leave unturned. Go back and complete the remaining checks.</p>
+      </div>
+
+      <div class="recommendations" *ngIf="exposureScore() === 100">
+        <h3>Excellent Work!</h3>
+        <p>You have taken control of your digital footprint. To maintain this:</p>
+        <ul class="text-left mx-auto" style="max-width: 400px; line-height: 1.6;">
+          <li>Set up a <strong>Google Alert</strong> for your name to be notified if you are mentioned online.</li>
+          <li>Regularly review app permissions.</li>
+          <li>Share this tool with your family members.</li>
+        </ul>
+      </div>
+    </div>
+
+  </app-stepper>
+</div>

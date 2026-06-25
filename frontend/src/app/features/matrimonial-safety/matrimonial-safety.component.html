@@ -1,0 +1,103 @@
+<div class="matrimonial-container">
+  <header class="page-header">
+    <h1>{{ t.translate('MATRIMONIAL.TITLE') }}</h1>
+    <p>{{ t.translate('MATRIMONIAL.SUBTITLE') }}</p>
+  </header>
+
+  <div class="main-layout">
+    <!-- Left Column: Tool Tabs -->
+    <div class="tool-section">
+      <div class="tabs">
+        <button [class.active]="activeTab === 'profile'" (click)="activeTab = 'profile'">{{ t.translate('MATRIMONIAL.TAB_PROFILE') }}</button>
+        <button [class.active]="activeTab === 'chat'" (click)="activeTab = 'chat'">{{ t.translate('MATRIMONIAL.TAB_CHAT') }}</button>
+        <button [class.active]="activeTab === 'checklist'" (click)="activeTab = 'checklist'">{{ t.translate('MATRIMONIAL.TAB_CHECKLIST') }}</button>
+      </div>
+
+      <!-- Tab 1: Profile Analyzer -->
+      <div *ngIf="activeTab === 'profile'" class="tab-pane">
+        <label>{{ t.translate('MATRIMONIAL.PROFILE_LABEL') }}</label>
+        <textarea [(ngModel)]="profileText" rows="6" [placeholder]="t.translate('MATRIMONIAL.PROFILE_PLACEHOLDER')"></textarea>
+        <button class="primary-btn" (click)="analyzeProfile()" [disabled]="!profileText.trim()">{{ t.translate('MATRIMONIAL.PROFILE_BTN') }}</button>
+
+        <div class="results-box" *ngIf="profileResult">
+          <div class="score-banner" [ngClass]="{'critical': profileResult.isCritical, 'safe': profileResult.redFlags.length === 0}">
+            <h3>{{ t.translate('MATRIMONIAL.SCORE') }}: {{ profileResult.score }}/100</h3>
+          </div>
+          <ul class="red-flag-list" *ngIf="profileResult.redFlags.length > 0">
+            <li *ngFor="let flag of profileResult.redFlags">⚠️ {{ flag }}</li>
+          </ul>
+          <p *ngIf="profileResult.redFlags.length === 0" class="safe-text">{{ t.translate('MATRIMONIAL.SAFE') }}</p>
+        </div>
+      </div>
+
+      <!-- Tab 2: Chat Analyzer -->
+      <div *ngIf="activeTab === 'chat'" class="tab-pane">
+        <label>{{ t.translate('MATRIMONIAL.CHAT_LABEL') }}</label>
+        <textarea [(ngModel)]="chatText" rows="6" [placeholder]="t.translate('MATRIMONIAL.CHAT_PLACEHOLDER')"></textarea>
+        <button class="primary-btn" (click)="analyzeChat()" [disabled]="!chatText.trim()">{{ t.translate('MATRIMONIAL.CHAT_BTN') }}</button>
+
+        <div class="results-box" *ngIf="chatResult">
+          <div class="score-banner" [ngClass]="{'critical': chatResult.isCritical, 'safe': chatResult.redFlags.length === 0}">
+            <h3>{{ t.translate('MATRIMONIAL.SCORE') }}: {{ chatResult.score }}/100</h3>
+            <strong *ngIf="chatResult.isCritical">{{ t.translate('MATRIMONIAL.DANGER') }}</strong>
+          </div>
+          <ul class="red-flag-list" *ngIf="chatResult.redFlags.length > 0">
+            <li *ngFor="let flag of chatResult.redFlags">🚨 {{ flag }}</li>
+          </ul>
+          <p *ngIf="chatResult.redFlags.length === 0" class="safe-text">{{ t.translate('MATRIMONIAL.SAFE') }}</p>
+        </div>
+      </div>
+
+      <!-- Tab 3: Checklist -->
+      <div *ngIf="activeTab === 'checklist'" class="tab-pane">
+        <p class="checklist-desc">{{ t.translate('MATRIMONIAL.CHECKLIST_SUB') }}</p>
+        
+        <div class="checklist-item" *ngFor="let item of checklist; let i = index">
+          <p>{{ i + 1 }}. {{ item.text }}</p>
+          <div class="radio-group">
+            <label><input type="radio" [(ngModel)]="checklistValues[i]" value="yes"> {{ t.currentLang() === 'hi' ? 'हाँ' : 'Yes' }}</label>
+            <label><input type="radio" [(ngModel)]="checklistValues[i]" value="no"> {{ t.currentLang() === 'hi' ? 'नहीं' : 'No' }}</label>
+            <label><input type="radio" [(ngModel)]="checklistValues[i]" value="unsure"> {{ t.currentLang() === 'hi' ? 'पता नहीं' : 'Unsure' }}</label>
+          </div>
+        </div>
+
+        <div class="checklist-result" *ngIf="getChecklistScore() > 0">
+          <div class="score-banner critical" *ngIf="getChecklistScore() >= 50">
+            <h3>{{ t.translate('MATRIMONIAL.PROBABILITY_HIGH') }}</h3>
+            <p>Your answers indicate severe red flags.</p>
+          </div>
+          <div class="score-banner warning" *ngIf="getChecklistScore() > 0 && getChecklistScore() < 50">
+            <h3>{{ t.translate('MATRIMONIAL.PROBABILITY_MED') }}</h3>
+            <p>There are suspicious elements in this interaction.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column: Verification Guide -->
+    <aside class="verification-guide">
+      <h2>{{ t.translate('MATRIMONIAL.GUIDE_TITLE') }}</h2>
+      
+      <div class="guide-step">
+        <h3>1. Reverse Image Search</h3>
+        <p>Save their profile photo and upload to images.google.com.</p>
+      </div>
+
+      <div class="guide-step">
+        <h3>2. LinkedIn Check</h3>
+        <p>Search for them on LinkedIn to verify their job.</p>
+      </div>
+
+      <div class="guide-step">
+        <h3>3. The Video Call Test</h3>
+        <p>Insist on a video call early on. If they refuse, it's a scam.</p>
+      </div>
+
+      <div class="critical-warning">
+        <h3>{{ t.translate('MATRIMONIAL.NEVER_SEND') }}</h3>
+        <p>{{ t.translate('MATRIMONIAL.NEVER_SEND_SUB') }}</p>
+      </div>
+    </aside>
+  </div>
+</div>

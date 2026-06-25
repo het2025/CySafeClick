@@ -1,0 +1,903 @@
+[
+  {
+    "term": "Phishing",
+    "hindiTerm": "फ़िशिंग",
+    "category": "attacks",
+    "difficulty": "beginner",
+    "simpleDefinition": "A fake email or message designed to trick you into giving away your password or credit card details.",
+    "detailedExplanation": "Phishing is a type of social engineering where an attacker sends a fraudulent message designed to trick a person into revealing sensitive information or deploying malicious software on the victim's infrastructure.",
+    "indianAnalogy": "It's like a stranger knocking on your door wearing a fake police uniform to get inside your house.",
+    "realWorldExample": "An email claiming your SBI bank account is blocked, with a link to a fake login page.",
+    "relatedTerms": [
+      "Smishing",
+      "Vishing",
+      "Social Engineering"
+    ],
+    "preventionTip": "Never click links in unexpected emails. Always type the bank's website address manually."
+  },
+  {
+    "term": "Vishing",
+    "hindiTerm": "विशिंग (वॉयस फ़िशिंग)",
+    "category": "attacks",
+    "difficulty": "beginner",
+    "simpleDefinition": "A phone scam where the caller tries to trick you into giving them your OTP, PIN, or money.",
+    "detailedExplanation": "Vishing (voice phishing) involves scammers using phone calls to deceive victims into sharing personal or financial information, often by pretending to be bank officials, police, or tech support.",
+    "indianAnalogy": "Like a fake 'Customer Care' calling you to say you've won a lottery.",
+    "realWorldExample": "A scammer calls claiming to be from Paytm KYC department and asks you to download an app.",
+    "relatedTerms": [
+      "Phishing",
+      "Smishing"
+    ],
+    "preventionTip": "Banks never call to ask for your OTP, PIN, or CVV. Disconnect such calls immediately."
+  },
+  {
+    "term": "Smishing",
+    "hindiTerm": "हिंदी - Smishing",
+    "category": "technology",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Smishing means.",
+    "detailedExplanation": "In technical terms, Smishing refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Smishing like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Smishing was utilized to compromise data.",
+    "relatedTerms": [
+      "Pharming",
+      "Malware"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Smishing."
+  },
+  {
+    "term": "Pharming",
+    "hindiTerm": "हिंदी - Pharming",
+    "category": "legal",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what Pharming means.",
+    "detailedExplanation": "In technical terms, Pharming refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Pharming like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Pharming was utilized to compromise data.",
+    "relatedTerms": [
+      "Malware",
+      "Ransomware"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Pharming."
+  },
+  {
+    "term": "Malware",
+    "hindiTerm": "हिंदी - Malware",
+    "category": "india-specific",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what Malware means.",
+    "detailedExplanation": "In technical terms, Malware refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Malware like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Malware was utilized to compromise data.",
+    "relatedTerms": [
+      "Ransomware",
+      "Spyware"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Malware."
+  },
+  {
+    "term": "Ransomware",
+    "hindiTerm": "हिंदी - Ransomware",
+    "category": "attacks",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Ransomware means.",
+    "detailedExplanation": "In technical terms, Ransomware refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Ransomware like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Ransomware was utilized to compromise data.",
+    "relatedTerms": [
+      "Spyware",
+      "Keylogger"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Ransomware."
+  },
+  {
+    "term": "Spyware",
+    "hindiTerm": "हिंदी - Spyware",
+    "category": "concepts",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what Spyware means.",
+    "detailedExplanation": "In technical terms, Spyware refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Spyware like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Spyware was utilized to compromise data.",
+    "relatedTerms": [
+      "Keylogger",
+      "Trojan"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Spyware."
+  },
+  {
+    "term": "Keylogger",
+    "hindiTerm": "हिंदी - Keylogger",
+    "category": "technology",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what Keylogger means.",
+    "detailedExplanation": "In technical terms, Keylogger refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Keylogger like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Keylogger was utilized to compromise data.",
+    "relatedTerms": [
+      "Trojan",
+      "Zero-day"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Keylogger."
+  },
+  {
+    "term": "Trojan",
+    "hindiTerm": "हिंदी - Trojan",
+    "category": "legal",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Trojan means.",
+    "detailedExplanation": "In technical terms, Trojan refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Trojan like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Trojan was utilized to compromise data.",
+    "relatedTerms": [
+      "Zero-day",
+      "Social Engineering"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Trojan."
+  },
+  {
+    "term": "Zero-day",
+    "hindiTerm": "हिंदी - Zero-day",
+    "category": "india-specific",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what Zero-day means.",
+    "detailedExplanation": "In technical terms, Zero-day refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Zero-day like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Zero-day was utilized to compromise data.",
+    "relatedTerms": [
+      "Social Engineering",
+      "Man-in-the-Middle"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Zero-day."
+  },
+  {
+    "term": "Social Engineering",
+    "hindiTerm": "हिंदी - Social Engineering",
+    "category": "attacks",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what Social Engineering means.",
+    "detailedExplanation": "In technical terms, Social Engineering refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Social Engineering like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Social Engineering was utilized to compromise data.",
+    "relatedTerms": [
+      "Man-in-the-Middle",
+      "SQL Injection"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Social Engineering."
+  },
+  {
+    "term": "Man-in-the-Middle",
+    "hindiTerm": "हिंदी - Man-in-the-Middle",
+    "category": "concepts",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Man-in-the-Middle means.",
+    "detailedExplanation": "In technical terms, Man-in-the-Middle refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Man-in-the-Middle like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Man-in-the-Middle was utilized to compromise data.",
+    "relatedTerms": [
+      "SQL Injection",
+      "Cross-site Scripting"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Man-in-the-Middle."
+  },
+  {
+    "term": "SQL Injection",
+    "hindiTerm": "हिंदी - SQL Injection",
+    "category": "technology",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what SQL Injection means.",
+    "detailedExplanation": "In technical terms, SQL Injection refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of SQL Injection like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where SQL Injection was utilized to compromise data.",
+    "relatedTerms": [
+      "Cross-site Scripting",
+      "Brute Force Attack"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to SQL Injection."
+  },
+  {
+    "term": "Cross-site Scripting",
+    "hindiTerm": "हिंदी - Cross-site Scripting",
+    "category": "legal",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what Cross-site Scripting means.",
+    "detailedExplanation": "In technical terms, Cross-site Scripting refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Cross-site Scripting like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Cross-site Scripting was utilized to compromise data.",
+    "relatedTerms": [
+      "Brute Force Attack",
+      "Dictionary Attack"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Cross-site Scripting."
+  },
+  {
+    "term": "Brute Force Attack",
+    "hindiTerm": "हिंदी - Brute Force Attack",
+    "category": "india-specific",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Brute Force Attack means.",
+    "detailedExplanation": "In technical terms, Brute Force Attack refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Brute Force Attack like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Brute Force Attack was utilized to compromise data.",
+    "relatedTerms": [
+      "Dictionary Attack",
+      "Credential Stuffing"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Brute Force Attack."
+  },
+  {
+    "term": "Dictionary Attack",
+    "hindiTerm": "हिंदी - Dictionary Attack",
+    "category": "attacks",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what Dictionary Attack means.",
+    "detailedExplanation": "In technical terms, Dictionary Attack refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Dictionary Attack like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Dictionary Attack was utilized to compromise data.",
+    "relatedTerms": [
+      "Credential Stuffing",
+      "Data Breach"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Dictionary Attack."
+  },
+  {
+    "term": "Credential Stuffing",
+    "hindiTerm": "हिंदी - Credential Stuffing",
+    "category": "concepts",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what Credential Stuffing means.",
+    "detailedExplanation": "In technical terms, Credential Stuffing refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Credential Stuffing like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Credential Stuffing was utilized to compromise data.",
+    "relatedTerms": [
+      "Data Breach",
+      "Dark Web"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Credential Stuffing."
+  },
+  {
+    "term": "Data Breach",
+    "hindiTerm": "हिंदी - Data Breach",
+    "category": "technology",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Data Breach means.",
+    "detailedExplanation": "In technical terms, Data Breach refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Data Breach like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Data Breach was utilized to compromise data.",
+    "relatedTerms": [
+      "Dark Web",
+      "Tor Network"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Data Breach."
+  },
+  {
+    "term": "Dark Web",
+    "hindiTerm": "हिंदी - Dark Web",
+    "category": "legal",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what Dark Web means.",
+    "detailedExplanation": "In technical terms, Dark Web refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Dark Web like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Dark Web was utilized to compromise data.",
+    "relatedTerms": [
+      "Tor Network",
+      "VPN"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Dark Web."
+  },
+  {
+    "term": "Tor Network",
+    "hindiTerm": "हिंदी - Tor Network",
+    "category": "india-specific",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what Tor Network means.",
+    "detailedExplanation": "In technical terms, Tor Network refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Tor Network like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Tor Network was utilized to compromise data.",
+    "relatedTerms": [
+      "VPN",
+      "Two-Factor Authentication"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Tor Network."
+  },
+  {
+    "term": "VPN",
+    "hindiTerm": "हिंदी - VPN",
+    "category": "attacks",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what VPN means.",
+    "detailedExplanation": "In technical terms, VPN refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of VPN like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where VPN was utilized to compromise data.",
+    "relatedTerms": [
+      "Two-Factor Authentication",
+      "End-to-End Encryption"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to VPN."
+  },
+  {
+    "term": "Two-Factor Authentication",
+    "hindiTerm": "हिंदी - Two-Factor Authentication",
+    "category": "concepts",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what Two-Factor Authentication means.",
+    "detailedExplanation": "In technical terms, Two-Factor Authentication refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Two-Factor Authentication like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Two-Factor Authentication was utilized to compromise data.",
+    "relatedTerms": [
+      "End-to-End Encryption",
+      "SSL/TLS"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Two-Factor Authentication."
+  },
+  {
+    "term": "End-to-End Encryption",
+    "hindiTerm": "हिंदी - End-to-End Encryption",
+    "category": "technology",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what End-to-End Encryption means.",
+    "detailedExplanation": "In technical terms, End-to-End Encryption refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of End-to-End Encryption like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where End-to-End Encryption was utilized to compromise data.",
+    "relatedTerms": [
+      "SSL/TLS",
+      "Digital Signature"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to End-to-End Encryption."
+  },
+  {
+    "term": "SSL/TLS",
+    "hindiTerm": "हिंदी - SSL/TLS",
+    "category": "legal",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what SSL/TLS means.",
+    "detailedExplanation": "In technical terms, SSL/TLS refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of SSL/TLS like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where SSL/TLS was utilized to compromise data.",
+    "relatedTerms": [
+      "Digital Signature",
+      "Hash Function"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to SSL/TLS."
+  },
+  {
+    "term": "Digital Signature",
+    "hindiTerm": "हिंदी - Digital Signature",
+    "category": "india-specific",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what Digital Signature means.",
+    "detailedExplanation": "In technical terms, Digital Signature refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Digital Signature like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Digital Signature was utilized to compromise data.",
+    "relatedTerms": [
+      "Hash Function",
+      "Firewall"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Digital Signature."
+  },
+  {
+    "term": "Hash Function",
+    "hindiTerm": "हिंदी - Hash Function",
+    "category": "attacks",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what Hash Function means.",
+    "detailedExplanation": "In technical terms, Hash Function refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Hash Function like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Hash Function was utilized to compromise data.",
+    "relatedTerms": [
+      "Firewall",
+      "Antivirus"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Hash Function."
+  },
+  {
+    "term": "Firewall",
+    "hindiTerm": "हिंदी - Firewall",
+    "category": "concepts",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Firewall means.",
+    "detailedExplanation": "In technical terms, Firewall refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Firewall like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Firewall was utilized to compromise data.",
+    "relatedTerms": [
+      "Antivirus",
+      "Password Manager"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Firewall."
+  },
+  {
+    "term": "Antivirus",
+    "hindiTerm": "हिंदी - Antivirus",
+    "category": "technology",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what Antivirus means.",
+    "detailedExplanation": "In technical terms, Antivirus refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Antivirus like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Antivirus was utilized to compromise data.",
+    "relatedTerms": [
+      "Password Manager",
+      "Biometric Authentication"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Antivirus."
+  },
+  {
+    "term": "Password Manager",
+    "hindiTerm": "हिंदी - Password Manager",
+    "category": "legal",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what Password Manager means.",
+    "detailedExplanation": "In technical terms, Password Manager refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Password Manager like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Password Manager was utilized to compromise data.",
+    "relatedTerms": [
+      "Biometric Authentication",
+      "CAPTCHA"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Password Manager."
+  },
+  {
+    "term": "Biometric Authentication",
+    "hindiTerm": "हिंदी - Biometric Authentication",
+    "category": "india-specific",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Biometric Authentication means.",
+    "detailedExplanation": "In technical terms, Biometric Authentication refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Biometric Authentication like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Biometric Authentication was utilized to compromise data.",
+    "relatedTerms": [
+      "CAPTCHA",
+      "Cookie"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Biometric Authentication."
+  },
+  {
+    "term": "CAPTCHA",
+    "hindiTerm": "हिंदी - CAPTCHA",
+    "category": "attacks",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what CAPTCHA means.",
+    "detailedExplanation": "In technical terms, CAPTCHA refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of CAPTCHA like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where CAPTCHA was utilized to compromise data.",
+    "relatedTerms": [
+      "Cookie",
+      "Session Hijacking"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to CAPTCHA."
+  },
+  {
+    "term": "Cookie",
+    "hindiTerm": "हिंदी - Cookie",
+    "category": "concepts",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what Cookie means.",
+    "detailedExplanation": "In technical terms, Cookie refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Cookie like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Cookie was utilized to compromise data.",
+    "relatedTerms": [
+      "Session Hijacking",
+      "IP Address"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Cookie."
+  },
+  {
+    "term": "Session Hijacking",
+    "hindiTerm": "हिंदी - Session Hijacking",
+    "category": "technology",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Session Hijacking means.",
+    "detailedExplanation": "In technical terms, Session Hijacking refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Session Hijacking like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Session Hijacking was utilized to compromise data.",
+    "relatedTerms": [
+      "IP Address",
+      "DNS"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Session Hijacking."
+  },
+  {
+    "term": "IP Address",
+    "hindiTerm": "हिंदी - IP Address",
+    "category": "legal",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what IP Address means.",
+    "detailedExplanation": "In technical terms, IP Address refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of IP Address like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where IP Address was utilized to compromise data.",
+    "relatedTerms": [
+      "DNS",
+      "Domain Spoofing"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to IP Address."
+  },
+  {
+    "term": "DNS",
+    "hindiTerm": "हिंदी - DNS",
+    "category": "india-specific",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what DNS means.",
+    "detailedExplanation": "In technical terms, DNS refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of DNS like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where DNS was utilized to compromise data.",
+    "relatedTerms": [
+      "Domain Spoofing",
+      "URL Shortener"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to DNS."
+  },
+  {
+    "term": "Domain Spoofing",
+    "hindiTerm": "हिंदी - Domain Spoofing",
+    "category": "attacks",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Domain Spoofing means.",
+    "detailedExplanation": "In technical terms, Domain Spoofing refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Domain Spoofing like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Domain Spoofing was utilized to compromise data.",
+    "relatedTerms": [
+      "URL Shortener",
+      "QR Code risks"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Domain Spoofing."
+  },
+  {
+    "term": "URL Shortener",
+    "hindiTerm": "हिंदी - URL Shortener",
+    "category": "concepts",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what URL Shortener means.",
+    "detailedExplanation": "In technical terms, URL Shortener refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of URL Shortener like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where URL Shortener was utilized to compromise data.",
+    "relatedTerms": [
+      "QR Code risks",
+      "Deepfake"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to URL Shortener."
+  },
+  {
+    "term": "QR Code risks",
+    "hindiTerm": "हिंदी - QR Code risks",
+    "category": "technology",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what QR Code risks means.",
+    "detailedExplanation": "In technical terms, QR Code risks refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of QR Code risks like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where QR Code risks was utilized to compromise data.",
+    "relatedTerms": [
+      "Deepfake",
+      "AI Voice Clone"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to QR Code risks."
+  },
+  {
+    "term": "Deepfake",
+    "hindiTerm": "हिंदी - Deepfake",
+    "category": "legal",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Deepfake means.",
+    "detailedExplanation": "In technical terms, Deepfake refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Deepfake like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Deepfake was utilized to compromise data.",
+    "relatedTerms": [
+      "AI Voice Clone",
+      "Identity Theft"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Deepfake."
+  },
+  {
+    "term": "AI Voice Clone",
+    "hindiTerm": "हिंदी - AI Voice Clone",
+    "category": "india-specific",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what AI Voice Clone means.",
+    "detailedExplanation": "In technical terms, AI Voice Clone refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of AI Voice Clone like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where AI Voice Clone was utilized to compromise data.",
+    "relatedTerms": [
+      "Identity Theft",
+      "SIM Swap"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to AI Voice Clone."
+  },
+  {
+    "term": "Identity Theft",
+    "hindiTerm": "हिंदी - Identity Theft",
+    "category": "attacks",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what Identity Theft means.",
+    "detailedExplanation": "In technical terms, Identity Theft refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Identity Theft like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Identity Theft was utilized to compromise data.",
+    "relatedTerms": [
+      "SIM Swap",
+      "SS7 Attack"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Identity Theft."
+  },
+  {
+    "term": "SIM Swap",
+    "hindiTerm": "हिंदी - SIM Swap",
+    "category": "concepts",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what SIM Swap means.",
+    "detailedExplanation": "In technical terms, SIM Swap refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of SIM Swap like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where SIM Swap was utilized to compromise data.",
+    "relatedTerms": [
+      "SS7 Attack",
+      "OTP Bypass"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to SIM Swap."
+  },
+  {
+    "term": "SS7 Attack",
+    "hindiTerm": "हिंदी - SS7 Attack",
+    "category": "technology",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what SS7 Attack means.",
+    "detailedExplanation": "In technical terms, SS7 Attack refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of SS7 Attack like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where SS7 Attack was utilized to compromise data.",
+    "relatedTerms": [
+      "OTP Bypass",
+      "Reverse Engineering"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to SS7 Attack."
+  },
+  {
+    "term": "OTP Bypass",
+    "hindiTerm": "हिंदी - OTP Bypass",
+    "category": "legal",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what OTP Bypass means.",
+    "detailedExplanation": "In technical terms, OTP Bypass refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of OTP Bypass like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where OTP Bypass was utilized to compromise data.",
+    "relatedTerms": [
+      "Reverse Engineering",
+      "Penetration Testing"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to OTP Bypass."
+  },
+  {
+    "term": "Reverse Engineering",
+    "hindiTerm": "हिंदी - Reverse Engineering",
+    "category": "india-specific",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Reverse Engineering means.",
+    "detailedExplanation": "In technical terms, Reverse Engineering refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Reverse Engineering like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Reverse Engineering was utilized to compromise data.",
+    "relatedTerms": [
+      "Penetration Testing",
+      "CERT-In"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Reverse Engineering."
+  },
+  {
+    "term": "Penetration Testing",
+    "hindiTerm": "हिंदी - Penetration Testing",
+    "category": "attacks",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what Penetration Testing means.",
+    "detailedExplanation": "In technical terms, Penetration Testing refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Penetration Testing like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Penetration Testing was utilized to compromise data.",
+    "relatedTerms": [
+      "CERT-In",
+      "NCIIPC"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Penetration Testing."
+  },
+  {
+    "term": "CERT-In",
+    "hindiTerm": "हिंदी - CERT-In",
+    "category": "concepts",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what CERT-In means.",
+    "detailedExplanation": "In technical terms, CERT-In refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of CERT-In like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where CERT-In was utilized to compromise data.",
+    "relatedTerms": [
+      "NCIIPC",
+      "IT Act"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to CERT-In."
+  },
+  {
+    "term": "NCIIPC",
+    "hindiTerm": "हिंदी - NCIIPC",
+    "category": "technology",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what NCIIPC means.",
+    "detailedExplanation": "In technical terms, NCIIPC refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of NCIIPC like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where NCIIPC was utilized to compromise data.",
+    "relatedTerms": [
+      "IT Act",
+      "DPDP Act"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to NCIIPC."
+  },
+  {
+    "term": "IT Act",
+    "hindiTerm": "हिंदी - IT Act",
+    "category": "legal",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what IT Act means.",
+    "detailedExplanation": "In technical terms, IT Act refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of IT Act like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where IT Act was utilized to compromise data.",
+    "relatedTerms": [
+      "DPDP Act",
+      "Cyber Forensics"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to IT Act."
+  },
+  {
+    "term": "DPDP Act",
+    "hindiTerm": "हिंदी - DPDP Act",
+    "category": "india-specific",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what DPDP Act means.",
+    "detailedExplanation": "In technical terms, DPDP Act refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of DPDP Act like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where DPDP Act was utilized to compromise data.",
+    "relatedTerms": [
+      "Cyber Forensics",
+      "Digital Evidence"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to DPDP Act."
+  },
+  {
+    "term": "Cyber Forensics",
+    "hindiTerm": "हिंदी - Cyber Forensics",
+    "category": "attacks",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what Cyber Forensics means.",
+    "detailedExplanation": "In technical terms, Cyber Forensics refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Cyber Forensics like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Cyber Forensics was utilized to compromise data.",
+    "relatedTerms": [
+      "Digital Evidence",
+      "eKYC"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Cyber Forensics."
+  },
+  {
+    "term": "Digital Evidence",
+    "hindiTerm": "हिंदी - Digital Evidence",
+    "category": "concepts",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what Digital Evidence means.",
+    "detailedExplanation": "In technical terms, Digital Evidence refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Digital Evidence like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Digital Evidence was utilized to compromise data.",
+    "relatedTerms": [
+      "eKYC",
+      "VID"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Digital Evidence."
+  },
+  {
+    "term": "eKYC",
+    "hindiTerm": "हिंदी - eKYC",
+    "category": "technology",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what eKYC means.",
+    "detailedExplanation": "In technical terms, eKYC refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of eKYC like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where eKYC was utilized to compromise data.",
+    "relatedTerms": [
+      "VID",
+      "Biometric Lock"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to eKYC."
+  },
+  {
+    "term": "VID",
+    "hindiTerm": "हिंदी - VID",
+    "category": "legal",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what VID means.",
+    "detailedExplanation": "In technical terms, VID refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of VID like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where VID was utilized to compromise data.",
+    "relatedTerms": [
+      "Biometric Lock",
+      "UIDAI"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to VID."
+  },
+  {
+    "term": "Biometric Lock",
+    "hindiTerm": "हिंदी - Biometric Lock",
+    "category": "india-specific",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what Biometric Lock means.",
+    "detailedExplanation": "In technical terms, Biometric Lock refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Biometric Lock like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Biometric Lock was utilized to compromise data.",
+    "relatedTerms": [
+      "UIDAI",
+      "VPA"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Biometric Lock."
+  },
+  {
+    "term": "UIDAI",
+    "hindiTerm": "हिंदी - UIDAI",
+    "category": "attacks",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what UIDAI means.",
+    "detailedExplanation": "In technical terms, UIDAI refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of UIDAI like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where UIDAI was utilized to compromise data.",
+    "relatedTerms": [
+      "VPA",
+      "Collect Request"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to UIDAI."
+  },
+  {
+    "term": "VPA",
+    "hindiTerm": "हिंदी - VPA",
+    "category": "concepts",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what VPA means.",
+    "detailedExplanation": "In technical terms, VPA refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of VPA like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where VPA was utilized to compromise data.",
+    "relatedTerms": [
+      "Collect Request",
+      "BHIM"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to VPA."
+  },
+  {
+    "term": "Collect Request",
+    "hindiTerm": "हिंदी - Collect Request",
+    "category": "technology",
+    "difficulty": "beginner",
+    "simpleDefinition": "A simplified explanation of what Collect Request means.",
+    "detailedExplanation": "In technical terms, Collect Request refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of Collect Request like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where Collect Request was utilized to compromise data.",
+    "relatedTerms": [
+      "BHIM",
+      "NPCI"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to Collect Request."
+  },
+  {
+    "term": "BHIM",
+    "hindiTerm": "हिंदी - BHIM",
+    "category": "legal",
+    "difficulty": "intermediate",
+    "simpleDefinition": "A simplified explanation of what BHIM means.",
+    "detailedExplanation": "In technical terms, BHIM refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of BHIM like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where BHIM was utilized to compromise data.",
+    "relatedTerms": [
+      "NPCI",
+      "Phishing"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to BHIM."
+  },
+  {
+    "term": "NPCI",
+    "hindiTerm": "हिंदी - NPCI",
+    "category": "india-specific",
+    "difficulty": "advanced",
+    "simpleDefinition": "A simplified explanation of what NPCI means.",
+    "detailedExplanation": "In technical terms, NPCI refers to a specific concept in cybersecurity that involves various mechanisms. It is crucial to understand this to stay safe.",
+    "indianAnalogy": "Think of NPCI like a lock on your house door in your neighborhood.",
+    "realWorldExample": "A recent incident in India where NPCI was utilized to compromise data.",
+    "relatedTerms": [
+      "Phishing",
+      "Vishing"
+    ],
+    "preventionTip": "Always stay alert and double-check before proceeding to prevent issues related to NPCI."
+  }
+]

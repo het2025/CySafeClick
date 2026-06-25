@@ -1,0 +1,193 @@
+<div class="threat-map-page">
+  <div class="header">
+    <h1>{{ 'MAP.TITLE' | translate }}</h1>
+    <p>{{ 'MAP.SUBTITLE' | translate }}</p>
+  </div>
+
+  <div class="layout-container">
+    <!-- Left Column: Map -->
+    <div class="map-column">
+      <div class="map-controls-top">
+        <div class="view-toggles">
+          <button [class.active]="viewMode() === 'threat'" (click)="setViewMode('threat')">{{ 'MAP.VIEW.THREAT' | translate }}</button>
+          <button [class.active]="viewMode() === 'count'" (click)="setViewMode('count')">{{ 'MAP.VIEW.COUNT' | translate }}</button>
+          <button [class.active]="viewMode() === 'trend'" (click)="setViewMode('trend')">{{ 'MAP.VIEW.TREND' | translate }}</button>
+        </div>
+        <div class="zoom-controls">
+          <button (click)="zoom(0.2)" aria-label="Zoom in">+</button>
+          <button (click)="resetZoom()" aria-label="Reset zoom">Reset</button>
+          <button (click)="zoom(-0.2)" aria-label="Zoom out">-</button>
+        </div>
+      </div>
+
+      <div class="svg-container" (wheel)="onWheel($event)" (mousedown)="onMouseDown($event)">
+        <svg #svgMap viewBox="0 0 800 900" width="100%" height="100%" role="img" aria-label="India cyber threat map">
+          <title>{{ 'MAP.TITLE' | translate }}</title>
+          
+          <g [style.transform]="'translate(' + panOffset().x + 'px, ' + panOffset().y + 'px) scale(' + zoomLevel() + ')'" class="map-transform-group">
+            <!-- Map Paths -->
+            <path *ngFor="let state of mergedData(); trackBy: trackByFn"
+              class="state-path"
+              [attr.d]="state.svgPath"
+              [attr.fill]="getFillColor(state)"
+              [attr.stroke]="'#1a2a4a'"
+              [attr.stroke-width]="0.5 / zoomLevel()"
+              [class.selected]="selectedState()?.id === state.id"
+              [class.hovered]="hoveredState()?.id === state.id"
+              (mouseenter)="onStateHover(state)"
+              (mouseleave)="onStateLeave()"
+              (click)="onStateClick(state)"
+              (keydown.enter)="onStateClick(state)"
+              [attr.tabindex]="0"
+              [attr.aria-label]="state.name + ': ' + state.threatLabel + ' threat level'"
+              role="button"
+            />
+            
+            <!-- State Labels -->
+            <text *ngFor="let state of largeStates(); trackBy: trackByFn"
+              [attr.x]="state.labelX"
+              [attr.y]="state.labelY"
+              class="state-label"
+              text-anchor="middle"
+              [attr.font-size]="9 / zoomLevel()">
+              <ng-container *ngIf="currentLanguage() === 'hi'">
+                <tspan *ngFor="let line of formatStateName(state.nameHindi); let i = index" 
+                       [attr.x]="state.labelX" 
+                       [attr.dy]="i === 0 ? '-0.2em' : '1.1em'">
+                  {{ line }}
+                </tspan>
+              </ng-container>
+              <ng-container *ngIf="currentLanguage() !== 'hi'">
+                <tspan *ngFor="let line of formatStateName(state.name); let i = index" 
+                       [attr.x]="state.labelX" 
+                       [attr.dy]="i === 0 ? '-0.2em' : '1.1em'">
+                  {{ line }}
+                </tspan>
+              </ng-container>
+            </text>
+
+            <!-- Tooltip -->
+            <g *ngIf="hoveredState()" [style.transform]="'translate(' + tooltipX() + 'px,' + tooltipY() + 'px)'" class="tooltip-group">
+              <rect x="-70" y="-40" width="140" height="45" rx="4" fill="#0A1628" fill-opacity="0.9" stroke="rgba(255,255,255,0.2)"/>
+              <text x="0" y="-22" text-anchor="middle" fill="white" font-size="12" font-weight="500">
+                {{ hoveredState()?.name }}
+              </text>
+              <text x="0" y="-5" text-anchor="middle" [attr.fill]="hoveredState()?.fillColor" font-size="11">
+                {{ hoveredState()?.threatLabel }} Threat
+              </text>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="legend" *ngIf="viewMode() === 'threat'">
+        <div class="legend-item"><span class="color-box" style="background: #22c55e"></span> {{ 'MAP.LEGEND.LOW' | translate }}</div>
+        <div class="legend-item"><span class="color-box" style="background: #84cc16"></span> {{ 'MAP.LEGEND.MODERATE' | translate }}</div>
+        <div class="legend-item"><span class="color-box" style="background: #f59e0b"></span> {{ 'MAP.LEGEND.HIGH' | translate }}</div>
+        <div class="legend-item"><span class="color-box" style="background: #f97316"></span> {{ 'MAP.LEGEND.VERY_HIGH' | translate }}</div>
+        <div class="legend-item"><span class="color-box" style="background: #ef4444"></span> {{ 'MAP.LEGEND.CRITICAL' | translate }}</div>
+      </div>
+    </div>
+
+    <!-- Right Column: Stats & Detail -->
+    <div class="stats-column">
+      
+      <!-- National Stats Summary -->
+      <div class="national-stats">
+        <h3>National Overview</h3>
+        <div class="stats-grid">
+          <div class="stat-box">
+            <span class="label">{{ 'MAP.NATIONAL.TOTAL_REPORTS' | translate }}</span>
+            <span class="val">{{ nationalStats().totalReports | number }}</span>
+          </div>
+          <div class="stat-box">
+            <span class="label">Total Loss</span>
+            <span class="val">₹{{ nationalStats().totalLoss | number }} Lakh</span>
+          </div>
+          <div class="stat-box">
+            <span class="label">Highest Threat</span>
+            <span class="val text-orange">{{ nationalStats().highestThreatState }}</span>
+          </div>
+          <div class="stat-box">
+            <span class="label">States on Alert</span>
+            <span class="val text-red">{{ nationalStats().statesAlert }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- State Detail Panel -->
+      <div class="state-detail-panel" *ngIf="selectedState(); else noStateSelected">
+        <div class="state-header">
+          <div>
+            <h2>{{ selectedState()!.name }}</h2>
+            <span class="hi-name">{{ selectedState()!.nameHindi }}</span>
+          </div>
+          <div class="threat-badge" [style.backgroundColor]="selectedState()!.fillColor">
+            {{ selectedState()!.threatLabel }}
+          </div>
+        </div>
+
+        <div class="trend-indicator">
+          Trend: 
+          <span class="trend" [ngClass]="selectedState()!.trendDirection">
+            <span *ngIf="selectedState()!.trendDirection === 'rising'">↑ Rising</span>
+            <span *ngIf="selectedState()!.trendDirection === 'falling'">↓ Falling</span>
+            <span *ngIf="selectedState()!.trendDirection === 'stable'">→ Stable</span>
+          </span>
+        </div>
+
+        <div class="detail-stats">
+          <div class="d-stat">
+            <span class="d-lbl">{{ 'MAP.STATE.WEEKLY_REPORTS' | translate }}</span>
+            <span class="d-val">{{ selectedState()!.weeklyReportCount }}</span>
+          </div>
+          <div class="d-stat">
+            <span class="d-lbl">Target City</span>
+            <span class="d-val">{{ selectedState()!.mostTargetedCity }}</span>
+          </div>
+          <div class="d-stat">
+            <span class="d-lbl">Target Age</span>
+            <span class="d-val">{{ selectedState()!.mostTargetedAgeGroup }}</span>
+          </div>
+        </div>
+
+        <div class="scam-types">
+          <h3>Top Scam Types</h3>
+          <div class="scam-bar" *ngFor="let scam of selectedState()!.topScamTypes">
+            <div class="scam-lbl">
+              <span>{{ scam.type }}</span>
+              <span>{{ scam.percentOfTotal }}% ({{ scam.count }})</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" [style.width.%]="scam.percentOfTotal"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn-primary" routerLink="/report-cybercrime">Report Incident Here</button>
+        </div>
+      </div>
+
+      <ng-template #noStateSelected>
+        <div class="no-selection">
+          <div class="icon">👆</div>
+          <p>{{ 'MAP.NO_STATE' | translate }}</p>
+        </div>
+
+        <div class="leaderboard">
+          <h3>Top 5 High-Alert States</h3>
+          <div class="list">
+            <div class="list-item" *ngFor="let st of topStates(); let i = index" (click)="onStateClick(st)">
+              <span class="rank">{{ i + 1 }}</span>
+              <span class="name">{{ st.name }}</span>
+              <span class="badge" [style.backgroundColor]="st.fillColor">{{ st.threatLabel }}</span>
+              <span class="count">{{ st.weeklyReportCount }}</span>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+    </div>
+  </div>
+</div>

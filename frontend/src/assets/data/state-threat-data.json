@@ -1,0 +1,1371 @@
+[
+  {
+    "stateId": "AP",
+    "stateName": "Andhra Pradesh",
+    "threatLevel": 3,
+    "weeklyReportCount": 1306,
+    "topScamTypes": [
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 51,
+        "count": 666
+      },
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 18,
+        "count": 235
+      },
+      {
+        "type": "Phishing",
+        "percentOfTotal": 16,
+        "count": 208
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 15,
+        "count": 195
+      }
+    ],
+    "activeAlerts": [
+      "ticker-1",
+      "ticker-13"
+    ],
+    "totalLossThisMonth": 1879,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "18-25",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.972Z"
+  },
+  {
+    "stateId": "AR",
+    "stateName": "Arunachal Pradesh",
+    "threatLevel": 1,
+    "weeklyReportCount": 59,
+    "topScamTypes": [
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 52,
+        "count": 30
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 19,
+        "count": 11
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 19,
+        "count": 11
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 10,
+        "count": 5
+      }
+    ],
+    "activeAlerts": [
+      "ticker-2",
+      "ticker-17"
+    ],
+    "totalLossThisMonth": 30,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "60+",
+    "trendDirection": "stable",
+    "lastUpdated": "2026-05-06T12:45:24.987Z"
+  },
+  {
+    "stateId": "AS",
+    "stateName": "Assam",
+    "threatLevel": 2,
+    "weeklyReportCount": 550,
+    "topScamTypes": [
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 44,
+        "count": 242
+      },
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 25,
+        "count": 137
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 17,
+        "count": 93
+      },
+      {
+        "type": "Phishing",
+        "percentOfTotal": 14,
+        "count": 77
+      }
+    ],
+    "activeAlerts": [
+      "ticker-4",
+      "ticker-13"
+    ],
+    "totalLossThisMonth": 372,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "41-60",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.987Z"
+  },
+  {
+    "stateId": "BR",
+    "stateName": "Bihar",
+    "threatLevel": 3,
+    "weeklyReportCount": 1582,
+    "topScamTypes": [
+      {
+        "type": "Phishing",
+        "percentOfTotal": 38,
+        "count": 601
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 26,
+        "count": 411
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 19,
+        "count": 300
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 17,
+        "count": 268
+      }
+    ],
+    "activeAlerts": [
+      "ticker-2",
+      "ticker-10"
+    ],
+    "totalLossThisMonth": 2054,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "41-60",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.987Z"
+  },
+  {
+    "stateId": "CG",
+    "stateName": "Chhattisgarh",
+    "threatLevel": 2,
+    "weeklyReportCount": 455,
+    "topScamTypes": [
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 50,
+        "count": 227
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 26,
+        "count": 118
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 13,
+        "count": 59
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 11,
+        "count": 50
+      }
+    ],
+    "activeAlerts": [
+      "ticker-8",
+      "ticker-18"
+    ],
+    "totalLossThisMonth": 437,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "26-40",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.987Z"
+  },
+  {
+    "stateId": "GA",
+    "stateName": "Goa",
+    "threatLevel": 2,
+    "weeklyReportCount": 300,
+    "topScamTypes": [
+      {
+        "type": "Phishing",
+        "percentOfTotal": 27,
+        "count": 81
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 26,
+        "count": 78
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 25,
+        "count": 75
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 22,
+        "count": 66
+      }
+    ],
+    "activeAlerts": [
+      "ticker-5",
+      "ticker-15"
+    ],
+    "totalLossThisMonth": 339,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "18-25",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.987Z"
+  },
+  {
+    "stateId": "GJ",
+    "stateName": "Gujarat",
+    "threatLevel": 3,
+    "weeklyReportCount": 1105,
+    "topScamTypes": [
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 39,
+        "count": 430
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 27,
+        "count": 298
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 22,
+        "count": 243
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 12,
+        "count": 132
+      }
+    ],
+    "activeAlerts": [
+      "ticker-4",
+      "ticker-18"
+    ],
+    "totalLossThisMonth": 1551,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "41-60",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.987Z"
+  },
+  {
+    "stateId": "HR",
+    "stateName": "Haryana",
+    "threatLevel": 5,
+    "weeklyReportCount": 2360,
+    "topScamTypes": [
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 36,
+        "count": 849
+      },
+      {
+        "type": "Phishing",
+        "percentOfTotal": 27,
+        "count": 637
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 25,
+        "count": 590
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 12,
+        "count": 283
+      }
+    ],
+    "activeAlerts": [
+      "ticker-3",
+      "ticker-10"
+    ],
+    "totalLossThisMonth": 2563,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "41-60",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "HP",
+    "stateName": "Himachal Pradesh",
+    "threatLevel": 2,
+    "weeklyReportCount": 565,
+    "topScamTypes": [
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 34,
+        "count": 192
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 29,
+        "count": 163
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 25,
+        "count": 141
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 12,
+        "count": 67
+      }
+    ],
+    "activeAlerts": [
+      "ticker-3",
+      "ticker-15"
+    ],
+    "totalLossThisMonth": 504,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "41-60",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "JH",
+    "stateName": "Jharkhand",
+    "threatLevel": 2,
+    "weeklyReportCount": 423,
+    "topScamTypes": [
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 52,
+        "count": 219
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 19,
+        "count": 80
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 18,
+        "count": 76
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 11,
+        "count": 46
+      }
+    ],
+    "activeAlerts": [
+      "ticker-0",
+      "ticker-16"
+    ],
+    "totalLossThisMonth": 366,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "60+",
+    "trendDirection": "stable",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "KA",
+    "stateName": "Karnataka",
+    "threatLevel": 4,
+    "weeklyReportCount": 2733,
+    "topScamTypes": [
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 47,
+        "count": 1284
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 21,
+        "count": 573
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 17,
+        "count": 464
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 15,
+        "count": 409
+      }
+    ],
+    "activeAlerts": [
+      "ticker-1",
+      "ticker-14"
+    ],
+    "totalLossThisMonth": 3230,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "41-60",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "KL",
+    "stateName": "Kerala",
+    "threatLevel": 3,
+    "weeklyReportCount": 606,
+    "topScamTypes": [
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 45,
+        "count": 272
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 19,
+        "count": 115
+      },
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 18,
+        "count": 109
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 18,
+        "count": 109
+      }
+    ],
+    "activeAlerts": [
+      "ticker-6",
+      "ticker-15"
+    ],
+    "totalLossThisMonth": 831,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "41-60",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "MP",
+    "stateName": "Madhya Pradesh",
+    "threatLevel": 3,
+    "weeklyReportCount": 1526,
+    "topScamTypes": [
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 31,
+        "count": 473
+      },
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 27,
+        "count": 412
+      },
+      {
+        "type": "Phishing",
+        "percentOfTotal": 23,
+        "count": 350
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 19,
+        "count": 289
+      }
+    ],
+    "activeAlerts": [
+      "ticker-4",
+      "ticker-12"
+    ],
+    "totalLossThisMonth": 1812,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "18-25",
+    "trendDirection": "stable",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "MH",
+    "stateName": "Maharashtra",
+    "threatLevel": 5,
+    "weeklyReportCount": 2727,
+    "topScamTypes": [
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 51,
+        "count": 1390
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 19,
+        "count": 518
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 18,
+        "count": 490
+      },
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 12,
+        "count": 327
+      }
+    ],
+    "activeAlerts": [
+      "ticker-2",
+      "ticker-11"
+    ],
+    "totalLossThisMonth": 2585,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "26-40",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "MN",
+    "stateName": "Manipur",
+    "threatLevel": 2,
+    "weeklyReportCount": 129,
+    "topScamTypes": [
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 44,
+        "count": 56
+      },
+      {
+        "type": "Phishing",
+        "percentOfTotal": 22,
+        "count": 28
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 20,
+        "count": 25
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 14,
+        "count": 18
+      }
+    ],
+    "activeAlerts": [
+      "ticker-6",
+      "ticker-17"
+    ],
+    "totalLossThisMonth": 151,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "26-40",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "ML",
+    "stateName": "Meghalaya",
+    "threatLevel": 2,
+    "weeklyReportCount": 57,
+    "topScamTypes": [
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 36,
+        "count": 20
+      },
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 23,
+        "count": 13
+      },
+      {
+        "type": "Phishing",
+        "percentOfTotal": 22,
+        "count": 12
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 19,
+        "count": 10
+      }
+    ],
+    "activeAlerts": [
+      "ticker-1",
+      "ticker-18"
+    ],
+    "totalLossThisMonth": 73,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "26-40",
+    "trendDirection": "stable",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "MZ",
+    "stateName": "Mizoram",
+    "threatLevel": 1,
+    "weeklyReportCount": 91,
+    "topScamTypes": [
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 37,
+        "count": 33
+      },
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 26,
+        "count": 23
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 19,
+        "count": 17
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 18,
+        "count": 16
+      }
+    ],
+    "activeAlerts": [
+      "ticker-7",
+      "ticker-15"
+    ],
+    "totalLossThisMonth": 108,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "41-60",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "NL",
+    "stateName": "Nagaland",
+    "threatLevel": 1,
+    "weeklyReportCount": 94,
+    "topScamTypes": [
+      {
+        "type": "Phishing",
+        "percentOfTotal": 45,
+        "count": 42
+      },
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 27,
+        "count": 25
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 17,
+        "count": 15
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 11,
+        "count": 10
+      }
+    ],
+    "activeAlerts": [
+      "ticker-2",
+      "ticker-12"
+    ],
+    "totalLossThisMonth": 123,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "26-40",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "OD",
+    "stateName": "Odisha",
+    "threatLevel": 2,
+    "weeklyReportCount": 658,
+    "topScamTypes": [
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 48,
+        "count": 315
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 24,
+        "count": 157
+      },
+      {
+        "type": "Phishing",
+        "percentOfTotal": 15,
+        "count": 98
+      },
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 13,
+        "count": 85
+      }
+    ],
+    "activeAlerts": [
+      "ticker-1",
+      "ticker-15"
+    ],
+    "totalLossThisMonth": 950,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "26-40",
+    "trendDirection": "stable",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "PB",
+    "stateName": "Punjab",
+    "threatLevel": 2,
+    "weeklyReportCount": 683,
+    "topScamTypes": [
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 44,
+        "count": 300
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 28,
+        "count": 191
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 16,
+        "count": 109
+      },
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 12,
+        "count": 81
+      }
+    ],
+    "activeAlerts": [
+      "ticker-6",
+      "ticker-10"
+    ],
+    "totalLossThisMonth": 1011,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "60+",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "RJ",
+    "stateName": "Rajasthan",
+    "threatLevel": 3,
+    "weeklyReportCount": 1565,
+    "topScamTypes": [
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 59,
+        "count": 923
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 19,
+        "count": 297
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 12,
+        "count": 187
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 10,
+        "count": 156
+      }
+    ],
+    "activeAlerts": [
+      "ticker-9",
+      "ticker-12"
+    ],
+    "totalLossThisMonth": 1008,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "60+",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "SK",
+    "stateName": "Sikkim",
+    "threatLevel": 1,
+    "weeklyReportCount": 136,
+    "topScamTypes": [
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 29,
+        "count": 39
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 28,
+        "count": 38
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 26,
+        "count": 35
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 17,
+        "count": 23
+      }
+    ],
+    "activeAlerts": [
+      "ticker-4",
+      "ticker-11"
+    ],
+    "totalLossThisMonth": 93,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "18-25",
+    "trendDirection": "stable",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "TN",
+    "stateName": "Tamil Nadu",
+    "threatLevel": 4,
+    "weeklyReportCount": 945,
+    "topScamTypes": [
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 37,
+        "count": 349
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 24,
+        "count": 226
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 20,
+        "count": 189
+      },
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 19,
+        "count": 179
+      }
+    ],
+    "activeAlerts": [
+      "ticker-4",
+      "ticker-11"
+    ],
+    "totalLossThisMonth": 803,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "26-40",
+    "trendDirection": "stable",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "TG",
+    "stateName": "Telangana",
+    "threatLevel": 5,
+    "weeklyReportCount": 2430,
+    "topScamTypes": [
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 41,
+        "count": 996
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 24,
+        "count": 583
+      },
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 19,
+        "count": 461
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 16,
+        "count": 388
+      }
+    ],
+    "activeAlerts": [
+      "ticker-2",
+      "ticker-11"
+    ],
+    "totalLossThisMonth": 2904,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "60+",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "TR",
+    "stateName": "Tripura",
+    "threatLevel": 1,
+    "weeklyReportCount": 115,
+    "topScamTypes": [
+      {
+        "type": "Phishing",
+        "percentOfTotal": 50,
+        "count": 57
+      },
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 25,
+        "count": 28
+      },
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 13,
+        "count": 14
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 12,
+        "count": 13
+      }
+    ],
+    "activeAlerts": [
+      "ticker-2",
+      "ticker-16"
+    ],
+    "totalLossThisMonth": 137,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "18-25",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "UP",
+    "stateName": "Uttar Pradesh",
+    "threatLevel": 4,
+    "weeklyReportCount": 2445,
+    "topScamTypes": [
+      {
+        "type": "Phishing",
+        "percentOfTotal": 43,
+        "count": 1051
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 22,
+        "count": 537
+      },
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 19,
+        "count": 464
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 16,
+        "count": 391
+      }
+    ],
+    "activeAlerts": [
+      "ticker-3",
+      "ticker-18"
+    ],
+    "totalLossThisMonth": 2846,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "60+",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "UK",
+    "stateName": "Uttarakhand",
+    "threatLevel": 3,
+    "weeklyReportCount": 328,
+    "topScamTypes": [
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 29,
+        "count": 95
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 28,
+        "count": 91
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 24,
+        "count": 78
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 19,
+        "count": 62
+      }
+    ],
+    "activeAlerts": [
+      "ticker-9",
+      "ticker-13"
+    ],
+    "totalLossThisMonth": 316,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "41-60",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "WB",
+    "stateName": "West Bengal",
+    "threatLevel": 4,
+    "weeklyReportCount": 1367,
+    "topScamTypes": [
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 38,
+        "count": 519
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 23,
+        "count": 314
+      },
+      {
+        "type": "Phishing",
+        "percentOfTotal": 20,
+        "count": 273
+      },
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 19,
+        "count": 259
+      }
+    ],
+    "activeAlerts": [
+      "ticker-7",
+      "ticker-13"
+    ],
+    "totalLossThisMonth": 1365,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "26-40",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "AN",
+    "stateName": "Andaman & Nicobar",
+    "threatLevel": 1,
+    "weeklyReportCount": 57,
+    "topScamTypes": [
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 46,
+        "count": 26
+      },
+      {
+        "type": "Phishing",
+        "percentOfTotal": 22,
+        "count": 12
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 17,
+        "count": 9
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 15,
+        "count": 8
+      }
+    ],
+    "activeAlerts": [
+      "ticker-4",
+      "ticker-11"
+    ],
+    "totalLossThisMonth": 73,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "26-40",
+    "trendDirection": "stable",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "CH",
+    "stateName": "Chandigarh",
+    "threatLevel": 3,
+    "weeklyReportCount": 390,
+    "topScamTypes": [
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 35,
+        "count": 136
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 23,
+        "count": 89
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 22,
+        "count": 85
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 20,
+        "count": 78
+      }
+    ],
+    "activeAlerts": [
+      "ticker-0",
+      "ticker-13"
+    ],
+    "totalLossThisMonth": 372,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "18-25",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "DN",
+    "stateName": "Dadra & Nagar Haveli",
+    "threatLevel": 2,
+    "weeklyReportCount": 533,
+    "topScamTypes": [
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 42,
+        "count": 223
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 28,
+        "count": 149
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 19,
+        "count": 101
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 11,
+        "count": 58
+      }
+    ],
+    "activeAlerts": [
+      "ticker-8",
+      "ticker-12"
+    ],
+    "totalLossThisMonth": 755,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "26-40",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "DD",
+    "stateName": "Daman & Diu",
+    "threatLevel": 3,
+    "weeklyReportCount": 496,
+    "topScamTypes": [
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 40,
+        "count": 198
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 29,
+        "count": 143
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 19,
+        "count": 94
+      },
+      {
+        "type": "Phishing",
+        "percentOfTotal": 12,
+        "count": 59
+      }
+    ],
+    "activeAlerts": [
+      "ticker-6",
+      "ticker-15"
+    ],
+    "totalLossThisMonth": 443,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "26-40",
+    "trendDirection": "stable",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "DL",
+    "stateName": "Delhi",
+    "threatLevel": 4,
+    "weeklyReportCount": 2307,
+    "topScamTypes": [
+      {
+        "type": "Phishing",
+        "percentOfTotal": 34,
+        "count": 784
+      },
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 29,
+        "count": 669
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 24,
+        "count": 553
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 13,
+        "count": 299
+      }
+    ],
+    "activeAlerts": [
+      "ticker-4",
+      "ticker-10"
+    ],
+    "totalLossThisMonth": 2221,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "18-25",
+    "trendDirection": "stable",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "JK",
+    "stateName": "Jammu & Kashmir",
+    "threatLevel": 2,
+    "weeklyReportCount": 338,
+    "topScamTypes": [
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 29,
+        "count": 98
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 28,
+        "count": 94
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 23,
+        "count": 77
+      },
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 20,
+        "count": 67
+      }
+    ],
+    "activeAlerts": [
+      "ticker-1",
+      "ticker-18"
+    ],
+    "totalLossThisMonth": 366,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "60+",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "LA",
+    "stateName": "Ladakh",
+    "threatLevel": 3,
+    "weeklyReportCount": 588,
+    "topScamTypes": [
+      {
+        "type": "Job Scam",
+        "percentOfTotal": 49,
+        "count": 288
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 23,
+        "count": 135
+      },
+      {
+        "type": "Fake KYC",
+        "percentOfTotal": 16,
+        "count": 94
+      },
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 12,
+        "count": 70
+      }
+    ],
+    "activeAlerts": [
+      "ticker-4",
+      "ticker-13"
+    ],
+    "totalLossThisMonth": 807,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "60+",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "LD",
+    "stateName": "Lakshadweep",
+    "threatLevel": 2,
+    "weeklyReportCount": 60,
+    "topScamTypes": [
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 47,
+        "count": 28
+      },
+      {
+        "type": "UPI Fraud",
+        "percentOfTotal": 23,
+        "count": 13
+      },
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 20,
+        "count": 12
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 10,
+        "count": 6
+      }
+    ],
+    "activeAlerts": [
+      "ticker-7",
+      "ticker-19"
+    ],
+    "totalLossThisMonth": 70,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "41-60",
+    "trendDirection": "rising",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  },
+  {
+    "stateId": "PY",
+    "stateName": "Puducherry",
+    "threatLevel": 3,
+    "weeklyReportCount": 660,
+    "topScamTypes": [
+      {
+        "type": "Customer Care Fraud",
+        "percentOfTotal": 50,
+        "count": 330
+      },
+      {
+        "type": "Matrimonial Fraud",
+        "percentOfTotal": 26,
+        "count": 171
+      },
+      {
+        "type": "Investment Scam",
+        "percentOfTotal": 14,
+        "count": 92
+      },
+      {
+        "type": "Digital Arrest",
+        "percentOfTotal": 10,
+        "count": 66
+      }
+    ],
+    "activeAlerts": [
+      "ticker-8",
+      "ticker-16"
+    ],
+    "totalLossThisMonth": 857,
+    "mostTargetedCity": "Major City",
+    "mostTargetedAgeGroup": "60+",
+    "trendDirection": "falling",
+    "lastUpdated": "2026-05-06T12:45:24.988Z"
+  }
+]

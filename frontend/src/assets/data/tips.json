@@ -1,0 +1,841 @@
+[
+  {
+    "id": 1,
+    "category": "Password Security",
+    "title": "Use Passphrases, Not Passwords",
+    "body": "Instead of complex passwords like P@ssw0rd1, use a passphrase like CorrectHorseBatteryStaple. They are longer, easier to remember, and harder to crack.",
+    "hindiTitle": "पासवर्ड नहीं, पासफ़्रेज़ का उपयोग करें",
+    "hindiBody": "जटिल पासवर्ड के बजाय एक पासफ़्रेज़ का उपयोग करें। वे लंबे होते हैं, याद रखने में आसान होते हैं, और क्रैक करने में कठिन होते हैं।",
+    "actionItem": "Change your main email password to a 4-word passphrase.",
+    "difficulty": "easy",
+    "tags": [
+      "passwords"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "UPI/Payment Safety",
+    "title": "UPI Collect Requests Send Money",
+    "body": "Entering your UPI PIN always deducts money from your account. You NEVER need to enter your PIN to receive money.",
+    "hindiTitle": "UPI कलेक्ट रिक्वेस्ट पैसे भेजते हैं",
+    "hindiBody": "अपना UPI पिन दर्ज करने से हमेशा आपके खाते से पैसे कटते हैं। पैसे प्राप्त करने के लिए आपको कभी भी अपना पिन दर्ज करने की आवश्यकता नहीं है।",
+    "actionItem": "Decline any pending UPI collect requests you do not recognize.",
+    "difficulty": "easy",
+    "tags": [
+      "upi",
+      "banking"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Social Media Privacy",
+    "title": "Lock Your WhatsApp",
+    "body": "Enable Two-Step Verification on WhatsApp to prevent scammers from hijacking your account using the call-forwarding trick.",
+    "hindiTitle": "अपना WhatsApp लॉक करें",
+    "hindiBody": "स्कैमर्स को कॉल-फ़ॉरवर्डिंग ट्रिक का उपयोग करके आपके खाते को हाईजैक करने से रोकने के लिए WhatsApp पर टू-स्टेप वेरिफिकेशन सक्षम करें।",
+    "actionItem": "Go to WhatsApp Settings > Account > Two-step verification and enable it.",
+    "difficulty": "medium",
+    "tags": [
+      "privacy",
+      "social-media"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Email Security",
+    "title": "Daily Tip on Email Security #1",
+    "body": "Always ensure you follow best practices regarding email security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Email Security पर दैनिक टिप #1",
+    "hindiBody": "हमेशा Email Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Email Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "privacy",
+      "social-media"
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Mobile Device Security",
+    "title": "Daily Tip on Mobile Device Security #1",
+    "body": "Always ensure you follow best practices regarding mobile device security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Mobile Device Security पर दैनिक टिप #1",
+    "hindiBody": "हमेशा Mobile Device Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Mobile Device Security today.",
+    "difficulty": "medium",
+    "tags": [
+      "social-media",
+      "banking"
+    ]
+  },
+  {
+    "id": 6,
+    "category": "India-Specific Scams",
+    "title": "Daily Tip on India-Specific Scams #1",
+    "body": "Always ensure you follow best practices regarding india-specific scams. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "India-Specific Scams पर दैनिक टिप #1",
+    "hindiBody": "हमेशा India-Specific Scams से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for India-Specific Scams today.",
+    "difficulty": "advanced",
+    "tags": [
+      "banking",
+      "upi"
+    ]
+  },
+  {
+    "id": 7,
+    "category": "Legal Rights",
+    "title": "Daily Tip on Legal Rights #1",
+    "body": "Always ensure you follow best practices regarding legal rights. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Legal Rights पर दैनिक टिप #1",
+    "hindiBody": "हमेशा Legal Rights से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Legal Rights today.",
+    "difficulty": "easy",
+    "tags": [
+      "upi",
+      "aadhaar"
+    ]
+  },
+  {
+    "id": 8,
+    "category": "Data Privacy",
+    "title": "Daily Tip on Data Privacy #1",
+    "body": "Always ensure you follow best practices regarding data privacy. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Data Privacy पर दैनिक टिप #1",
+    "hindiBody": "हमेशा Data Privacy से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Data Privacy today.",
+    "difficulty": "medium",
+    "tags": [
+      "aadhaar",
+      "scam"
+    ]
+  },
+  {
+    "id": 9,
+    "category": "Network Security",
+    "title": "Daily Tip on Network Security #1",
+    "body": "Always ensure you follow best practices regarding network security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Network Security पर दैनिक टिप #1",
+    "hindiBody": "हमेशा Network Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Network Security today.",
+    "difficulty": "advanced",
+    "tags": [
+      "scam",
+      "malware"
+    ]
+  },
+  {
+    "id": 10,
+    "category": "Physical Security",
+    "title": "Daily Tip on Physical Security #1",
+    "body": "Always ensure you follow best practices regarding physical security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Physical Security पर दैनिक टिप #1",
+    "hindiBody": "हमेशा Physical Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Physical Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "malware",
+      "wifi"
+    ]
+  },
+  {
+    "id": 11,
+    "category": "Children Online Safety",
+    "title": "Daily Tip on Children Online Safety #1",
+    "body": "Always ensure you follow best practices regarding children online safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Children Online Safety पर दैनिक टिप #1",
+    "hindiBody": "हमेशा Children Online Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Children Online Safety today.",
+    "difficulty": "medium",
+    "tags": [
+      "wifi",
+      "kids"
+    ]
+  },
+  {
+    "id": 12,
+    "category": "Senior Citizen Safety",
+    "title": "Daily Tip on Senior Citizen Safety #1",
+    "body": "Always ensure you follow best practices regarding senior citizen safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Senior Citizen Safety पर दैनिक टिप #1",
+    "hindiBody": "हमेशा Senior Citizen Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Senior Citizen Safety today.",
+    "difficulty": "advanced",
+    "tags": [
+      "kids",
+      "seniors"
+    ]
+  },
+  {
+    "id": 13,
+    "category": "Password Security",
+    "title": "Daily Tip on Password Security #2",
+    "body": "Always ensure you follow best practices regarding password security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Password Security पर दैनिक टिप #2",
+    "hindiBody": "हमेशा Password Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Password Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "seniors",
+      "legal"
+    ]
+  },
+  {
+    "id": 14,
+    "category": "UPI/Payment Safety",
+    "title": "Daily Tip on UPI/Payment Safety #2",
+    "body": "Always ensure you follow best practices regarding upi/payment safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "UPI/Payment Safety पर दैनिक टिप #2",
+    "hindiBody": "हमेशा UPI/Payment Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for UPI/Payment Safety today.",
+    "difficulty": "medium",
+    "tags": [
+      "legal",
+      "phishing"
+    ]
+  },
+  {
+    "id": 15,
+    "category": "Social Media Privacy",
+    "title": "Daily Tip on Social Media Privacy #2",
+    "body": "Always ensure you follow best practices regarding social media privacy. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Social Media Privacy पर दैनिक टिप #2",
+    "hindiBody": "हमेशा Social Media Privacy से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Social Media Privacy today.",
+    "difficulty": "advanced",
+    "tags": [
+      "phishing",
+      "otp"
+    ]
+  },
+  {
+    "id": 16,
+    "category": "Email Security",
+    "title": "Daily Tip on Email Security #2",
+    "body": "Always ensure you follow best practices regarding email security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Email Security पर दैनिक टिप #2",
+    "hindiBody": "हमेशा Email Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Email Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "otp",
+      "passwords"
+    ]
+  },
+  {
+    "id": 17,
+    "category": "Mobile Device Security",
+    "title": "Daily Tip on Mobile Device Security #2",
+    "body": "Always ensure you follow best practices regarding mobile device security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Mobile Device Security पर दैनिक टिप #2",
+    "hindiBody": "हमेशा Mobile Device Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Mobile Device Security today.",
+    "difficulty": "medium",
+    "tags": [
+      "passwords",
+      "privacy"
+    ]
+  },
+  {
+    "id": 18,
+    "category": "India-Specific Scams",
+    "title": "Daily Tip on India-Specific Scams #2",
+    "body": "Always ensure you follow best practices regarding india-specific scams. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "India-Specific Scams पर दैनिक टिप #2",
+    "hindiBody": "हमेशा India-Specific Scams से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for India-Specific Scams today.",
+    "difficulty": "advanced",
+    "tags": [
+      "privacy",
+      "social-media"
+    ]
+  },
+  {
+    "id": 19,
+    "category": "Legal Rights",
+    "title": "Daily Tip on Legal Rights #2",
+    "body": "Always ensure you follow best practices regarding legal rights. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Legal Rights पर दैनिक टिप #2",
+    "hindiBody": "हमेशा Legal Rights से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Legal Rights today.",
+    "difficulty": "easy",
+    "tags": [
+      "social-media",
+      "banking"
+    ]
+  },
+  {
+    "id": 20,
+    "category": "Data Privacy",
+    "title": "Daily Tip on Data Privacy #2",
+    "body": "Always ensure you follow best practices regarding data privacy. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Data Privacy पर दैनिक टिप #2",
+    "hindiBody": "हमेशा Data Privacy से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Data Privacy today.",
+    "difficulty": "medium",
+    "tags": [
+      "banking",
+      "upi"
+    ]
+  },
+  {
+    "id": 21,
+    "category": "Network Security",
+    "title": "Daily Tip on Network Security #2",
+    "body": "Always ensure you follow best practices regarding network security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Network Security पर दैनिक टिप #2",
+    "hindiBody": "हमेशा Network Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Network Security today.",
+    "difficulty": "advanced",
+    "tags": [
+      "upi",
+      "aadhaar"
+    ]
+  },
+  {
+    "id": 22,
+    "category": "Physical Security",
+    "title": "Daily Tip on Physical Security #2",
+    "body": "Always ensure you follow best practices regarding physical security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Physical Security पर दैनिक टिप #2",
+    "hindiBody": "हमेशा Physical Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Physical Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "aadhaar",
+      "scam"
+    ]
+  },
+  {
+    "id": 23,
+    "category": "Children Online Safety",
+    "title": "Daily Tip on Children Online Safety #2",
+    "body": "Always ensure you follow best practices regarding children online safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Children Online Safety पर दैनिक टिप #2",
+    "hindiBody": "हमेशा Children Online Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Children Online Safety today.",
+    "difficulty": "medium",
+    "tags": [
+      "scam",
+      "malware"
+    ]
+  },
+  {
+    "id": 24,
+    "category": "Senior Citizen Safety",
+    "title": "Daily Tip on Senior Citizen Safety #2",
+    "body": "Always ensure you follow best practices regarding senior citizen safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Senior Citizen Safety पर दैनिक टिप #2",
+    "hindiBody": "हमेशा Senior Citizen Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Senior Citizen Safety today.",
+    "difficulty": "advanced",
+    "tags": [
+      "malware",
+      "wifi"
+    ]
+  },
+  {
+    "id": 25,
+    "category": "Password Security",
+    "title": "Daily Tip on Password Security #3",
+    "body": "Always ensure you follow best practices regarding password security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Password Security पर दैनिक टिप #3",
+    "hindiBody": "हमेशा Password Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Password Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "wifi",
+      "kids"
+    ]
+  },
+  {
+    "id": 26,
+    "category": "UPI/Payment Safety",
+    "title": "Daily Tip on UPI/Payment Safety #3",
+    "body": "Always ensure you follow best practices regarding upi/payment safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "UPI/Payment Safety पर दैनिक टिप #3",
+    "hindiBody": "हमेशा UPI/Payment Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for UPI/Payment Safety today.",
+    "difficulty": "medium",
+    "tags": [
+      "kids",
+      "seniors"
+    ]
+  },
+  {
+    "id": 27,
+    "category": "Social Media Privacy",
+    "title": "Daily Tip on Social Media Privacy #3",
+    "body": "Always ensure you follow best practices regarding social media privacy. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Social Media Privacy पर दैनिक टिप #3",
+    "hindiBody": "हमेशा Social Media Privacy से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Social Media Privacy today.",
+    "difficulty": "advanced",
+    "tags": [
+      "seniors",
+      "legal"
+    ]
+  },
+  {
+    "id": 28,
+    "category": "Email Security",
+    "title": "Daily Tip on Email Security #3",
+    "body": "Always ensure you follow best practices regarding email security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Email Security पर दैनिक टिप #3",
+    "hindiBody": "हमेशा Email Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Email Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "legal",
+      "phishing"
+    ]
+  },
+  {
+    "id": 29,
+    "category": "Mobile Device Security",
+    "title": "Daily Tip on Mobile Device Security #3",
+    "body": "Always ensure you follow best practices regarding mobile device security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Mobile Device Security पर दैनिक टिप #3",
+    "hindiBody": "हमेशा Mobile Device Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Mobile Device Security today.",
+    "difficulty": "medium",
+    "tags": [
+      "phishing",
+      "otp"
+    ]
+  },
+  {
+    "id": 30,
+    "category": "India-Specific Scams",
+    "title": "Daily Tip on India-Specific Scams #3",
+    "body": "Always ensure you follow best practices regarding india-specific scams. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "India-Specific Scams पर दैनिक टिप #3",
+    "hindiBody": "हमेशा India-Specific Scams से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for India-Specific Scams today.",
+    "difficulty": "advanced",
+    "tags": [
+      "otp",
+      "passwords"
+    ]
+  },
+  {
+    "id": 31,
+    "category": "Legal Rights",
+    "title": "Daily Tip on Legal Rights #3",
+    "body": "Always ensure you follow best practices regarding legal rights. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Legal Rights पर दैनिक टिप #3",
+    "hindiBody": "हमेशा Legal Rights से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Legal Rights today.",
+    "difficulty": "easy",
+    "tags": [
+      "passwords",
+      "privacy"
+    ]
+  },
+  {
+    "id": 32,
+    "category": "Data Privacy",
+    "title": "Daily Tip on Data Privacy #3",
+    "body": "Always ensure you follow best practices regarding data privacy. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Data Privacy पर दैनिक टिप #3",
+    "hindiBody": "हमेशा Data Privacy से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Data Privacy today.",
+    "difficulty": "medium",
+    "tags": [
+      "privacy",
+      "social-media"
+    ]
+  },
+  {
+    "id": 33,
+    "category": "Network Security",
+    "title": "Daily Tip on Network Security #3",
+    "body": "Always ensure you follow best practices regarding network security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Network Security पर दैनिक टिप #3",
+    "hindiBody": "हमेशा Network Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Network Security today.",
+    "difficulty": "advanced",
+    "tags": [
+      "social-media",
+      "banking"
+    ]
+  },
+  {
+    "id": 34,
+    "category": "Physical Security",
+    "title": "Daily Tip on Physical Security #3",
+    "body": "Always ensure you follow best practices regarding physical security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Physical Security पर दैनिक टिप #3",
+    "hindiBody": "हमेशा Physical Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Physical Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "banking",
+      "upi"
+    ]
+  },
+  {
+    "id": 35,
+    "category": "Children Online Safety",
+    "title": "Daily Tip on Children Online Safety #3",
+    "body": "Always ensure you follow best practices regarding children online safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Children Online Safety पर दैनिक टिप #3",
+    "hindiBody": "हमेशा Children Online Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Children Online Safety today.",
+    "difficulty": "medium",
+    "tags": [
+      "upi",
+      "aadhaar"
+    ]
+  },
+  {
+    "id": 36,
+    "category": "Senior Citizen Safety",
+    "title": "Daily Tip on Senior Citizen Safety #3",
+    "body": "Always ensure you follow best practices regarding senior citizen safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Senior Citizen Safety पर दैनिक टिप #3",
+    "hindiBody": "हमेशा Senior Citizen Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Senior Citizen Safety today.",
+    "difficulty": "advanced",
+    "tags": [
+      "aadhaar",
+      "scam"
+    ]
+  },
+  {
+    "id": 37,
+    "category": "Password Security",
+    "title": "Daily Tip on Password Security #4",
+    "body": "Always ensure you follow best practices regarding password security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Password Security पर दैनिक टिप #4",
+    "hindiBody": "हमेशा Password Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Password Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "scam",
+      "malware"
+    ]
+  },
+  {
+    "id": 38,
+    "category": "UPI/Payment Safety",
+    "title": "Daily Tip on UPI/Payment Safety #4",
+    "body": "Always ensure you follow best practices regarding upi/payment safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "UPI/Payment Safety पर दैनिक टिप #4",
+    "hindiBody": "हमेशा UPI/Payment Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for UPI/Payment Safety today.",
+    "difficulty": "medium",
+    "tags": [
+      "malware",
+      "wifi"
+    ]
+  },
+  {
+    "id": 39,
+    "category": "Social Media Privacy",
+    "title": "Daily Tip on Social Media Privacy #4",
+    "body": "Always ensure you follow best practices regarding social media privacy. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Social Media Privacy पर दैनिक टिप #4",
+    "hindiBody": "हमेशा Social Media Privacy से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Social Media Privacy today.",
+    "difficulty": "advanced",
+    "tags": [
+      "wifi",
+      "kids"
+    ]
+  },
+  {
+    "id": 40,
+    "category": "Email Security",
+    "title": "Daily Tip on Email Security #4",
+    "body": "Always ensure you follow best practices regarding email security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Email Security पर दैनिक टिप #4",
+    "hindiBody": "हमेशा Email Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Email Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "kids",
+      "seniors"
+    ]
+  },
+  {
+    "id": 41,
+    "category": "Mobile Device Security",
+    "title": "Daily Tip on Mobile Device Security #4",
+    "body": "Always ensure you follow best practices regarding mobile device security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Mobile Device Security पर दैनिक टिप #4",
+    "hindiBody": "हमेशा Mobile Device Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Mobile Device Security today.",
+    "difficulty": "medium",
+    "tags": [
+      "seniors",
+      "legal"
+    ]
+  },
+  {
+    "id": 42,
+    "category": "India-Specific Scams",
+    "title": "Daily Tip on India-Specific Scams #4",
+    "body": "Always ensure you follow best practices regarding india-specific scams. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "India-Specific Scams पर दैनिक टिप #4",
+    "hindiBody": "हमेशा India-Specific Scams से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for India-Specific Scams today.",
+    "difficulty": "advanced",
+    "tags": [
+      "legal",
+      "phishing"
+    ]
+  },
+  {
+    "id": 43,
+    "category": "Legal Rights",
+    "title": "Daily Tip on Legal Rights #4",
+    "body": "Always ensure you follow best practices regarding legal rights. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Legal Rights पर दैनिक टिप #4",
+    "hindiBody": "हमेशा Legal Rights से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Legal Rights today.",
+    "difficulty": "easy",
+    "tags": [
+      "phishing",
+      "otp"
+    ]
+  },
+  {
+    "id": 44,
+    "category": "Data Privacy",
+    "title": "Daily Tip on Data Privacy #4",
+    "body": "Always ensure you follow best practices regarding data privacy. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Data Privacy पर दैनिक टिप #4",
+    "hindiBody": "हमेशा Data Privacy से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Data Privacy today.",
+    "difficulty": "medium",
+    "tags": [
+      "otp",
+      "passwords"
+    ]
+  },
+  {
+    "id": 45,
+    "category": "Network Security",
+    "title": "Daily Tip on Network Security #4",
+    "body": "Always ensure you follow best practices regarding network security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Network Security पर दैनिक टिप #4",
+    "hindiBody": "हमेशा Network Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Network Security today.",
+    "difficulty": "advanced",
+    "tags": [
+      "passwords",
+      "privacy"
+    ]
+  },
+  {
+    "id": 46,
+    "category": "Physical Security",
+    "title": "Daily Tip on Physical Security #4",
+    "body": "Always ensure you follow best practices regarding physical security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Physical Security पर दैनिक टिप #4",
+    "hindiBody": "हमेशा Physical Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Physical Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "privacy",
+      "social-media"
+    ]
+  },
+  {
+    "id": 47,
+    "category": "Children Online Safety",
+    "title": "Daily Tip on Children Online Safety #4",
+    "body": "Always ensure you follow best practices regarding children online safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Children Online Safety पर दैनिक टिप #4",
+    "hindiBody": "हमेशा Children Online Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Children Online Safety today.",
+    "difficulty": "medium",
+    "tags": [
+      "social-media",
+      "banking"
+    ]
+  },
+  {
+    "id": 48,
+    "category": "Senior Citizen Safety",
+    "title": "Daily Tip on Senior Citizen Safety #4",
+    "body": "Always ensure you follow best practices regarding senior citizen safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Senior Citizen Safety पर दैनिक टिप #4",
+    "hindiBody": "हमेशा Senior Citizen Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Senior Citizen Safety today.",
+    "difficulty": "advanced",
+    "tags": [
+      "banking",
+      "upi"
+    ]
+  },
+  {
+    "id": 49,
+    "category": "Password Security",
+    "title": "Daily Tip on Password Security #5",
+    "body": "Always ensure you follow best practices regarding password security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Password Security पर दैनिक टिप #5",
+    "hindiBody": "हमेशा Password Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Password Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "upi",
+      "aadhaar"
+    ]
+  },
+  {
+    "id": 50,
+    "category": "UPI/Payment Safety",
+    "title": "Daily Tip on UPI/Payment Safety #5",
+    "body": "Always ensure you follow best practices regarding upi/payment safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "UPI/Payment Safety पर दैनिक टिप #5",
+    "hindiBody": "हमेशा UPI/Payment Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for UPI/Payment Safety today.",
+    "difficulty": "medium",
+    "tags": [
+      "aadhaar",
+      "scam"
+    ]
+  },
+  {
+    "id": 51,
+    "category": "Social Media Privacy",
+    "title": "Daily Tip on Social Media Privacy #5",
+    "body": "Always ensure you follow best practices regarding social media privacy. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Social Media Privacy पर दैनिक टिप #5",
+    "hindiBody": "हमेशा Social Media Privacy से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Social Media Privacy today.",
+    "difficulty": "advanced",
+    "tags": [
+      "scam",
+      "malware"
+    ]
+  },
+  {
+    "id": 52,
+    "category": "Email Security",
+    "title": "Daily Tip on Email Security #5",
+    "body": "Always ensure you follow best practices regarding email security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Email Security पर दैनिक टिप #5",
+    "hindiBody": "हमेशा Email Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Email Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "malware",
+      "wifi"
+    ]
+  },
+  {
+    "id": 53,
+    "category": "Mobile Device Security",
+    "title": "Daily Tip on Mobile Device Security #5",
+    "body": "Always ensure you follow best practices regarding mobile device security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Mobile Device Security पर दैनिक टिप #5",
+    "hindiBody": "हमेशा Mobile Device Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Mobile Device Security today.",
+    "difficulty": "medium",
+    "tags": [
+      "wifi",
+      "kids"
+    ]
+  },
+  {
+    "id": 54,
+    "category": "India-Specific Scams",
+    "title": "Daily Tip on India-Specific Scams #5",
+    "body": "Always ensure you follow best practices regarding india-specific scams. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "India-Specific Scams पर दैनिक टिप #5",
+    "hindiBody": "हमेशा India-Specific Scams से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for India-Specific Scams today.",
+    "difficulty": "advanced",
+    "tags": [
+      "kids",
+      "seniors"
+    ]
+  },
+  {
+    "id": 55,
+    "category": "Legal Rights",
+    "title": "Daily Tip on Legal Rights #5",
+    "body": "Always ensure you follow best practices regarding legal rights. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Legal Rights पर दैनिक टिप #5",
+    "hindiBody": "हमेशा Legal Rights से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Legal Rights today.",
+    "difficulty": "easy",
+    "tags": [
+      "seniors",
+      "legal"
+    ]
+  },
+  {
+    "id": 56,
+    "category": "Data Privacy",
+    "title": "Daily Tip on Data Privacy #5",
+    "body": "Always ensure you follow best practices regarding data privacy. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Data Privacy पर दैनिक टिप #5",
+    "hindiBody": "हमेशा Data Privacy से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Data Privacy today.",
+    "difficulty": "medium",
+    "tags": [
+      "legal",
+      "phishing"
+    ]
+  },
+  {
+    "id": 57,
+    "category": "Network Security",
+    "title": "Daily Tip on Network Security #5",
+    "body": "Always ensure you follow best practices regarding network security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Network Security पर दैनिक टिप #5",
+    "hindiBody": "हमेशा Network Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Network Security today.",
+    "difficulty": "advanced",
+    "tags": [
+      "phishing",
+      "otp"
+    ]
+  },
+  {
+    "id": 58,
+    "category": "Physical Security",
+    "title": "Daily Tip on Physical Security #5",
+    "body": "Always ensure you follow best practices regarding physical security. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Physical Security पर दैनिक टिप #5",
+    "hindiBody": "हमेशा Physical Security से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Physical Security today.",
+    "difficulty": "easy",
+    "tags": [
+      "otp",
+      "passwords"
+    ]
+  },
+  {
+    "id": 59,
+    "category": "Children Online Safety",
+    "title": "Daily Tip on Children Online Safety #5",
+    "body": "Always ensure you follow best practices regarding children online safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Children Online Safety पर दैनिक टिप #5",
+    "hindiBody": "हमेशा Children Online Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Children Online Safety today.",
+    "difficulty": "medium",
+    "tags": [
+      "passwords",
+      "privacy"
+    ]
+  },
+  {
+    "id": 60,
+    "category": "Senior Citizen Safety",
+    "title": "Daily Tip on Senior Citizen Safety #5",
+    "body": "Always ensure you follow best practices regarding senior citizen safety. This helps in protecting your digital identity from malicious actors. Stay vigilant and verify sources.",
+    "hindiTitle": "Senior Citizen Safety पर दैनिक टिप #5",
+    "hindiBody": "हमेशा Senior Citizen Safety से संबंधित सर्वोत्तम प्रथाओं का पालन करें। यह आपकी डिजिटल पहचान को दुर्भावनापूर्ण तत्वों से बचाने में मदद करता है। सतर्क रहें और स्रोतों की पुष्टि करें।",
+    "actionItem": "Review your settings for Senior Citizen Safety today.",
+    "difficulty": "advanced",
+    "tags": [
+      "privacy",
+      "social-media"
+    ]
+  }
+]

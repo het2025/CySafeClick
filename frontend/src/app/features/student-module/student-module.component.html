@@ -1,0 +1,118 @@
+<div class="student-container">
+  <header class="page-header no-print">
+    <h1>{{ t.translate('STUDENT.TITLE') }}</h1>
+    <p>{{ t.translate('STUDENT.SUBTITLE') }}</p>
+  </header>
+
+  <div class="content-wrapper no-print">
+    
+    <!-- Topics Grid -->
+    <div class="topics-grid">
+      <div class="topic-card">
+        <div class="icon">🛑</div>
+        <h3>{{ t.translate('TOOLS.CYBER_LAW') }}</h3>
+        <p>Bullying online hurts just as much. It includes exclusion, spreading rumors, and harassment.</p>
+        <div class="topic-action">
+          <strong>Rule:</strong> Never retaliate. Screenshot the evidence, block the person, and report it.
+        </div>
+      </div>
+      <!-- Note: Hardcoding small descriptions for student module to save space, but headers are translated -->
+      <div class="topic-card">
+        <div class="icon">👣</div>
+        <h3>Digital Footprint</h3>
+        <p>Every comment, photo, and like stays online forever.</p>
+        <div class="topic-action">
+          <strong>Rule:</strong> Keep your profiles private.
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Scenario Quiz -->
+    <section class="scenario-section">
+      <h2>{{ t.translate('STUDENT.QUIZ_TITLE') }}</h2>
+      
+      <div class="quiz-box" *ngIf="!scenarioFinished">
+        <div class="progress">{{ t.translate('STUDENT.PROGRESS').replace('{{ current }}', (currentScenario + 1).toString()).replace('{{ total }}', scenarios.length.toString()) }}</div>
+        <div class="context-box">
+          {{ scenarios[currentScenario].context }}
+        </div>
+        <h3>{{ scenarios[currentScenario].question }}</h3>
+
+        <div class="options-list">
+          <button class="opt-btn" 
+                  *ngFor="let opt of scenarios[currentScenario].options; let i = index"
+                  [disabled]="showFeedback"
+                  [class.selected]="selectedOption === i"
+                  [class.correct]="showFeedback && i === scenarios[currentScenario].correctIndex"
+                  [class.wrong]="showFeedback && selectedOption === i && i !== scenarios[currentScenario].correctIndex"
+                  (click)="selectOption(i)">
+            {{ opt }}
+          </button>
+        </div>
+
+        <div class="feedback-box" *ngIf="showFeedback">
+          <h4 [class.safe]="selectedOption === scenarios[currentScenario].correctIndex" 
+              [class.danger]="selectedOption !== scenarios[currentScenario].correctIndex">
+            {{ selectedOption === scenarios[currentScenario].correctIndex ? '✅ Good call!' : '❌ Not quite right.' }}
+          </h4>
+          <p>{{ scenarios[currentScenario].feedback }}</p>
+          <button class="next-btn" (click)="nextScenario()">{{ t.translate('COMMON.NEXT') }}</button>
+        </div>
+      </div>
+
+      <div class="results-box" *ngIf="scenarioFinished">
+        <h3>{{ t.translate('STUDENT.RESULTS') }}</h3>
+        <div class="score">{{ scenarioScore }} / {{ scenarios.length }}</div>
+        <p *ngIf="scenarioScore >= 2">{{ t.translate('STUDENT.EXCELLENT') }}</p>
+        <p *ngIf="scenarioScore < 2">{{ t.translate('STUDENT.GOOD_START') }}</p>
+        <button class="next-btn" (click)="resetScenarios()">{{ t.translate('QUIZ.RETAKE') }}</button>
+      </div>
+    </section>
+
+    <!-- Safety Rules Builder -->
+    <section class="rules-builder-section">
+      <h2>{{ t.translate('STUDENT.BUILDER_TITLE') }}</h2>
+      <p>{{ t.translate('STUDENT.BUILDER_SUB') }}</p>
+
+      <div class="builder-box">
+        <input type="text" [(ngModel)]="studentName" [placeholder]="t.translate('QUIZ.NAME_PLACEHOLDER')" class="name-input">
+        
+        <div class="rule-item" *ngFor="let rule of rules">
+          <input type="checkbox" [(ngModel)]="rule.selected">
+          <span>{{ t.currentLang() === 'hi' ? rule.textHi : rule.textEn }}</span>
+        </div>
+
+        <div class="custom-rule-adder">
+          <input type="text" [(ngModel)]="customRule" [placeholder]="t.translate('STUDENT.ADD_BTN') + '...'" (keyup.enter)="addCustomRule()">
+          <button (click)="addCustomRule()">{{ t.translate('STUDENT.ADD_BTN') }}</button>
+        </div>
+
+        <button class="print-btn" (click)="printRules()">{{ t.translate('STUDENT.PRINT_BTN') }}</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Printable Area -->
+  <div class="printable-area">
+    <div class="cert-header">
+      <h1>{{ t.translate('STUDENT.PRINT_TITLE') }}</h1>
+      <p>{{ t.translate('STUDENT.AGREE').replace('I,', 'I, ' + (studentName || '[Name]')) }}</p>
+    </div>
+
+    <ul class="printed-rules">
+      <ng-container *ngFor="let rule of rules">
+        <li *ngIf="rule.selected">{{ t.currentLang() === 'hi' ? rule.textHi : rule.textEn }}</li>
+      </ng-container>
+    </ul>
+
+    <div class="signatures">
+      <div class="sig">
+        <span>{{ t.translate('STUDENT.SIG_STUDENT') }}</span>
+      </div>
+      <div class="sig">
+        <span>{{ t.translate('STUDENT.SIG_TEACHER') }}</span>
+      </div>
+    </div>
+  </div>
+
+</div>

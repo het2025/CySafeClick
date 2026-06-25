@@ -1,0 +1,96 @@
+<div class="container stories-page">
+  <div class="header-section" *ngIf="!selectedStory()">
+    <h1>Scam Stories (Anonymized)</h1>
+    <p>These are anonymized, composite stories for awareness. They illustrate how scams typically operate in India.</p>
+  </div>
+
+  <!-- LIST VIEW -->
+  <div class="list-view" *ngIf="!selectedStory()">
+    <div class="filters">
+      <input type="text" [ngModel]="searchQuery()" (ngModelChange)="searchQuery.set($event)" placeholder="Search stories, cities..." class="form-input search-box">
+      
+      <select [ngModel]="selectedScamType()" (ngModelChange)="selectedScamType.set($event)" class="form-select">
+        <option value="">All Scam Types</option>
+        <option *ngFor="let type of scamTypes()" [value]="type">{{ type | titlecase }}</option>
+      </select>
+    </div>
+
+    <div class="stories-grid">
+      <div class="story-card" *ngFor="let story of filteredStories()" (click)="viewStory(story)">
+        <div class="story-thumbnail">
+          <div class="avatar-placeholder">
+            {{ story.victim.firstName.charAt(0) }}
+          </div>
+        </div>
+        <div class="story-summary">
+          <span class="scam-tag">{{ story.scamType }}</span>
+          <h3>{{ story.title }}</h3>
+          <p class="subtitle">{{ story.subtitle }}</p>
+          <div class="story-meta">
+            <span><i class="icon-loc"></i> {{ story.victim.city }}</span>
+            <span class="loss" [class.recovered]="story.wasMoneyRecovered">Loss: {{ formatCurrency(story.amountLost) }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="no-results" *ngIf="filteredStories().length === 0">
+      <p>No stories found matching your filters.</p>
+    </div>
+  </div>
+
+  <!-- DETAIL VIEW -->
+  <div class="detail-view" *ngIf="selectedStory() as story">
+    <button class="btn-back" (click)="closeStory()">← Back to Stories</button>
+    
+    <div class="story-header">
+      <div class="victim-profile">
+        <div class="avatar-large">{{ story.victim.firstName.charAt(0) }}</div>
+        <div>
+          <h2>{{ story.title }}</h2>
+          <p class="victim-details">{{ story.victim.firstName }} • {{ story.victim.age }} yrs • {{ story.victim.occupation }} • {{ story.victim.city }}</p>
+        </div>
+      </div>
+      <div class="loss-box" [class.recovered]="story.wasMoneyRecovered">
+        <span class="label">Amount Lost</span>
+        <span class="amount">{{ formatCurrency(story.amountLost) }}</span>
+        <span class="status" *ngIf="story.wasMoneyRecovered">RECOVERED</span>
+      </div>
+    </div>
+
+    <div class="story-body card">
+      <div class="narrative-section">
+        <h3>How it started</h3>
+        <p>{{ story.howItStarted }}</p>
+      </div>
+
+      <div class="narrative-section">
+        <h3>How it unfolded</h3>
+        <p>{{ story.howItUnfolded }}</p>
+      </div>
+
+      <div class="red-flags-section">
+        <h3><app-risk-badge level="dangerous"></app-risk-badge> Red Flags Missed</h3>
+        <ul>
+          <li *ngFor="let flag of story.redFlags">{{ flag }}</li>
+        </ul>
+      </div>
+
+      <div class="narrative-section">
+        <h3>The Outcome</h3>
+        <p>{{ story.howItEnded }}</p>
+        <p class="recovery-text"><strong>Recovery Action:</strong> {{ story.recoverySteps }}</p>
+      </div>
+
+      <div class="lesson-section">
+        <h3>Key Takeaway</h3>
+        <p class="lesson-text">{{ story.lesson }}</p>
+        <p class="prevention-text"><strong>Could have been prevented if:</strong> {{ story.couldHaveBeenPrevented }}</p>
+      </div>
+    </div>
+
+    <div class="action-footer">
+      <button class="btn-whatsapp" (click)="shareStory(story)">Share to Warn Others on WhatsApp</button>
+    </div>
+  </div>
+</div>

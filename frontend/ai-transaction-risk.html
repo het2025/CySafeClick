@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Transaction Risk Checker - SafeClick</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.47 4.09-2.8 7.93-7 9.15v-9.15z"></path>
+                </svg>
+                SafeClick <span>🛡️</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="ai-tools.html">AI Tools</a>
+            </nav>
+            <div class="controls">
+                <button id="theme-toggle" class="btn-icon">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="padding: var(--space-4) 0; max-width: 800px;">
+        <h1 style="text-align: center; margin-bottom: var(--space-1);">UPI Transaction Risk Checker 💳</h1>
+        <p style="text-align: center; color: var(--muted); margin-bottom: var(--space-4);">Verify a UPI ID or phone number before sending money.</p>
+
+        <div style="background: rgba(245, 158, 11, 0.1); border-left: 4px solid var(--warning); padding: 15px; border-radius: 4px; margin-bottom: var(--space-4);">
+            <strong style="color: var(--warning);">Educational Guidance Only</strong>
+            <p style="margin-top: 5px; font-size: 0.9rem;">This tool provides an AI assessment based on common scam patterns. It cannot access bank records to verify the actual owner. Never rely solely on this tool for financial decisions.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: var(--space-4);">
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+                <div>
+                    <label style="font-weight: 600; display: block; margin-bottom: 5px;">UPI ID or Phone Number *</label>
+                    <input type="text" id="upi-input" placeholder="e.g. 9876543210@upi or 9876543210" style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text);">
+                </div>
+                
+                <div style="display: flex; gap: 15px;">
+                    <div style="flex: 1;">
+                        <label style="font-weight: 600; display: block; margin-bottom: 5px;">Amount (₹) (Optional)</label>
+                        <input type="number" id="amount-input" placeholder="0.00" style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text);">
+                    </div>
+                    <div style="flex: 1;">
+                        <label style="font-weight: 600; display: block; margin-bottom: 5px;">Purpose (Optional)</label>
+                        <select id="purpose-input" style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text);">
+                            <option value="">Select a purpose...</option>
+                            <option value="Friend/Family">Friend/Family transfer</option>
+                            <option value="Online Purchase">Online Purchase / Store</option>
+                            <option value="Job Registration">Job Registration / Security Fee</option>
+                            <option value="Lottery/Prize Claim">Lottery / Prize Claim Fee</option>
+                            <option value="Refund">Receiving a Refund</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="check-btn" class="btn-cta" style="width: 100%; margin-top: 10px;">Check Risk 🔍</button>
+            </div>
+        </div>
+
+        <div id="loading-state" class="ai-loading" style="display: none;">
+            <div class="ai-spinner"></div>
+            <p>Assessing transaction risk...</p>
+        </div>
+
+        <div id="results-container" style="display: none;">
+            <div class="card" style="margin-bottom: var(--space-4);">
+                <div style="text-align: center; margin-bottom: var(--space-4);">
+                    <div id="risk-badge" class="verdict-badge">LOW RISK</div>
+                    <div class="risk-meter">
+                        <div id="risk-bar" class="risk-meter-fill" style="width: 0%; background: var(--safe);"></div>
+                    </div>
+                    <p id="summary-text" style="font-size: 1.1rem; color: var(--muted);"></p>
+                </div>
+
+                <div style="background: rgba(255, 153, 51, 0.08); padding: 15px; border-radius: 8px; margin-bottom: var(--space-4); text-align: center;">
+                    <strong style="font-size: 1.1rem;">Recommendation:</strong>
+                    <p id="recommendation-text" style="font-size: 1.2rem; margin-top: 5px; font-weight: bold;"></p>
+                </div>
+                
+                <div style="margin-top: var(--space-4);">
+                    <h4 style="margin-bottom: var(--space-2);">🔍 Analysis Indicators:</h4>
+                    <div id="indicators-list"></div>
+                </div>
+
+                <div style="margin-top: var(--space-4);">
+                    <h4 style="margin-bottom: var(--space-2);">💡 Safety Tips:</h4>
+                    <div id="tips-list"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="margin-top: auto;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="site-disclaimer">📌 SafeClick is an educational awareness platform. All tools and information are provided for general guidance only. Results may not always be accurate.</p>
+                <p>&copy; 2026 SafeClick Awareness Initiative</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/ai-transaction-risk.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

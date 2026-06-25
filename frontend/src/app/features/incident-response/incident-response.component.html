@@ -1,0 +1,117 @@
+<div class="incident-response-container">
+  <header class="ir-header">
+    <h1>{{ t.translate('IR.TITLE') }}</h1>
+    <p>{{ t.translate('IR.SUBTITLE') }}</p>
+  </header>
+
+  <!-- Category View -->
+  <div class="categories-view" *ngIf="!selectedCategory && !selectedPlaybook">
+    <div class="category-card" *ngFor="let cat of categories$ | async" (click)="selectCategory(cat)">
+      <h2>{{ cat }}</h2>
+      <p>{{ t.translate('IR.VIEW_GUIDES') }} {{ cat }}</p>
+    </div>
+  </div>
+
+  <!-- Playbooks List View -->
+  <div class="playbooks-view" *ngIf="selectedCategory && !selectedPlaybook">
+    <button class="back-btn" (click)="clearCategory()">{{ t.translate('IR.BACK_CAT') }}</button>
+    <h2>{{ selectedCategory }}</h2>
+    
+    <div class="playbook-list" *ngIf="playbooks$ | async as playbooks">
+      <ng-container *ngFor="let pb of playbooks">
+        <div class="playbook-card" *ngIf="pb.category === selectedCategory" (click)="openPlaybook(pb)">
+          <div class="pb-header">
+            <h3>{{ pb.title }}</h3>
+            <span class="urgency-badge" [ngClass]="pb.urgency.split(' ')[0].toLowerCase()">{{ pb.urgency }}</span>
+          </div>
+          <p class="est-time">⏱️ {{ pb.estimatedTime }}</p>
+          <button class="start-btn">{{ t.translate('IR.START_BTN') }}</button>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <!-- Active Playbook View -->
+  <div class="active-playbook" *ngIf="selectedPlaybook">
+    <button class="back-btn" (click)="closePlaybook()">← {{ t.translate('COMMON.BACK') }} {{ selectedPlaybook.category }}</button>
+    
+    <div class="playbook-header">
+      <h2>{{ selectedPlaybook.title }}</h2>
+      <div class="pb-meta">
+        <span class="urgency-badge" [ngClass]="selectedPlaybook.urgency.split(' ')[0].toLowerCase()">{{ selectedPlaybook.urgency }}</span>
+        <span class="est-time">⏱️ {{ selectedPlaybook.estimatedTime }}</span>
+      </div>
+      <div class="playbook-actions">
+        <button class="reset-btn" (click)="copySummary()">Copy Summary</button>
+        <button class="reset-btn" (click)="printSummary()">Print</button>
+        <button class="reset-btn" (click)="resetProgress()">{{ t.translate('IR.RESET_BTN') }}</button>
+      </div>
+    </div>
+
+    <!-- Stepper -->
+    <div class="stepper">
+      <div class="step-indicator" 
+           *ngFor="let step of selectedPlaybook.steps; let i = index"
+           [class.active]="i === currentStepIndex"
+           [class.completed]="completedSteps.has(i)"
+           (click)="currentStepIndex = i">
+        <div class="step-circle">
+          <span *ngIf="!completedSteps.has(i)">{{ i + 1 }}</span>
+          <span *ngIf="completedSteps.has(i)">✓</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Current Step Detail -->
+    <div class="step-detail-card" *ngIf="selectedPlaybook.steps[currentStepIndex] as currentStep">
+      <div class="step-meta">
+        <span class="step-number">
+          {{ t.translate('IR.STEP_OF').replace('{{ current }}', (currentStepIndex + 1).toString()).replace('{{ total }}', selectedPlaybook.steps.length.toString()) }}
+        </span>
+        <span class="step-time">⏱️ {{ currentStep.time }}</span>
+      </div>
+      
+      <h3 class="step-title">
+        <input type="checkbox" 
+               [checked]="completedSteps.has(currentStepIndex)"
+               (change)="toggleStep(currentStepIndex)"
+               class="step-checkbox">
+        {{ currentStep.title }}
+      </h3>
+      
+      <div class="step-action">
+        <h4>{{ t.translate('IR.ACTION_REQ') }}</h4>
+        <p>{{ currentStep.action }}</p>
+      </div>
+      
+      <div class="step-why">
+        <h4>{{ t.translate('IR.WHY_MATTERS') }}</h4>
+        <p>{{ currentStep.why }}</p>
+      </div>
+
+      <div class="step-actions-footer">
+        <button class="next-step-btn" 
+                *ngIf="currentStepIndex < selectedPlaybook.steps.length - 1"
+                (click)="nextStep()">
+          {{ t.translate('IR.NEXT_STEP') }}
+        </button>
+        <div class="completion-message" *ngIf="currentStepIndex === selectedPlaybook.steps.length - 1 && completedSteps.has(currentStepIndex)">
+          {{ t.translate('IR.COMPLETION_MSG') }}
+        </div>
+        <button class="finish-btn" 
+                *ngIf="currentStepIndex === selectedPlaybook.steps.length - 1 && !completedSteps.has(currentStepIndex)"
+                (click)="toggleStep(currentStepIndex)">
+          {{ t.translate('IR.MARK_DONE') }}
+        </button>
+      </div>
+    </div>
+
+    <!-- What NOT To Do Panel -->
+    <div class="warning-panel">
+      <h3>{{ t.translate('IR.NOT_TO_DO') }}</h3>
+      <ul>
+        <li *ngFor="let warning of selectedPlaybook.whatNotToDo">{{ warning }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

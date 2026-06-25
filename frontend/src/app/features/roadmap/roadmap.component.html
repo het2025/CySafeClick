@@ -1,0 +1,84 @@
+<div class="container roadmap-page">
+  
+  <!-- Confetti overlay -->
+  <div class="confetti-overlay" *ngIf="showConfetti()">
+    <div class="confetti-text">🎉 Task Completed! Keep the streak alive! 🎉</div>
+  </div>
+
+  <div class="header-section">
+    <h1>30-Day Security Hardening Plan</h1>
+    <p>A step-by-step guide to locking down your digital life.</p>
+  </div>
+
+  <div class="dashboard">
+    <div class="stats-card">
+      <app-progress-ring [progress]="progressPercent()" [size]="120" [strokeWidth]="10">
+        <span class="stat-value">{{ completedDays().length }}/30</span>
+        <span class="stat-label">Days</span>
+      </app-progress-ring>
+    </div>
+    
+    <div class="stats-card streak-card">
+      <div class="flame-icon">🔥</div>
+      <div class="streak-info">
+        <span class="stat-value">{{ streak() }}</span>
+        <span class="stat-label">Day Streak</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    
+    <!-- Left Column: Calendar -->
+    <div class="calendar-panel">
+      <h3>Your Journey</h3>
+      
+      <div class="week-block" *ngFor="let week of weeks">
+        <h4>Week {{ week }}</h4>
+        <div class="days-grid">
+          <button 
+            *ngFor="let task of getTasksForWeek(week)" 
+            class="day-box"
+            [ngClass]="getTaskStatusClass(task.day)"
+            (click)="setCurrentDay(task.day)"
+            [attr.aria-label]="'Day ' + task.day + ': ' + task.title"
+          >
+            <span class="day-num">{{ task.day }}</span>
+            <span class="icon" *ngIf="isCompleted(task.day)">✓</span>
+            <span class="icon" *ngIf="!isCompleted(task.day) && task.day < currentDay()">!</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Today's Task Details -->
+    <div class="task-panel card">
+      <div class="task-header">
+        <span class="day-badge">Day {{ todayTask().day }}</span>
+        <span class="status-badge" *ngIf="isCompleted(todayTask().day)">Completed ✓</span>
+      </div>
+      
+      <h2>{{ todayTask().title }}</h2>
+      <p class="task-desc">{{ todayTask().description }}</p>
+      
+      <div class="instructions-box">
+        <h3>How to do this:</h3>
+        <ol>
+          <li *ngFor="let step of todayTask().instructions">{{ step }}</li>
+        </ol>
+      </div>
+
+      <div class="action-area">
+        <button 
+          class="btn-primary btn-large" 
+          [class.btn-success]="isCompleted(todayTask().day)"
+          (click)="markTaskComplete(todayTask().day)"
+          [disabled]="isCompleted(todayTask().day)"
+        >
+          {{ isCompleted(todayTask().day) ? 'Task Completed' : 'Mark as Complete' }}
+        </button>
+      </div>
+    </div>
+    
+  </div>
+</div>

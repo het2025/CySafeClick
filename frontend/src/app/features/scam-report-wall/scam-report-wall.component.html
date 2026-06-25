@@ -1,0 +1,88 @@
+<div class="report-wall-container">
+  <header class="page-header">
+    <h1>{{ 'SCAM_WALL.TITLE' | translate }}</h1>
+    <p>{{ 'SCAM_WALL.SUBTITLE' | translate }}</p>
+  </header>
+
+  <div class="stats-banner" *ngIf="reports$ | async as allReports">
+    <div class="stat-item">
+      <h3>{{ allReports.length }}</h3>
+      <p>{{ 'SCAM_WALL.TOTAL' | translate }}</p>
+    </div>
+    <div class="stat-item">
+      <h3>{{ phoneCount | async }}</h3>
+      <p>{{ 'SCAM_WALL.PHONE' | translate }}</p>
+    </div>
+    <div class="stat-item">
+      <h3>{{ upiCount | async }}</h3>
+      <p>{{ 'SCAM_WALL.UPI' | translate }}</p>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <strong>{{ 'SCAM_WALL.DISCLAIMER' | translate }}</strong>
+  </div>
+
+  <div class="layout-grid" *ngIf="reports$ | async as allReports">
+    <div class="feed-section">
+      <div class="toolbar">
+        <input type="text" [(ngModel)]="searchTerm" [placeholder]="'SCAM_WALL.SEARCH' | translate" class="search-input" disabled>
+        <select [(ngModel)]="typeFilter" class="filter-select">
+          <option value="all">All Types</option>
+          <option value="phone">Phone Numbers</option>
+          <option value="upi">UPI IDs</option>
+          <option value="website">Websites</option>
+          <option value="email">Emails</option>
+        </select>
+        <a class="primary-btn" routerLink="/report-cybercrime">{{ 'REPORT_CYBERCRIME.TITLE' | translate }}</a>
+      </div>
+
+      <div class="report-form-card">
+        <h2>{{ 'SCAM_WALL.FORM_TITLE' | translate }}</h2>
+        <p>SafeClick does not collect, display, or rank alleged scammer phone numbers, UPI IDs, emails, or websites. Use official reporting channels for complaints and preserve evidence privately.</p>
+        <a class="submit-btn" href="https://cybercrime.gov.in" target="_blank" rel="noopener">Open cybercrime.gov.in</a>
+      </div>
+
+      <div class="reports-feed">
+        <div class="report-card" *ngFor="let report of getFilteredReports(allReports)">
+          <div class="report-header">
+            <div class="type-badge" [ngClass]="report.type">{{ report.type }}</div>
+            <div class="date">{{ report.dateReported | date:'mediumDate' }}</div>
+          </div>
+          
+          <h3 class="scammer-id">{{ report.value }}</h3>
+          <p class="scam-desc"><strong>{{ report.scamType | uppercase }}:</strong> {{ report.description }}</p>
+          
+          <div class="report-footer">
+            <span class="location" *ngIf="report.city">📍 {{ report.city }}</span>
+            <button class="upvote-btn" (click)="upvote(report.id)">
+              👍 {{ report.upvotes }} {{ 'SCAM_WALL.HELPFUL' | translate }}
+            </button>
+          </div>
+        </div>
+        
+        <div class="empty-state" *ngIf="getFilteredReports(allReports).length === 0">
+          Public community reports are disabled to reduce privacy, defamation, and moderation risk.
+        </div>
+      </div>
+    </div>
+
+    <aside class="leaderboard-section">
+      <div class="top-scammers-card">
+        <h2>{{ 'SCAM_WALL.TOP_TITLE' | translate }}</h2>
+        <p>Leaderboards for alleged scammers are disabled. Do not publish unverified personal identifiers.</p>
+        
+        <div class="leaderboard-list">
+          <div class="lb-item" *ngFor="let top of getTopScammers(allReports); let i = index">
+            <div class="lb-rank">#{{ i + 1 }}</div>
+            <div class="lb-details">
+              <strong>{{ top.value }}</strong>
+              <span>{{ top.scamType }} ({{ top.upvotes }} reports)</span>
+            </div>
+            <button class="small-check-btn">{{ 'COMMON.COPY' | translate }}</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>

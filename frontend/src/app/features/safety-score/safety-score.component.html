@@ -1,0 +1,111 @@
+<div class="container score-page">
+  <div class="header-section text-center no-print">
+    <h1>Digital Safety Score</h1>
+    <p>Take the assessment to get your personalized security report card.</p>
+  </div>
+
+  <!-- QUIZ SECTION -->
+  <div class="quiz-card no-print" *ngIf="!finished()">
+    <div class="progress-bar-container">
+      <div class="progress-bar" [style.width.%]="(step() / questions.length) * 100"></div>
+    </div>
+    
+    <div class="question-header">
+      <span class="question-number">Question {{ step() + 1 }} of {{ questions.length }}</span>
+      <span class="category-badge">{{ questions[step()].category }}</span>
+    </div>
+
+    <h2 class="question-text">{{ questions[step()].text }}</h2>
+
+    <div class="options-list">
+      <button 
+        *ngFor="let opt of questions[step()].options"
+        class="option-btn"
+        (click)="answer(opt.score)"
+      >
+        {{ opt.label }}
+      </button>
+    </div>
+  </div>
+
+  <!-- REPORT CARD SECTION -->
+  <div class="report-card" id="printable-report" *ngIf="finished()">
+    
+    <div class="report-header">
+      <div class="logo">SafeClick Shield</div>
+      <h2>Digital Safety Report Card</h2>
+      <div class="date">{{ history().length > 0 ? (history()[history().length - 1].date | date:'longDate') : '' }}</div>
+    </div>
+
+    <div class="exec-summary">
+      <div class="grade-box" [style.borderColor]="getGradeColor()">
+        <span class="grade-letter" [style.color]="getGradeColor()">{{ grade() }}</span>
+        <span class="score-number">{{ totalScore() }} / 100</span>
+      </div>
+      
+      <div class="summary-text">
+        <h3>Executive Summary</h3>
+        <p *ngIf="grade() === 'A'">Excellent posture. You are well protected against common threats.</p>
+        <p *ngIf="grade() === 'B' || grade() === 'C'">Good baseline, but specific vulnerabilities need addressing.</p>
+        <p *ngIf="grade() === 'D' || grade() === 'F'">High risk of compromise. Immediate action is required.</p>
+        
+        <div class="improvement" *ngIf="scoreImprovement() !== null && scoreImprovement() !== 0">
+          <span *ngIf="(scoreImprovement() ?? 0) > 0" class="positive">↑ Improved by {{ scoreImprovement() }} points since last test.</span>
+          <span *ngIf="(scoreImprovement() ?? 0) < 0" class="negative">↓ Dropped by {{ Math.abs(scoreImprovement() ?? 0) }} points since last test.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Breakdown -->
+    <div class="report-section">
+      <h3>Detailed Category Analysis</h3>
+      <div class="category-grid">
+        <div class="cat-card" *ngFor="let kv of categoryScores() | keyvalue">
+          <div class="cat-header">
+            <h4>{{ kv.key }}</h4>
+            <span class="cat-score">{{ (kv.value.earned / kv.value.total) * 100 | number:'1.0-0' }}%</span>
+          </div>
+          
+          <div class="good-list" *ngIf="kv.value.good.length > 0">
+            <strong>Doing well:</strong>
+            <ul>
+              <li *ngFor="let g of kv.value.good">✓ {{ g }}</li>
+            </ul>
+          </div>
+          
+          <div class="bad-list" *ngIf="kv.value.bad.length > 0">
+            <strong>Needs improvement:</strong>
+            <ul>
+              <li *ngFor="let b of kv.value.bad">✗ {{ b }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Risks -->
+    <div class="report-section action-plan" *ngIf="topRisks().length > 0">
+      <h3>Top Priority Action Plan</h3>
+      <p>Address these immediately to improve your security:</p>
+      <ol>
+        <li *ngFor="let risk of topRisks()">
+          <strong>Action:</strong> {{ risk }}
+        </li>
+      </ol>
+    </div>
+    
+    <div class="report-section" *ngIf="topRisks().length === 0">
+      <h3>Top Priority Action Plan</h3>
+      <p class="all-clear">✓ You have no critical vulnerabilities detected. Keep up the good work!</p>
+    </div>
+
+    <!-- Footer actions -->
+    <div class="report-actions no-print">
+      <button class="btn-primary" (click)="printReport()">
+        Download / Print Report
+      </button>
+      <button class="btn-secondary" (click)="reset()">Retake Assessment</button>
+    </div>
+    
+  </div>
+</div>

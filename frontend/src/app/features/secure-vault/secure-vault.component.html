@@ -1,0 +1,98 @@
+<div class="vault-container" (mousemove)="resetTimer()" (keypress)="resetTimer()">
+  
+  <header class="vault-header">
+    <div class="header-main">
+      <h1>🔒 Encrypted Note Vault</h1>
+      <button class="lock-btn" *ngIf="activeKey" (click)="lockVault()">Lock Vault</button>
+    </div>
+    <div class="transparency-panel">
+      <p><strong>Security Notice:</strong> Your notes are encrypted locally with AES-256-GCM. Your password never leaves your device. SafeClick has zero access to your notes.</p>
+    </div>
+  </header>
+
+  <!-- SETUP STATE -->
+  <div class="auth-card" *ngIf="viewState === 'setup'">
+    <h2>Create Your Secure Vault</h2>
+    <p class="auth-desc">Set a strong master password. You will need this to unlock your notes.</p>
+    
+    <div class="input-group">
+      <input type="password" [(ngModel)]="passwordInput" placeholder="Master Password (min 8 chars)">
+    </div>
+    <div class="input-group">
+      <input type="password" [(ngModel)]="confirmPasswordInput" placeholder="Confirm Password">
+    </div>
+    
+    <div class="warning-checkbox">
+      <input type="checkbox" id="risk" [(ngModel)]="understandRisk">
+      <label for="risk" class="text-danger">
+        <strong>WARNING:</strong> If you forget this password, your notes CANNOT be recovered. We have no way to help you.
+      </label>
+    </div>
+
+    <p class="error-msg" *ngIf="authError">{{ authError }}</p>
+    <button class="primary-btn" (click)="createVault()">Create Vault</button>
+  </div>
+
+  <!-- LOGIN STATE -->
+  <div class="auth-card" *ngIf="viewState === 'login'">
+    <h2>Unlock Vault</h2>
+    <p class="auth-desc">Enter your master password to decrypt your notes.</p>
+    
+    <div class="input-group">
+      <input type="password" [(ngModel)]="passwordInput" placeholder="Master Password" (keyup.enter)="unlockVault()">
+    </div>
+
+    <p class="error-msg" *ngIf="authError">{{ authError }}</p>
+    <button class="primary-btn" (click)="unlockVault()">Unlock</button>
+  </div>
+
+  <!-- LIST STATE -->
+  <div class="list-view" *ngIf="viewState === 'list'">
+    <div class="list-actions">
+      <button class="primary-btn" (click)="createNewNote()">+ New Encrypted Note</button>
+      <button class="secondary-btn" (click)="exportData()">⬇️ Export Encrypted Backup</button>
+    </div>
+
+    <div class="notes-grid" *ngIf="notes.length > 0; else noNotes">
+      <div class="note-card" *ngFor="let note of notes">
+        <div class="note-category-badge">{{ note.category }}</div>
+        <h3 class="note-title">{{ note.title }}</h3>
+        <p class="note-date">Updated: {{ note.updatedAt | date:'mediumDate' }}</p>
+        <div class="note-actions">
+          <button class="open-btn" (click)="openNote(note)">Decrypt & Open</button>
+          <button class="delete-btn" (click)="deleteNote(note.id)">🗑️</button>
+        </div>
+      </div>
+    </div>
+    
+    <ng-template #noNotes>
+      <div class="empty-state">
+        <p>Your vault is empty. Create a secure note to store passwords, locker combinations, or private contacts.</p>
+      </div>
+    </ng-template>
+  </div>
+
+  <!-- EDIT STATE -->
+  <div class="edit-view" *ngIf="viewState === 'edit' && activeNote">
+    <div class="edit-header">
+      <button class="back-btn" (click)="viewState = 'list'">← Cancel</button>
+      <button class="save-btn" (click)="saveNote()">Encrypt & Save</button>
+    </div>
+
+    <div class="edit-meta">
+      <input type="text" [(ngModel)]="activeNote.title" placeholder="Note Title (Stored Unencrypted)" class="title-input">
+      <select [(ngModel)]="activeNote.category" class="category-select">
+        <option *ngFor="let cat of categories" [value]="cat">{{ cat | uppercase }}</option>
+      </select>
+    </div>
+
+    <div class="editor-container">
+      <div class="editor-badge">AES-256-GCM Encrypted Area</div>
+      <textarea [(ngModel)]="decryptedContent" 
+                rows="15" 
+                placeholder="Enter sensitive information here... It will be encrypted before saving."
+                class="secure-textarea"></textarea>
+    </div>
+  </div>
+
+</div>

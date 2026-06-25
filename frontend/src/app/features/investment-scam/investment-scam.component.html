@@ -1,0 +1,110 @@
+<div class="investment-scam-container">
+  <header class="page-header">
+    <h1>{{ t.translate('INVESTMENT.TITLE') }}</h1>
+    <p>{{ t.translate('INVESTMENT.SUBTITLE') }}</p>
+  </header>
+
+  <div class="tools-grid">
+    <!-- Text Analyzer Tool -->
+    <div class="tool-card">
+      <h2>{{ t.translate('INVESTMENT.OFFER.TITLE') }}</h2>
+      <p class="tool-desc">{{ t.translate('INVESTMENT.OFFER.DESC') }}</p>
+      
+      <textarea [(ngModel)]="offerText" 
+                rows="5" 
+                [placeholder]="t.translate('INVESTMENT.OFFER.PLACEHOLDER')"></textarea>
+      
+      <button class="primary-btn" (click)="analyzeOffer()" [disabled]="!offerText || isAnalyzing">
+        {{ isAnalyzing ? t.translate('INVESTMENT.OFFER.ANALYZING') : t.translate('INVESTMENT.OFFER.SCAN_BTN') }}
+      </button>
+
+      <div class="analysis-results" *ngIf="analysisResult">
+        <div *ngIf="analysisResult.redFlags.length === 0" class="safe-box">
+          <h3>{{ t.translate('INVESTMENT.OFFER.SAFE') }}</h3>
+          <p>{{ t.translate('INVESTMENT.OFFER.SAFE_SUB') }}</p>
+        </div>
+        
+        <div *ngIf="analysisResult.redFlags.length > 0" class="danger-box">
+          <h3>{{ t.translate('INVESTMENT.OFFER.DANGER').replace('{{ count }}', analysisResult.redFlags.length.toString()) }}</h3>
+          <ul>
+            <li *ngFor="let flag of analysisResult.redFlags">{{ flag }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ponzi Calculator -->
+    <div class="tool-card">
+      <h2>{{ t.translate('INVESTMENT.PONZI.TITLE') }}</h2>
+      <p class="tool-desc">{{ t.translate('INVESTMENT.PONZI.DESC') }}</p>
+      
+      <div class="calc-inputs">
+        <div class="input-group">
+          <label>{{ t.translate('INVESTMENT.PONZI.LABEL_RETURN') }}</label>
+          <input type="number" [(ngModel)]="promisedReturn" placeholder="e.g., 5">
+        </div>
+        <div class="input-group">
+          <label>{{ t.translate('INVESTMENT.PONZI.LABEL_PER') }}</label>
+          <select [(ngModel)]="returnPeriod">
+            <option value="day">{{ t.translate('INVESTMENT.PONZI.LABEL_PER') }} Day</option>
+            <option value="week">{{ t.translate('INVESTMENT.PONZI.LABEL_PER') }} Week</option>
+            <option value="month">{{ t.translate('INVESTMENT.PONZI.LABEL_PER') }} Month</option>
+            <option value="year">{{ t.translate('INVESTMENT.PONZI.LABEL_PER') }} Year</option>
+          </select>
+        </div>
+      </div>
+      
+      <button class="primary-btn" (click)="calculateReturn()" [disabled]="!promisedReturn">{{ t.translate('INVESTMENT.PONZI.CALC_BTN') }}</button>
+
+      <div class="ponzi-results" *ngIf="ponziResult" [class.is-scam]="ponziResult.isScam">
+        <h3>{{ t.translate('INVESTMENT.PONZI.EQUIVALENT').replace('{{ rate }}', ponziResult.annualReturn.toFixed(2)) }}</h3>
+        <div class="verdict-box">
+          <strong>{{ t.translate('INVESTMENT.PONZI.VERDICT') }}</strong> {{ ponziResult.verdict }}
+        </div>
+        
+        <div class="benchmark-info">
+          <p><strong>{{ t.translate('INVESTMENT.PONZI.REALITY') }}</strong></p>
+          <ul>
+            <li>{{ t.translate('INVESTMENT.PONZI.FD') }}</li>
+            <li>{{ t.translate('INVESTMENT.PONZI.MF') }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEBI Education & Scams -->
+  <section class="education-section">
+    <h2>{{ t.translate('INVESTMENT.EDU.TITLE') }}</h2>
+    
+    <div class="scam-types-grid">
+      <div class="scam-type">
+        <h3>{{ t.translate('INVESTMENT.EDU.TASK.TITLE') }}</h3>
+        <p>{{ t.translate('INVESTMENT.EDU.TASK.DESC') }}</p>
+      </div>
+
+      <div class="scam-type">
+        <h3>{{ t.translate('INVESTMENT.EDU.PIG.TITLE') }}</h3>
+        <p>{{ t.translate('INVESTMENT.EDU.PIG.DESC') }}</p>
+      </div>
+
+      <div class="scam-type">
+        <h3>{{ t.translate('INVESTMENT.EDU.TRADING.TITLE') }}</h3>
+        <p>{{ t.translate('INVESTMENT.EDU.TRADING.DESC') }}</p>
+      </div>
+
+      <div class="scam-type">
+        <h3>{{ t.translate('INVESTMENT.EDU.CELEB.TITLE') }}</h3>
+        <p>{{ t.translate('INVESTMENT.EDU.CELEB.DESC') }}</p>
+      </div>
+    </div>
+
+    <div class="verification-guide">
+      <h2>{{ t.translate('INVESTMENT.VERIFY.TITLE') }}</h2>
+      <ol>
+        <li *ngFor="let step of t.translateData('INVESTMENT.VERIFY.STEPS')">{{ step }}</li>
+      </ol>
+    </div>
+  </section>
+
+</div>

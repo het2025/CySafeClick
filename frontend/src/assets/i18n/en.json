@@ -1,0 +1,996 @@
+{
+  "TICKER": {
+    "LIVE_ALERTS": "LIVE ALERTS"
+  },
+  "NUMBER_LOOKUP": {
+    "TITLE": "Number Safety Check",
+    "SUBTITLE": "Educational guidance only — no public scam-number database",
+    "INPUT_PLACEHOLDER": "Enter any format: 9876543210 or +91-98765-43210",
+    "RESULT": {
+      "FOUND": "DATABASE LOOKUP UNAVAILABLE",
+      "NOT_FOUND": "NO PUBLIC DATABASE",
+      "COMMUNITY_REPORTED": "COMMUNITY REPORTS DISABLED"
+    },
+    "ACTION": {
+      "BLOCK": "Block This Number",
+      "REPORT": "Report to Cybercrime",
+      "SHARE": "Share Warning"
+    },
+    "REPORT_FORM": {
+      "TITLE": "Report a Scam Number"
+    }
+  },
+  "NAV": {
+    "HOME": "Home",
+    "TOOLS": "Tools",
+    "LEARN": "Learn",
+    "REPORT": "Report Cybercrime",
+    "ABOUT": "About",
+    "CYBER_MITRA": "Cyber Mitra",
+    "SENIOR_MODE": "Senior Mode"
+  },
+  "NOTIFICATIONS": {
+    "TITLE": "Live Scam Alert Notifications",
+    "ENABLE_CTA": "Enable SafeClick Alerts",
+    "ENABLE_DESC": "Get notified when new scams are targeting Indians. We never spam — only genuine security alerts.",
+    "ENABLE_BTN": "Enable Notifications",
+    "ACTIVE": "Notifications Active",
+    "LAST_ALERT": "Last alert received",
+    "TOTAL_ALERTS": "Total alerts received",
+    "BLOCKED": "Notifications Blocked",
+    "PERMISSION_DENIED_HELP": "Please unblock notifications in your browser settings (Site Settings > Notifications) to receive alerts.",
+    "CATEGORIES_TITLE": "Alert Categories",
+    "CRITICAL": "Critical Alerts",
+    "CRITICAL_DESC": "Active fraud campaigns. Always delivered.",
+    "UPI": "UPI & Payment Fraud",
+    "UPI_DESC": "New UPI scam patterns and fake payment portals.",
+    "PHISHING": "Phishing Campaigns",
+    "PHISHING_DESC": "Fake bank websites, credential theft sites.",
+    "MALWARE": "Malware & Viruses",
+    "MALWARE_DESC": "Android malware, fake APKs, trojans.",
+    "ADVISORY": "Government Advisories",
+    "ADVISORY_DESC": "Official CERT-In and MHA announcements.",
+    "CALLS": "Scam Call Patterns",
+    "CALLS_DESC": "New phone scam scripts doing the rounds.",
+    "FREQUENCY_TITLE": "Alert Frequency",
+    "FREQ_REALTIME": "Real-time (Immediate)",
+    "FREQ_DAILY": "Daily Digest",
+    "FREQ_WEEKLY": "Weekly Digest",
+    "TEST_BTN": "Send Test Notification",
+    "TEST_MSG": "If you see the notification, everything is working correctly!",
+    "HISTORY_TITLE": "Recent Alerts",
+    "VIEW_DETAILS": "View details",
+    "MARK_ALL_READ": "Mark all as read",
+    "VIEW_ALL": "View all alerts",
+    "NO_ALERTS": "No new alerts",
+    "PRIVACY": "SafeClick notifications are generated entirely on your device. We do not have a server that pushes notifications to you. Alerts are loaded from our data file and shown using your browser's notification system."
+  },
+  "HERO": {
+    "TITLE": "Is Your Digital Life Safe?",
+    "SUBTITLE": "Your Free Digital Safety Hub for India",
+    "CTA": "Get Your Safety Score",
+    "COUNTER": "Citizens Protected",
+    "COUNTER_TEXT": "Indians affected by cybercrime in 2024"
+  },
+  "FEATURED": {
+    "TITLE": "Featured Tools",
+    "DESC": "Start here to secure your most critical digital assets.",
+    "UPI": {
+      "TITLE": "UPI Fraud Scanner",
+      "DESC": "Paste a UPI ID or link to check if it's a scam collect request.",
+      "BTN": "Try Now →"
+    },
+    "PRIVACY": {
+      "TITLE": "Social Media Privacy Audit",
+      "DESC": "Step-by-step guides to lock down your WhatsApp, Instagram & Facebook.",
+      "BTN": "Start Audit →"
+    },
+    "ROADMAP": {
+      "TITLE": "30-Day Security Roadmap",
+      "DESC": "A daily step-by-step plan to completely harden your digital life.",
+      "BTN": "Begin Journey →"
+    }
+  },
+  "TOOLS": {
+    "TITLE": "All Tools & Resources",
+    "CAT_ALL": "All",
+    "CAT_TOOLS": "Interactive Tools",
+    "CAT_LEARN": "Learn & Resources",
+    "CAT_COMMUNITY": "Community",
+    "CAT_MODES": "Special Modes",
+    "SENIOR_GUIDE": "Senior Parent Safety Guide",
+    "OPEN": "Open Tool →",
+    "PASSWORD_LAB": "Password Lab",
+    "PASSWORD_LAB_DESC": "Analyze and generate ultra-secure passwords.",
+    "PHISHING_DETECTOR": "Phishing Detector",
+    "PHISHING_DETECTOR_DESC": "Identify malicious links and SMS scams.",
+    "DATA_BREACH": "Data Breach Check",
+    "DATA_BREACH_DESC": "Check if your email has been compromised.",
+    "UPI_SCANNER": "UPI Scanner",
+    "SAFETY_SCORE": "Digital Safety Score",
+    "SAFETY_SCORE_DESC": "Assess your overall cybersecurity hygiene.",
+    "OSINT_CHECK": "Personal OSINT Check",
+    "CYBER_MITRA": "Cyber Mitra (AI Chatbot)",
+    "CITIZEN_TOOLKIT": "Citizen Cyber Safety Toolkit",
+    "FACT_CHECKER": "WhatsApp Fact-Checker",
+    "DEEPFAKE_HUB": "Deepfake Awareness Hub",
+    "JOB_SCAM": "Job Scam Detector",
+    "INVESTMENT_SCAM": "Investment Scam Analyzer",
+    "MATRIMONIAL_SAFETY": "Matrimonial Safety",
+    "ECOMMERCE_FRAUD": "e-Commerce Fraud Shield",
+    "SCAM_AWARENESS": "Scam Awareness",
+    "SCAM_AWARENESS_DESC": "Learn about latest scams targeting Indians.",
+    "SCAM_REPORT": "Official Reporting Guide",
+    "REPORT_CYBERCRIME": "Report Cybercrime",
+    "REPORT_CYBERCRIME_DESC": "Step-by-step guide to reporting incidents.",
+    "APP_PERMISSIONS": "App Permissions Guide",
+    "EMAIL_HEADER": "Email Header Analyzer",
+    "PRIVACY_AUDIT": "Privacy Audit",
+    "TWO_FA_ADVISOR": "2FA Advisor",
+    "WIFI_SAFETY": "Wi-Fi Safety Checker",
+    "NUMBER_LOOKUP": "Number Safety Check",
+    "QUIZ": "Weekly Quiz Championship",
+    "SENIOR_MODE": "Senior Citizen Mode",
+    "STUDENT_MODULE": "Student Safety Module",
+    "BUSINESS_SECURITY": "SME / Business Security",
+    "CHILD_SAFETY": "Parent's Child Safety Guide",
+    "SECURE_VAULT": "Encrypted Note Vault",
+    "QR_TOOLS": "Safe QR Tools",
+    "INCIDENT_RESPONSE": "Incident Playbooks",
+    "STATS": "Cybercrime Stats Dashboard",
+    "TIPS": "Daily Cyber Tips",
+    "SCAM_STORIES": "Real Scam Stories",
+    "CYBER_LAW": "Cyber Law Knowledge Base",
+    "THREAT_FEED": "Cyber Threat Live Feed",
+    "GLOSSARY": "Security Glossary",
+    "AADHAAR_SAFETY": "Aadhaar Safety Guide",
+    "ROADMAP": "30-Day Security Roadmap"
+  },
+  "LOGO": {
+    "NAME": "SafeClick",
+    "TAGLINE": "\"Apni Digital Suraksha, Apne Haath Mein\""
+  },
+  "SCAM_AWARENESS": {
+    "TITLE": "Scam Awareness",
+    "SUBTITLE": "Know the common tactics scammers use in India and how to stay safe.",
+    "QUIZ_TITLE": "Scam or Legit?",
+    "QUIZ_SUBTITLE": "Can you spot the fraud in these real-life scenarios?",
+    "MODAL_HOW": "How it works",
+    "MODAL_SAYS": "What the scammer says",
+    "MODAL_FLAGS": "Red Flags",
+    "MODAL_TODO": "What to do",
+    "SCAMS": [
+      {
+        "TITLE": "OTP Scam",
+        "ICON": "📱",
+        "HOW": "Scammer calls impersonating a bank official, citing 'account verification' or 'card block', and asks for the OTP sent to your phone.",
+        "RED_FLAGS": ["Call from a normal mobile number", "Urgency/Threat of blocking account", "Asking for OTP/PIN"],
+        "SCRIPT": "Sir, I am calling from SBI head office. Your credit card will be blocked in 10 minutes. I have sent a verification code to your phone, please tell it to me to keep it active.",
+        "TODO": "Disconnect immediately. No bank asks for OTP."
+      },
+      {
+        "TITLE": "KYC Update Scam",
+        "ICON": "🆔",
+        "HOW": "SMS or call claiming your Paytm/Bank KYC has expired and you need to click a link or download an app (like AnyDesk) to update.",
+        "RED_FLAGS": ["Links with suspicious spelling", "Asking to download screen-sharing apps", "Threat of service disconnection"],
+        "SCRIPT": "Dear customer, your PAYTM KYC has expired. Call 98xxxxxxx to update or your wallet will be closed today.",
+        "TODO": "Go to the official app or branch. Never use phone numbers or links from SMS."
+      },
+      {
+        "TITLE": "UPI Collect Request",
+        "ICON": "💸",
+        "HOW": "Scammer sends a 'Collect Request' on your UPI app (GPay/PhonePe) while claiming they are 'sending' you money for an OLX item.",
+        "RED_FLAGS": ["Entering PIN to 'receive' money", "Unknown collect requests", "Random people sending QR codes"],
+        "SCRIPT": "I have sent the payment for the sofa. Just click 'Accept' and enter your PIN to receive it in your bank.",
+        "TODO": "Remember: YOU NEVER NEED TO ENTER PIN TO RECEIVE MONEY."
+      },
+      {
+        "TITLE": "Fake Job Scam",
+        "ICON": "💼",
+        "HOW": "Offers of high-paying remote jobs from 'Amazon' or 'Instagram'. They ask for a 'registration fee' or 'laptop security deposit'.",
+        "RED_FLAGS": ["Paying money to get a job", "Communications only on WhatsApp/Telegram", "Too good to be true salary"],
+        "SCRIPT": "Work from home 2 hours daily and earn ₹5000/day. Just pay ₹500 for the training kit to start.",
+        "TODO": "Real companies never ask for money to hire you."
+      },
+      {
+        "TITLE": "FedEx/Police Scam",
+        "ICON": "📦",
+        "HOW": "A call claiming a package in your name was seized with drugs. They connect you to 'Skype' with fake police to demand money for clearance.",
+        "RED_FLAGS": ["Police asking for money over Skype", "Claims of illegal items in your name", "Pressure to not tell anyone"],
+        "SCRIPT": "Your FedEx parcel to Taiwan contains 5 passports and drugs. You are under digital arrest. Pay ₹2 Lakh as security bond to avoid jail.",
+        "TODO": "Police never do 'digital arrests' or ask for money online. Report to 1930."
+      }
+    ],
+    "SCENARIOS": [
+      { "TEXT": "SMS: Your SBI account has been credited with ₹25,000 cashback. Click here to claim: bit.ly/sbi-rewards-now", "TYPE": "scam", "REASON": "Banks don't use bit.ly links for rewards. This is a phishing link." },
+      { "TEXT": "WhatsApp: I'm from your HR department. Please share your Aadhaar photo for the new insurance policy.", "TYPE": "legit", "REASON": "HR departments often collect documents for insurance, but verify the sender's identity through official channels first." },
+      { "TEXT": "Call: This is the electricity board. Your bill is pending. Pay via this link or power will be cut in 1 hour.", "TYPE": "scam", "REASON": "Electricity boards never threaten immediate disconnection via phone calls or random links." },
+      { "TEXT": "OLX: I want to buy your fridge. I'm sending a QR code. Scan it and enter your PIN to get the money.", "TYPE": "scam", "REASON": "Scanning QR and entering PIN is for SENDING money, not receiving." },
+      { "TEXT": "Email: Your Netflix subscription failed. Update payment here: netflix.com/your-account", "TYPE": "legit", "REASON": "This looks like a standard notification. Always check if the sender email is actually @netflix.com." }
+    ],
+    "FEEDBACK": {
+      "CORRECT": "Correct!",
+      "INCORRECT": "Incorrect."
+    }
+  },
+  "IR": {
+    "TITLE": "Incident Response Playbooks",
+    "SUBTITLE": "Calm, step-by-step recovery guides for cyber emergencies.",
+    "BACK_CAT": "← Back to Categories",
+    "VIEW_GUIDES": "View recovery guides for",
+    "START_BTN": "Start Recovery Plan",
+    "RESET_BTN": "Reset Progress",
+    "STEP_OF": "Step {{ current }} of {{ total }}",
+    "ACTION_REQ": "Action required:",
+    "WHY_MATTERS": "Why this matters:",
+    "NEXT_STEP": "Done? Next Step →",
+    "COMPLETION_MSG": "🎉 You have completed all recommended steps for this incident.",
+    "MARK_DONE": "Mark as Completed",
+    "NOT_TO_DO": "⚠️ What NOT to do"
+  },
+  "SENIOR": {
+    "TITLE": "SafeClick Senior Safe Mode",
+    "ON": "Turn On Safe Mode",
+    "OFF": "Turn Off Safe Mode",
+    "HELP_TEXT": "For Cyber Fraud Help",
+    "IS_SCAM": "Is this a scam?",
+    "READ": "Read",
+    "LISTEN": "Listen",
+    "INPUT_DESC": "Type or paste what someone told you:",
+    "PLACE_HOLDER": "Example: Your bank account will be closed. Please share OTP...",
+    "CHECK_BTN": "Check Now",
+    "SCAM_FOUND": "🚨 THIS LOOKS LIKE A SCAM",
+    "SCAM_SUB": "Do not share any details. Do not send money.",
+    "SAFE_FOUND": "✅ Seems Safe",
+    "SAFE_SUB": "We did not detect obvious scam words. Still, stay cautious.",
+    "COMMON_TITLE": "Common Scams to Watch Out For",
+    "SCAMS": {
+      "BANK": {
+        "TITLE": "1. Fake Bank Employee Calls",
+        "SAY": "They will say: \"Sir, your account will close, share OTP now\"",
+        "DO": "What to do: HANG UP. Call your bank directly on the number on your card."
+      },
+      "PENSION": {
+        "TITLE": "2. Pension/PF Scam Calls",
+        "SAY": "They will say: \"Your pension has stopped, pay 500 rupees for form processing\"",
+        "DO": "What to do: Ignore. Pension offices NEVER ask for payment over phone."
+      },
+      "BILL": {
+        "TITLE": "3. Fake Electricity/Gas Bill Calls",
+        "SAY": "They will say: \"Your electricity will be cut tonight, pay bill on this link\"",
+        "DO": "What to do: Ignore. Call your actual electricity provider using an old bill."
+      },
+      "GRANDCHILD": {
+        "TITLE": "4. Grandchild Emergency Scam",
+        "SAY": "They will say: \"I am in an accident, please send money\"",
+        "DO": "What to do: Hang up. Call your relative on their known original number to verify."
+      },
+      "MEDICINE": {
+        "TITLE": "5. Fake Medicine/Health Cures",
+        "SAY": "They will do: Sell \"miracle\" treatments for diabetes or BP on WhatsApp.",
+        "DO": "What to do: Do not buy. Only trust prescribed medicine from your doctor."
+      }
+    },
+    "GUIDE_TITLE": "Cyber Safety Guide for Parents",
+    "GUIDE_DESC": "A simple one-page guide to print and keep at home.",
+    "VIEW_GUIDE": "View Guide"
+  },
+  "SAFETY_SCORE": {
+    "TITLE": "Digital Safety Score",
+    "LOADING": "Loading question...",
+    "RESULTS_TITLE": "Your Safety Score",
+    "GRADE": "Grade",
+    "TIPS_TITLE": "Personalized Tips:",
+    "RETAKE": "Retake Quiz",
+    "QUESTIONS": [
+      {
+        "Q": "Do you use the same password for multiple accounts (Email, Bank, Social Media)?",
+        "OPTIONS": [
+          { "TEXT": "Yes, for almost all", "SCORE": 0, "CAT": "Password Hygiene", "TIP": "Use unique passwords for every account. Use a password manager to help." },
+          { "TEXT": "For some accounts", "SCORE": 5, "CAT": "Password Hygiene", "TIP": "Avoid reusing passwords even for 'minor' accounts." },
+          { "TEXT": "No, every account is different", "SCORE": 10, "CAT": "Password Hygiene" }
+        ]
+      },
+      {
+        "Q": "Do you have Two-Factor Authentication (2FA) enabled on your primary email and banking apps?",
+        "OPTIONS": [
+          { "TEXT": "What is 2FA?", "SCORE": 0, "CAT": "Account Security", "TIP": "Enable 2FA immediately. It's the best defense after a password." },
+          { "TEXT": "Only for banking", "SCORE": 5, "CAT": "Account Security", "TIP": "Your email is the keys to your digital life. Protect it with 2FA too." },
+          { "TEXT": "Yes, on all important accounts", "SCORE": 10, "CAT": "Account Security" }
+        ]
+      },
+      {
+        "Q": "Has anyone ever asked for your OTP (over call or SMS) and did you share it?",
+        "OPTIONS": [
+          { "TEXT": "Yes, a bank employee asked", "SCORE": 0, "CAT": "Social Engineering", "TIP": "NO official will EVER ask for your OTP. Sharing it is sharing your money." },
+          { "TEXT": "No, I never share OTPs", "SCORE": 10, "CAT": "Social Engineering" }
+        ]
+      },
+      {
+        "Q": "How often do you update your phone's operating system and apps?",
+        "OPTIONS": [
+          { "TEXT": "Rarely/When I get a new phone", "SCORE": 0, "CAT": "Device Security", "TIP": "Updates contain critical security patches. Enable auto-updates." },
+          { "TEXT": "Once in a while", "SCORE": 5, "CAT": "Device Security", "TIP": "Try to update within a week of a new release." },
+          { "TEXT": "As soon as update is available", "SCORE": 10, "CAT": "Device Security" }
+        ]
+      },
+      {
+        "Q": "Do you use public WiFi (Airports, Cafes) for banking or UPI payments?",
+        "OPTIONS": [
+          { "TEXT": "Yes, quite often", "SCORE": 0, "CAT": "Network Safety", "TIP": "Public WiFi is easily snooped. Use mobile data for sensitive tasks." },
+          { "TEXT": "Only if I use a VPN", "SCORE": 8, "CAT": "Network Safety" },
+          { "TEXT": "Never", "SCORE": 10, "CAT": "Network Safety" }
+        ]
+      },
+      {
+        "Q": "Is your phone protected by a PIN, Pattern, or Biometric (Face/Fingerprint)?",
+        "OPTIONS": [
+          { "TEXT": "No lock", "SCORE": 0, "CAT": "Device Security", "TIP": "Set a screen lock immediately. A stolen phone is an open wallet." },
+          { "TEXT": "Yes, a simple pattern/PIN", "SCORE": 7, "CAT": "Device Security", "TIP": "Use a strong 6-digit PIN or complex pattern." },
+          { "TEXT": "Yes, Biometrics + Strong PIN", "SCORE": 10, "CAT": "Device Security" }
+        ]
+      },
+      {
+        "Q": "Do you check 'App Permissions' before installing a new app from Play Store/App Store?",
+        "OPTIONS": [
+          { "TEXT": "No, I just click Accept", "SCORE": 0, "CAT": "Privacy", "TIP": "Check why a calculator app needs access to your contacts or SMS." },
+          { "TEXT": "Sometimes", "SCORE": 5, "CAT": "Privacy" },
+          { "TEXT": "Yes, always", "SCORE": 10, "CAT": "Privacy" }
+        ]
+      },
+      {
+        "Q": "Do you have a backup of your important photos and documents?",
+        "OPTIONS": [
+          { "TEXT": "No", "SCORE": 0, "CAT": "Data Safety", "TIP": "Ransomware can lock your files. Keep a backup on cloud or physical drive." },
+          { "TEXT": "Yes, on a cloud drive", "SCORE": 10, "CAT": "Data Safety" }
+        ]
+      },
+      {
+        "Q": "If you receive a 'Reward' link on WhatsApp from an unknown number, do you click it?",
+        "OPTIONS": [
+          { "TEXT": "Yes, if it looks exciting", "SCORE": 0, "CAT": "Social Engineering", "TIP": "WhatsApp rewards are 99% scams. Delete and block." },
+          { "TEXT": "No, I delete it", "SCORE": 10, "CAT": "Social Engineering" }
+        ]
+      },
+      {
+        "Q": "Do you use a different UPI PIN than your phone screen lock PIN?",
+        "OPTIONS": [
+          { "TEXT": "They are the same", "SCORE": 0, "CAT": "Financial Safety", "TIP": "Keep your UPI PIN unique. If someone sees your screen PIN, they can't pay." },
+          { "TEXT": "They are different", "SCORE": 10, "CAT": "Financial Safety" }
+        ]
+      }
+    ]
+  },
+  "REPORT_CYBERCRIME": {
+    "TITLE": "Report Cybercrime",
+    "EMERGENCY_LABEL": "IMMEDIATE FINANCIAL FRAUD HELPLINE",
+    "AVAILABILITY": "Available 24/7 across all States/UTs",
+    "OFFICIAL_CTA": "File Official Complaint Online",
+    "STEPS_TITLE": "Steps to File Complaint",
+    "STEPS": [
+      { "TITLE": "Visit Official Portal", "DESC": "Go to cybercrime.gov.in and click on 'File a Complaint'." },
+      { "TITLE": "Select Category", "DESC": "Choose between 'Financial Fraud', 'Women/Child Related Crime', or 'Other Cyber Crimes'." },
+      { "TITLE": "Fill Details", "DESC": "Provide your mobile number, OTP, and details of the incident." },
+      { "TITLE": "Upload Evidence", "DESC": "Attach screenshots of messages, transaction receipts, and URLs." },
+      { "TITLE": "Submit & Save", "DESC": "Submit and note down the Acknowledgement Number for future tracking." }
+    ],
+    "CHECKLIST_TITLE": "Evidence Checklist",
+    "CHECKLIST_INTRO": "Gather these before you start reporting:",
+    "CHECKLIST_ITEMS": [
+      "Screenshots of the scam message/call log",
+      "Transaction ID / UTR Number (for money theft)",
+      "Bank statement showing unauthorized debit",
+      "Phone number of the scammer",
+      "Website URL or App name used",
+      "Date and exact time of incident"
+    ],
+    "PRINT_BTN": "🖨️ Print Checklist",
+    "CONTACTS_TITLE": "State-wise Cyber Cell Contacts",
+    "TABLE": {
+      "STATE": "State / UT",
+      "CONTACT": "Helpline / Contact"
+    },
+    "STATES": {
+      "DELHI": "Delhi",
+      "MAHARASHTRA": "Maharashtra",
+      "KARNATAKA": "Karnataka",
+      "TAMIL_NADU": "Tamil Nadu",
+      "TELANGANA": "Telangana",
+      "GUJARAT": "Gujarat",
+      "UTTAR_PRADESH": "Uttar Pradesh",
+      "RAJASTHAN": "Rajasthan"
+    },
+    "FOOTER_SOURCE": "Source: cybercrime.gov.in | National Cyber Crime Reporting Portal"
+  },
+  "BREACH_CHECK": {
+    "TITLE": "Data Breach Check",
+    "SUBTITLE": "Password check only. Email lookup is disabled in the public demo.",
+    "TAB_EMAIL": "Email (Unavailable)",
+    "TAB_PWD": "Check Password",
+    "PRIVACY_EMAIL": "Email breach lookup is disabled for privacy. We do not send email data to any server.",
+    "EMAIL_DISABLED_NOTE": "Email checks are unavailable in this public demo.",
+    "EMAIL_DISABLED_BTN": "Unavailable",
+    "PRIVACY_PWD": "Uses the Pwned Passwords API with k-anonymity. Your password is hashed locally before checking.",
+    "EMAIL_PLACEHOLDER": "Enter your email address...",
+    "PWD_PLACEHOLDER": "Enter password to check...",
+    "CHECK_BTN": "Check Now",
+    "LOADING": "Checking database...",
+    "RESULT_PWD_DANGER": "Warning! This password has appeared in {{ count }} data breaches.",
+    "RESULT_PWD_SAFE": "Good news! This password was not found in any known data breaches.",
+    "RESULT_EMAIL_DANGER": "Email lookup is disabled in this public demo.",
+    "RESULT_EMAIL_SAFE": "Email lookup is disabled in this public demo.",
+    "COMPROMISED": "Compromised: ",
+    "ACTION_TITLE": "🚨 Immediate Action Checklist",
+    "ACTIONS": [
+      "Change your password for this service immediately.",
+      "If you use this password elsewhere, change it there too.",
+      "Enable Two-Factor Authentication (2FA) on your accounts.",
+      "Monitor your bank statements for suspicious activity."
+    ]
+  },
+  "PHISHING_DETECTOR": {
+    "TITLE": "Phishing Detector",
+    "SUBTITLE": "Scan suspicious URLs or SMS messages for signs of fraud.",
+    "TAB_URL": "Scan a URL",
+    "TAB_MSG": "Scan a Message/SMS",
+    "URL_PLACEHOLDER": "Paste the link here (e.g., https://paytrn-secure.link/login)...",
+    "MSG_PLACEHOLDER": "Paste the SMS or WhatsApp message here...",
+    "SCAN_BTN": "Analyze for Risk",
+    "ADVICE_TITLE": "What should you do?",
+    "RISK_LEVELS": {
+      "SAFE": "SAFE",
+      "LOW": "LOW RISK",
+      "MEDIUM": "MEDIUM RISK",
+      "HIGH": "HIGH RISK",
+      "DANGER": "EXTREME DANGER"
+    },
+    "FLAGS": {
+      "URGENCY": "Urgency tactic",
+      "LOOKALIK": "Lookalike domain",
+      "TOO_GOOD": "Too good to be true",
+      "SHORTENER": "URL shortener hides destination",
+      "FEAR": "Fear tactic"
+    },
+    "EXAMPLES": {
+      "FAKE_SMS": "FAKE SMS",
+      "SBI_BLOCKED": "SBI account is blocked",
+      "CASH_PRIZE": "cash prize of ₹50,000",
+      "POWER_CUT": "disconnected tonight at 9:30 PM"
+    },
+    "CHECKS": {
+      "HTTP": { "LABEL": "Unsecured Connection (HTTP)", "DESC": "Legitimate banks always use HTTPS." },
+      "KEYWORDS": { "LABEL": "Suspicious Keywords", "DESC": "URL contains sensitive words: " },
+      "TLD": { "LABEL": "Suspicious Domain Extension", "DESC": "Uses a cheap domain extension often favored by scammers." },
+      "IP": { "LABEL": "IP Address Used", "DESC": "Legitimate sites use brand names, not raw IP addresses." },
+      "SHORTENER": { "LABEL": "URL Shortener Detected", "DESC": "Scammers use these to hide the real destination." },
+      "URGENCY": { "LABEL": "Urgency Tactic", "DESC": "Scammers create panic to make you act without thinking." },
+      "PRIZE": { "LABEL": "Prize/Incentive Claim", "DESC": "Unexpected prizes are almost always scams." },
+      "SENSITIVE": { "LABEL": "Sensitive Info Request", "DESC": "No bank or official will ever ask for your OTP or PIN over text." },
+      "BRAND": { "LABEL": "Brand Mentioned", "DESC": "Message claims to be from: " }
+    },
+    "URL_KEYWORDS": ["login", "verify", "update", "secure", "bank", "paytm", "upi", "aadhaar", "kyc", "reward", "winner", "free", "sbi", "hdfc", "icici", "axis", "refund", "cashback"],
+    "URL_SUSPICIOUS_TLDS": [".xyz", ".top", ".click", ".online", ".site", ".link", ".info", ".buzz", ".loan", ".work"],
+    "URL_SHORTENERS": ["bit.ly", "tinyurl", "t.co", "goo.gl", "is.gd", "cutt.ly", "rebrand.ly", "shorturl"],
+    "MSG_URGENCY_WORDS": ["immediately", "blocked", "suspended", "24 hours", "tonight", "last chance", "kyc pending", "arrest", "within 24 hours"],
+    "MSG_PRIZE_WORDS": ["won", "prize", "lottery", "reward", "cashback", "gift", "iphone", "crore", "lakh", "free recharge"],
+    "MSG_SENSITIVE_WORDS": ["otp", "pin", "cvv", "password", "share", "aadhaar", "pan"],
+    "MSG_BRAND_NAMES": ["sbi", "paytm", "hdfc", "icici", "axis", "rbi", "income tax", "trai", "amazon", "flipkart", "phonepe", "gpay"],
+    "ADVICE": {
+      "DANGER": "1. <strong>Do NOT click</strong> any links in this message.<br>2. Do NOT share any OTP or personal details.<br>3. Report this to <strong>1930</strong> or <strong>cybercrime.gov.in</strong>.<br>4. Forward spam SMS to <strong>1909</strong> (TRAI).",
+      "SAFE": "This message seems okay, but always stay cautious. Never share passwords or OTPs regardless of how legitimate a request looks."
+    }
+  },
+  "PWD_LAB": {
+    "TITLE": "Password Lab",
+    "SUBTITLE": "Test your password strength and generate safer alternatives.",
+    "ANALYZER_TITLE": "Analyze Password",
+    "INPUT_PLACEHOLDER": "Enter password to test...",
+    "STRENGTH": "Strength",
+    "ATTACK_ONLINE": "Online Attack",
+    "ATTACK_SLOW": "Offline Slow",
+    "ATTACK_FAST": "Offline Fast",
+    "TIPS_TITLE": "Smart Tips",
+    "VARIANTS_TITLE": "Stronger Variants",
+    "REFRESH": "Refresh",
+    "VARIANTS_EMPTY": "Enter a password on the left to see variants.",
+    "STRENGTH_LABELS": ["Very Weak", "Weak", "Fair", "Strong", "Very Strong"],
+    "TIPS": {
+      "MOBILE": "Avoid using your mobile number.",
+      "YEAR": "Avoid using birth years like 1990 or 2005.",
+      "COMMON_NAME": "Avoid common Indian names, cities, or cricket terms.",
+      "EXCELLENT": "Excellent! This is a very strong password."
+    },
+    "INDIAN_WORDS": ["india", "bharat", "sachin", "dhoni", "ipl", "rahul", "priya", "delhi", "mumbai", "kolkata", "chennai", "bangalore", "hyderabad", "pune", "jaipur", "virat", "rohit", "cricket", "diwali", "ganesh", "shiva", "krishna", "ram", "sita", "paytm", "phonepe", "gpay", "vanakkam", "namaste"],
+    "VARIANT_WORDS": ["Mera", "Apna", "Suraksha", "SafeClick", "Sher"],
+    "PASSPHRASE_WORDS": ["apple", "mountain", "river", "delta", "tiger"],
+    "VARIANTS": {
+      "ADD_SYMBOL": "Add Number + Symbol",
+      "LEET": "Leet Speak",
+      "CAPITALIZE": "Capitalize & Append",
+      "WORD_MIX": "Word Mix",
+      "REVERSE": "Reverse & Pad",
+      "PASSPHRASE": "Passphrase Style",
+      "COPY": "Copy",
+      "COPIED": "Copied!",
+      "TEST": "Test"
+    },
+    "FAQ_TITLE": "Password Safety FAQ",
+    "FAQ": [
+      {
+        "Q": "Why length matters more than complexity?",
+        "A": "Adding just one character increases the possible combinations exponentially. A 12-character simple word is often harder to crack than an 8-character complex one."
+      },
+      {
+        "Q": "What is a passphrase?",
+        "A": "A passphrase is a sequence of random words (e.g., \"mango-blue-bicycle\"). They are easy for humans to remember but very hard for computers to guess."
+      },
+      {
+        "Q": "India-specific: Is OTP enough?",
+        "A": "No. OTP is a second layer, but if your password is weak, hackers can still try to trick you into sharing the OTP. Never share your OTP with anyone."
+      }
+    ]
+  },
+  "DEEPFAKE": {
+    "TITLE": "Deepfake & AI Voice Clone Awareness Hub",
+    "SUBTITLE": "Learn to spot and defend against India's fastest-growing cyber threat.",
+    "S1": {
+      "TITLE": "1. What is a Deepfake?",
+      "P1": "Imagine someone took your photo and put your face on a completely different body in a video. AI can now do this automatically and realistically in minutes.",
+      "P2": "Using Deep Learning, scammers can swap faces or perfectly clone anyone's voice using just a 3-second audio clip."
+    },
+    "S2": {
+      "TITLE": "2. How Deepfake Scams Target Indians",
+      "SCAMS": {
+        "VIDEO": { "TITLE": "📹 Video Call Impersonation", "DESC": "A scammer creates a deepfake video of a 'police officer' or 'CBI official' on WhatsApp. They threaten you with fake arrest warrants." },
+        "AUDIO": { "TITLE": "🗣️ Fake Audio Clone Calls", "DESC": "AI clones your relative's voice. They call saying: 'Beta mujhe ₹50,000 bhejo, main hospital mein hoon'. You think it's actually them." },
+        "CEO": { "TITLE": "👔 Fake CEO/Boss Voice", "DESC": "Clones a company CEO's voice to instruct the finance team to do an urgent wire transfer." },
+        "CELEB": { "TITLE": "🌟 Fake Celebrity Endorsements", "DESC": "Deepfake videos of Ratan Tata or Virat Kohli promoting fake trading apps on Facebook." },
+        "SEX": { "TITLE": "📸 Sextortion Deepfakes", "DESC": "Scammers take innocent social media photos and use AI to create explicit fake images for blackmail." }
+      }
+    },
+    "S3": {
+      "TITLE": "3. How to Spot a Deepfake",
+      "VIDEO": "👀 Spotting Video Deepfakes",
+      "AUDIO": "👂 Spotting AI Voice Clones",
+      "V_LIST": ["Unnatural blinking", "Facial edges blur", "Lighting mismatch", "Lip-sync issues", "Glitching accessories", "Waxy skin"],
+      "A_LIST": ["Flat intonation", "No background noise", "Unusual pauses", "Can't handle interruptions", "Refuses language switch"]
+    },
+    "S4": {
+      "TITLE": "4. The Family \"Safe Word\" System",
+      "DESC": "Set up a family code word right now that no AI can know.",
+      "INPUT_LABEL": "Type a memorable safe word:",
+      "SAVE_BTN": "Save to Device",
+      "NOTE": "Stored locally. Not sent to any server.",
+      "DISPLAY_TITLE": "Your Family Safe Word:",
+      "SHARE_TIP": "Share this word offline with your family.",
+      "CHANGE_BTN": "Change Safe Word"
+    },
+    "S5": {
+      "TITLE": "5. What to do if you are a victim",
+      "STEPS": [
+        "Do NOT pay any money.",
+        "Preserve evidence: Screenshots, recordings.",
+        "Report: cybercrime.gov.in under Section 66E.",
+        "Report to Platform: Block and flag the account.",
+        "StopNCII.org: Block sharing of explicit images."
+      ]
+    },
+    "QUIZ": {
+      "TITLE": "6. Spot the Deepfake Quiz",
+      "COMPLETE": "Quiz Complete!",
+      "RETAKE": "Retake Quiz",
+      "EXCELLENT": "Excellent! You are well-prepared.",
+      "REVIEW": "Good effort. Review the signs above."
+    }
+  },
+  "QUIZ": {
+    "TITLE": "Weekly Cyber Championship",
+    "DESC": "Test your knowledge, compete nationally, and earn your certificate.",
+    "RULES_TITLE": "Tournament Rules",
+    "RULES_LIST": [
+      "10 Questions, 30 seconds per question.",
+      "+10 points for correct answer.",
+      "+5 points Speed Bonus (answer in under 5s).",
+      "No going back once you answer."
+    ],
+    "ALREADY_DONE": "You have already completed this week's challenge. Come back next Monday!",
+    "START_BTN": "Start Week's Challenge",
+    "LOADING": "Loading Questions...",
+    "LEADERBOARD_TITLE": "Current Top 5 (National)",
+    "PROGRESS": "Question {{ current }}/10",
+    "SCORE": "Score: {{ score }}",
+    "TIME_OUT": "Time Out!",
+    "COMPLETED": "Challenge Completed!",
+    "CERT_TITLE": "SafeClick Cyber Champion",
+    "CERT_SUB": "This certifies that scored points in the Weekly Cyber Championship.",
+    "NAME_PLACEHOLDER": "Enter name for certificate",
+    "CERT_BTN": "Download Certificate",
+    "ENCOURAGEMENT": "Good effort! Read more SafeClick safety tips and try again next week to earn your certificate (Requires 80+ points).",
+    "BACK_BTN": "Back to Leaderboard"
+  },
+  "FACT": {
+    "TITLE": "WhatsApp Forward Fact-Checker",
+    "SUBTITLE": "Verify viral messages, claims, and links before you share them with others.",
+    "TAB_MSG": "Message/Forward",
+    "TAB_CLAIM": "Specific Claim",
+    "TAB_URL": "Check URL",
+    "LABEL_MSG": "Paste the full WhatsApp forwarded message:",
+    "LABEL_CLAIM": "Type the claim you want to verify:",
+    "LABEL_URL": "Paste the link/URL that was shared:",
+    "PLACEHOLDER": "Paste here...",
+    "CHECK_BTN": "Fact Check Now",
+    "ANALYZING": "Analyzing...",
+    "VERDICT": {
+      "likely-true": "Likely True / Safe",
+      "unverified": "Unverified (Needs Research)",
+      "likely-false": "Likely False / Suspicious",
+      "known-misinformation": "Known Misinformation Pattern"
+    },
+    "SCORE": "Credibility Score",
+    "RED_FLAGS": "⚠️ Red Flags Detected",
+    "GREEN_FLAGS": "✅ Positive Signals",
+    "TIPS_TITLE": "How to verify this yourself:",
+    "RESOURCES_TITLE": "Indian Fact-Checking Sites",
+    "RESOURCES_SUB": "Use these trusted portals to search if a viral claim has already been debunked.",
+    "WA_HELPLINE": "PIB WhatsApp Helpline",
+    "WA_SUB": "Send messages to verify:",
+    "GUIDE_TITLE": "Manual Verification Guide",
+    "GUIDE_STEPS": [
+      "Google the claim in quotes (\"exact claim text\").",
+      "Reverse image search on images.google.com.",
+      "Check the URL to ensure it's not a mimic site.",
+      "Check the date - old news is often recycled."
+    ]
+  },
+  "JOB_SCAM": {
+    "TITLE": "Job Offer Scam Detector",
+    "SUBTITLE": "Analyze WhatsApp messages, SMS, or job descriptions for hidden scam patterns.",
+    "LABEL": "Paste the job offer text below:",
+    "PLACEHOLDER": "Example: Work from home data entry. Earn ₹15,000 daily...",
+    "ANALYZE_BTN": "Analyze Offer",
+    "ANALYZING": "Scanning for fraudulent patterns...",
+    "RISK_SCORE": "Risk Score",
+    "RED_FLAGS": "⚠️ Red Flags Detected",
+    "LEGIT_SIGNALS": "✅ Positive Signals",
+    "NO_SIGNALS": "Not enough clear signals. Always verify independently.",
+    "VERIFY_TITLE": "Verification Checklist",
+    "RULES": [
+      "Verify company on MCA21 portal: mca.gov.in",
+      "Check employee reviews on Glassdoor or Ambitionbox",
+      "Google \"Company name + scam\"",
+      "NEVER pay any fees before receiving a salary."
+    ],
+    "RESET_BTN": "Check Another Offer",
+    "EDU_TITLE": "Common Indian Job Scams",
+    "TYPES": {
+      "DATA": { "TITLE": "1. Envelope Stuffing / Data Entry", "DESC": "Promise high pay for basic work, but demand a 'registration fee' upfront." },
+      "TASK": { "TITLE": "2. Task-Based App Scams", "DESC": "Pay small amounts first, then ask for 'investment' to unlock premium tasks." },
+      "BPO": { "TITLE": "3. Fake BPO / Call Center Jobs", "DESC": "Fake agencies charge a 'training fee' for a job at a major IT company." },
+      "FOREIGN": { "TITLE": "4. Foreign Job / Visa Scams", "DESC": "Lucrative Dubai/Canada jobs requiring immediate 'visa fees'." },
+      "MLM": { "TITLE": "5. Reselling / MLM Traps", "DESC": "Aggressive recruitment to resell overpriced products." }
+    }
+  },
+  "INVESTMENT": {
+    "TITLE": "Crypto & Investment Scam Analyzer",
+    "SUBTITLE": "Protect your hard-earned money from fraudulent schemes and Ponzi traps.",
+    "OFFER": {
+      "TITLE": "Analyze an Offer",
+      "DESC": "Paste an app name, Telegram group description, or WhatsApp message.",
+      "PLACEHOLDER": "Example: Join our VIP Telegram group. Invest ₹5000 and get guaranteed 5% daily return...",
+      "SCAN_BTN": "Scan for Red Flags",
+      "ANALYZING": "Analyzing...",
+      "SAFE": "✅ No blatant red flags detected",
+      "SAFE_SUB": "However, always verify if the entity is SEBI registered before investing.",
+      "DANGER": "🚨 DANGER: {{ count }} Red Flags Found"
+    },
+    "PONZI": {
+      "TITLE": "Ponzi Detection Calculator",
+      "DESC": "Enter the promised returns to see if they are mathematically realistic.",
+      "LABEL_RETURN": "Promised Return (%)",
+      "LABEL_PER": "Per",
+      "CALC_BTN": "Calculate Annual Rate",
+      "EQUIVALENT": "Equivalent to: {{ rate }}% Annual Return",
+      "VERDICT": "Verdict:",
+      "REALITY": "Compare this to reality:",
+      "FD": "Bank Fixed Deposit (FD): ~7% per year",
+      "MF": "Mutual Funds (Nifty 50 Avg): ~12-15% per year"
+    },
+    "EDU": {
+      "TITLE": "Common Investment Scam Patterns in India",
+      "TASK": { "TITLE": "📱 Task-Based Investment Scam", "DESC": "Join Telegram -> Small tasks -> Small pay -> Trust -> Big investment -> Money locked." },
+      "PIG": { "TITLE": "💔 Pig Butchering (Sha Zhu Pan)", "DESC": "Romance + investment combo. Scammer builds relationship over months then 'introduces' fake platform." },
+      "TRADING": { "TITLE": "📉 Fake Trading Apps", "DESC": "Legitimate looking app. Small withdrawals work. Big investment gets blocked." },
+      "CELEB": { "TITLE": "🎭 Celebrity-Endorsed Crypto Scams", "DESC": "AI Deepfake videos of famous billionaires promoting fake platforms." }
+    },
+    "VERIFY": {
+      "TITLE": "How to Verify an Investment",
+      "STEPS": [
+        "Check SEBI Registration: sebi.gov.in",
+        "Check RBI List: rbi.org.in",
+        "Google Search: \"[App/Company Name] + scam + review\"",
+        "File Complaints: scores.gov.in or cybercrime.gov.in"
+      ]
+    }
+  },
+  "ECOMMERCE": {
+    "TITLE": "e-Commerce Fraud Shield",
+    "SUBTITLE": "Verify deals, sellers, and learn how to recover your money if scammed online.",
+    "TAB_DEAL": "Analyze a Deal",
+    "TAB_SELLER": "Verify Seller / Reviews",
+    "TAB_SCAMMED": "I Was Scammed",
+    "FORM": {
+      "TITLE": "Enter Deal Details",
+      "PRODUCT": "Product Name",
+      "MARKET_PRICE": "Typical Market Price (₹) *",
+      "DEAL_PRICE": "Offered Deal Price (₹) *",
+      "URL": "Website URL (if applicable)",
+      "TIMER": "Site has a \"Limited Time Offer\" countdown timer",
+      "PREPAID": "Site ONLY accepts UPI/Card (No Cash on Delivery)",
+      "BTN": "Analyze Risk"
+    },
+    "VERDICT": {
+      "HIGH": "HIGH RISK: Likely Scam",
+      "MED": "MEDIUM RISK: Proceed with Caution",
+      "LOW": "LOW RISK: Seems Safe"
+    },
+    "SCORE": "Risk Score",
+    "DETECTED_RISKS": "Detected Risks:",
+    "REVIEWS": {
+      "TITLE": "How to Spot Fake Reviews",
+      "SUB": "Many sellers buy 5-star reviews to trick you. Look for these red flags:",
+      "FLAGS": [
+        { "ICON": "📅", "TITLE": "Date Clustering:", "DESC": "Dozens of 5-star reviews posted on the exact same day or week." },
+        { "ICON": "🤖", "TITLE": "Generic Praise:", "DESC": "Reviews say \"great product\" without mentioning specific features." },
+        { "ICON": "👤", "TITLE": "Hidden Profiles:", "DESC": "Reviewer has no profile photo, or this is their only review." },
+        { "ICON": "📸", "TITLE": "Missing Photos:", "DESC": "Real buyers often upload photos. Fake reviews rarely have them." }
+      ]
+    },
+    "SELLER_STEPS": {
+      "TITLE": "Seller Verification Steps",
+      "LIST": [
+        "Verify GST: Check the seller's GST number at gst.gov.in.",
+        "Check Forums: Search on MouthShut, Trustpilot, or consumer forums.",
+        "Google Search: Search for \"[Seller Name] + complaints\"."
+      ]
+    },
+    "RECOVERY": {
+      "TITLE": "I Think I Was Scammed. What Now?",
+      "SUB": "Follow this timeline to maximize your chances of getting your money back.",
+      "T1": { "TITLE": "Immediate Actions", "TIME": "Within 24 Hours", "LIST": ["Call 1930 NOW", "Dispute Payment with your bank", "Report to Platform (Amazon/Flipkart)"] },
+      "T2": { "TITLE": "Official Complaints", "TIME": "Within 1 Week", "LIST": ["Consumer Helpline (1915)", "Contact Payment Gateway", "Cybercrime Portal"] },
+      "T3": { "TITLE": "Legal Recourse", "TIME": "Long Term", "LIST": ["Consumer Forum", "Social Media Pressure"] }
+    }
+  },
+  "STUDENT": {
+    "TITLE": "Student Cyber Safety Hub",
+    "SUBTITLE": "Essential survival skills for the digital world.",
+    "QUIZ_TITLE": "Test Your Instincts: What's the right move?",
+    "PROGRESS": "Scenario {{ current }} of {{ total }}",
+    "RESULTS": "Training Complete!",
+    "EXCELLENT": "Excellent digital instincts! You know how to stay safe.",
+    "GOOD_START": "Good start, but review the topics above.",
+    "BUILDER_TITLE": "Build Your Digital Code of Conduct",
+    "BUILDER_SUB": "Select the rules you agree to follow.",
+    "PRINT_BTN": "🖨️ Print My Rules",
+    "ADD_BTN": "Add",
+    "PRINT_TITLE": "My Digital Code of Conduct",
+    "AGREE": "I, agree to follow these rules.",
+    "SIG_STUDENT": "Student Signature",
+    "SIG_TEACHER": "Teacher/Parent Signature"
+    },
+    "BUSINESS": {
+    "TITLE": "SME & Small Business Security",
+    "SUBTITLE": "Essential cyber defense for shop owners, freelancers, and startups.",
+    "TAB_GUIDE": "Security Guide",
+    "TAB_SCORE": "Business Security Score",
+    "TAB_TEMPLATE": "Policy Template",
+    "S1": { "TITLE": "1. GST & Income Tax Portal Security", "DESC": "Mandate Two-Factor Authentication on gst.gov.in and incometax.gov.in." },
+    "S2": { "TITLE": "2. Vendor Impersonation Fraud", "DESC": "ALWAYS verify a change in bank details via a phone call." },
+    "S3": { "TITLE": "3. Business Email Compromise", "DESC": "Large transfers require verbal confirmation." },
+    "S4": { "TITLE": "4. Ransomware & Data Backup", "DESC": "The 3-2-1 Rule: Keep 3 copies of your data." },
+    "S5": { "TITLE": "5. Secure Payment Acceptance (Shops)", "DESC": "Daily check for physical QR code tampering." },
+    "QUIZ": {
+      "TITLE": "Assess Your Business Risk",
+      "SUB": "Answer these 10 questions to see how secure your business is.",
+      "SCORE_BANNER": "Your Business Security Score",
+      "GOOD": "Excellent! Strong fundamental defenses.",
+      "MED": "Moderate risk. Implement missing policies.",
+      "BAD": "High Risk! Your business is highly vulnerable."
+    },
+    "TEMPLATE": {
+      "TITLE": "1-Page Security Policy Template",
+      "SUB": "Every business should have written security rules.",
+      "BTN": "⬇️ Download Policy (.txt)"
+      }
+      },
+      "PARENT": {
+      "TITLE": "Parent's Guide to Child Online Safety",
+      "SUBTITLE": "A comprehensive guide to protecting children aged 6-17 in the digital world.",
+      "S1": { "TITLE": "1. Age-Appropriate Internet Usage", "DESC": "インターネット使用の年齢ガイド" },
+      "S2": { "TITLE": "2. Setting Up Parental Controls", "DESC": "Step-by-step setup for Android, iOS, and YouTube." },
+      "S3": { "TITLE": "3. Online Grooming Warning Signs", "DESC": "Watch for behavioral changes and suspicious online friends." },
+      "S4": { "TITLE": "4. Gaming & In-App Purchase Safety", "DESC": "Disable payments and moderate multiplayer chat." },
+      "S5": { "TITLE": "5. Family Digital Safety Agreement", "DESC": "Fill out names and print this agreement to sign together." },
+      "S6": { "TITLE": "6. Reporting Child Online Abuse", "DESC": "Contact Childline 1098 or NCPCR." },
+      "PRINT_BTN": "🖨️ Print Agreement"
+      },
+      "MATRIMONIAL": {    "TITLE": "Matrimonial Safety Checker",
+    "SUBTITLE": "Detect romance scams and verify profiles on matrimonial platforms.",
+    "TAB_PROFILE": "Profile Analyzer",
+    "TAB_CHAT": "Chat Analyzer",
+    "TAB_CHECKLIST": "Safety Checklist",
+    "SCORE": "Risk Score",
+    "DANGER": "EXTREME DANGER",
+    "SAFE": "✅ No automated red flags found.",
+    "CHECKLIST_SUB": "Answer these questions honestly:",
+    "PROBABILITY_HIGH": "🚨 High Scam Probability",
+    "PROBABILITY_MED": "⚠️ Proceed with Caution",
+    "PROFILE_LABEL": "Paste the user's \"About Me\" or profile description:",
+    "PROFILE_PLACEHOLDER": "Example: I am an NRI doctor working in the UK...",
+    "PROFILE_BTN": "Scan Profile",
+    "CHAT_LABEL": "Paste a suspicious conversation snippet:",
+    "CHAT_PLACEHOLDER": "Example: Honey, my account is blocked...",
+    "CHAT_BTN": "Analyze Conversation",
+    "CHECKLIST_BTN": "Safety Checklist",
+    "GUIDE_TITLE": "How to Verify a Profile",
+    "NEVER_SEND": "Never send money.",
+    "NEVER_SEND_SUB": "No matter how tragic the story, never transfer money."
+  },
+  "SCAM_WALL": {
+    "TITLE": "Official Reporting Guide",
+    "SUBTITLE": "Public scam reports and alleged identifier databases are disabled for privacy and legal safety.",
+    "TOTAL": "Total Reports",
+    "PHONE": "Phone Scams",
+    "UPI": "UPI IDs Flagged",
+    "DISCLAIMER": "SafeClick does not collect, publish, verify, or rank alleged scammer identifiers. Use official channels and preserve evidence privately.",
+    "SEARCH": "Public search disabled",
+    "REPORT_BTN": "Open official reporting guide",
+    "FORM_TITLE": "Public submissions disabled",
+    "SUBMIT_BTN": "Open Official Portal",
+    "TOP_TITLE": "Identifier leaderboards disabled",
+    "HELPFUL": "Helpful"
+  },
+  "STATS": {
+    "TITLE": "India Cybercrime Statistics Dashboard",
+    "SUBTITLE": "Data from NCRB Annual Reports, MHA cybercrime data, and RBI reports.",
+    "IMPACT_TITLE": "SafeClick Impact (Live)",
+    "TOOLS": "Tools Used",
+    "PASSWORDS": "Passwords Tested",
+    "PHISHING": "Phishing URLs Scanned",
+    "SCANS": "Scans Performed"
+  },
+  "VAULT": {
+    "TITLE": "🔒 Encrypted Note Vault",
+    "LOCK_BTN": "Lock Vault",
+    "NOTICE": "Security Notice: Your notes are encrypted locally with AES-256-GCM. Your password never leaves your device.",
+    "SETUP_TITLE": "Create Your Secure Vault",
+    "UNLOCK_TITLE": "Unlock Vault",
+    "NEW_NOTE": "+ New Encrypted Note",
+    "EXPORT": "⬇️ Export Encrypted Backup",
+    "SAVE_BTN": "Encrypt & Save",
+    "EMPTY": "Your vault is empty."
+  },
+  "QR": {
+    "TITLE": "Safe QR Code Tools",
+    "SUBTITLE": "Generate safe UPI codes or inspect suspicious QR codes.",
+    "TAB_GEN": "Generate Safe QR",
+    "TAB_VER": "Verify a QR Code",
+    "GEN_BTN": "Generate QR Code",
+    "UPLOAD_TITLE": "Upload a QR Code Image",
+    "DECODED": "Decoded Content",
+    "ANTI_TAMPER": "Anti-tamper tip: Print the QR on a surface that tears.",
+    "STICKER_SCAM": "QR Code Sticker Scam"
+  },
+  "MITRA": {
+    "SUBTITLE": "Your digital safety advisor",
+    "VOICE_WAKE": "Say \"SafeClick, am I being scammed?\"",
+    "PLACEHOLDER": "Type your question or use voice...",
+    "SEND": "Send",
+    "CLEAR_HISTORY": "Are you sure you want to clear the conversation history?",
+    "VOICE_NOT_SUPPORTED": "Voice Assistant is not supported in this browser. Falling back to text input.",
+    "HELPFUL_QUESTION": "Was this helpful?",
+    "SPEAK_HELPLINE": "🚨 Speak to helpline 1930 →",
+    "CONFIRM_HEARING": "Did I hear you correctly?",
+    "SAY_YES_NO": "Say Yes to continue, No to cancel",
+    "SUGGESTIONS": {
+      "SCAMMED": "SafeClick, am I being scammed?",
+      "OTP": "Someone asked for my OTP — what should I do?",
+      "UPI": "How do I report UPI fraud?",
+      "HACKED": "My phone got hacked — help!",
+      "PHISHING": "What is phishing?"
+    }
+  },
+  "EXTENSION": {
+    "GUARD_TITLE": "SafeClick Guard",
+    "ACTIVE": "Active",
+    "ANALYZING": "Analyzing Site...",
+    "STATUS_SAFE": "Safe Website",
+    "STATUS_CAUTION": "Proceed with Caution",
+    "STATUS_DANGER": "DANGEROUS SITE",
+    "RESCANNING": "Re-scanning...",
+    "SCAN_BTN": "Force Re-Scan Page",
+    "WEB_APP_BTN": "Open SafeClick Web App",
+    "TIP_TITLE": "💡 Today's Security Tip"
+  },
+  "FOOTER": {
+    "HELPLINE": "Cyber Crime Helpline: 1930",
+    "DISCLAIMER": "Educational use only. We do not collect or store your inputs on our servers. Not affiliated with any government or bank."
+  },
+  "COMMON": {
+    "PRIVACY_TEXT": "Most tools run in your browser. We don’t collect or store your inputs on our servers. See Privacy & Terms.",
+    "GOT_IT": "Got it!",
+    "SCAM": "SCAM",
+    "LEGIT": "LEGIT",
+    "SAFE": "Safe",
+    "SUSPICIOUS": "Suspicious",
+    "DANGEROUS": "Dangerous",
+    "SCAN": "Scan Now",
+    "NEXT": "Next",
+    "BACK": "Back",
+    "SHARE": "Share",
+    "COPY": "Copy",
+    "DONE": "Done",
+    "ERROR": "An error occurred. Please try again.",
+    "LOADING": "Loading..."
+  },
+  "DIGEST": {
+    "SECTION_TITLE": "This Week in Indian Cybercrime",
+    "UPDATED_MONDAY": "Updated every Monday",
+    "STATS": {
+      "COMPLAINTS": "complaints reported nationally",
+      "LOSS": "crore lost",
+      "TOP_STATE": "most affected state"
+    },
+    "PATTERN": {
+      "RANK": "Top Threat",
+      "NEW_THIS_WEEK": "NEW THIS WEEK",
+      "TRENDING": "TRENDING ↑",
+      "RECURRING": "RECURRING",
+      "READ_MORE": "Read more",
+      "LEARN_MORE": "Learn more",
+      "ACTIVE_IN": "Active in:",
+      "TARGETS": "Targets:",
+      "LOSS_THIS_WEEK": "Estimated loss this week:",
+      "LAKH": "lakh",
+      "HOW_IT_WORKS": "How It Works",
+      "WHAT_SCAMMER_SAYS": "What the scammer actually says:",
+      "SCRIPT_NOTE": "This exact script has been reported by multiple victims this week.",
+      "RED_FLAGS": "Red Flags Checklist",
+      "RED_FLAGS_SUB": "If you see 2 or more of these — it's a scam.",
+      "WHAT_TO_DO": "What To Do",
+      "IF_NOT_ACTED": "If you haven't acted yet:",
+      "IF_ACTED": "If you already shared OTP/money:",
+      "CALL_1930": "Call 1930 immediately",
+      "SHARE_WARNING": "Warn your family"
+    },
+    "ARCHIVE": {
+      "TITLE": "Previous digests",
+      "SUBSCRIBE": "Subscribe to alerts"
+    },
+    "DOWNLOAD_PDF": "Download this week's digest as PDF",
+    "READ_FULL_DIGEST": "Read full digest →"
+  },
+  "REGIONAL": {
+    "TITLE": "Regional Scams",
+    "YOUR_STATE_TAB": "Your State",
+    "YOUR_CITY_TAB": "Your City",
+    "NATIONAL_TAB": "National",
+    "SET_LOCATION_CTA": "Set your location",
+    "SCAM_TARGETS": "Targets",
+    "AVG_LOSS": "Average Loss",
+    "REAL_SCRIPT_LABEL": "What the scammer says",
+    "REPORT_TO": "Report to",
+    "HOW_IT_WORKS": "How it works",
+    "PREVENTION": "Prevention Tip",
+    "SHARE_WARNING": "Share this warning"
+  },
+  "ONBOARDING": {
+    "TITLE": "Where are you from?",
+    "SUBTITLE": "See scams targeting your region",
+    "SELECT_STATE": "Select your State",
+    "SELECT_CITY": "Select your City (Optional)",
+    "SKIP": "Skip for now",
+    "START_EXPLORING": "Start Exploring",
+    "CHANGE_LATER": "You can change this anytime in settings"
+  }
+}

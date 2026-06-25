@@ -1,0 +1,65 @@
+{
+  "lastUpdated": "2026-05-03T10:00:00Z",
+  "alerts": [
+    {
+      "id": "t1",
+      "date": "2026-05-02T14:30:00Z",
+      "source": "CERT-In",
+      "severity": "critical",
+      "type": "vulnerability",
+      "title": "Multiple Vulnerabilities in Google Chrome",
+      "summary": "CERT-In has issued a high severity warning for multiple vulnerabilities found in Google Chrome. These could allow a remote attacker to execute arbitrary code or cause a Denial of Service (DoS) condition on the targeted system.",
+      "affectedSystems": ["Google Chrome versions prior to 125.0.6422.60"],
+      "actionRequired": "Update Google Chrome to the latest version immediately.",
+      "referenceUrl": "https://www.cert-in.org.in/"
+    },
+    {
+      "id": "t2",
+      "date": "2026-05-01T09:15:00Z",
+      "source": "Cyber Dost",
+      "severity": "high",
+      "type": "phishing",
+      "title": "Fake Traffic Challan SMS Scam",
+      "summary": "Scammers are sending fake SMS messages claiming the user has a pending traffic challan. The message contains a malicious link disguised as the official E-Challan portal. Clicking the link downloads malware that steals OTPs.",
+      "affectedSystems": ["Android smartphones"],
+      "actionRequired": "Do not click on links in SMS. Verify traffic challans only on the official echallan.parivahan.gov.in portal.",
+      "referenceUrl": "https://twitter.com/Cyberdost"
+    },
+    {
+      "id": "t3",
+      "date": "2026-04-29T11:45:00Z",
+      "source": "RBI",
+      "severity": "high",
+      "type": "scam",
+      "title": "Warning Against Fake KYC Update Apps",
+      "summary": "Reserve Bank of India warns citizens against downloading unauthorized apps like AnyDesk or TeamViewer for KYC updates. Bank officials will never ask you to download screen-sharing applications.",
+      "affectedSystems": ["All Banking Customers"],
+      "actionRequired": "Never share your screen or download remote access apps for banking purposes.",
+      "referenceUrl": "https://rbi.org.in/"
+    },
+    {
+      "id": "t4",
+      "date": "2026-04-28T16:20:00Z",
+      "source": "CERT-In",
+      "severity": "medium",
+      "type": "advisory",
+      "title": "Advisory on AI Voice Cloning Scams",
+      "summary": "An increase in scams using AI to clone voices of family members in distress has been reported. Scammers use cloned voices to demand urgent money transfers for medical emergencies or legal trouble.",
+      "affectedSystems": ["General Public"],
+      "actionRequired": "Always verify the emergency by calling the person back on their known phone number before transferring any funds.",
+      "referenceUrl": "https://www.cert-in.org.in/"
+    },
+    {
+      "id": "t5",
+      "date": "2026-04-25T10:00:00Z",
+      "source": "MHA",
+      "severity": "medium",
+      "type": "malware",
+      "title": "Malicious Apps Disguised as Antivirus",
+      "summary": "Several fake antivirus apps have been detected on third-party app stores. These apps do not protect your device but instead harvest your contacts, SMS, and location data.",
+      "affectedSystems": ["Android OS"],
+      "actionRequired": "Only download security applications from the official Google Play Store or Apple App Store. Check reviews before installing.",
+      "referenceUrl": "https://cybercrime.gov.in/"
+    }
+  ]
+}

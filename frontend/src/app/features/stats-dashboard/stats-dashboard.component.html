@@ -1,0 +1,83 @@
+<div class="stats-container">
+  <header class="stats-header">
+    <h1>{{ 'STATS.TITLE' | translate }}</h1>
+    <p>{{ 'STATS.SUBTITLE' | translate }}</p>
+  </header>
+
+  <!-- Impact Stats -->
+  <section class="impact-stats">
+    <h2>Local Activity Snapshot</h2>
+    <p class="chart-desc">These numbers come from this browser only. They are not national impact statistics.</p>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <h3>{{ impactStats.toolsUsed }}</h3>
+        <p>{{ 'STATS.TOOLS' | translate }}</p>
+      </div>
+      <div class="impact-card">
+        <h3>{{ impactStats.passwordsTested }}</h3>
+        <p>{{ 'STATS.PASSWORDS' | translate }}</p>
+      </div>
+      <div class="impact-card">
+        <h3>{{ impactStats.phishingScanned }}</h3>
+        <p>{{ 'STATS.PHISHING' | translate }}</p>
+      </div>
+      <div class="impact-card">
+        <h3>{{ impactStats.reportsSubmitted }}</h3>
+        <p>{{ 'STATS.SCANS' | translate }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Charts Grid -->
+  <div class="charts-grid">
+    <!-- Chart 1 -->
+    <div class="chart-card">
+      <div class="card-header">
+        <h3>Year-over-Year Complaints</h3>
+        <button (click)="downloadChart(0, 'Year over Year')">⬇️</button>
+      </div>
+      <canvas #chartCanvas></canvas>
+      <p class="chart-desc">Shows massive growth to convey urgency. (Source: NCRB 2023)</p>
+    </div>
+
+    <!-- Chart 2 -->
+    <div class="chart-card">
+      <div class="card-header">
+        <h3>Top 10 States by Complaints</h3>
+        <button (click)="downloadChart(1, 'Top States')">⬇️</button>
+      </div>
+      <canvas #chartCanvas></canvas>
+      <p class="chart-desc">Maharashtra and Telangana lead the absolute numbers. (Source: cybercrime.gov.in)</p>
+    </div>
+
+    <!-- Chart 3 -->
+    <div class="chart-card">
+      <div class="card-header">
+        <h3>Fraud Type Breakdown (%)</h3>
+        <button (click)="downloadChart(2, 'Fraud Types')">⬇️</button>
+      </div>
+      <canvas #chartCanvas></canvas>
+      <p class="chart-desc">Financial fraud dominates cybercrimes in India. (Source: MHA Data)</p>
+    </div>
+
+    <!-- Chart 4 -->
+    <div class="chart-card">
+      <div class="card-header">
+        <h3>Financial Loss by Fraud Type (₹ Crores)</h3>
+        <button (click)="downloadChart(3, 'Financial Loss')">⬇️</button>
+      </div>
+      <canvas #chartCanvas></canvas>
+      <p class="chart-desc">Investment and UPI frauds cause the highest financial damage. (Source: RBI)</p>
+    </div>
+
+    <!-- Chart 5 -->
+    <div class="chart-card chart-card-full">
+      <div class="card-header">
+        <h3>Recovery Rate vs Time to Report</h3>
+        <button (click)="downloadChart(4, 'Time to Report')">⬇️</button>
+      </div>
+      <canvas #chartCanvas></canvas>
+      <p class="chart-desc">Reporting within the golden hour dramatically increases recovery chances. Call 1930 immediately.</p>
+    </div>
+  </div>
+</div>

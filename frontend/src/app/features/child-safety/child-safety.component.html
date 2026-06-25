@@ -1,0 +1,75 @@
+<div class="child-safety-container">
+  <header class="page-header no-print">
+    <h1>{{ t.translate('PARENT.TITLE') }}</h1>
+    <p>{{ t.translate('PARENT.SUBTITLE') }}</p>
+  </header>
+
+  <div class="content-grid no-print">
+    <section class="edu-section">
+      <h2>{{ t.translate('PARENT.S1.TITLE') }}</h2>
+      <p>{{ t.translate('PARENT.S1.DESC') }}</p>
+    </section>
+
+    <section class="edu-section">
+      <h2>{{ t.translate('PARENT.S2.TITLE') }}</h2>
+      <p>{{ t.translate('PARENT.S2.DESC') }}</p>
+    </section>
+
+    <section class="edu-section danger-section">
+      <h2>{{ t.translate('PARENT.S3.TITLE') }}</h2>
+      <p>{{ t.translate('PARENT.S3.DESC') }}</p>
+    </section>
+
+    <section class="edu-section">
+      <h2>{{ t.translate('PARENT.S4.TITLE') }}</h2>
+      <p>{{ t.translate('PARENT.S4.DESC') }}</p>
+    </section>
+
+    <section class="edu-section info-section">
+      <h2>{{ t.translate('PARENT.S6.TITLE') }}</h2>
+      <p>{{ t.translate('PARENT.S6.DESC') }}</p>
+      <ul>
+        <li><strong>Childline India:</strong> 1098</li>
+        <li><strong>NCPCR:</strong> ncpcr.gov.in</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Section 5: Family Agreement (Printable) -->
+  <section class="edu-section agreement-section printable-area">
+    <div class="no-print agreement-intro">
+      <h2>{{ t.translate('PARENT.S5.TITLE') }}</h2>
+      <p>{{ t.translate('PARENT.S5.DESC') }}</p>
+      <div class="agreement-inputs">
+        <input type="text" [(ngModel)]="childName" [placeholder]="t.translate('STUDENT.PRINT_TITLE')">
+        <input type="text" [(ngModel)]="parentName" [placeholder]="t.translate('STUDENT.SIG_TEACHER')">
+        <button class="primary-btn" (click)="printAgreement()">{{ t.translate('PARENT.PRINT_BTN') }}</button>
+      </div>
+    </div>
+
+    <div class="printable-document">
+      <div class="doc-header">
+        <h1>{{ t.translate('STUDENT.PRINT_TITLE') }}</h1>
+        <p>{{ t.translate('STUDENT.AGREE').replace('I,', 'I, ' + (childName || '[Name]')) }}</p>
+      </div>
+
+      <div class="doc-body">
+        <h3>{{ t.translate('STUDENT.BUILDER_TITLE') }}:</h3>
+        <ul>
+          <li>{{ t.currentLang() === 'hi' ? 'मैं अपना पासवर्ड किसी के साथ साझा नहीं करूँगा।' : 'I will not share my passwords.' }}</li>
+          <li>{{ t.currentLang() === 'hi' ? 'मैं माता-पिता की अनुमति के बिना किसी से नहीं मिलूँगा।' : 'I will not meet strangers without permission.' }}</li>
+        </ul>
+
+        <div class="signatures">
+          <div class="sig-line">
+            <span>{{ t.translate('STUDENT.SIG_STUDENT') }}</span>
+          </div>
+          <div class="sig-line">
+            <span>{{ t.translate('STUDENT.SIG_TEACHER') }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

@@ -1,0 +1,123 @@
+<div class="ecommerce-container">
+  <header class="page-header">
+    <h1>{{ t.translate('ECOMMERCE.TITLE') }}</h1>
+    <p>{{ t.translate('ECOMMERCE.SUBTITLE') }}</p>
+  </header>
+
+  <div class="tabs">
+    <button [class.active]="activeTab === 'deal'" (click)="activeTab = 'deal'">{{ t.translate('ECOMMERCE.TAB_DEAL') }}</button>
+    <button [class.active]="activeTab === 'seller'" (click)="activeTab = 'seller'">{{ t.translate('ECOMMERCE.TAB_SELLER') }}</button>
+    <button [class.active]="activeTab === 'scammed'" (click)="activeTab = 'scammed'">{{ t.translate('ECOMMERCE.TAB_SCAMMED') }}</button>
+  </div>
+
+  <div class="tab-content" *ngIf="activeTab === 'deal'">
+    <div class="tool-grid">
+      <div class="form-card">
+        <h2>{{ t.translate('ECOMMERCE.FORM.TITLE') }}</h2>
+        <div class="form-group">
+          <label>{{ t.translate('ECOMMERCE.FORM.PRODUCT') }}</label>
+          <input type="text" [(ngModel)]="productName" placeholder="e.g., iPhone 15 Pro">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>{{ t.translate('ECOMMERCE.FORM.MARKET_PRICE') }}</label>
+            <input type="number" [(ngModel)]="actualPrice" placeholder="e.g., 130000">
+          </div>
+          <div class="form-group">
+            <label>{{ t.translate('ECOMMERCE.FORM.DEAL_PRICE') }}</label>
+            <input type="number" [(ngModel)]="dealPrice" placeholder="e.g., 40000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>{{ t.translate('ECOMMERCE.FORM.URL') }}</label>
+          <input type="text" [(ngModel)]="url" placeholder="https://...">
+        </div>
+        
+        <div class="checkbox-group">
+          <label><input type="checkbox" [(ngModel)]="hasTimer"> {{ t.translate('ECOMMERCE.FORM.TIMER') }}</label>
+          <label><input type="checkbox" [(ngModel)]="isPrepaidOnly"> {{ t.translate('ECOMMERCE.FORM.PREPAID') }}</label>
+        </div>
+
+        <button class="primary-btn" (click)="analyzeDeal()" [disabled]="!actualPrice || !dealPrice">{{ t.translate('ECOMMERCE.FORM.BTN') }}</button>
+      </div>
+
+      <div class="result-card" *ngIf="dealResult">
+        <div class="score-banner" [ngClass]="{
+          'high': dealResult.riskScore >= 70,
+          'med': dealResult.riskScore >= 40 && dealResult.riskScore < 70,
+          'low': dealResult.riskScore < 40
+        }">
+          <h3>{{ getVerdictText(dealResult.verdict) }}</h3>
+          <p>{{ t.translate('ECOMMERCE.SCORE') }}: {{ dealResult.riskScore }}/100</p>
+        </div>
+
+        <div class="flags-list" *ngIf="dealResult.flags.length > 0">
+          <h4>{{ t.translate('ECOMMERCE.DETECTED_RISKS') }}</h4>
+          <ul>
+            <li *ngFor="let flag of dealResult.flags">⚠️ {{ flag }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" *ngIf="activeTab === 'seller'">
+    <div class="education-card">
+      <h2>{{ t.translate('ECOMMERCE.REVIEWS.TITLE') }}</h2>
+      <p>{{ t.translate('ECOMMERCE.REVIEWS.SUB') }}</p>
+      
+      <div class="review-flags">
+        <div class="flag-item" *ngFor="let flag of t.translateData('ECOMMERCE.REVIEWS.FLAGS')">
+          <span class="icon">{{ flag.ICON }}</span>
+          <div>
+            <strong>{{ flag.TITLE }}</strong> {{ flag.DESC }}
+          </div>
+        </div>
+      </div>
+
+      <h2 style="margin-top: 2rem;">{{ t.translate('ECOMMERCE.SELLER_STEPS.TITLE') }}</h2>
+      <ul class="steps-list">
+        <li *ngFor="let step of t.translateData('ECOMMERCE.SELLER_STEPS.LIST')"><strong>{{ step.split(':')[0] }}:</strong> {{ step.split(':')[1] }}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tab-content" *ngIf="activeTab === 'scammed'">
+    <div class="incident-guide">
+      <h2>{{ t.translate('ECOMMERCE.RECOVERY.TITLE') }}</h2>
+      <p class="subtitle">{{ t.translate('ECOMMERCE.RECOVERY.SUB') }}</p>
+
+      <div class="timeline">
+        <div class="timeline-item critical">
+          <div class="time-marker">{{ t.translate('ECOMMERCE.RECOVERY.T1.TIME') }}</div>
+          <div class="action-content">
+            <h3>{{ t.translate('ECOMMERCE.RECOVERY.T1.TITLE') }}</h3>
+            <ul>
+              <li *ngFor="let act of t.translateData('ECOMMERCE.RECOVERY.T1.LIST')">{{ act }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item high">
+          <div class="time-marker">{{ t.translate('ECOMMERCE.RECOVERY.T2.TIME') }}</div>
+          <div class="action-content">
+            <h3>{{ t.translate('ECOMMERCE.RECOVERY.T2.TITLE') }}</h3>
+            <ul>
+              <li *ngFor="let act of t.translateData('ECOMMERCE.RECOVERY.T2.LIST')">{{ act }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item medium">
+          <div class="time-marker">{{ t.translate('ECOMMERCE.RECOVERY.T3.TIME') }}</div>
+          <div class="action-content">
+            <h3>{{ t.translate('ECOMMERCE.RECOVERY.T3.TITLE') }}</h3>
+            <ul>
+              <li *ngFor="let act of t.translateData('ECOMMERCE.RECOVERY.T3.LIST')">{{ act }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

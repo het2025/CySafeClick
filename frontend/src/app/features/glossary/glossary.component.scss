@@ -1,0 +1,143 @@
+.glossary-page {
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 32px;
+  h1 { color: var(--primary); margin-bottom: 8px; }
+  p { color: var(--muted); font-size: 1.1rem; }
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  
+  .search-box {
+    width: 100%;
+    padding: 16px 16px 16px 48px;
+    font-size: 1.1rem;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    transition: all 0.2s;
+    
+    &:focus { outline: none; border-color: var(--accent-saffron); box-shadow: 0 0 0 3px rgba(255, 153, 51, 0.2); }
+  }
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  
+  @media (max-width: 600px) { flex-direction: column; }
+  
+  .form-select { flex: 1; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+}
+
+.alphabet-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  margin-bottom: 32px;
+  padding: 16px;
+  background: var(--surface);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  
+  .letter-btn {
+    width: 32px; height: 32px; border: none; background: transparent; border-radius: 4px; font-weight: bold; color: var(--muted); cursor: pointer; transition: all 0.2s;
+    &:hover { background: var(--bg); color: var(--primary); }
+  }
+}
+
+.letter-group {
+  margin-bottom: 40px;
+  
+  .letter-header { font-size: 2.5rem; color: var(--border); border-bottom: 2px solid var(--border); margin-bottom: 16px; padding-bottom: 8px; }
+}
+
+.terms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.term-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.term-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  
+  .badge { padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; }
+  .badge-hindi { background: var(--bg); color: var(--text); border: 1px solid var(--border); }
+  .badge-category { background: rgba(10,22,40,0.1); color: var(--primary); }
+  .badge-difficulty { background: rgba(34,197,94,0.1); color: var(--safe); }
+}
+
+.definition-block {
+  strong { display: block; margin-bottom: 4px; color: var(--text); }
+  p { margin: 0; color: var(--muted); line-height: 1.5; font-size: 1.05rem; }
+}
+
+.analogy-box {
+  background: var(--bg);
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+  .analogy-item {
+    strong { color: var(--primary); margin-right: 8px; }
+    span { font-style: italic; color: var(--text); }
+  }
+}
+
+.prevention-block {
+  background: rgba(34, 197, 94, 0.05);
+  padding: 16px;
+  border-left: 4px solid var(--safe);
+  border-radius: 4px;
+  
+  strong { display: block; margin-bottom: 4px; color: var(--safe); }
+  p { margin: 0; font-weight: 500; line-height: 1.5; }
+}
+
+.related-terms {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  
+  strong { color: var(--muted); }
+  
+  .related-chips {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    .chip { background: transparent; border: 1px solid var(--primary); color: var(--primary); padding: 4px 12px; border-radius: 16px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; }
+    .chip:hover { background: var(--primary); color: white; }
+  }
+}
+
+.actions {
+  margin-top: 8px; text-align: right;
+  
+  .btn-copy { background: transparent; border: none; color: var(--muted); cursor: pointer; font-size: 0.9rem; font-weight: 600; text-decoration: underline; }
+  .btn-copy:hover { color: var(--primary); }
+}
+
+.no-results { text-align: center; padding: 48px; background: var(--surface); border-radius: 12px; border: 1px dashed var(--border); p { color: var(--muted); margin-bottom: 16px; } .btn-secondary { padding: 8px 16px; border: 1px solid var(--border); border-radius: 6px; background: transparent; cursor: pointer; } }

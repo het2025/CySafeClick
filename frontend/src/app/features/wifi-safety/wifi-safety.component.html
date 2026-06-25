@@ -1,0 +1,109 @@
+<div class="container wifi-page">
+  <div class="header-section">
+    <h1>WiFi Safety Tester</h1>
+    <p>Test the security of your current WiFi network and find out how to secure it.</p>
+  </div>
+
+  <!-- QUIZ SECTION -->
+  <div class="quiz-card" *ngIf="!isCompleted()">
+    <div class="progress-bar-container">
+      <div class="progress-bar" [style.width.%]="progress()"></div>
+    </div>
+    
+    <div class="question-header">
+      <span class="question-number">Question {{ currentQuestionIndex() + 1 }} of {{ questions.length }}</span>
+      <span class="category-badge">{{ currentQuestion().category }}</span>
+    </div>
+
+    <h2 class="question-text">{{ currentQuestion().text }}</h2>
+
+    <div class="options-list">
+      <button 
+        *ngFor="let option of currentQuestion().options; let i = index"
+        class="option-btn"
+        [class.selected]="answers().get(currentQuestionIndex()) === i"
+        (click)="selectOption(i)"
+      >
+        {{ option.label }}
+      </button>
+    </div>
+
+    <!-- Immediate feedback if public wifi is selected on Q1 -->
+    <div class="immediate-warning" *ngIf="currentQuestionIndex() === 0 && answers().get(0) === 3">
+      <strong>⚠️ HIGH RISK:</strong> You are on a public WiFi network. Do not log into banking apps or sensitive accounts without a VPN.
+    </div>
+
+    <div class="actions">
+      <button class="btn-secondary" (click)="prevQuestion()" [disabled]="currentQuestionIndex() === 0">Back</button>
+      <button class="btn-primary" (click)="nextQuestion()" [disabled]="!answers().has(currentQuestionIndex())">
+        {{ currentQuestionIndex() === questions.length - 1 ? 'See Results' : 'Next' }}
+      </button>
+    </div>
+  </div>
+
+  <!-- RESULTS SECTION -->
+  <div class="results-section" *ngIf="isCompleted()">
+    <div class="score-card text-center">
+      <h2>Your WiFi Safety Score</h2>
+      <div class="score-ring-wrapper">
+        <app-progress-ring [progress]="totalScore()" [size]="150" [strokeWidth]="12" [color]="getScoreColor()">
+          <span class="score-value" [style.color]="getScoreColor()">{{ totalScore() }}</span>
+          <span class="score-max">/ 100</span>
+        </app-progress-ring>
+      </div>
+      <p class="score-message" *ngIf="totalScore() >= 80">Excellent! Your network is highly secure.</p>
+      <p class="score-message" *ngIf="totalScore() >= 50 && totalScore() < 80">Fair. Your network has some security gaps.</p>
+      <p class="score-message" *ngIf="totalScore() < 50">High Risk! Your network is vulnerable to attacks.</p>
+    </div>
+
+    <div class="results-grid">
+      <!-- Category Breakdown -->
+      <div class="category-breakdown card">
+        <h3>Category Breakdown</h3>
+        <div class="category-item" *ngFor="let kv of categoryScores() | keyvalue">
+          <div class="cat-info">
+            <span>{{ kv.key }}</span>
+            <span>{{ kv.value.earned }} / {{ kv.value.total }}</span>
+          </div>
+          <div class="cat-bar-bg">
+            <div class="cat-bar-fill" 
+                 [style.width.%]="(kv.value.earned / kv.value.total) * 100"
+                 [style.background]="(kv.value.earned / kv.value.total) >= 0.8 ? '#22c55e' : (kv.value.earned / kv.value.total) >= 0.5 ? '#f59e0b' : '#ef4444'">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actionable Fixes -->
+      <div class="actionable-fixes card">
+        <h3>Actionable Fixes</h3>
+        <p *ngIf="actionableFixes().length === 0">No fixes required. Great job!</p>
+        <div class="fix-item" *ngFor="let fix of actionableFixes()">
+          <div class="fix-header">
+            <app-risk-badge [level]="fix.risk === 'high' ? 'dangerous' : 'suspicious'"></app-risk-badge>
+            <strong>Based on your answer to:</strong>
+          </div>
+          <p class="fix-q">"{{ fix.questionText }}"</p>
+          <p class="fix-explanation">{{ fix.explanation }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Guides Section -->
+    <div class="guides-section card mt-4">
+      <h3>How to Access Your Router Settings</h3>
+      <p>Most Indian ISPs use standard router IP addresses. Type one of these into your browser's address bar:</p>
+      <div class="isp-grid">
+        <div class="isp-item"><strong>Jio:</strong> 192.168.29.1</div>
+        <div class="isp-item"><strong>Airtel:</strong> 192.168.1.1 or 192.168.0.1</div>
+        <div class="isp-item"><strong>BSNL:</strong> 192.168.1.1</div>
+        <div class="isp-item"><strong>ACT:</strong> 192.168.1.1</div>
+      </div>
+      <p class="warning-text mt-2"><strong>Warning:</strong> If you are still using the default username/password (like admin/admin) printed on the back of your router, change it immediately!</p>
+    </div>
+
+    <div class="text-center mt-4">
+      <button class="btn-secondary" (click)="restart()">Retake Test</button>
+    </div>
+  </div>
+</div>

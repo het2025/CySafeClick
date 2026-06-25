@@ -1,0 +1,242 @@
+.investment-scam-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--safeclick-navy, #0A1628);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.tool-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.tool-card h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: var(--safeclick-navy, #0A1628);
+}
+
+.tool-desc {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.primary-btn {
+  width: 100%;
+  background: var(--safeclick-navy, #0A1628);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.primary-btn:hover:not([disabled]) {
+  background: var(--safeclick-saffron, #FF9933);
+}
+
+.primary-btn:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.analysis-results {
+  margin-top: 1.5rem;
+}
+
+.safe-box {
+  background: #f0fdf4;
+  border: 2px solid var(--safeclick-safe, #22c55e);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #166534;
+}
+
+.danger-box {
+  background: #fef2f2;
+  border: 2px solid var(--safeclick-danger, #ef4444);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #991b1b;
+}
+
+.danger-box ul {
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+.danger-box li {
+  margin-bottom: 0.5rem;
+}
+
+.calc-inputs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input, .input-group select {
+  padding: 0.75rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.ponzi-results {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.ponzi-results.is-scam {
+  background: #fef2f2;
+  border-color: var(--safeclick-danger, #ef4444);
+}
+
+.ponzi-results h3 {
+  margin-top: 0;
+  color: var(--safeclick-navy, #0A1628);
+}
+
+.ponzi-results.is-scam h3 {
+  color: var(--safeclick-danger, #ef4444);
+}
+
+.verdict-box {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.benchmark-info {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.benchmark-info p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.benchmark-info ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #475569;
+}
+
+/* Education Section */
+.education-section {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.education-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.scam-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.scam-type {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.scam-type h3 {
+  color: var(--safeclick-danger, #ef4444);
+  margin-top: 0;
+}
+
+.scam-type p {
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.verification-guide {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--safeclick-navy, #0A1628);
+}
+
+.verification-guide h2 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  border-bottom: none;
+}
+
+.verification-guide ol {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #334155;
+  padding-left: 1.5rem;
+}
+
+.verification-guide li {
+  margin-bottom: 1rem;
+}

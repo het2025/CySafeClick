@@ -1,0 +1,43 @@
+{
+  "NAV": {
+    "HOME": "मुख्यपृष्ठ",
+    "TOOLS": "साधने",
+    "LEARN": "शिका",
+    "REPORT": "रिपोर्ट"
+  },
+  "MODULES": {
+    "PASSWORD_LAB": "पासवर्ड लॅब",
+    "PHISHING_DETECTOR": "फिशिंग डिटेक्टर",
+    "DATA_BREACH": "डेटा ब्रीच चेक",
+    "SAFETY_SCORE": "सेफ्टी स्कोअर",
+    "SCAM_AWARENESS": "घोटाळा जागरूकता",
+    "REPORT_CYBERCRIME": "सायबर गुन्ह्याची तक्रार करा",
+    "UPI_SCANNER": "UPI स्कॅनर",
+    "TWO_FACTOR": "2FA सल्लागार",
+    "PRIVACY_AUDIT": "गोपनीयता ऑडिट",
+    "EMAIL_HEADER": "ईमेल हेडर विश्लेषक",
+    "APP_PERMISSIONS": "ॲप परमिशन चेकर",
+    "WIFI_SAFETY": "वायफाय सुरक्षा",
+    "THREAT_FEED": "थ्रेट फीड",
+    "CYBER_LAW": "सायबर कायदा",
+    "DAILY_TIPS": "दैनिक टिप्स",
+    "SCAM_STORIES": "घोटाळ्याच्या कथा",
+    "AADHAAR_GUIDE": "आधार सुरक्षा",
+    "OSINT_CHECK": "OSINT चेक",
+    "ROADMAP": "30-दिवसांची योजना",
+    "GLOSSARY": "शब्दकोश"
+  },
+  "COMMON": {
+    "SAFE": "सुरक्षित",
+    "SUSPICIOUS": "संशयास्पद",
+    "DANGEROUS": "धोकादायक",
+    "SCAN": "स्कॅन करा",
+    "NEXT": "पुढे",
+    "BACK": "मागे",
+    "SHARE": "शेअर करा",
+    "COPY": "कॉपी करा",
+    "DONE": "पूर्ण झाले",
+    "ERROR": "एक त्रुटी आली.",
+    "LOADING": "लोड होत आहे..."
+  }
+}
