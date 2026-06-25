@@ -310,6 +310,14 @@ footer {
     font-weight: bold;
 }
 
+/* ── Generic Card ──────────────────────────────────────────── */
+.card {
+    background: var(--surface);
+    padding: var(--space-4);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
 /* ── AI Tool Cards ─────────────────────────────────────────────── */
 .ai-card {
     position: relative;

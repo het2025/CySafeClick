@@ -1,8 +1,25 @@
+/* ============================================================
+   SafeClick — Responsive CSS
+   Breakpoints: 992px (tablet) | 768px (mobile) | 480px (small)
+   ============================================================ */
+
+/* ── Tablet (≤ 992px) ─────────────────────────────────────── */
 @media (max-width: 992px) {
-    .lab-grid { grid-template-columns: 1fr; }
+    /* Password Lab: stack analyser + generator */
+    .lab-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Crack time boxes: 3 → 2 columns */
+    .crack-times {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+/* ── Mobile (≤ 768px) ─────────────────────────────────────── */
 @media (max-width: 768px) {
+
+    /* ── Navigation ── */
     .nav-links {
         display: none;
         position: absolute;
@@ -13,34 +30,187 @@
         flex-direction: column;
         padding: var(--space-2);
         gap: var(--space-2);
-        border-top: 1px solid rgba(255,255,255,0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 999;
     }
-    
+
     .nav-links.show {
         display: flex;
     }
-    
+
+    /* Show hamburger on all pages */
     .menu-toggle {
-        display: block;
+        display: block !important;
     }
-    
+
+    /* ── Hero ── */
     .hero h1 {
         font-size: 2rem;
     }
 
+    /* ── Guide section (Report page) ── */
     .guide-section {
         grid-template-columns: 1fr;
     }
+
+    /* ── AI Tools Hub card ── */
+    .tool-card[style*="grid-column"] {
+        padding: 24px 16px !important;
+    }
+
+    .tool-card[style*="grid-column"] h3 {
+        font-size: 1.4rem !important;
+    }
+
+    /* ── breach-check / phishing: stack input + button ── */
+    .input-box {
+        flex-direction: column;
+    }
+
+    .input-box input,
+    .input-box button {
+        width: 100%;
+    }
+
+    /* ── Contact table: allow horizontal scroll ── */
+    .table-scroll-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .contact-table {
+        min-width: 420px;
+    }
+
+    /* ── Transaction risk: stack Amount + Purpose row ── */
+    .upi-fields-row {
+        flex-direction: column !important;
+    }
+
+    /* ── Chat page: textarea + send button ── */
+    .chat-input-row {
+        flex-direction: column;
+    }
+
+    .chat-input-row textarea,
+    .chat-input-row button {
+        width: 100%;
+    }
+
+    /* ── Privacy banner ── */
+    .privacy-banner {
+        font-size: 0.85rem;
+        padding: var(--space-1) var(--space-2);
+    }
+
+    /* ── Emergency box on report page ── */
+    .emergency-box h2 {
+        font-size: 2.2rem;
+    }
+
+    /* ── Counter value ── */
+    .counter-value {
+        font-size: 2rem;
+    }
+
+    /* ── Verdict badge ── */
+    .verdict-badge {
+        font-size: 1.3rem;
+        padding: 12px 20px;
+    }
+
+    /* ── AI card wide strip ── */
+    .ai-card h3 {
+        font-size: 1.4rem;
+    }
 }
 
+/* ── Small phones (≤ 480px) ──────────────────────────────── */
 @media (max-width: 480px) {
+
+    /* ── Hero ── */
     .hero h1 {
         font-size: 1.5rem;
     }
-    
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* ── Score circle ── */
     .score-circle {
         width: 120px;
         height: 120px;
         font-size: 2.5rem;
+    }
+
+    /* ── Crack time: single column ── */
+    .crack-times {
+        grid-template-columns: 1fr;
+    }
+
+    /* ── Emergency box ── */
+    .emergency-box h2 {
+        font-size: 1.8rem;
+    }
+
+    /* ── Verdict badge ── */
+    .verdict-badge {
+        font-size: 1rem;
+        padding: 10px 14px;
+        letter-spacing: 0.5px;
+    }
+
+    /* ── Logo: hide text on very small screens ── */
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    /* ── Btn CTA ── */
+    .btn-cta {
+        padding: var(--space-2) var(--space-3);
+        font-size: 1rem;
+    }
+
+    /* ── Tool grid: enforce single column ── */
+    .tool-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* ── Footer ── */
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* ── Tabs: smaller padding ── */
+    .tab {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    /* ── Accordion ── */
+    .accordion-header {
+        font-size: 0.9rem;
+    }
+
+    /* ── Quick reply chips: wrap smaller ── */
+    .quick-reply-btn {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+
+    /* ── Risk meter label ── */
+    .risk-meter {
+        height: 12px;
+    }
+
+    /* ── Modal content ── */
+    .modal-content {
+        padding: var(--space-3);
+    }
+
+    /* ── Counter box ── */
+    .counter-value {
+        font-size: 1.8rem;
     }
 }

@@ -97,6 +97,7 @@
             <div class="controls">
                 <button id="lang-toggle" class="btn-lang">हिंदी</button>
                 <button id="theme-toggle" class="btn-icon">🌙</button>
+                <button class="menu-toggle btn-icon">☰</button>
             </div>
         </div>
     </header>
@@ -156,24 +157,26 @@
             <p style="font-size: 0.9rem; color: var(--danger); margin-bottom: 10px;">
                 <em>Note: These numbers were last verified on May 2026. Please verify with your local police station as government phone numbers may change.</em>
             </p>
-            <table class="contact-table">
-                <thead>
-                    <tr>
-                        <th data-i18n="REPORT_CYBERCRIME.TABLE.STATE">State / UT</th>
-                        <th data-i18n="REPORT_CYBERCRIME.TABLE.CONTACT">Helpline / Contact</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.DELHI">Delhi</td><td>011-20892633</td></tr>
-                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.MAHARASHTRA">Maharashtra</td><td>022-22160080</td></tr>
-                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.KARNATAKA">Karnataka</td><td>080-22343232</td></tr>
-                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.TAMIL_NADU">Tamil Nadu</td><td>044-28447701</td></tr>
-                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.TELANGANA">Telangana</td><td>040-23148421</td></tr>
-                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.GUJARAT">Gujarat</td><td>079-23210914</td></tr>
-                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.UTTAR_PRADESH">Uttar Pradesh</td><td>0522-2236162</td></tr>
-                    <tr><td data-i18n="REPORT_CYBERCRIME.STATES.RAJASTHAN">Rajasthan</td><td>0141-2309859</td></tr>
-                </tbody>
-            </table>
+            <div class="table-scroll-wrapper">
+                <table class="contact-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="REPORT_CYBERCRIME.TABLE.STATE">State / UT</th>
+                            <th data-i18n="REPORT_CYBERCRIME.TABLE.CONTACT">Helpline / Contact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td data-i18n="REPORT_CYBERCRIME.STATES.DELHI">Delhi</td><td>011-20892633</td></tr>
+                        <tr><td data-i18n="REPORT_CYBERCRIME.STATES.MAHARASHTRA">Maharashtra</td><td>022-22160080</td></tr>
+                        <tr><td data-i18n="REPORT_CYBERCRIME.STATES.KARNATAKA">Karnataka</td><td>080-22343232</td></tr>
+                        <tr><td data-i18n="REPORT_CYBERCRIME.STATES.TAMIL_NADU">Tamil Nadu</td><td>044-28447701</td></tr>
+                        <tr><td data-i18n="REPORT_CYBERCRIME.STATES.TELANGANA">Telangana</td><td>040-23148421</td></tr>
+                        <tr><td data-i18n="REPORT_CYBERCRIME.STATES.GUJARAT">Gujarat</td><td>079-23210914</td></tr>
+                        <tr><td data-i18n="REPORT_CYBERCRIME.STATES.UTTAR_PRADESH">Uttar Pradesh</td><td>0522-2236162</td></tr>
+                        <tr><td data-i18n="REPORT_CYBERCRIME.STATES.RAJASTHAN">Rajasthan</td><td>0141-2309859</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
 

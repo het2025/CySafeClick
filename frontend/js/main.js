@@ -26,8 +26,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
     
     if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
             navLinks.classList.toggle('show');
+            menuToggle.textContent = navLinks.classList.contains('show') ? '✕' : '☰';
+        });
+
+        // Close menu when a nav link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+                menuToggle.textContent = '☰';
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                navLinks.classList.remove('show');
+                menuToggle.textContent = '☰';
+            }
         });
     }
 
@@ -35,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const privacyBanner = document.getElementById('privacy-banner');
     const closeBanner = document.getElementById('close-privacy');
     
-    if (!localStorage.getItem('privacy-accepted')) {
+    if (privacyBanner && !localStorage.getItem('privacy-accepted')) {
         privacyBanner.classList.add('show');
     }
     
