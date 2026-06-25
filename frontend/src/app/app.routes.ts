@@ -208,5 +208,12 @@ export const routes: Routes = [
     title: 'Regional Scam Patterns — CySafeClick'
   },
   // Redirect legacy routes if any
-  { path: 'safety-score', redirectTo: 'tools/safety-score', pathMatch: 'full' }
+  { path: 'safety-score', redirectTo: 'tools/safety-score', pathMatch: 'full' },
+
+  // ─── 404 Catch-all ───────────────────────────────────────
+  {
+    path: '**',
+    loadComponent: () => import('./features/not-found/not-found.component').then(m => m.NotFoundComponent),
+    title: 'Page Not Found — CySafeClick'
+  }
 ];

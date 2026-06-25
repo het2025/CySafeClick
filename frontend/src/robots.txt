@@ -1,8 +1,9 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://safeclick.gov.in/sitemap.xml
-
-# Block admin/API paths
+# Block Angular internals and API paths
 Disallow: /api/
 Disallow: /admin/
+Disallow: /assets/i18n/
+
+Sitemap: https://cysafeclick.app/sitemap.xml

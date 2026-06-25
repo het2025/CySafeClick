@@ -2,10 +2,11 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
+const helmet = require('helmet');
 const connectDB = require('./config/db');
 const { getDbStatus } = require('./config/db');
 const errorHandler = require('./middleware/errorHandler');
-const { generalLimiter } = require('./middleware/rateLimiter');
+const { generalLimiter, writeLimiter } = require('./middleware/rateLimiter');
 const dbCheck = require('./middleware/dbCheck');
 
 // ─── Route Imports ───────────────────────────────────────
@@ -34,6 +35,10 @@ const PORT = process.env.PORT || 3000;
 connectDB();
 
 // ─── Global Middleware ───────────────────────────────────
+app.use(helmet({
+  crossOriginEmbedderPolicy: false,   // Allow embedding for PWA
+  contentSecurityPolicy: false         // Managed separately to avoid breaking Angular
+}));
 app.use(cors({
   origin: process.env.FRONTEND_URL || 'http://localhost:4200',
   methods: ['GET', 'POST', 'PATCH', 'DELETE'],
@@ -71,8 +76,8 @@ app.use('/api/stats',      dbCheck, statsRoutes);
 app.use('/api/community',  dbCheck, communityRoutes);
 app.use('/api/news',       dbCheck, newsRoutes);
 
-// ─── AI Routes (No dbCheck — stateless, no DB needed) ────────────────────
-app.use('/api/ai',         aiRoutes);
+// ─── AI Routes (writeLimiter applied — POST endpoints need rate protection) ───
+app.use('/api/ai',         writeLimiter, aiRoutes);
 
 // ─── 404 Handler ─────────────────────────────────────────
 app.use((req, res) => {

@@ -71,3 +71,4 @@ Screenshot*.jpg
 
 # ─── Package lock (optional - keep if you want reproducible installs) ───
 # package-lock.json  ← KEEP this, it helps reproducibility
+# agy --conversation=d5783549-3a9a-45c1-99d7-1e157d3a4f1e
