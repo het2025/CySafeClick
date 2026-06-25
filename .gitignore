@@ -12,6 +12,22 @@ dist/
 .angular/
 **/.angular/
 
+# ─── TypeScript build cache ─────────────────
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# ─── Test coverage & reports ────────────────
+coverage/
+**/coverage/
+.nyc_output/
+test-results/
+
+# ─── Cache directories ───────────────────────
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
 # ─── Environment variables (NEVER commit) ───
 .env
 .env.local
@@ -44,6 +60,14 @@ logs/
 # ─── Temp / Scratch files ───────────────────
 task.txt
 *.tmp
+*.bak
+*.swp
+*~
+
+# ─── Screenshots (dev testing artifacts) ────
+# Comment out next line if you want to keep screenshots in repo
+Screenshot*.png
+Screenshot*.jpg
 
 # ─── Package lock (optional - keep if you want reproducible installs) ───
 # package-lock.json  ← KEEP this, it helps reproducibility

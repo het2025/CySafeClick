@@ -5,6 +5,19 @@ node_modules/
 dist/
 .angular/
 
+# TypeScript build cache
+*.tsbuildinfo
+
+# Test coverage & reports
+coverage/
+.nyc_output/
+test-results/
+
+# Cache directories
+.cache/
+.eslintcache
+.stylelintcache
+
 # Environment files
 .env
 .env.local
@@ -27,3 +40,11 @@ Thumbs.db
 
 # Temp / scratch
 task.txt
+*.tmp
+*.bak
+*.swp
+*~
+
+# Screenshots (dev testing artifacts)
+Screenshot*.png
+Screenshot*.jpg
