@@ -7,7 +7,7 @@ import { RegionalScamsService, RegionalScamDatabase } from '../../../features/re
 import { setLocation, completeOnboarding } from '../../../store/location.store';
 
 @Component({
-  selector: 'Cycysafeclick-location-onboarding',
+  selector: 'CySafeClick-location-onboarding',
   standalone: true,
   imports: [CommonModule, TranslatePipe],
   template: `
@@ -91,7 +91,7 @@ import { setLocation, completeOnboarding } from '../../../store/location.store';
       overflow-y: auto;
     }
     .modal-header { text-align: center; margin-bottom: 2rem; }
-    .modal-header h2 { font-size: 2rem; color: var(--Cycysafeclick-navy); margin: 0 0 0.5rem 0; }
+    .modal-header h2 { font-size: 2rem; color: var(--CySafeClick-navy); margin: 0 0 0.5rem 0; }
     .modal-header p { color: #64748b; font-size: 1.1rem; margin: 0; }
     
     .grid {
@@ -112,7 +112,7 @@ import { setLocation, completeOnboarding } from '../../../store/location.store';
       transition: all 0.2s;
     }
     .grid-item:hover { border-color: #cbd5e1; background: #f8fafc; }
-    .grid-item.selected { border-color: var(--Cycysafeclick-navy); background: #f1f5f9; box-shadow: 0 0 0 1px var(--Cycysafeclick-navy); }
+    .grid-item.selected { border-color: var(--CySafeClick-navy); background: #f1f5f9; box-shadow: 0 0 0 1px var(--CySafeClick-navy); }
     
     .abbr {
       background: #e2e8f0;
@@ -133,7 +133,7 @@ import { setLocation, completeOnboarding } from '../../../store/location.store';
       align-items: center;
     }
     button { padding: 10px 24px; border-radius: 6px; font-weight: 600; cursor: pointer; border: none; font-size: 1rem; }
-    .btn-primary { background: var(--Cycysafeclick-navy); color: white; }
+    .btn-primary { background: var(--CySafeClick-navy); color: white; }
     .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
     .btn-secondary { background: #e2e8f0; color: #1e293b; }
     .btn-link { background: none; color: #64748b; text-decoration: underline; }

@@ -32,7 +32,7 @@ interface IntentResponse {
   providedIn: 'root'
 })
 export class CyberMitraService {
-  private readonly HISTORY_KEY = 'Cycysafeclick_mitra_history';
+  private readonly HISTORY_KEY = 'CySafeClick_mitra_history';
 
   private readonly INTENTS: Record<string, IntentResponse> = {
     FINANCIAL_LOSS: {
@@ -121,7 +121,7 @@ export class CyberMitraService {
     },
     SAFE_CHECK: {
       keywords: ['safe', 'scam', 'real', 'genuine', 'सही है', 'स्कैम', 'fake'],
-      en: "I can help you check if something is safe or a scam. What would you like to verify?\n\n- A suspicious link or website?\n- A WhatsApp forwarded message?\n- A job offer?\n- An investment opportunity?\n\nPlease provide more details or use one of Cycysafeclick's dedicated scanners.",
+      en: "I can help you check if something is safe or a scam. What would you like to verify?\n\n- A suspicious link or website?\n- A WhatsApp forwarded message?\n- A job offer?\n- An investment opportunity?\n\nPlease provide more details or use one of CySafeClick's dedicated scanners.",
       hi: "मैं यह जांचने में आपकी मदद कर सकता हूं कि कोई चीज़ सुरक्षित है या स्कैम। आप क्या जाँचना चाहेंगे?\n\n- कोई संदिग्ध लिंक?\n- व्हाट्सएप का कोई फॉरवर्ड मैसेज?\n- नौकरी का प्रस्ताव?\n- निवेश का अवसर?\n\nकृपया अधिक जानकारी दें।",
       quickRepliesEn: ['Check a link', 'Check a job offer', 'Check WhatsApp forward'],
       quickRepliesHi: ['एक लिंक की जाँच करें', 'नौकरी के प्रस्ताव की जाँच करें', 'व्हाट्सएप फॉरवर्ड की जाँच करें'],
@@ -231,7 +231,7 @@ export class CyberMitraService {
 
   private fallbackResponse: IntentResponse = {
     keywords: [],
-    en: "I am not entirely sure about that. Could you please provide more details? Are you asking about a suspicious message, a hacked account, or reporting a fraud? You can also explore Cycysafeclick's tools for specific checks.",
+    en: "I am not entirely sure about that. Could you please provide more details? Are you asking about a suspicious message, a hacked account, or reporting a fraud? You can also explore CySafeClick's tools for specific checks.",
     hi: "मुझे इसके बारे में पूरी तरह से यकीन नहीं है। क्या आप कृपया अधिक जानकारी दे सकते हैं? क्या आप किसी संदिग्ध संदेश, हैक किए गए खाते, या धोखाधड़ी की रिपोर्ट करने के बारे में पूछ रहे हैं?",
     quickRepliesEn: ['Help me report fraud', 'Check a suspicious link', 'Open tools menu'],
     quickRepliesHi: ['धोखाधड़ी की रिपोर्ट करने में मेरी मदद करें', 'एक संदिग्ध लिंक की जाँच करें', 'टूल मेनू खोलें']

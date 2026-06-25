@@ -81,7 +81,7 @@ import { TranslationService } from '../../../core/services/translation.service';
     .severity-badge.critical { background: var(--danger); color: white; }
     .severity-badge.high { background: var(--warning); color: black; }
     .severity-badge.medium { background: #fde047; color: black; }
-    .severity-badge.low { background: var(--Cycysafeclick-green); color: white; }
+    .severity-badge.low { background: var(--CySafeClick-green); color: white; }
     
     .source-badge { padding: 4px 10px; border-radius: 4px; background: rgba(0,0,0,0.05); border: 1px solid var(--border); font-size: 0.8rem; color: var(--muted); }
     [data-theme="dark"] .source-badge { background: rgba(255,255,255,0.05); }
@@ -89,7 +89,7 @@ import { TranslationService } from '../../../core/services/translation.service';
     .lang-toggle button { background: none; border: 1px solid var(--primary); color: var(--primary); padding: 4px 12px; border-radius: 20px; cursor: pointer; font-size: 0.8rem; font-weight: bold; }
     .lang-toggle button.active { background: var(--primary); color: white; }
 
-    .title { font-size: 1.5rem; margin-bottom: 5px; color: var(--Cycysafeclick-navy); line-height: 1.3; }
+    .title { font-size: 1.5rem; margin-bottom: 5px; color: var(--CySafeClick-navy); line-height: 1.3; }
     .date { color: var(--muted); font-size: 0.9rem; margin-bottom: 20px; }
 
     .summary-box { font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px; }
@@ -99,10 +99,10 @@ import { TranslationService } from '../../../core/services/translation.service';
     .pills { display: flex; flex-wrap: wrap; gap: 8px; }
     .pill { padding: 4px 12px; border-radius: 16px; font-size: 0.85rem; }
     .pill.outline { border: 1px solid var(--border); color: var(--text); }
-    .pill.fill { background: rgba(10, 22, 40, 0.1); color: var(--Cycysafeclick-navy); font-weight: bold; }
+    .pill.fill { background: rgba(10, 22, 40, 0.1); color: var(--CySafeClick-navy); font-weight: bold; }
     [data-theme="dark"] .pill.fill { background: rgba(255,255,255,0.1); color: white; }
 
-    .action-box { background: rgba(255, 153, 51, 0.1); border-left: 4px solid var(--Cycysafeclick-saffron); padding: 20px; border-radius: 0 8px 8px 0; margin-bottom: 30px; }
+    .action-box { background: rgba(255, 153, 51, 0.1); border-left: 4px solid var(--CySafeClick-saffron); padding: 20px; border-radius: 0 8px 8px 0; margin-bottom: 30px; }
     .action-box h3 { margin: 0 0 10px 0; font-size: 1.1rem; color: #b45309; }
     [data-theme="dark"] .action-box h3 { color: #fcd34d; }
     .action-box p { margin: 0; line-height: 1.5; font-weight: 500; }
@@ -133,7 +133,7 @@ export class AlertDetailModalComponent {
   }
 
   share() {
-    const text = encodeURIComponent(`⚠️ Cycysafeclick Alert: ${this.alert.title}\n\n${this.alert.summary}\n\nStay safe! Check Cycysafeclick App for details.`);
+    const text = encodeURIComponent(`⚠️ CySafeClick Alert: ${this.alert.title}\n\n${this.alert.summary}\n\nStay safe! Check CySafeClick App for details.`);
     window.open(`https://wa.me/?text=${text}`, '_blank');
   }
 }

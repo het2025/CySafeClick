@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   imports: [CommonModule, RouterLink],
   template: `
     <div class="container" style="padding: 60px 0; text-align: center; max-width: 900px;">
-      <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Cycysafeclick AI Tools Hub 🤖✨</h1>
+      <h1 style="font-size: 2.5rem; margin-bottom: 10px;">CySafeClick AI Tools Hub 🤖✨</h1>
       <p style="font-size: 1.2rem; color: var(--muted); margin-bottom: 40px;">Experience the next generation of cyber safety. Our advanced AI tools analyze threats instantly and guide you in real-time.</p>
       
       <div class="tool-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; text-align: left;">

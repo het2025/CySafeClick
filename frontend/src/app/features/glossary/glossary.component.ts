@@ -78,7 +78,7 @@ export class GlossaryComponent implements OnInit {
   }
 
   async copyDefinition(term: GlossaryTerm) {
-    const text = `${term.term}: ${term.simpleDefinition}\nMore info at Cycysafeclick Shield.`;
+    const text = `${term.term}: ${term.simpleDefinition}\nMore info at CySafeClick Shield.`;
     try {
       await navigator.clipboard.writeText(text);
       // Optional: replace with toast service

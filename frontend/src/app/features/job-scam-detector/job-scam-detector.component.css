@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
 }
 
 .page-header {
@@ -56,11 +56,11 @@ textarea {
 
 textarea:focus {
   outline: none;
-  border-color: var(--Cycysafeclick-saffron, #FF9933);
+  border-color: var(--CySafeClick-saffron, #FF9933);
 }
 
 .analyze-btn, .reset-btn {
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -91,7 +91,7 @@ textarea:focus {
   width: 40px;
   height: 40px;
   border: 4px solid #f1f5f9;
-  border-top: 4px solid var(--Cycysafeclick-saffron, #FF9933);
+  border-top: 4px solid var(--CySafeClick-saffron, #FF9933);
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 0 auto 1rem;
@@ -130,9 +130,9 @@ textarea:focus {
   display: block;
 }
 
-.text-danger { color: var(--Cycysafeclick-danger, #ef4444); }
-.text-warning { color: var(--Cycysafeclick-warn, #f59e0b); }
-.text-safe { color: var(--Cycysafeclick-safe, #22c55e); }
+.text-danger { color: var(--CySafeClick-danger, #ef4444); }
+.text-warning { color: var(--CySafeClick-warn, #f59e0b); }
+.text-safe { color: var(--CySafeClick-safe, #22c55e); }
 
 .progress-bar {
   height: 12px;
@@ -210,7 +210,7 @@ textarea:focus {
   padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: 2rem;
-  border-left: 4px solid var(--Cycysafeclick-navy, #0A1628);
+  border-left: 4px solid var(--CySafeClick-navy, #0A1628);
 }
 
 .verification-steps h3 {
@@ -226,7 +226,7 @@ textarea:focus {
 .verification-steps li { margin-bottom: 0.5rem; }
 .critical-rule {
   font-weight: bold;
-  color: var(--Cycysafeclick-danger, #ef4444);
+  color: var(--CySafeClick-danger, #ef4444);
   margin-top: 1rem;
 }
 
@@ -253,7 +253,7 @@ textarea:focus {
 }
 
 .scam-type h3 {
-  color: var(--Cycysafeclick-danger, #ef4444);
+  color: var(--CySafeClick-danger, #ef4444);
   margin-top: 0;
   margin-bottom: 0.5rem;
 }

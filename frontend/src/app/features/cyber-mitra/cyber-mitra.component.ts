@@ -103,7 +103,7 @@ export class CyberMitraComponent implements OnInit, AfterViewChecked, OnDestroy 
   handleSpecialCommands(text: string): boolean {
     const lower = text.toLowerCase();
     
-    if (lower.includes("Cycysafeclick") && (lower.includes("scammed") || lower.includes("स्कैम"))) {
+    if (lower.includes("CySafeClick") && (lower.includes("scammed") || lower.includes("स्कैम"))) {
       this.sendMessage(this.t.currentLang() === 'hi' ? "शायद मेरे साथ स्कैम हो रहा है।" : "I might be getting scammed.");
       return true;
     }

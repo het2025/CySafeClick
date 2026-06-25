@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
 }
 
 .page-header {
@@ -32,9 +32,9 @@
 }
 
 .tabs button.active {
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
-  border-color: var(--Cycysafeclick-navy, #0A1628);
+  border-color: var(--CySafeClick-navy, #0A1628);
 }
 
 .tool-grid {
@@ -98,7 +98,7 @@ input[type="text"], input[type="number"] {
 
 .primary-btn {
   width: 100%;
-  background: var(--Cycysafeclick-saffron, #FF9933);
+  background: var(--CySafeClick-saffron, #FF9933);
   color: white;
   border: none;
   padding: 1rem;
@@ -115,9 +115,9 @@ input[type="text"], input[type="number"] {
   margin-bottom: 1.5rem;
 }
 
-.score-banner.high { background: #fef2f2; color: #991b1b; border: 2px solid var(--Cycysafeclick-danger, #ef4444); }
-.score-banner.med { background: #fffbeb; color: #b45309; border: 2px solid var(--Cycysafeclick-warn, #f59e0b); }
-.score-banner.low { background: #f0fdf4; color: #166534; border: 2px solid var(--Cycysafeclick-safe, #22c55e); }
+.score-banner.high { background: #fef2f2; color: #991b1b; border: 2px solid var(--CySafeClick-danger, #ef4444); }
+.score-banner.med { background: #fffbeb; color: #b45309; border: 2px solid var(--CySafeClick-warn, #f59e0b); }
+.score-banner.low { background: #f0fdf4; color: #166534; border: 2px solid var(--CySafeClick-safe, #22c55e); }
 
 .flags-list {
   background: #f8fafc;
@@ -190,7 +190,7 @@ input[type="text"], input[type="number"] {
 }
 
 .time-marker {
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
   padding: 1.5rem;
   display: flex;
@@ -201,8 +201,8 @@ input[type="text"], input[type="number"] {
   text-align: center;
 }
 
-.timeline-item.critical .time-marker { background: var(--Cycysafeclick-danger, #ef4444); }
-.timeline-item.high .time-marker { background: var(--Cycysafeclick-warn, #f59e0b); }
+.timeline-item.critical .time-marker { background: var(--CySafeClick-danger, #ef4444); }
+.timeline-item.high .time-marker { background: var(--CySafeClick-warn, #f59e0b); }
 
 .action-content {
   padding: 1.5rem;

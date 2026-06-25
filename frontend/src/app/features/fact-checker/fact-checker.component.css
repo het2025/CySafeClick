@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
 }
 
 .page-header {
@@ -54,7 +54,7 @@
 }
 
 .tabs button.active {
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
 }
 
 .tabs button.active::after {
@@ -64,7 +64,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--Cycysafeclick-saffron, #FF9933);
+  background: var(--CySafeClick-saffron, #FF9933);
 }
 
 .input-area label {
@@ -87,7 +87,7 @@ textarea {
 
 .primary-btn {
   width: 100%;
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
   border: none;
   padding: 1rem;
@@ -99,7 +99,7 @@ textarea {
 }
 
 .primary-btn:hover:not([disabled]) {
-  background: var(--Cycysafeclick-saffron, #FF9933);
+  background: var(--CySafeClick-saffron, #FF9933);
 }
 
 .primary-btn:disabled {
@@ -129,10 +129,10 @@ textarea {
 .verdict-banner h2 { margin: 0 0 0.5rem 0; font-size: 1.8rem; }
 .verdict-banner p { margin: 0; font-weight: bold; }
 
-.verdict-banner.likely-true { background: var(--Cycysafeclick-safe, #22c55e); }
+.verdict-banner.likely-true { background: var(--CySafeClick-safe, #22c55e); }
 .verdict-banner.unverified { background: #64748b; }
-.verdict-banner.likely-false { background: var(--Cycysafeclick-warn, #f59e0b); }
-.verdict-banner.known-misinformation { background: var(--Cycysafeclick-danger, #ef4444); }
+.verdict-banner.likely-false { background: var(--CySafeClick-warn, #f59e0b); }
+.verdict-banner.known-misinformation { background: var(--CySafeClick-danger, #ef4444); }
 
 .flags-grid {
   display: flex;
@@ -163,7 +163,7 @@ textarea {
   background: #f8fafc;
   padding: 1.5rem;
   border-radius: 8px;
-  border-left: 4px solid var(--Cycysafeclick-navy, #0A1628);
+  border-left: 4px solid var(--CySafeClick-navy, #0A1628);
   margin-bottom: 1.5rem;
 }
 .tips-card h3 { margin-top: 0; }
@@ -171,8 +171,8 @@ textarea {
 
 .secondary-btn {
   background: transparent;
-  border: 2px solid var(--Cycysafeclick-navy, #0A1628);
-  color: var(--Cycysafeclick-navy, #0A1628);
+  border: 2px solid var(--CySafeClick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
   padding: 0.75rem 1.5rem;
   font-weight: bold;
   border-radius: 8px;
@@ -196,7 +196,7 @@ textarea {
 .resources-card h2, .guide-card h2 {
   margin-top: 0;
   font-size: 1.3rem;
-  border-bottom: 2px solid var(--Cycysafeclick-saffron, #FF9933);
+  border-bottom: 2px solid var(--CySafeClick-saffron, #FF9933);
   padding-bottom: 0.5rem;
 }
 
@@ -211,7 +211,7 @@ textarea {
 
 .resource-list a {
   text-decoration: none;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
   display: block;
   padding: 0.75rem;
   background: #f8fafc;
@@ -224,7 +224,7 @@ textarea {
 }
 
 .resource-list strong {
-  color: var(--Cycysafeclick-saffron, #FF9933);
+  color: var(--CySafeClick-saffron, #FF9933);
 }
 
 .whatsapp-helpline {

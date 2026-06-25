@@ -77,7 +77,7 @@ import { TranslatePipe } from '../../../core/pipes/translate.pipe';
     .severity-dot.critical { background: var(--danger); box-shadow: 0 0 5px var(--danger); }
     .severity-dot.high { background: var(--warning); }
     .severity-dot.medium { background: #fde047; }
-    .severity-dot.low { background: var(--Cycysafeclick-green); }
+    .severity-dot.low { background: var(--CySafeClick-green); }
     
     .alert-text { display: flex; flex-direction: column; }
     .alert-text strong { font-size: 0.9rem; margin-bottom: 4px; line-height: 1.3; }

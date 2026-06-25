@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
 }
 
 .quiz-header {
@@ -14,7 +14,7 @@
 .quiz-header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
 }
 
 .rules-card {
@@ -28,7 +28,7 @@
 
 .rules-card h2 {
   margin-top: 0;
-  border-bottom: 2px solid var(--Cycysafeclick-saffron, #FF9933);
+  border-bottom: 2px solid var(--CySafeClick-saffron, #FF9933);
   padding-bottom: 0.5rem;
   display: inline-block;
 }
@@ -46,7 +46,7 @@
 }
 
 .start-btn {
-  background: var(--Cycysafeclick-saffron, #FF9933);
+  background: var(--CySafeClick-saffron, #FF9933);
   color: white;
   border: none;
   padding: 1rem 2.5rem;
@@ -105,14 +105,14 @@
 
 .lb-score {
   font-weight: bold;
-  color: var(--Cycysafeclick-saffron, #FF9933);
+  color: var(--CySafeClick-saffron, #FF9933);
 }
 
 /* Active Screen */
 .quiz-top-bar {
   display: flex;
   justify-content: space-between;
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
   padding: 1rem 1.5rem;
   border-radius: 8px;
@@ -122,7 +122,7 @@
 }
 
 .q-timer.danger {
-  color: var(--Cycysafeclick-danger, #ef4444);
+  color: var(--CySafeClick-danger, #ef4444);
   animation: flash 1s infinite;
 }
 
@@ -179,18 +179,18 @@
 }
 
 .opt-btn.selected {
-  border-color: var(--Cycysafeclick-navy, #0A1628);
+  border-color: var(--CySafeClick-navy, #0A1628);
 }
 
 .opt-btn.correct {
   background: #dcfce7;
-  border-color: var(--Cycysafeclick-safe, #22c55e);
+  border-color: var(--CySafeClick-safe, #22c55e);
   color: #166534;
 }
 
 .opt-btn.wrong {
   background: #fee2e2;
-  border-color: var(--Cycysafeclick-danger, #ef4444);
+  border-color: var(--CySafeClick-danger, #ef4444);
   color: #991b1b;
 }
 
@@ -199,7 +199,7 @@
   padding: 1.5rem;
   background: #f8fafc;
   border-radius: 8px;
-  border-left: 4px solid var(--Cycysafeclick-navy, #0A1628);
+  border-left: 4px solid var(--CySafeClick-navy, #0A1628);
 }
 
 .explanation-box h4 {
@@ -207,8 +207,8 @@
   font-size: 1.2rem;
 }
 
-.text-safe { color: var(--Cycysafeclick-safe, #22c55e); }
-.text-danger { color: var(--Cycysafeclick-danger, #ef4444); }
+.text-safe { color: var(--CySafeClick-safe, #22c55e); }
+.text-danger { color: var(--CySafeClick-danger, #ef4444); }
 
 /* Result Screen */
 .result-screen {
@@ -222,7 +222,7 @@
 }
 
 .score-card {
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
   padding: 2rem;
   border-radius: 12px;
@@ -233,7 +233,7 @@
 .final-score {
   font-size: 4rem;
   font-weight: bold;
-  color: var(--Cycysafeclick-saffron, #FF9933);
+  color: var(--CySafeClick-saffron, #FF9933);
 }
 
 .certificate-section {
@@ -245,7 +245,7 @@
 }
 
 .cert-preview {
-  border: 10px solid var(--Cycysafeclick-navy, #0A1628);
+  border: 10px solid var(--CySafeClick-navy, #0A1628);
   padding: 2rem;
   background: white;
   margin-bottom: 1.5rem;
@@ -255,7 +255,7 @@
 .cert-preview h3 {
   font-size: 2rem;
   margin-top: 0;
-  color: var(--Cycysafeclick-saffron, #FF9933);
+  color: var(--CySafeClick-saffron, #FF9933);
 }
 
 .cert-form {
@@ -272,7 +272,7 @@
 }
 
 .cert-btn {
-  background: var(--Cycysafeclick-safe, #22c55e);
+  background: var(--CySafeClick-safe, #22c55e);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -283,8 +283,8 @@
 
 .home-btn {
   background: transparent;
-  border: 2px solid var(--Cycysafeclick-navy, #0A1628);
-  color: var(--Cycysafeclick-navy, #0A1628);
+  border: 2px solid var(--CySafeClick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
   padding: 1rem 2rem;
   border-radius: 8px;
   font-weight: bold;

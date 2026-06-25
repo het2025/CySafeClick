@@ -17,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
 }
 
@@ -48,9 +48,9 @@
   right: 2px;
   width: 12px;
   height: 12px;
-  background: var(--Cycysafeclick-safe, #22c55e);
+  background: var(--CySafeClick-safe, #22c55e);
   border-radius: 50%;
-  border: 2px solid var(--Cycysafeclick-navy, #0A1628);
+  border: 2px solid var(--CySafeClick-navy, #0A1628);
 }
 
 .bot-text h2 {
@@ -106,7 +106,7 @@
 .chip {
   background: white;
   border: 1px solid #cbd5e1;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
   padding: 0.5rem 1rem;
   border-radius: 999px;
   font-size: 0.875rem;
@@ -115,9 +115,9 @@
 }
 
 .chip:hover {
-  background: var(--Cycysafeclick-saffron, #FF9933);
+  background: var(--CySafeClick-saffron, #FF9933);
   color: white;
-  border-color: var(--Cycysafeclick-saffron, #FF9933);
+  border-color: var(--CySafeClick-saffron, #FF9933);
 }
 
 /* Messages */
@@ -143,14 +143,14 @@
 }
 
 .message-row.user .message-bubble {
-  background: var(--Cycysafeclick-saffron, #FF9933);
+  background: var(--CySafeClick-saffron, #FF9933);
   color: white;
   border-bottom-right-radius: 4px;
 }
 
 .message-row.assistant .message-bubble {
   background: white;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
   border-bottom-left-radius: 4px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
@@ -169,7 +169,7 @@
 
 .action-btn {
   display: inline-block;
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -193,7 +193,7 @@
 .qr-btn {
   background: #f1f5f9;
   border: 1px solid #cbd5e1;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
   padding: 0.4rem 0.8rem;
   border-radius: 999px;
   font-size: 0.8rem;
@@ -202,9 +202,9 @@
 }
 
 .qr-btn:hover {
-  background: var(--Cycysafeclick-saffron, #FF9933);
+  background: var(--CySafeClick-saffron, #FF9933);
   color: white;
-  border-color: var(--Cycysafeclick-saffron, #FF9933);
+  border-color: var(--CySafeClick-saffron, #FF9933);
 }
 
 /* Metadata and tools */
@@ -282,7 +282,7 @@
 
 .escalation-btn {
   display: inline-block;
-  color: var(--Cycysafeclick-danger, #ef4444);
+  color: var(--CySafeClick-danger, #ef4444);
   font-weight: 600;
   text-decoration: none;
   font-size: 0.875rem;
@@ -299,7 +299,7 @@
 }
 
 .mic-btn, .send-btn {
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
   border: none;
   width: 48px;
@@ -314,7 +314,7 @@
 }
 
 .mic-btn.recording {
-  background: var(--Cycysafeclick-danger, #ef4444);
+  background: var(--CySafeClick-danger, #ef4444);
   animation: pulse 1.5s infinite;
 }
 
@@ -337,7 +337,7 @@
 }
 
 .chat-input:focus {
-  border-color: var(--Cycysafeclick-saffron, #FF9933);
+  border-color: var(--CySafeClick-saffron, #FF9933);
 }
 
 /* Waveform Animation for Recording */
@@ -351,7 +351,7 @@
 
 .waveform .bar {
   width: 4px;
-  background: var(--Cycysafeclick-danger, #ef4444);
+  background: var(--CySafeClick-danger, #ef4444);
   border-radius: 2px;
   animation: wave 1s infinite ease-in-out;
 }

@@ -167,7 +167,7 @@ export class SecureVaultComponent implements OnInit {
   exportData() {
     const dataStr = JSON.stringify(this.notes);
     const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
-    const exportFileDefaultName = 'Cycysafeclick_vault_backup.json';
+    const exportFileDefaultName = 'CySafeClick_vault_backup.json';
     const linkElement = document.createElement('a');
     linkElement.setAttribute('href', dataUri);
     linkElement.setAttribute('download', exportFileDefaultName);

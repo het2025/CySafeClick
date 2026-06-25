@@ -34,12 +34,12 @@ export class WebCryptoService {
   }
 
   private getOrCreateSalt(): Uint8Array {
-    const saved = localStorage.getItem('Cycysafeclick_vault_salt');
+    const saved = localStorage.getItem('CySafeClick_vault_salt');
     if (saved) {
       return new Uint8Array(this.base64ToBuffer(saved));
     }
     const salt = window.crypto.getRandomValues(new Uint8Array(16));
-    localStorage.setItem('Cycysafeclick_vault_salt', this.bufferToBase64(salt.buffer));
+    localStorage.setItem('CySafeClick_vault_salt', this.bufferToBase64(salt.buffer));
     return salt;
   }
 
@@ -100,15 +100,15 @@ export class WebCryptoService {
   }
 
   hasVault(): boolean {
-    return !!localStorage.getItem('Cycysafeclick_vault_salt');
+    return !!localStorage.getItem('CySafeClick_vault_salt');
   }
 
   getNotes(): VaultNote[] {
-    const saved = localStorage.getItem('Cycysafeclick_vault_notes');
+    const saved = localStorage.getItem('CySafeClick_vault_notes');
     return saved ? JSON.parse(saved) : [];
   }
 
   saveNotes(notes: VaultNote[]): void {
-    localStorage.setItem('Cycysafeclick_vault_notes', JSON.stringify(notes));
+    localStorage.setItem('CySafeClick_vault_notes', JSON.stringify(notes));
   }
 }

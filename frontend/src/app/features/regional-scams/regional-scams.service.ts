@@ -135,20 +135,20 @@ export class RegionalScamsService {
   }
 
   getUserState(): string | null {
-    return localStorage.getItem('Cycysafeclick_user_state');
+    return localStorage.getItem('CySafeClick_user_state');
   }
 
   setUserState(stateId: string, cityId?: string): void {
-    localStorage.setItem('Cycysafeclick_user_state', stateId);
+    localStorage.setItem('CySafeClick_user_state', stateId);
     if (cityId) {
-      localStorage.setItem('Cycysafeclick_user_city', cityId);
+      localStorage.setItem('CySafeClick_user_city', cityId);
     } else {
-      localStorage.removeItem('Cycysafeclick_user_city');
+      localStorage.removeItem('CySafeClick_user_city');
     }
-    localStorage.setItem('Cycysafeclick_location_onboarded', 'true');
+    localStorage.setItem('CySafeClick_location_onboarded', 'true');
   }
 
   hasUserSetLocation(): boolean {
-    return localStorage.getItem('Cycysafeclick_location_onboarded') === 'true';
+    return localStorage.getItem('CySafeClick_location_onboarded') === 'true';
   }
 }

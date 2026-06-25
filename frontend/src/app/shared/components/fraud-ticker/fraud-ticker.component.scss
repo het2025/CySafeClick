@@ -3,7 +3,7 @@
   align-items: center;
   width: 100%;
   height: 44px;
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   border-bottom: 1px solid rgba(255, 153, 51, 0.3);
   position: relative;
   overflow: hidden;
@@ -14,7 +14,7 @@
   }
   
   &:focus {
-    outline: 2px solid var(--Cycysafeclick-saffron, #FF9933);
+    outline: 2px solid var(--CySafeClick-saffron, #FF9933);
     outline-offset: -2px;
   }
 }
@@ -43,7 +43,7 @@
     }
     
     .text {
-      color: var(--Cycysafeclick-saffron, #FF9933);
+      color: var(--CySafeClick-saffron, #FF9933);
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.05em;
@@ -68,7 +68,7 @@
     max-width: 100px;
     
     option {
-      background: var(--Cycysafeclick-navy, #0A1628);
+      background: var(--CySafeClick-navy, #0A1628);
       color: white;
     }
   }
@@ -96,11 +96,11 @@
   }
   &::before {
     left: 0;
-    background: linear-gradient(to right, var(--Cycysafeclick-navy, #0A1628), transparent);
+    background: linear-gradient(to right, var(--CySafeClick-navy, #0A1628), transparent);
   }
   &::after {
     right: 0;
-    background: linear-gradient(to left, var(--Cycysafeclick-navy, #0A1628), transparent);
+    background: linear-gradient(to left, var(--CySafeClick-navy, #0A1628), transparent);
   }
   
   &.paused .ticker-track {
@@ -152,7 +152,7 @@
   }
   
   .learn-more {
-    color: var(--Cycysafeclick-saffron, #FF9933);
+    color: var(--CySafeClick-saffron, #FF9933);
     font-size: 10px;
     font-weight: bold;
     opacity: 0;
@@ -162,7 +162,7 @@
   }
   
   .item-separator {
-    color: var(--Cycysafeclick-saffron, #FF9933);
+    color: var(--CySafeClick-saffron, #FF9933);
     margin: 0 10px;
     font-size: 10px;
   }

@@ -14,7 +14,7 @@ import { PersonalizedAlertBannerComponent } from '../../shared/components/person
   standalone: true,
   imports: [RouterLink, CommonModule, TranslatePipe, FraudTickerComponent, ThreatMapWidgetComponent, WeeklyDigestWidgetComponent, PersonalizedAlertBannerComponent],
   template: `
-    <Cycysafeclick-fraud-ticker></Cycysafeclick-fraud-ticker>
+    <CySafeClick-fraud-ticker></CySafeClick-fraud-ticker>
     <section class="hero">
       <div class="container">
         <h1>{{ 'HERO.TITLE' | translate }}</h1>
@@ -24,7 +24,7 @@ import { PersonalizedAlertBannerComponent } from '../../shared/components/person
 
         <div class="counter-box">
           <span class="counter-value">{{ counter().toLocaleString() }}</span>
-          <p>Visitors on Cycysafeclick 🇮🇳</p>
+          <p>Visitors on CySafeClick 🇮🇳</p>
         </div>
       </div>
     </section>
@@ -33,12 +33,12 @@ import { PersonalizedAlertBannerComponent } from '../../shared/components/person
       <h2 class="section-title">⭐ {{ 'FEATURED.TITLE' | translate }}</h2>
       <p class="section-desc">{{ 'FEATURED.DESC' | translate }}</p>
       <div class="featured-grid">
-        <!-- Cycysafeclick AI Tools Hub -->
+        <!-- CySafeClick AI Tools Hub -->
         <a routerLink="/ai-tools" class="featured-card ai-feature" style="grid-column: 1 / -1; border-color: #a855f7; background: linear-gradient(135deg, rgba(255,153,51,0.05), rgba(168,85,247,0.05));">
           <div class="card-icon">🤖✨</div>
           <div class="card-content" style="max-width: 600px; margin: 0 auto;">
             <span style="background: linear-gradient(135deg, var(--accent-saffron), #a855f7); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; margin-bottom: 10px; display: inline-block;">NEW: Advanced AI Powered Tools</span>
-            <h3>Cycysafeclick AI Tools Hub</h3>
+            <h3>CySafeClick AI Tools Hub</h3>
             <p>Access our next-generation cyber safety features: Scam Message Analyzer, Cyber Mitra Chatbot, and Transaction Risk Checker.</p>
           </div>
           <span class="btn-go" style="max-width: 200px; margin: 0 auto;">Explore AI Tools →</span>
@@ -97,12 +97,12 @@ import { PersonalizedAlertBannerComponent } from '../../shared/components/person
     </section>
 
     <div class="container">
-      <Cycysafeclick-personalized-alert-banner></Cycysafeclick-personalized-alert-banner>
-      <Cycysafeclick-weekly-digest-widget></Cycysafeclick-weekly-digest-widget>
+      <CySafeClick-personalized-alert-banner></CySafeClick-personalized-alert-banner>
+      <CySafeClick-weekly-digest-widget></CySafeClick-weekly-digest-widget>
     </div>
 
     <section class="container map-section">
-      <Cycysafeclick-threat-map-widget></Cycysafeclick-threat-map-widget>
+      <CySafeClick-threat-map-widget></CySafeClick-threat-map-widget>
     </section>
   `,
   styles: [`
@@ -287,8 +287,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   incrementVisitorCount() {
-    const COUNT_KEY = 'Cycysafeclick_visitor_count';
-    const SESSION_KEY = 'Cycysafeclick_has_interacted';
+    const COUNT_KEY = 'CySafeClick_visitor_count';
+    const SESSION_KEY = 'CySafeClick_has_interacted';
     let currentCount = Number(localStorage.getItem(COUNT_KEY)) || 0;
     if (!sessionStorage.getItem(SESSION_KEY)) {
       currentCount++;

@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
 }
 
 .page-header {
@@ -32,9 +32,9 @@
 }
 
 .tabs button.active {
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
-  border-color: var(--Cycysafeclick-navy, #0A1628);
+  border-color: var(--CySafeClick-navy, #0A1628);
 }
 
 .edu-section {
@@ -48,7 +48,7 @@
 
 .edu-section h2 {
   margin-top: 0;
-  color: var(--Cycysafeclick-danger, #ef4444);
+  color: var(--CySafeClick-danger, #ef4444);
   border-bottom: 2px solid #fecaca;
   padding-bottom: 0.5rem;
 }
@@ -61,7 +61,7 @@
 
 .critical-rule {
   background: #fffbeb;
-  border-left: 4px solid var(--Cycysafeclick-saffron, #FF9933);
+  border-left: 4px solid var(--CySafeClick-saffron, #FF9933);
   padding: 1rem;
   border-radius: 8px;
   margin-top: 1rem;
@@ -98,7 +98,7 @@
 }
 
 .primary-btn, .download-btn {
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -111,7 +111,7 @@
   transition: background 0.2s;
 }
 
-.primary-btn:hover, .download-btn:hover { background: var(--Cycysafeclick-saffron, #FF9933); }
+.primary-btn:hover, .download-btn:hover { background: var(--CySafeClick-saffron, #FF9933); }
 
 .result-banner {
   margin-top: 2rem;
@@ -120,9 +120,9 @@
   text-align: center;
 }
 
-.result-banner.good { background: #f0fdf4; border: 2px solid var(--Cycysafeclick-safe, #22c55e); color: #166534; }
-.result-banner.medium { background: #fffbeb; border: 2px solid var(--Cycysafeclick-warn, #f59e0b); color: #b45309; }
-.result-banner.bad { background: #fef2f2; border: 2px solid var(--Cycysafeclick-danger, #ef4444); color: #991b1b; }
+.result-banner.good { background: #f0fdf4; border: 2px solid var(--CySafeClick-safe, #22c55e); color: #166534; }
+.result-banner.medium { background: #fffbeb; border: 2px solid var(--CySafeClick-warn, #f59e0b); color: #b45309; }
+.result-banner.bad { background: #fef2f2; border: 2px solid var(--CySafeClick-danger, #ef4444); color: #991b1b; }
 
 .result-banner h3 { margin-top: 0; font-size: 1.8rem; }
 
@@ -131,7 +131,7 @@
   background: #f1f5f9;
   padding: 1.5rem;
   border-radius: 8px;
-  border-left: 4px solid var(--Cycysafeclick-navy, #0A1628);
+  border-left: 4px solid var(--CySafeClick-navy, #0A1628);
   margin: 1.5rem 0;
 }
 

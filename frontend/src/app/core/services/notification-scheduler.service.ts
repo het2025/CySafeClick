@@ -9,9 +9,9 @@ import { AlertDataService, ScamAlert } from './alert-data.service';
 })
 export class NotificationSchedulerService {
   private intervalId: any;
-  private readonly LAST_CHECKED_KEY = 'Cycysafeclick_last_alert_check';
-  private readonly STATS_KEY = 'Cycysafeclick_alert_stats';
-  private readonly HISTORY_KEY = 'Cycysafeclick_alert_history';
+  private readonly LAST_CHECKED_KEY = 'CySafeClick_last_alert_check';
+  private readonly STATS_KEY = 'CySafeClick_alert_stats';
+  private readonly HISTORY_KEY = 'CySafeClick_alert_history';
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
@@ -80,10 +80,10 @@ export class NotificationSchedulerService {
     if (Notification.permission !== 'granted') return;
 
     // We don't want to duplicate tags
-    const notification = new Notification('⚠️ Cycysafeclick Alert: ' + alert.title, {
+    const notification = new Notification('⚠️ CySafeClick Alert: ' + alert.title, {
       body: alert.summary.length > 100 ? alert.summary.substring(0, 97) + '...' : alert.summary,
-      icon: '/assets/icons/Cycysafeclick-shield-192.png',
-      badge: '/assets/icons/Cycysafeclick-badge-72.png',
+      icon: '/assets/icons/CySafeClick-shield-192.png',
+      badge: '/assets/icons/CySafeClick-badge-72.png',
       tag: alert.id,
       requireInteraction: alert.severity === 'critical'
     });

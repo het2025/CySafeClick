@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
 }
 
 .page-header {
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   gap: 3rem;
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
   padding: 1.5rem;
   border-radius: 12px;
@@ -34,7 +34,7 @@
 .stat-item h3 {
   font-size: 2rem;
   margin: 0;
-  color: var(--Cycysafeclick-saffron, #FF9933);
+  color: var(--CySafeClick-saffron, #FF9933);
 }
 
 .stat-item p {
@@ -86,7 +86,7 @@
 }
 
 .primary-btn {
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -96,11 +96,11 @@
   white-space: nowrap;
 }
 
-.primary-btn:hover { background: var(--Cycysafeclick-saffron, #FF9933); }
+.primary-btn:hover { background: var(--CySafeClick-saffron, #FF9933); }
 
 .report-form-card {
   background: #f8fafc;
-  border: 2px solid var(--Cycysafeclick-saffron, #FF9933);
+  border: 2px solid var(--CySafeClick-saffron, #FF9933);
   padding: 1.5rem;
   border-radius: 12px;
   margin-bottom: 2rem;
@@ -135,7 +135,7 @@
 }
 
 .submit-btn {
-  background: var(--Cycysafeclick-safe, #22c55e);
+  background: var(--CySafeClick-safe, #22c55e);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -180,12 +180,12 @@
 .type-badge.website { background: #fef3c7; color: #b45309; }
 .type-badge.email { background: #f3e8ff; color: #7e22ce; }
 
-.verified-badge { color: var(--Cycysafeclick-safe, #22c55e); font-weight: bold; }
+.verified-badge { color: var(--CySafeClick-safe, #22c55e); font-weight: bold; }
 .date { color: #94a3b8; margin-left: auto; }
 
 .scammer-id {
   font-size: 1.5rem;
-  color: var(--Cycysafeclick-danger, #ef4444);
+  color: var(--CySafeClick-danger, #ef4444);
   margin: 0 0 0.5rem 0;
   font-family: monospace;
 }
@@ -221,7 +221,7 @@
   top: 2rem;
 }
 
-.top-scammers-card h2 { margin-top: 0; color: var(--Cycysafeclick-danger, #ef4444); font-size: 1.2rem;}
+.top-scammers-card h2 { margin-top: 0; color: var(--CySafeClick-danger, #ef4444); font-size: 1.2rem;}
 
 .leaderboard-list {
   display: flex;

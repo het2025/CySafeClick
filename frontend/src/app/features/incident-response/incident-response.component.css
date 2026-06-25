@@ -11,7 +11,7 @@
 }
 
 .ir-header h1 {
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
   margin-bottom: 0.5rem;
 }
 
@@ -39,12 +39,12 @@
 
 .category-card:hover {
   transform: translateY(-2px);
-  border-color: var(--Cycysafeclick-saffron, #FF9933);
+  border-color: var(--CySafeClick-saffron, #FF9933);
   box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .category-card h2 {
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -58,7 +58,7 @@
 .back-btn {
   background: none;
   border: none;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
   font-weight: 600;
   cursor: pointer;
   padding: 0;
@@ -88,7 +88,7 @@
 }
 
 .playbook-card:hover {
-  border-color: var(--Cycysafeclick-saffron, #FF9933);
+  border-color: var(--CySafeClick-saffron, #FF9933);
 }
 
 .pb-header {
@@ -100,7 +100,7 @@
 
 .pb-header h3 {
   margin: 0;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
   font-size: 1.25rem;
 }
 
@@ -114,12 +114,12 @@
 
 .urgency-badge.critical {
   background-color: #fee2e2;
-  color: var(--Cycysafeclick-danger, #ef4444);
+  color: var(--CySafeClick-danger, #ef4444);
 }
 
 .urgency-badge.high {
   background-color: #fef3c7;
-  color: var(--Cycysafeclick-warn, #f59e0b);
+  color: var(--CySafeClick-warn, #f59e0b);
 }
 
 .urgency-badge.medium {
@@ -134,7 +134,7 @@
 }
 
 .start-btn {
-  background-color: var(--Cycysafeclick-navy, #0A1628);
+  background-color: var(--CySafeClick-navy, #0A1628);
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -156,7 +156,7 @@
 .playbook-header h2 {
   margin-top: 0;
   margin-bottom: 1rem;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
 }
 
 .pb-meta {
@@ -228,21 +228,21 @@
 }
 
 .step-indicator.active .step-circle {
-  border-color: var(--Cycysafeclick-saffron, #FF9933);
-  color: var(--Cycysafeclick-saffron, #FF9933);
+  border-color: var(--CySafeClick-saffron, #FF9933);
+  color: var(--CySafeClick-saffron, #FF9933);
   box-shadow: 0 0 0 4px rgba(255, 153, 51, 0.1);
 }
 
 .step-indicator.completed .step-circle {
-  background: var(--Cycysafeclick-safe, #22c55e);
-  border-color: var(--Cycysafeclick-safe, #22c55e);
+  background: var(--CySafeClick-safe, #22c55e);
+  border-color: var(--CySafeClick-safe, #22c55e);
   color: white;
 }
 
 /* Step Detail */
 .step-detail-card {
   background: white;
-  border: 2px solid var(--Cycysafeclick-navy, #0A1628);
+  border: 2px solid var(--CySafeClick-navy, #0A1628);
   border-radius: 12px;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -264,7 +264,7 @@
   gap: 0.75rem;
   margin-top: 0;
   margin-bottom: 1.5rem;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
   font-size: 1.5rem;
 }
 
@@ -272,7 +272,7 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
-  accent-color: var(--Cycysafeclick-safe, #22c55e);
+  accent-color: var(--CySafeClick-safe, #22c55e);
 }
 
 .step-action, .step-why {
@@ -285,7 +285,7 @@
 .step-action h4, .step-why h4 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -304,7 +304,7 @@
 }
 
 .next-step-btn, .finish-btn {
-  background: var(--Cycysafeclick-saffron, #FF9933);
+  background: var(--CySafeClick-saffron, #FF9933);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -320,7 +320,7 @@
 }
 
 .completion-message {
-  color: var(--Cycysafeclick-safe, #22c55e);
+  color: var(--CySafeClick-safe, #22c55e);
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -331,7 +331,7 @@
 .warning-panel {
   background: #fef2f2;
   border: 1px solid #fecaca;
-  border-left: 4px solid var(--Cycysafeclick-danger, #ef4444);
+  border-left: 4px solid var(--CySafeClick-danger, #ef4444);
   padding: 1.5rem;
   border-radius: 8px;
 }

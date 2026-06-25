@@ -496,7 +496,7 @@
       "EXCELLENT": "उत्कृष्ट! यह एक बहुत ही मजबूत पासवर्ड है।"
     },
     "INDIAN_WORDS": ["india", "bharat", "sachin", "dhoni", "ipl", "rahul", "priya", "delhi", "mumbai", "kolkata", "chennai", "bangalore", "hyderabad", "pune", "jaipur", "virat", "rohit", "cricket", "diwali", "ganesh", "shiva", "krishna", "ram", "sita", "paytm", "phonepe", "gpay", "vanakkam", "namaste", "भारत", "दिल्ली", "मुंबई", "कोलकाता", "चेन्नई"],
-    "VARIANT_WORDS": ["Mera", "Apna", "Suraksha", "Cycysafeclick", "Sher"],
+    "VARIANT_WORDS": ["Mera", "Apna", "Suraksha", "CySafeClick", "Sher"],
     "PASSPHRASE_WORDS": ["apple", "mountain", "river", "delta", "tiger"],
     "VARIANTS": {
       "ADD_SYMBOL": "संख्या + प्रतीक जोड़ें",

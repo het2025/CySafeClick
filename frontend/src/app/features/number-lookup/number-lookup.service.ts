@@ -138,10 +138,10 @@ export class NumberLookupService {
       sourceConfidence: 'unknown',
       riskLevel: 'unknown',
       message: isValid
-        ? 'Cycysafeclick does not publish a public scam-number database. Use official channels to verify or report fraud.'
+        ? 'CySafeClick does not publish a public scam-number database. Use official channels to verify or report fraud.'
         : 'Please enter a valid 10-digit Indian phone number.',
       messageHindi: isValid
-        ? 'Cycysafeclick सार्वजनिक स्कैम-नंबर डेटाबेस प्रकाशित नहीं करता। सत्यापन/रिपोर्टिंग के लिए आधिकारिक चैनलों का उपयोग करें।'
+        ? 'CySafeClick सार्वजनिक स्कैम-नंबर डेटाबेस प्रकाशित नहीं करता। सत्यापन/रिपोर्टिंग के लिए आधिकारिक चैनलों का उपयोग करें।'
         : 'कृपया एक मान्य 10-अंकों का भारतीय फोन नंबर दर्ज करें।',
       suggestedAction: 'Do not share OTP, PIN, Aadhaar, card details, or money on a call. If you lost money, call 1930 immediately.',
       suggestedActionHindi: 'कॉल पर ओटीपी, पिन, आधार, कार्ड विवरण या पैसे साझा न करें। यदि पैसे कटे हैं तो तुरंत 1930 पर कॉल करें।',

@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
 }
 
 .page-header {
@@ -27,7 +27,7 @@
 
 .edu-section h2 {
   margin-top: 0;
-  border-bottom: 2px solid var(--Cycysafeclick-saffron, #FF9933);
+  border-bottom: 2px solid var(--CySafeClick-saffron, #FF9933);
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
 }
@@ -47,7 +47,7 @@
 
 .age-card h3 {
   margin-top: 0;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
 }
 
 .age-card ul {
@@ -66,7 +66,7 @@
   background: #f8fafc;
   padding: 1.5rem;
   border-radius: 8px;
-  border-top: 4px solid var(--Cycysafeclick-navy, #0A1628);
+  border-top: 4px solid var(--CySafeClick-navy, #0A1628);
 }
 
 .os-guide h3 { margin-top: 0; }
@@ -82,8 +82,8 @@
 }
 
 .danger-section h2 {
-  border-bottom-color: var(--Cycysafeclick-danger, #ef4444);
-  color: var(--Cycysafeclick-danger, #ef4444);
+  border-bottom-color: var(--CySafeClick-danger, #ef4444);
+  color: var(--CySafeClick-danger, #ef4444);
 }
 
 .sensitive-warning {
@@ -107,12 +107,12 @@
 
 .action-box {
   background: white;
-  border: 2px solid var(--Cycysafeclick-danger, #ef4444);
+  border: 2px solid var(--CySafeClick-danger, #ef4444);
   padding: 1.5rem;
   border-radius: 8px;
 }
 
-.action-box h3 { margin-top: 0; color: var(--Cycysafeclick-danger, #ef4444); }
+.action-box h3 { margin-top: 0; color: var(--CySafeClick-danger, #ef4444); }
 .action-box p { margin-bottom: 0.5rem; }
 
 .gaming-tips {
@@ -125,7 +125,7 @@
   background: #f8fafc;
   padding: 1.5rem;
   border-radius: 8px;
-  border-left: 4px solid var(--Cycysafeclick-saffron, #FF9933);
+  border-left: 4px solid var(--CySafeClick-saffron, #FF9933);
 }
 
 .tip h3 { margin-top: 0; }
@@ -135,7 +135,7 @@
   background: #f0fdf4;
   border-color: #bbf7d0;
 }
-.info-section h2 { border-bottom-color: var(--Cycysafeclick-safe, #22c55e); }
+.info-section h2 { border-bottom-color: var(--CySafeClick-safe, #22c55e); }
 .info-section ul { line-height: 1.8; }
 
 /* Agreement Section */
@@ -160,7 +160,7 @@
 }
 
 .primary-btn {
-  background: var(--Cycysafeclick-navy, #0A1628);
+  background: var(--CySafeClick-navy, #0A1628);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -170,7 +170,7 @@
   transition: background 0.2s;
 }
 
-.primary-btn:hover { background: var(--Cycysafeclick-saffron, #FF9933); }
+.primary-btn:hover { background: var(--CySafeClick-saffron, #FF9933); }
 
 /* Printable Document Styles */
 .printable-document {

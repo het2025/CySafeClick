@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ScamCallType, UserReport } from '../../number-lookup.service';
 // import { Store } from '@ngrx/store';
-// import { CycysafeclickShieldActions } from '...'; // Placeholder for integration
+// import { CySafeClickShieldActions } from '...'; // Placeholder for integration
 
 @Component({
   selector: 'app-report-number',

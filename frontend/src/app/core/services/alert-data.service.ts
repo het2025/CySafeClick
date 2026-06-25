@@ -5,7 +5,7 @@ import { environment } from '../../../environments/environment';
 
 export type AlertCategory = 'upi-fraud' | 'phishing' | 'malware' | 'advisory' | 'scam-call' | 'breaking';
 export type AlertSeverity = 'low' | 'medium' | 'high' | 'critical';
-export type AlertSource = 'CERT-In' | 'Cyber Dost' | 'MHA' | 'RBI' | 'TRAI' | 'Cycysafeclick Community';
+export type AlertSource = 'CERT-In' | 'Cyber Dost' | 'MHA' | 'RBI' | 'TRAI' | 'CySafeClick Community';
 
 export interface ScamAlert {
   id: string;

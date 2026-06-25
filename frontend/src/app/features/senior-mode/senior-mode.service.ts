@@ -8,7 +8,7 @@ export class SeniorModeService {
   private isSeniorMode = false;
 
   constructor(@Inject(DOCUMENT) private document: Document) {
-    const saved = localStorage.getItem('Cycysafeclick_senior_mode');
+    const saved = localStorage.getItem('CySafeClick_senior_mode');
     if (saved === 'true') {
       this.enableMode();
     }
@@ -25,13 +25,13 @@ export class SeniorModeService {
   private enableMode(): void {
     this.isSeniorMode = true;
     this.document.body.classList.add('senior-mode-active');
-    localStorage.setItem('Cycysafeclick_senior_mode', 'true');
+    localStorage.setItem('CySafeClick_senior_mode', 'true');
   }
 
   private disableMode(): void {
     this.isSeniorMode = false;
     this.document.body.classList.remove('senior-mode-active');
-    localStorage.setItem('Cycysafeclick_senior_mode', 'false');
+    localStorage.setItem('CySafeClick_senior_mode', 'false');
   }
 
   isActive(): boolean {

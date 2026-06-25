@@ -7,7 +7,7 @@ import { TranslatePipe } from '../../../core/pipes/translate.pipe';
 import { PatternDetailComponent } from '../../../features/weekly-digest/pattern-detail/pattern-detail.component';
 
 @Component({
-  selector: 'Cycysafeclick-weekly-digest-widget',
+  selector: 'CySafeClick-weekly-digest-widget',
   standalone: true,
   imports: [CommonModule, RouterModule, TranslatePipe, PatternDetailComponent],
   template: `
@@ -66,7 +66,7 @@ import { PatternDetailComponent } from '../../../features/weekly-digest/pattern-
       <div class="drawer-overlay" *ngIf="selectedPattern()" (click)="closePattern()">
         <div class="drawer-content" (click)="$event.stopPropagation()">
           <button class="close-btn" (click)="closePattern()">×</button>
-          <Cycysafeclick-pattern-detail [pattern]="selectedPattern()!"></Cycysafeclick-pattern-detail>
+          <CySafeClick-pattern-detail [pattern]="selectedPattern()!"></CySafeClick-pattern-detail>
         </div>
       </div>
     </section>
@@ -100,7 +100,7 @@ import { PatternDetailComponent } from '../../../features/weekly-digest/pattern-
     
     .week-badge {
       display: inline-block;
-      background: var(--Cycysafeclick-navy);
+      background: var(--CySafeClick-navy);
       color: white;
       padding: 4px 12px;
       border-radius: 16px;
@@ -135,7 +135,7 @@ import { PatternDetailComponent } from '../../../features/weekly-digest/pattern-
     .stat-item .value {
       font-size: 1.5rem;
       font-weight: 800;
-      color: var(--Cycysafeclick-saffron);
+      color: var(--CySafeClick-saffron);
     }
     
     .stat-item .label {
@@ -165,7 +165,7 @@ import { PatternDetailComponent } from '../../../features/weekly-digest/pattern-
     }
     
     .pattern-card:hover {
-      border-color: var(--Cycysafeclick-saffron);
+      border-color: var(--CySafeClick-saffron);
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
       transform: translateY(-2px);
     }
@@ -224,7 +224,7 @@ import { PatternDetailComponent } from '../../../features/weekly-digest/pattern-
     }
     
     .read-more {
-      color: var(--Cycysafeclick-saffron);
+      color: var(--CySafeClick-saffron);
       font-weight: 600;
     }
     
@@ -261,7 +261,7 @@ import { PatternDetailComponent } from '../../../features/weekly-digest/pattern-
     }
     
     .pattern-card:hover .learn-more-btn {
-      background: var(--Cycysafeclick-saffron);
+      background: var(--CySafeClick-saffron);
     }
     
     .widget-footer {
@@ -284,7 +284,7 @@ import { PatternDetailComponent } from '../../../features/weekly-digest/pattern-
     }
     
     .full-digest-link {
-      color: var(--Cycysafeclick-saffron);
+      color: var(--CySafeClick-saffron);
       text-decoration: none;
       font-weight: 700;
       display: flex;

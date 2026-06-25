@@ -30,7 +30,7 @@ export class RoadmapService {
       { day: 14, week: 2, title: 'Week 2 Review', description: 'Review social media lock down.', instructions: ['Ensure all privacy audits are complete'] },
       { day: 15, week: 3, title: 'Update Phone OS', description: 'Install the latest security patches.', instructions: ['Go to Settings > System > System Update', 'Install any pending updates'] },
       { day: 16, week: 3, title: 'Update All Apps', description: 'Patch vulnerabilities in your installed apps.', instructions: ['Open Play Store / App Store', 'Update all pending apps', 'Enable Auto-update'] },
-      { day: 17, week: 3, title: 'Run WiFi Safety Test', description: 'Check if your home network is secure.', instructions: ['Use the Cycysafeclick WiFi Safety Tester tool'] },
+      { day: 17, week: 3, title: 'Run WiFi Safety Test', description: 'Check if your home network is secure.', instructions: ['Use the CySafeClick WiFi Safety Tester tool'] },
       { day: 18, week: 3, title: 'Change Router Password', description: 'Secure your home router admin panel.', instructions: ['Log into your router (e.g. 192.168.1.1)', 'Change the default admin password'] },
       { day: 19, week: 3, title: 'Install Antivirus', description: 'Add a layer of defense (especially on Windows/Android).', instructions: ['Install a reputable free AV like Bitdefender or Avast', 'Run a full system scan'] },
       { day: 20, week: 3, title: 'Encrypt Phone Storage', description: 'Protect data if your phone is stolen.', instructions: ['Go to Settings > Security', 'Ensure Device Encryption is active'] },
@@ -43,7 +43,7 @@ export class RoadmapService {
       { day: 27, week: 4, title: 'Back Up Phone Data', description: 'Protect against ransomware or device loss.', instructions: ['Enable Google One Backup or iCloud Backup', 'Ensure photos and contacts are synced'] },
       { day: 28, week: 4, title: 'Review Location History', description: 'Delete old tracking data.', instructions: ['Go to Google Maps > Timeline', 'Review and delete unnecessary location history'] },
       { day: 29, week: 4, title: 'Set up Google Alerts', description: 'Get notified if your data leaks.', instructions: ['Go to google.com/alerts', 'Create alerts for your email and name'] },
-      { day: 30, week: 4, title: 'Final Assessment', description: 'Retake the Digital Safety Quiz.', instructions: ['Take the Cycysafeclick Digital Safety Quiz', 'Compare your score to Day 0'] }
+      { day: 30, week: 4, title: 'Final Assessment', description: 'Retake the Digital Safety Quiz.', instructions: ['Take the CySafeClick Digital Safety Quiz', 'Compare your score to Day 0'] }
     ];
   }
 }

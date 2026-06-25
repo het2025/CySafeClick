@@ -116,7 +116,7 @@ export class IncidentResponseComponent implements OnInit {
   async copySummary(): Promise<void> {
     if (!this.selectedPlaybook) return;
     const summary = [
-      `Cycysafeclick Incident Playbook: ${this.selectedPlaybook.title}`,
+      `CySafeClick Incident Playbook: ${this.selectedPlaybook.title}`,
       `Urgency: ${this.selectedPlaybook.urgency}`,
       `Estimated time: ${this.selectedPlaybook.estimatedTime}`,
       '',

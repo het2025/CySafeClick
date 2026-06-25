@@ -39,7 +39,7 @@ export class StatsDashboardComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {}
 
   loadImpactStats(): void {
-    this.impactStats.toolsUsed = this.readArrayCount('Cycysafeclick_recent_lookups') + this.readArrayCount('Cycysafeclick_quiz_history');
+    this.impactStats.toolsUsed = this.readArrayCount('CySafeClick_recent_lookups') + this.readArrayCount('CySafeClick_quiz_history');
     this.impactStats.reportsSubmitted = 0;
     this.impactStats.passwordsTested = 0;
     this.impactStats.phishingScanned = 0;

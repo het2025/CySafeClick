@@ -179,15 +179,15 @@ import { NotificationSchedulerService } from '../../core/services/notification-s
   `,
   styles: [`
     .settings-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-    h1 { color: var(--Cycysafeclick-navy); margin-bottom: 30px; border-bottom: 2px solid var(--border); padding-bottom: 10px; }
+    h1 { color: var(--CySafeClick-navy); margin-bottom: 30px; border-bottom: 2px solid var(--border); padding-bottom: 10px; }
     h2 { font-size: 1.2rem; margin-bottom: 15px; color: var(--text); }
     
     .status-card { padding: 30px; border-radius: 12px; margin-bottom: 40px; text-align: center; border: 1px solid var(--border); background: var(--surface); box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-    .status-card.granted { border-color: var(--Cycysafeclick-green); background: rgba(19, 136, 8, 0.05); }
+    .status-card.granted { border-color: var(--CySafeClick-green); background: rgba(19, 136, 8, 0.05); }
     .status-card.denied { border-color: var(--danger); background: rgba(239, 68, 68, 0.05); }
     
-    .primary-btn.saffron { background: var(--Cycysafeclick-saffron); color: white; padding: 12px 24px; font-size: 1.1rem; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 20px; }
-    .secondary-btn { background: var(--surface); border: 2px solid var(--Cycysafeclick-navy); color: var(--Cycysafeclick-navy); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+    .primary-btn.saffron { background: var(--CySafeClick-saffron); color: white; padding: 12px 24px; font-size: 1.1rem; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 20px; }
+    .secondary-btn { background: var(--surface); border: 2px solid var(--CySafeClick-navy); color: var(--CySafeClick-navy); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; }
     
     .icon-check, .icon-error { font-size: 3rem; margin-bottom: 10px; display: block; }
     
@@ -200,11 +200,11 @@ import { NotificationSchedulerService } from '../../core/services/notification-s
     .switch input { opacity: 0; width: 0; height: 0; }
     .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; }
     .slider:before { position: absolute; content: ""; height: 20px; width: 20px; left: 4px; bottom: 4px; background-color: white; transition: .4s; }
-    input:checked + .slider { background-color: var(--Cycysafeclick-green); }
+    input:checked + .slider { background-color: var(--CySafeClick-green); }
     input:checked + .slider:before { transform: translateX(22px); }
     .slider.round { border-radius: 34px; }
     .slider.round:before { border-radius: 50%; }
-    .slider.disabled { background-color: var(--Cycysafeclick-green); opacity: 0.5; cursor: not-allowed; }
+    .slider.disabled { background-color: var(--CySafeClick-green); opacity: 0.5; cursor: not-allowed; }
     
     .frequency-section { margin-bottom: 40px; }
     .radio-group { display: flex; gap: 20px; }
@@ -219,7 +219,7 @@ import { NotificationSchedulerService } from '../../core/services/notification-s
     .badge.critical { background: var(--danger); color: white; }
     .badge.high { background: var(--warning); color: black; }
     .badge.medium { background: #fde047; color: black; }
-    .badge.low { background: var(--Cycysafeclick-green); color: white; }
+    .badge.low { background: var(--CySafeClick-green); color: white; }
     .details { flex: 1; display: flex; flex-direction: column; }
     
     .privacy-notice { text-align: center; color: var(--muted); border-top: 1px solid var(--border); padding-top: 20px; }
@@ -270,7 +270,7 @@ export class NotificationSettingsComponent implements OnInit {
     this.lastAlert = status.lastNotificationAt;
 
     try {
-      const h = localStorage.getItem('Cycysafeclick_alert_history');
+      const h = localStorage.getItem('CySafeClick_alert_history');
       if (h) this.history = JSON.parse(h);
     } catch(e) {}
   }
@@ -304,10 +304,10 @@ export class NotificationSettingsComponent implements OnInit {
 
   sendTestNotification() {
     if ('Notification' in window && Notification.permission === 'granted') {
-      const notification = new Notification('✅ Cycysafeclick Alerts Active', {
+      const notification = new Notification('✅ CySafeClick Alerts Active', {
         body: 'This is a test notification. You will now receive alerts for new scams.',
-        icon: '/assets/icons/Cycysafeclick-shield-192.png',
-        badge: '/assets/icons/Cycysafeclick-badge-72.png',
+        icon: '/assets/icons/CySafeClick-shield-192.png',
+        badge: '/assets/icons/CySafeClick-badge-72.png',
         tag: 'test-notification'
       });
       setTimeout(() => notification.close(), 5000);

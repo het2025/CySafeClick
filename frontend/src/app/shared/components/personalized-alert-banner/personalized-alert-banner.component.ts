@@ -7,7 +7,7 @@ import { RegionalScamsService, RegionalScamDatabase } from '../../../features/re
 import { LocationOnboardingComponent } from '../location-onboarding/location-onboarding.component';
 
 @Component({
-  selector: 'Cycysafeclick-personalized-alert-banner',
+  selector: 'CySafeClick-personalized-alert-banner',
   standalone: true,
   imports: [CommonModule, RouterModule, LocationOnboardingComponent],
   template: `
@@ -34,9 +34,9 @@ import { LocationOnboardingComponent } from '../location-onboarding/location-onb
       </ng-template>
     </div>
 
-    <Cycysafeclick-location-onboarding *ngIf="showOnboarding || (!hasOnboarded() && isHomepage)" 
+    <CySafeClick-location-onboarding *ngIf="showOnboarding || (!hasOnboarded() && isHomepage)" 
       (completed)="onboardingCompleted()">
-    </Cycysafeclick-location-onboarding>
+    </CySafeClick-location-onboarding>
   `,
   styles: [`
     .banner-container {
@@ -54,7 +54,7 @@ import { LocationOnboardingComponent } from '../location-onboarding/location-onb
     }
     .icon { font-size: 1.5rem; }
     .text-content { flex-grow: 1; display: flex; flex-direction: column; gap: 0.25rem; }
-    .text-content strong { color: var(--Cycysafeclick-navy); font-size: 1.05rem; }
+    .text-content strong { color: var(--CySafeClick-navy); font-size: 1.05rem; }
     .scam-list { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
     .scam-badge {
       background: #fee2e2;
@@ -65,7 +65,7 @@ import { LocationOnboardingComponent } from '../location-onboarding/location-onb
       font-weight: 600;
     }
      .btn-view-all {
-       background: var(--Cycysafeclick-navy, #0A1628);
+       background: var(--CySafeClick-navy, #0A1628);
        color: white;
        text-decoration: none;
        padding: 10px 16px;

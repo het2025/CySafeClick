@@ -192,11 +192,11 @@ export class PrivacyAuditComponent {
   });
 
   constructor(public service: PrivacyAuditService, private localStorage: LocalStorageService) {
-    const saved = this.localStorage.getItem<any>('Cycysafeclick-privacy-audit') || {};
+    const saved = this.localStorage.getItem<any>('CySafeClick-privacy-audit') || {};
     this.userState.set(saved);
 
     effect(() => {
-      this.localStorage.setItem('Cycysafeclick-privacy-audit', this.userState());
+      this.localStorage.setItem('CySafeClick-privacy-audit', this.userState());
     });
   }
 

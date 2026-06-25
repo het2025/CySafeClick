@@ -9,7 +9,7 @@ export interface AnalyticsEvent {
 
 @Injectable({ providedIn: 'root' })
 export class AnalyticsService {
-  private eventsKey = 'Cycysafeclick-analytics-events';
+  private eventsKey = 'CySafeClick-analytics-events';
 
   constructor(private localStorageService: LocalStorageService) {}
 

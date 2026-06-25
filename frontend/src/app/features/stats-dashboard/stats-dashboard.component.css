@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   font-family: system-ui, -apple-system, sans-serif;
-  color: var(--Cycysafeclick-navy, #0A1628);
+  color: var(--CySafeClick-navy, #0A1628);
 }
 
 .stats-header {
@@ -39,7 +39,7 @@
 }
 
 .impact-card {
-  background: linear-gradient(135deg, var(--Cycysafeclick-navy, #0A1628), #1e293b);
+  background: linear-gradient(135deg, var(--CySafeClick-navy, #0A1628), #1e293b);
   color: white;
   border-radius: 12px;
   padding: 2rem;
@@ -50,7 +50,7 @@
 .impact-card h3 {
   font-size: 3rem;
   margin: 0 0 0.5rem 0;
-  color: var(--Cycysafeclick-saffron, #FF9933);
+  color: var(--CySafeClick-saffron, #FF9933);
 }
 
 .impact-card p {

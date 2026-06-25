@@ -14,8 +14,8 @@ import { NotificationBellComponent } from './shared/components/notification-bell
     <header>
       <div class="container nav-container">
         <a routerLink="/" class="logo">
-          <img src="assets/images/logo.png" alt="Cycysafeclick Logo" class="logo-img">
-          Cycysafeclick
+          <img src="assets/images/logo.png" alt="CySafeClick Logo" class="logo-img">
+          CySafeClick
         </a>
 
         <nav class="nav-links">
@@ -43,7 +43,7 @@ import { NotificationBellComponent } from './shared/components/notification-bell
       <div class="container footer-bottom">
         <div class="footer-grid">
           <div>
-            <strong>Cycysafeclick Cyber Safety</strong>
+            <strong>CySafeClick Cyber Safety</strong>
             <p>Educational guidance for awareness only. We do not collect or store your inputs on our servers. Not affiliated with any government or bank.</p>
             <p>Official complaints must be filed through 1930, cybercrime.gov.in, banks, or police.</p>
           </div>
