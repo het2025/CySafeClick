@@ -17,6 +17,8 @@ To provide every Indian user with a powerful shield of knowledge. We focus on:
 
 ## 🛡️ Awareness Modules & Tools
 
+- **India Threat Map:** Live visualization of cybercrime hotspots across different states.
+- **Cyber Mitra AI:** A 24/7 bilingual assistant to help users recover from digital fraud.
 - **Scam Stories:** Real-life case studies of digital fraud to help users recognize red flags.
 - **Phishing Guard:** A protective extension that alerts you to suspicious links and fake government websites.
 - **Password Lab:** An educational tool to understand what makes a password truly "unhackable."
