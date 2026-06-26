@@ -83,4 +83,6 @@ This project is licensed under the [MIT License](LICENSE).
 This platform is for **educational purposes only**. It does not provide legal advice or official law enforcement services. Users are always encouraged to report crimes through the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in).
 
 ---
-*"Apni Digital Suraksha, Apne Haath Mein"*
+
+> *"Apni Digital Suraksha, Apne Haath Mein"* 🛡️✨  
+> **Stay safe. Stay aware. CySafeClick.**
