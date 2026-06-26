@@ -68,12 +68,6 @@ npm run dev:backend
 npm run dev:frontend
 ```
 
-### 🚀 Deployment
-
-The optimal setup for this monorepo is deploying the backend and frontend separately:
-- **Frontend:** Perfect for **Vercel**. Point it to the `frontend/` directory, set build command to `npm run build`, and output to `dist/cysafeclick-angular/browser`.
-- **Backend:** Perfect for **Render** or **Railway**. Point to `backend/`, and run `npm start`. Set `FRONTEND_URL` in environment variables.
-
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
