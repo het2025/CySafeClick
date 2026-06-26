@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "safeclick-angular": {
+    "cysafeclick-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
-            "outputPath": "dist/safeclick-angular",
+            "outputPath": "dist/cysafeclick-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "safeclick-angular:build:production"
+              "buildTarget": "cysafeclick-angular:build:production"
             },
             "development": {
-              "buildTarget": "safeclick-angular:build:development",
+              "buildTarget": "cysafeclick-angular:build:development",
               "proxyConfig": "proxy.conf.json"
             }
           },
