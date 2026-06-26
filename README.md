@@ -11,9 +11,9 @@ CySafeClick is a dedicated **Cyber Awareness Initiative** designed to empower In
 ## 🇮🇳 Our Mission
 
 To provide every Indian user with a powerful shield of knowledge. We focus on:
-- **Demystifying Scams:** Explaining complex frauds like UPI-collect, Sextortion, and KYC-traps in simple terms.
-- **Language Inclusivity:** Providing content in both Hindi and English.
-- **Real-time Detection:** Offering a browser extension to guard against phishing as you browse.
+- [x] **Demystifying Scams:** Explaining complex frauds like UPI-collect, Sextortion, and KYC-traps in simple terms.
+- [x] **Language Inclusivity:** Providing content in both Hindi and English.
+- [x] **Real-time Detection:** Offering a browser extension to guard against phishing as you browse.
 
 ## 🛡️ Awareness Modules & Tools
 
