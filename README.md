@@ -90,6 +90,10 @@ npm run dev:backend
 npm run dev:frontend
 ```
 
+## 🤝 Community & Feedback
+
+CySafeClick is constantly evolving to tackle the latest digital threats in India. If you have suggestions, spot a bug, or want to contribute new scam profiles to our database, please check out our [Contributing Guide](CONTRIBUTING.md) or open an issue on GitHub. Together, we can build a safer digital India!
+
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
