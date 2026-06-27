@@ -15,6 +15,13 @@ To provide every Indian user with a powerful shield of knowledge. We focus on:
 - [x] **Language Inclusivity:** Providing content in both Hindi and English.
 - [x] **Real-time Detection:** Offering a browser extension to guard against phishing as you browse.
 
+## 👥 Target Audience
+
+CySafeClick is built for everyone, with special focus on:
+- **Senior Citizens:** A dedicated "Senior Safe Mode" with large text, simple navigation, and voice assistance.
+- **Students & Youth:** Interactive quizzes and password labs to build strong digital habits early.
+- **Rural Internet Users:** Bilingual support (Hindi/English) to break language barriers in cyber education.
+
 ## 🛡️ Awareness Modules & Tools
 
 - **India Threat Map:** Live visualization of cybercrime hotspots across different states.
