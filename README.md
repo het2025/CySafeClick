@@ -31,6 +31,14 @@ CySafeClick is built for everyone, with special focus on:
 - **Password Lab:** An educational tool to understand what makes a password truly "unhackable."
 - **Direct Reporting Guide:** A clear, step-by-step path to the 1930 Helpline and the National Cyber Crime Reporting Portal.
 
+## 💻 Tech Stack
+
+This project is built using a modern, scalable full-stack architecture:
+- **Frontend:** Angular 17, TypeScript, TailwindCSS, SCSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB Atlas
+- **AI Integration:** Groq API (for Cyber Mitra AI)
+
 ## 📖 How to Use This Platform
 
 This project is intended as a public awareness resource. 
