@@ -22,6 +22,10 @@ CySafeClick is built for everyone, with special focus on:
 - **Students & Youth:** Interactive quizzes and password labs to build strong digital habits early.
 - **Rural Internet Users:** Bilingual support (Hindi/English) to break language barriers in cyber education.
 
+## 🌍 Localization (Bilingual Platform)
+
+To reach the heartland of India, CySafeClick features a robust internal translation engine. Users can instantly switch the entire platform between **English** and **Hindi (हिंदी)** without page reloads, ensuring complex cyber hygiene concepts are understood natively.
+
 ## 🛡️ Awareness Modules & Tools
 
 - **India Threat Map:** Live visualization of cybercrime hotspots across different states.
