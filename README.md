@@ -45,7 +45,10 @@ This project is intended as a public awareness resource.
 
 ### For Users / Learners
 - **Browse the Site:** Simply open `index.html` (or the hosted URL) to access all awareness modules.
-- **Install the Guard:** Add the `cysafeclick-extension` to your browser for real-time safety warnings.
+- **Install the CySafeClick Guard Extension:** Our custom browser extension runs quietly in the background to provide:
+  - 🛑 Real-time blocking of known malicious URLs
+  - 🔍 Visual indicators of safe vs fake government domains
+  - 🌐 Direct shortcut to the reporting portal
 
 ### For Developers / Contributors
 If you wish to host this platform or contribute to its development:
