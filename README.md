@@ -94,6 +94,13 @@ npm run dev:frontend
 
 CySafeClick is constantly evolving to tackle the latest digital threats in India. If you have suggestions, spot a bug, or want to contribute new scam profiles to our database, please check out our [Contributing Guide](CONTRIBUTING.md) or open an issue on GitHub. Together, we can build a safer digital India!
 
+## 🔒 Data Privacy Guarantee
+
+CySafeClick operates on a **zero-trust data policy**. 
+- We do not store personal identifiable information (PII).
+- Threat reports and AI chat histories are processed securely and scrubbed of sensitive data.
+- The platform is designed purely for education and awareness.
+
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
