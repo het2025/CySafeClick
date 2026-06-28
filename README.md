@@ -29,7 +29,7 @@ To reach the heartland of India, CySafeClick features a robust internal translat
 ## 🛡️ Awareness Modules & Tools
 
 - **India Threat Map:** Live visualization of cybercrime hotspots across different states.
-- **Cyber Mitra AI:** A 24/7 bilingual assistant to help users recover from digital fraud.
+- **Cyber Mitra AI:** A 24/7 bilingual assistant powered by Groq. It acts as a digital first-responder to help users identify if they are being scammed and guides them through recovery steps.
 - **Scam Stories:** Real-life case studies of digital fraud to help users recognize red flags.
 - **Phishing Guard:** A protective extension that alerts you to suspicious links and fake government websites.
 - **Password Lab:** An educational tool to understand what makes a password truly "unhackable."
