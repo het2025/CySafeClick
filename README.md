@@ -84,8 +84,14 @@ If you wish to host this platform or contribute to its development:
    - `GROQ_API_KEY` → Your Groq API key (free at [console.groq.com](https://console.groq.com))
 
 3. **Install all dependencies:**
+   The easiest way is to use the monorepo script:
    ```bash
    npm run install:all
+   ```
+   *Fallback:* If the above command fails, you can install them manually:
+   ```bash
+   cd backend && npm install
+   cd ../frontend && npm install
    ```
 
 > **⚠️ Note:** The `.env` file is intentionally excluded from this repository via `.gitignore`. Never commit real API keys or database credentials.
