@@ -7,6 +7,16 @@
 
 CySafeClick is a dedicated **Cyber Awareness Initiative** designed to empower Indian citizens with the knowledge and tools to protect themselves against the growing threat of cybercrime. This is an educational platform, not a commercial software installation.
 
+## 📑 Table of Contents
+- [Our Mission](#-our-mission)
+- [Target Audience](#-target-audience)
+- [Localization](#-localization-bilingual-platform)
+- [Modules & Tools](#-awareness-modules--tools)
+- [Tech Stack](#-tech-stack)
+- [How to Use](#-how-to-use-this-platform)
+- [Community & Feedback](#-community--feedback)
+- [Data Privacy Guarantee](#-data-privacy-guarantee)
+
 
 ## 🇮🇳 Our Mission
 
