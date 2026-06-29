@@ -112,7 +112,7 @@ npm run dev:frontend
 
 ## 🤝 Community & Feedback
 
-CySafeClick is constantly evolving to tackle the latest digital threats in India. If you have suggestions, spot a bug, or want to contribute new scam profiles to our database, please check out our [Contributing Guide](CONTRIBUTING.md) or open an issue on GitHub. Together, we can build a safer digital India!
+CySafeClick is a **100% free and open-source** initiative, constantly evolving to tackle the latest digital threats in India. If you have suggestions, spot a bug, or want to contribute new scam profiles to our database, please check out our [Contributing Guide](CONTRIBUTING.md) or open an issue on GitHub. Together, we can build a safer digital India!
 
 ## 🔒 Data Privacy Guarantee
 
