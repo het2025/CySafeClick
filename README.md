@@ -53,6 +53,7 @@ This project is built using a modern, scalable full-stack architecture:
 - **PWA Ready:** Configured with `ngsw-config.json` for offline caching and home-screen installation.
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB Atlas
+- **Security:** Helmet.js, Express Rate Limiter, strict CORS
 - **AI Integration:** Groq API (for Cyber Mitra AI)
 
 ## 📖 How to Use This Platform
