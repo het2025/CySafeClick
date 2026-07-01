@@ -137,7 +137,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## ⚠️ Disclaimer
 
-> This platform is for **educational purposes only**. It does not provide legal advice or official law enforcement services. Users are always encouraged to report crimes through the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in).
+> This platform is for **educational purposes only**. It does not provide legal advice or official law enforcement services. Users are always encouraged to report crimes immediately by dialing **1930** or visiting the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in).
 
 ---
 
