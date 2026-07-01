@@ -51,6 +51,7 @@ To reach the heartland of India, CySafeClick features a robust internal translat
 - **Scam Fact Checker:** An instant verification tool to check if a viral WhatsApp forward or SMS offer is real or fake.
 - **Cyber Glossary:** A dictionary of complex cyber terms broken down into simple, easy-to-understand definitions.
 - **Daily Cyber Tips:** Bite-sized, actionable security advice to keep users updated on best practices.
+- **Student Safety Module:** Specialized gamified curriculum focusing on social media hygiene, cyberbullying, and gaming safety.
 
 ## 💻 Tech Stack
 
