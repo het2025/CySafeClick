@@ -66,6 +66,7 @@ This project is built using a modern, scalable full-stack architecture:
 This project is intended as a public awareness resource. 
 
 ### For Users / Learners
+- **No Registration Required:** You do not need to create an account or provide an email to use the tools.
 - **Browse the Site:** Simply open `index.html` (or the hosted URL) to access all awareness modules.
 - **Install the CySafeClick Guard Extension:** Our custom browser extension runs quietly in the background to provide:
   - 🛑 Real-time blocking of known malicious URLs
