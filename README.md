@@ -49,6 +49,7 @@ To reach the heartland of India, CySafeClick features a robust internal translat
 - **Direct Reporting Guide:** A clear, step-by-step path detailing exactly how to file an official FIR through the 1930 Helpline and the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in).
 - **Personal Safety Score:** A quick interactive quiz that audits your daily online habits and calculates your vulnerability to scams.
 - **Scam Fact Checker:** An instant verification tool to check if a viral WhatsApp forward or SMS offer is real or fake.
+- **Cyber Glossary:** A dictionary of complex cyber terms broken down into simple, easy-to-understand definitions.
 - **Daily Cyber Tips:** Bite-sized, actionable security advice to keep users updated on best practices.
 
 ## 💻 Tech Stack
