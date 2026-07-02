@@ -27,6 +27,9 @@ To provide every Indian user with a powerful shield of knowledge. We focus on:
 - [x] **Language Inclusivity:** Providing content in both Hindi and English.
 - [x] **Real-time Detection:** Offering a browser extension to guard against phishing as you browse.
 
+### 💡 Why We Built This
+With India experiencing a rapid digital transformation, cybercriminals are constantly innovating new ways to exploit the public. CySafeClick bridges the digital literacy gap by providing an accessible, free, and completely secure sandbox where users can learn to spot scams before they become victims.
+
 ## 👥 Target Audience
 
 CySafeClick is built for everyone, with special focus on:
