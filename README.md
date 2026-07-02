@@ -34,7 +34,7 @@ With India experiencing a rapid digital transformation, cybercriminals are const
 
 CySafeClick is built for everyone, with special focus on:
 - **Senior Citizens:** A dedicated "Senior Safe Mode" with large text, simple navigation, and voice assistance.
-- **Students & Youth:** Interactive quizzes and password labs to build strong digital habits early.
+- **Students & Youth:** Gamified learning modules, interactive quizzes, and password labs to build strong digital habits early.
 - **Rural Internet Users:** Bilingual support (Hindi/English) to break language barriers in cyber education.
 
 ## 🌍 Localization (Bilingual Platform)
