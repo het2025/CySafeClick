@@ -140,6 +140,8 @@ CySafeClick operates on a **zero-trust data policy**.
 - Threat reports and AI chat histories are processed securely and scrubbed of sensitive data.
 - The platform is designed purely for education and awareness.
 
+For more details on our secure development lifecycle, vulnerability reporting, and automated checks, please read our [Security Policy](SECURITY.md).
+
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
