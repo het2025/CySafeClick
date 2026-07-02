@@ -59,12 +59,17 @@ To reach the heartland of India, CySafeClick features a robust internal translat
 ## 💻 Tech Stack
 
 This project is built using a modern, scalable full-stack architecture:
-- **Frontend:** Angular 17, TypeScript, TailwindCSS, SCSS
+
+### Frontend (Angular Workspace)
+- **Framework:** Angular 17 (TypeScript, SCSS)
+- **Styling:** TailwindCSS for rapid, utility-first styling.
 - **UI Architecture:** 100% Mobile-first responsive design using CSS Grid and Flexbox.
 - **PWA Ready:** Configured with `ngsw-config.json` for offline caching and home-screen installation.
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB Atlas
-- **Security:** Helmet.js, Express Rate Limiter, strict CORS
+
+### Backend (Node.js API)
+- **Runtime & Framework:** Node.js, Express.js
+- **Database:** MongoDB Atlas (Mongoose ODM)
+- **Security:** Helmet.js, Express Rate Limiter, strict CORS policies.
 - **AI Integration:** Groq API (for Cyber Mitra AI)
 
 ## 📖 How to Use This Platform
