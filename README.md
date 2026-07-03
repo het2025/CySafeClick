@@ -72,6 +72,7 @@ This project is built using a modern, scalable full-stack architecture:
 
 ### Backend (Node.js API)
 - **Runtime & Framework:** Node.js, Express.js
+- **Architecture:** Fully decoupled RESTful API design.
 - **Database:** MongoDB Atlas (Mongoose ODM)
 - **Security:** Helmet.js, Express Rate Limiter, strict CORS policies.
 - **AI Integration:** Groq API (for Cyber Mitra AI)
