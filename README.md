@@ -77,6 +77,7 @@ This project is built using a modern, scalable full-stack architecture:
 - **Architecture:** Fully decoupled RESTful API design.
 - **Database:** MongoDB Atlas (Mongoose ODM)
 - **Security:** Helmet.js, Express Rate Limiter, strict CORS policies.
+- **Environment:** Secure local `dotenv` configuration (keys excluded from VCS).
 - **AI Integration:** Groq API (for Cyber Mitra AI)
 
 ## 📖 How to Use This Platform
