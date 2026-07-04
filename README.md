@@ -50,7 +50,7 @@ All of our modules are designed to be highly interactive and beginner-friendly, 
 - **Cyber Law Guide:** A simplified breakdown of the IT Act (2000) and BNS so citizens understand their digital rights.
 - **Scam Stories:** Real-life case studies of digital fraud to help users recognize red flags.
 - **Phishing Guard:** A protective extension that alerts you to suspicious links and fake government websites.
-- **Password Lab:** An educational tool to understand what makes a password truly "unhackable."
+- **Password Lab:** An educational tool featuring real-time entropy calculation to help users understand what makes a password truly "unhackable."
 - **Direct Reporting Guide:** A clear, step-by-step path detailing exactly how to file an official FIR through the 1930 Helpline and the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in).
 - **Personal Safety Score:** A quick interactive quiz that audits your daily online habits and calculates your vulnerability to scams.
 - **Scam Fact Checker:** An instant verification tool to check if a viral WhatsApp forward or SMS offer is real or fake.
