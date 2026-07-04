@@ -4,6 +4,7 @@
 ![NodeJS](https://img.shields.io/badge/Node.js-Express-green.svg?logo=node.js)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248.svg?logo=mongodb)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active_Development-brightgreen.svg)
 
 CySafeClick is a dedicated **Cyber Awareness Initiative** designed to empower Indian citizens with the knowledge and tools to protect themselves against the growing threat of cybercrime. This is an educational platform, not a commercial software installation.
