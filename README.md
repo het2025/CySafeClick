@@ -4,6 +4,7 @@
 ![NodeJS](https://img.shields.io/badge/Node.js-Express-green.svg?logo=node.js)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248.svg?logo=mongodb)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Open Source](https://img.shields.io/badge/Open_Source-100%25-green.svg)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active_Development-brightgreen.svg)
 
