@@ -137,6 +137,13 @@ npm run dev:backend
 npm run dev:frontend
 ```
 
+## 🚀 Future Roadmap
+
+- [ ] Interactive simulated phishing tests for users.
+- [ ] Direct integration with local state police APIs (where available).
+- [ ] Regional language expansion (Tamil, Telugu, Marathi).
+- [ ] WhatsApp bot integration for the Cyber Mitra AI.
+
 ## 🤝 Community & Feedback
 
 CySafeClick is a **100% free and open-source** initiative, constantly evolving to tackle the latest digital threats in India. If you have suggestions, spot a bug, or want to contribute new scam profiles to our database, please check out our [Contributing Guide](CONTRIBUTING.md) or [open an issue](https://github.com/het2025/CySafeClick/issues) on GitHub. Together, we can build a safer digital India!
