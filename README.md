@@ -145,6 +145,7 @@ npm run dev:frontend
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
+- [ ] Voice-to-text input support for accessibility in the AI chat.
 
 ## 🤝 Community & Feedback
 
