@@ -52,7 +52,7 @@ All of our modules are designed to be highly interactive and beginner-friendly, 
 - **Cyber Mitra AI:** A 24/7 bilingual assistant powered by Groq. It acts as a digital first-responder to help users identify if they are being scammed and guides them through recovery steps.
 - **Cyber Law Guide:** A simplified breakdown of the IT Act (2000) and BNS so citizens understand their digital rights.
 - **Scam Stories:** Real-life anonymized case studies of digital fraud to help users recognize red flags without exposing victim details.
-- **Phishing Guard:** A protective extension that alerts you to suspicious links and fake government websites.
+- **Phishing Guard:** A lightweight, protective browser extension that alerts you to suspicious links and fake government websites without draining your battery.
 - **Password Lab:** An educational tool featuring real-time entropy calculation to help users understand what makes a password truly "unhackable."
 - **Direct Reporting Guide:** A zero-friction, step-by-step UI detailing exactly how to file an official FIR through the 1930 Helpline and the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in).
 - **Personal Safety Score:** A quick interactive quiz that audits your daily online habits and calculates your vulnerability to scams.
