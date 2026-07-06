@@ -70,6 +70,7 @@ This project is built using a modern, scalable full-stack architecture:
 - **Framework:** Angular 17 (TypeScript, SCSS)
 - **Styling:** TailwindCSS for rapid, utility-first styling.
 - **Compatibility:** Fully tested across Chrome, Firefox, Safari, and Edge.
+- **Performance:** Optimized with Angular AOT compilation and route-level lazy loading for fast initial paint.
 - **Accessibility:** Built with WCAG standards in mind to support screen readers and high-contrast modes.
 - **UI Architecture:** 100% Mobile-first responsive design featuring an automated Dark Mode for comfortable nighttime reading.
 - **PWA Ready:** Configured with `ngsw-config.json` for offline caching and home-screen installation.
