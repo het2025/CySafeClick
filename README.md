@@ -54,7 +54,7 @@ All of our modules are designed to be highly interactive and beginner-friendly, 
 - **Scam Stories:** Real-life anonymized case studies of digital fraud to help users recognize red flags without exposing victim details.
 - **Phishing Guard:** A protective extension that alerts you to suspicious links and fake government websites.
 - **Password Lab:** An educational tool featuring real-time entropy calculation to help users understand what makes a password truly "unhackable."
-- **Direct Reporting Guide:** A clear, step-by-step path detailing exactly how to file an official FIR through the 1930 Helpline and the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in).
+- **Direct Reporting Guide:** A zero-friction, step-by-step UI detailing exactly how to file an official FIR through the 1930 Helpline and the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in).
 - **Personal Safety Score:** A quick interactive quiz that audits your daily online habits and calculates your vulnerability to scams.
 - **Scam Fact Checker:** An instant verification tool to check if a viral WhatsApp forward or SMS offer is real or fake.
 - **Cyber Glossary:** A dictionary of complex cyber terms broken down into simple, easy-to-understand definitions, including modern digital finance and crypto terminology.
