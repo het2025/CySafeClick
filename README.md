@@ -7,6 +7,7 @@
 ![Open Source](https://img.shields.io/badge/Open_Source-100%25-green.svg)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active_Development-brightgreen.svg)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 CySafeClick is a dedicated **Cyber Awareness Initiative** designed to empower Indian citizens with the knowledge and tools to protect themselves against the growing threat of cybercrime. This is an educational platform, not a commercial software installation.
 
