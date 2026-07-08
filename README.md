@@ -100,7 +100,7 @@ This project is intended as a public awareness resource.
 ### For Developers / Contributors
 If you wish to host this platform or contribute to its development:
 
-0. **Prerequisites:** Make sure you have Node.js (v18+) and npm installed.
+0. **Prerequisites:** Make sure you have `git`, Node.js (v18+), and npm installed.
 
 1. **Clone the repository.**
    ```bash
