@@ -1,4 +1,4 @@
-# CySafeClick — Cyber Safety Awareness Platform for India
+# CySafeClick — Cyber Safety Awareness Platform for India 🇮🇳
 
 ![Angular](https://img.shields.io/badge/Angular-17-red.svg?logo=angular)
 ![NodeJS](https://img.shields.io/badge/Node.js-Express-green.svg?logo=node.js)
