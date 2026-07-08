@@ -144,6 +144,7 @@ npm run dev:frontend
 ## 🚀 Future Roadmap
 
 - [ ] Interactive simulated phishing tests for users.
+- [ ] Gamified leaderboards to encourage community participation in safety quizzes.
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
