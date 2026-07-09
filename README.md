@@ -149,6 +149,7 @@ npm run dev:frontend
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
 - [ ] Voice-to-text input support for accessibility in the AI chat.
+- [ ] Shareable personal safety report card users can send to family members.
 
 ## 🤝 Community & Feedback
 
