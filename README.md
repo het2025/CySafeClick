@@ -18,6 +18,7 @@ CySafeClick is a dedicated **Cyber Awareness Initiative** designed to empower In
 - [Modules & Tools](#-awareness-modules--tools)
 - [Tech Stack](#-tech-stack)
 - [How to Use](#-how-to-use-this-platform)
+- [Future Roadmap](#-future-roadmap)
 - [Community & Feedback](#-community--feedback)
 - [Data Privacy Guarantee](#-data-privacy-guarantee)
 - [Disclaimer](#-disclaimer)
