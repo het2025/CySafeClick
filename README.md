@@ -83,7 +83,7 @@ This project is built using a modern, scalable full-stack architecture:
 - **Performance:** Optimized with Angular AOT compilation and route-level lazy loading for fast initial paint.
 - **Accessibility:** Built with WCAG standards in mind to support screen readers and high-contrast modes.
 - **UI Architecture:** 100% Mobile-first responsive design featuring an automated Dark Mode for comfortable nighttime reading.
-- **PWA Ready:** Configured with `ngsw-config.json` for offline caching and home-screen installation.
+- **PWA Ready:** Configured with `ngsw-config.json` for offline caching — key awareness content remains accessible even without an internet connection.
 
 ### Backend (Node.js API)
 - **Runtime & Framework:** Node.js, Express.js
