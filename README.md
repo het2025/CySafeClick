@@ -36,6 +36,11 @@ To provide every Indian user with a powerful shield of knowledge. We focus on:
 ### 💡 Why We Built This
 With India experiencing a rapid digital transformation, cybercriminals are constantly innovating new ways to exploit the public. CySafeClick bridges the digital literacy gap by providing an accessible, free, and completely secure sandbox where users can learn to spot scams before they become victims.
 
+### 📊 Did You Know?
+- India reported over **14 lakh cybercrime cases** registered on the national portal in a single year.
+- **UPI fraud** is the single most common type of digital crime targeting Indian citizens.
+- Most victims are **first-time internet users** who lack basic digital literacy resources.
+
 ## 👥 Target Audience
 
 CySafeClick is built for everyone, with special focus on:
