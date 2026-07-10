@@ -1,6 +1,7 @@
 # CySafeClick — Cyber Safety Awareness Platform for India 🇮🇳
 
 ![Angular](https://img.shields.io/badge/Angular-17-red.svg?logo=angular)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg?logo=typescript)
 ![NodeJS](https://img.shields.io/badge/Node.js-Express-green.svg?logo=node.js)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248.svg?logo=mongodb)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
