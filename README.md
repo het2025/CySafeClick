@@ -51,7 +51,7 @@ CySafeClick is built for everyone, with special focus on:
 
 ## 🌍 Localization (Bilingual Platform)
 
-To reach the heartland of India, CySafeClick features a robust internal translation engine. Users can instantly switch the entire platform between **English** and **Hindi (हिंदी)** without page reloads, ensuring complex cyber hygiene concepts are understood natively.
+To reach the heartland of India, CySafeClick features a robust internal translation engine covering **1,000+ UI strings**. Users can instantly switch the entire platform between **English** and **Hindi (हिंदी)** without page reloads, ensuring complex cyber hygiene concepts are understood natively.
 
 ## 🛡️ Awareness Modules & Tools
 
