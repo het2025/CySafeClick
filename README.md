@@ -159,6 +159,7 @@ npm run dev:frontend
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
 - [ ] Voice-to-text input support for accessibility in the AI chat.
 - [ ] Shareable personal safety report card users can send to family members.
+- [ ] Offline-first Android/iOS mobile app for low-connectivity rural areas.
 
 ## 🤝 Community & Feedback
 
