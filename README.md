@@ -33,6 +33,7 @@ To provide every Indian user with a powerful shield of knowledge. We focus on:
 - [x] **Real-time Detection:** Offering a browser extension to guard against phishing as you browse.
 - [x] **Digital Hygiene:** Educating users on strong passwords, 2FA, and secure social media habits.
 - [x] **Zero Monetization:** Committing to a 100% free platform with no ads, ever.
+- [x] **Community Empowerment:** Building a network of digitally aware citizens who can protect their families and neighbors.
 
 ### 💡 Why We Built This
 With India experiencing a rapid digital transformation, cybercriminals are constantly innovating new ways to exploit the public. CySafeClick bridges the digital literacy gap by providing an accessible, free, and completely secure sandbox where users can learn to spot scams before they become victims.
