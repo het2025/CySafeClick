@@ -67,7 +67,7 @@ All of our modules are designed to be highly interactive and beginner-friendly, 
 - **Password Lab:** An educational tool featuring real-time entropy calculation to help users understand what makes a password truly "unhackable."
 - **Direct Reporting Guide:** A zero-friction, step-by-step UI detailing exactly how to file an official FIR through the 1930 Helpline and the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in).
 - **Personal Safety Score:** A quick interactive quiz that audits your daily online habits, calculates your vulnerability to scams, and generates a personalized action plan to improve your digital safety.
-- **Scam Fact Checker:** An instant verification tool to check if a viral WhatsApp forward or SMS offer is real or fake.
+- **Scam Fact Checker:** An instant verification tool to check if a viral WhatsApp forward, SMS offer, lottery win, or OTP request is real or a known scam.
 - **Cyber Glossary:** A dictionary of complex cyber terms broken down into simple, easy-to-understand definitions, including modern digital finance and crypto terminology.
 - **Daily Cyber Tips:** Bite-sized, actionable security advice delivered via PWA web push notifications to keep users updated on best practices.
 - **Student Safety Module:** Specialized gamified curriculum focusing on social media hygiene, cyberbullying, and gaming safety.
