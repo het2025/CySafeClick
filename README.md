@@ -36,7 +36,7 @@ To provide every Indian user with a powerful shield of knowledge. We focus on:
 - [x] **Community Empowerment:** Building a network of digitally aware citizens who can protect their families and neighbors.
 
 ### 💡 Why We Built This
-With India experiencing a rapid digital transformation, cybercriminals are constantly innovating new ways to exploit the public. CySafeClick bridges the digital literacy gap by providing an accessible, free, and completely secure sandbox where users can learn to spot scams before they become victims.
+With India experiencing a rapid digital transformation, cybercriminals are constantly innovating new ways to exploit the public. CySafeClick bridges the digital literacy gap by providing an accessible, free, and completely secure sandbox where users can learn to spot scams before they become victims. Built entirely by a passionate community of open-source volunteers, this platform prioritizes public safety over profit.
 
 ### 📊 Did You Know?
 - India reported over **14 lakh cybercrime cases** registered on the national portal in a single year.
