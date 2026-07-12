@@ -94,6 +94,10 @@ This project is built using a modern, scalable full-stack architecture:
 - **Environment:** Secure local `dotenv` configuration (keys excluded from VCS).
 - **AI Integration:** Groq API (for Cyber Mitra AI)
 
+### Browser Extension
+- **Architecture:** Manifest V3 for enhanced security and privacy.
+- **Functionality:** Real-time DOM scanning, cross-origin communication with background service workers.
+
 ## 📖 How to Use This Platform
 
 This project is intended as a public awareness resource. 
