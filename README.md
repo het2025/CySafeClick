@@ -32,7 +32,7 @@ To provide every Indian user with a powerful shield of knowledge. We focus on:
 - [x] **Language Inclusivity:** Providing content in both Hindi and English.
 - [x] **Real-time Detection:** Offering a browser extension to guard against phishing as you browse.
 - [x] **Digital Hygiene:** Educating users on strong passwords, 2FA, and secure social media habits.
-- [x] **Zero Monetization:** Committing to a 100% free platform with no ads, ever.
+- [x] **Zero Monetization:** Committing to a 100% free platform with no ads, ever — because safety education shouldn't be gated by profit.
 - [x] **Community Empowerment:** Building a network of digitally aware citizens who can protect their families and neighbors.
 
 ### 💡 Why We Built This
