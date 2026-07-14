@@ -174,6 +174,7 @@ CySafeClick is a **100% free and open-source** initiative, constantly evolving t
 
 CySafeClick operates on a **zero-trust data policy**. 
 - We do not store personal identifiable information (PII).
+- **No Registration Required:** You do not need to create an account, provide an email, or share a phone number to use the tools.
 - **No Ads, No Tracking:** We use zero third-party trackers, ad networks, or tracking cookies.
 - **Local Storage Only:** User preferences (like theme and language) are saved locally on your device, not on our servers.
 - **Open Source Transparency:** All of our code is publicly available for security auditing by anyone.
