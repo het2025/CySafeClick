@@ -62,7 +62,7 @@ All of our modules are designed to be highly interactive and beginner-friendly, 
 - **India Threat Map:** Live interactive heatmaps of cybercrime hotspots across different Indian states, featuring state-wise filtering to break down the most common scams geographically.
 - **Cyber Mitra AI:** A 24/7 bilingual assistant powered by Groq with sub-second response times. It acts as a digital first-responder to help users identify if they are being scammed and guides them through recovery steps.
 - **Cyber Law Guide:** A simplified breakdown of the IT Act (2000) fully aligned with the new **Bharatiya Nyaya Sanhita (BNS)** so citizens understand their digital rights.
-- **Scam Stories:** Real-life anonymized case studies of digital fraud to help users recognize red flags without exposing victim details.
+- **Scam Stories:** Real-life anonymized case studies of digital fraud (updated weekly) to help users recognize red flags without exposing victim details.
 - **Phishing Guard:** A lightweight, protective browser extension that alerts you to suspicious links and fake government websites without draining your battery.
 - **Password Lab:** An educational tool featuring real-time entropy calculation to help users understand what makes a password truly "unhackable."
 - **Direct Reporting Guide:** A zero-friction, step-by-step UI detailing exactly how to file an official FIR, simplifying complex forms for the 1930 Helpline and the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in).
