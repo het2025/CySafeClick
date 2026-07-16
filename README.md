@@ -3,6 +3,7 @@
 ![Angular](https://img.shields.io/badge/Angular-17-red.svg?logo=angular)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg?logo=typescript)
 ![NodeJS](https://img.shields.io/badge/Node.js-Express-green.svg?logo=node.js)
+![AI Powered](https://img.shields.io/badge/AI_Powered-Groq_Llama3-purple.svg)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248.svg?logo=mongodb)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Open Source](https://img.shields.io/badge/Open_Source-100%25-green.svg)
