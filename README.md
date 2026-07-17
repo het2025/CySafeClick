@@ -174,7 +174,7 @@ CySafeClick is a **100% free and open-source** initiative, constantly evolving t
 
 ## 🔒 Data Privacy Guarantee
 
-CySafeClick operates on a **zero-trust data policy**. 
+CySafeClick operates on a **zero-trust data policy** fully compliant with India's **DPDP Act (2023)**. 
 - We do not store personal identifiable information (PII).
 - **No Registration Required:** You do not need to create an account, provide an email, or share a phone number to use the tools.
 - **No Ads, No Tracking:** We use zero third-party trackers, ad networks, or tracking cookies.
