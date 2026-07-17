@@ -164,6 +164,7 @@ npm run dev:frontend
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
 - [ ] Voice-to-text input support for accessibility in the AI chat.
+- [ ] Weekly Audio-based Cyber Tips for visually impaired users.
 - [ ] Shareable personal safety report card users can send to family members.
 - [ ] Live Cybersecurity News Feed integration localized for Indian users.
 - [ ] Offline-first Android/iOS mobile app (via Ionic Capacitor) for low-connectivity rural areas.
