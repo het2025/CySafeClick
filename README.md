@@ -159,6 +159,7 @@ npm run dev:frontend
 ## 🚀 Future Roadmap
 
 - [ ] Interactive simulated phishing tests for users.
+- [ ] Interactive Financial Fraud Simulator (sandbox environment).
 - [ ] Gamified leaderboards to encourage community participation in safety quizzes.
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
