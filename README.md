@@ -98,7 +98,7 @@ This project is built using a modern, scalable full-stack architecture:
 
 ### Browser Extension
 - **Architecture:** Manifest V3 for enhanced security and privacy.
-- **Functionality:** Real-time DOM scanning, cross-origin communication with background service workers.
+- **Functionality:** Real-time DOM scanning, cross-origin communication with background service workers, and automatic blocking of malicious hidden iframes.
 
 ## 📖 How to Use This Platform
 
