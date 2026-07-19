@@ -196,7 +196,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## ⚠️ Disclaimer
 
-> This platform is for **educational purposes only**. It does not provide legal advice or official law enforcement services. Users are always encouraged to report financial cybercrimes immediately by dialing **1930** or visiting the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in). For immediate physical emergencies, please dial **112**.
+> This platform is for **educational purposes only**. It does not provide legal advice or official law enforcement services, and CySafeClick is an independent open-source initiative not formally affiliated with the Government of India. Users are always encouraged to report financial cybercrimes immediately by dialing **1930** or visiting the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in). For immediate physical emergencies, please dial **112**.
 
 ---
 
