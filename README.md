@@ -68,7 +68,7 @@ All of our modules are designed to be highly interactive and beginner-friendly, 
 - **Phishing Guard:** A lightweight, protective browser extension that alerts you to suspicious links and zero-day fake government websites without draining your battery.
 - **Password Lab:** An educational tool featuring real-time, client-side (offline) entropy calculation to help users understand what makes a password truly "unhackable" without sending data to a server.
 - **Direct Reporting Guide:** A zero-friction, step-by-step UI detailing exactly how to file an official FIR, simplifying complex forms for the 1930 Helpline and the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in).
-- **E-Commerce Safety Guide:** Learn how to identify fake shopping websites, verify seller authenticity, and use secure payment methods to prevent financial loss.
+- **E-Commerce Safety Guide:** Learn how to identify fake shopping websites, detect dropshipping scams, verify seller authenticity, and use secure payment methods to prevent financial loss.
 - **Personal Safety Score:** A quick interactive quiz that audits your daily online habits, calculates your vulnerability to scams, and generates a personalized action plan to improve your digital safety.
 - **Scam Fact Checker:** An instant verification tool to check if a viral WhatsApp forward, SMS offer, lottery win, or OTP request is real or a known scam.
 - **Cyber Glossary:** A dictionary of complex cyber terms broken down into simple, easy-to-understand definitions, including modern UPI, Digital Wallet, and crypto terminology.
