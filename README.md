@@ -162,6 +162,7 @@ npm run dev:frontend
 - [ ] Interactive simulated phishing tests for users.
 - [ ] Interactive Financial Fraud Simulator (sandbox environment).
 - [ ] Gamified leaderboards to encourage community participation in safety quizzes.
+- [ ] Digital Forensics Basics module specifically designed for university students.
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
