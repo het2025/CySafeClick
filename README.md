@@ -170,6 +170,7 @@ npm run dev:frontend
 - [ ] Shareable personal safety report card users can send to family members.
 - [ ] National Cybersecurity Awareness Month (October) special campaigns and interactive quizzes.
 - [ ] Live Cybersecurity News Feed integration localized for Indian users.
+- [ ] Community Bug Bounty Program to incentivize responsible vulnerability disclosure.
 - [ ] Offline-first Android/iOS mobile app (via Ionic Capacitor) for low-connectivity rural areas.
 
 ## 🤝 Community & Feedback
