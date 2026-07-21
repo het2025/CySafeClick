@@ -73,7 +73,7 @@ All of our modules are designed to be highly interactive and beginner-friendly, 
 - **Scam Fact Checker:** An instant verification tool that cross-references a crowdsourced national database to check if a viral WhatsApp forward, SMS offer, lottery win, or OTP request is real or a known scam.
 - **Cyber Glossary:** A dictionary of complex cyber terms broken down into simple, easy-to-understand definitions, including modern UPI, Digital Wallet, and crypto terminology.
 - **Daily Cyber Tips:** Bite-sized, actionable security advice curated by certified cybersecurity professionals and delivered in regional languages via PWA web push notifications.
-- **Student Safety Module:** Specialized gamified curriculum focusing on social media hygiene, cyberbullying prevention, and gaming safety.
+- **Student Safety Module:** Specialized gamified curriculum focusing on social media hygiene, interactive cyberbullying prevention scenarios, and gaming safety.
 - **State-Specific Helplines:** A comprehensive directory of localized cyber cell contact numbers across India, featuring 1-click calling on mobile devices.
 
 ## 💻 Tech Stack
