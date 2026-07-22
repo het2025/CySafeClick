@@ -78,7 +78,7 @@ All of our modules are designed to be highly interactive and beginner-friendly, 
 
 ## 💻 Tech Stack
 
-This project is built using a modern, scalable full-stack architecture:
+This project is built using a modern, scalable, and serverless-ready full-stack architecture:
 
 ### Frontend (Angular Workspace)
 - **Framework:** Angular 17 (TypeScript, SCSS)
