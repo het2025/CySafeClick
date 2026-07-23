@@ -174,6 +174,7 @@ npm run dev:frontend
 - [ ] National Cybersecurity Awareness Month (October) special campaigns and interactive quizzes.
 - [ ] Live Cybersecurity News Feed integration localized for Indian users.
 - [ ] Personalized Data Breach Notification Tracker alerting users if their credentials are compromised.
+- [ ] API rate limit monitoring dashboard for external community developers.
 - [ ] Community Bug Bounty Program to incentivize responsible vulnerability disclosure.
 - [ ] Offline-first Android/iOS mobile app (via Ionic Capacitor) for low-connectivity rural areas.
 
