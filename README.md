@@ -164,6 +164,7 @@ npm run dev:frontend
 - [ ] Gamified leaderboards to encourage community participation in safety quizzes.
 - [ ] Blockchain-based certificate issuance for verified "Cyber Champions".
 - [ ] Annual Cybersecurity Hackathon for students to build awareness solutions.
+- [ ] Open-source intelligence (OSINT) gathering tools for advanced users.
 - [ ] Digital Forensics Basics module specifically designed for university students.
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
