@@ -92,7 +92,7 @@ This project is built using a modern, scalable, and serverless-ready full-stack 
 ### Backend (Node.js API)
 - **Runtime & Framework:** Node.js, Express.js
 - **Architecture:** Fully decoupled RESTful API design.
-- **Database:** MongoDB Atlas (Mongoose ODM) configured for high-throughput NoSQL scalability with strict schema validation.
+- **Database:** MongoDB Atlas (Mongoose ODM) configured for high-throughput NoSQL scalability with strict schema validation and automated daily backups.
 - **Security:** Zero-trust architecture using Helmet.js, Express Rate Limiter (to prevent DDoS and brute-force attacks), strict CORS policies, robust Content Security Policy (CSP), and zero telemetry collection.
 - **Environment:** Secure local `dotenv` configuration (keys excluded from VCS).
 - **AI Integration:** Groq API (for Cyber Mitra AI)
