@@ -190,7 +190,7 @@ CySafeClick operates on a **zero-trust data policy** fully compliant with India'
 - **No Registration Required:** You do not need to create an account, provide an email, or share a phone number to use the tools.
 - **No Ads, No Tracking:** We use zero third-party trackers, ad networks, tracking cookies, or third-party analytics suites.
 - **Local Storage Only:** User preferences (like theme and language) are saved locally on your device, not on our servers.
-- **Open Source Transparency:** All of our code is publicly available for security auditing by anyone.
+- **Open Source Transparency:** All of our code is publicly available and subject to regular third-party security auditing by the community.
 - **Data Encryption:** Any data in transit between the client and our AI backend is secured via AES-256 encryption.
 - Threat reports and AI chat histories are processed securely and scrubbed of sensitive data.
 - The platform is designed purely for education and awareness.
