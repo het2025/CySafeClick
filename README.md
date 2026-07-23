@@ -193,6 +193,7 @@ CySafeClick operates on a **zero-trust data policy** fully compliant with India'
 - **Open Source Transparency:** All of our code is publicly available and subject to regular third-party security auditing by the community.
 - **Data Encryption:** Any data in transit between the client and our AI backend is secured via AES-256 encryption.
 - Threat reports and AI chat histories are processed securely and scrubbed of sensitive data.
+- **Responsible AI:** Our language models are strictly bound by guardrails to prevent hallucination of legal advice.
 - The platform is designed purely for education and awareness.
 
 For more details on our secure development lifecycle, vulnerability reporting, and automated checks, please read our [Security Policy](SECURITY.md).
