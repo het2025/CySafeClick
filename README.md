@@ -166,6 +166,7 @@ npm run dev:frontend
 - [ ] Annual Cybersecurity Hackathon for students to build awareness solutions.
 - [ ] Open-source intelligence (OSINT) gathering tools for advanced users.
 - [ ] Digital Forensics Basics module specifically designed for university students.
+- [ ] Integration with DigiLocker for verified identity reporting of cybercrimes.
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
