@@ -85,7 +85,7 @@ This project is built using a modern, scalable, and serverless-ready full-stack 
 - **Styling:** TailwindCSS for rapid, utility-first styling.
 - **Compatibility & QA:** Fully tested across Chrome, Firefox, Safari, and Edge, with End-to-End testing powered by Cypress.
 - **Performance:** Optimized with Angular AOT compilation, Web Workers for heavy client-side calculations, and route-level lazy loading for fast initial paint, even on low-bandwidth 3G networks.
-- **Accessibility:** Built with strict WCAG 2.1 AAA standards in mind to flawlessly support screen readers and high-contrast modes.
+- **Accessibility:** Built with strict WCAG 2.1 AAA standards in mind to flawlessly support screen readers, high-contrast modes, and full keyboard navigation.
 - **UI Architecture:** 100% Mobile-first responsive design featuring micro-animations for enhanced engagement and an automated OLED-friendly "true black" Dark Mode, built with a strict "no dark patterns" policy for honest user navigation.
 - **PWA Ready:** Configured with `ngsw-config.json` for offline caching — key awareness content remains accessible even without an internet connection.
 
