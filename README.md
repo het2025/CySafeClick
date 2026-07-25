@@ -171,6 +171,7 @@ npm run dev:frontend
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
 - [ ] Voice-to-text input support for accessibility in the AI chat.
+- [ ] One-click shareable cybersecurity awareness badges for social media profiles.
 - [ ] Weekly Audio-based Cyber Tips for visually impaired users.
 - [ ] Shareable personal safety report card users can send to family members.
 - [ ] National Cybersecurity Awareness Month (October) special campaigns and interactive quizzes.
