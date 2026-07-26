@@ -165,6 +165,7 @@ npm run dev:frontend
 - [ ] Blockchain-based certificate issuance for verified "Cyber Champions".
 - [ ] Annual Cybersecurity Hackathon for students to build awareness solutions.
 - [ ] Open-source intelligence (OSINT) gathering tools for advanced users.
+- [ ] Integration of WebAuthn for Hardware Security Key (FIDO2) setup tutorials.
 - [ ] Digital Forensics Basics module specifically designed for university students.
 - [ ] Integration with DigiLocker for verified identity reporting of cybercrimes.
 - [ ] Direct integration with local state police APIs (where available).
