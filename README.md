@@ -163,7 +163,7 @@ npm run dev:frontend
 - [ ] Interactive Financial Fraud Simulator (sandbox environment).
 - [ ] Gamified leaderboards to encourage community participation in safety quizzes.
 - [ ] Blockchain-based certificate issuance for verified "Cyber Champions".
-- [ ] Annual Cybersecurity Hackathon for students to build awareness solutions.
+- [ ] Annual Cybersecurity Hackathon and Capture The Flag (CTF) competition for students to build awareness solutions.
 - [ ] Open-source intelligence (OSINT) gathering tools for advanced users.
 - [ ] Integration of WebAuthn for Hardware Security Key (FIDO2) setup tutorials.
 - [ ] Digital Forensics Basics module specifically designed for university students.
