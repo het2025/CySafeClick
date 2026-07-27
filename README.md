@@ -81,7 +81,7 @@ All of our modules are designed to be highly interactive and beginner-friendly, 
 This project is built using a modern, scalable, and serverless-ready full-stack architecture:
 
 ### Frontend (Angular Workspace)
-- **Framework:** Angular 17 (TypeScript, SCSS)
+- **Framework:** Angular 17 (TypeScript, SCSS) with native Internationalization (i18n) support for seamless language switching.
 - **Styling:** TailwindCSS for rapid, utility-first styling.
 - **Compatibility & QA:** Fully tested across Chrome, Firefox, Safari, and Edge, with End-to-End testing powered by Cypress.
 - **Performance:** Optimized with Angular AOT compilation, Web Workers for heavy client-side calculations, and route-level lazy loading for fast initial paint, even on low-bandwidth 3G networks.
