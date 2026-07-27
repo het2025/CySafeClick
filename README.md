@@ -168,6 +168,7 @@ npm run dev:frontend
 - [ ] Integration of WebAuthn for Hardware Security Key (FIDO2) setup tutorials.
 - [ ] Digital Forensics Basics module specifically designed for university students.
 - [ ] Integration with DigiLocker for verified identity reporting of cybercrimes.
+- [ ] Integration with national telecom blocklists to automatically detect spoofed spam calls.
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
