@@ -160,6 +160,7 @@ npm run dev:frontend
 ## 🚀 Future Roadmap
 
 - [ ] Interactive simulated phishing tests for users.
+- [ ] Interactive Deepfake detection education module (audio & video).
 - [ ] Interactive Financial Fraud Simulator (sandbox environment).
 - [ ] Gamified leaderboards to encourage community participation in safety quizzes.
 - [ ] Blockchain-based certificate issuance for verified "Cyber Champions".
