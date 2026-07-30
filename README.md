@@ -32,7 +32,7 @@ To provide every Indian user with a powerful shield of knowledge. We focus on:
 - [x] **Demystifying Scams:** Explaining complex frauds like UPI-collect, Sextortion, and KYC-traps in simple terms.
 - [x] **Language Inclusivity:** Providing content in both Hindi and English.
 - [x] **Real-time Detection:** Offering a browser extension to guard against phishing as you browse.
-- [x] **Digital Hygiene:** Educating users on strong passwords, 2FA, preventing SIM swapping, and secure social media habits.
+- [x] **Digital Hygiene:** Educating users on strong passwords, 2FA, setting up hardware key MFA, preventing SIM swapping, and secure social media habits.
 - [x] **Zero Monetization:** Committing to a 100% free platform with no ads, ever — sustained entirely by community donations because safety education shouldn't be gated by profit.
 - [x] **Community Empowerment:** Building a network of digitally aware citizens who can protect their families and neighbors.
 
