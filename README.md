@@ -169,7 +169,7 @@ npm run dev:frontend
 - [ ] Open-source intelligence (OSINT) gathering tools for advanced users.
 - [ ] Integration with smart home (IoT) vulnerability scanners to audit local networks.
 - [ ] Integration of WebAuthn for Hardware Security Key (FIDO2) setup tutorials.
-- [ ] Digital Forensics Basics module specifically designed for university students.
+- [ ] Digital Forensics Basics module (including malware sandboxing tutorials) specifically designed for university students.
 - [ ] Integration with DigiLocker for verified identity reporting of cybercrimes.
 - [ ] Integration with national telecom blocklists to automatically detect spoofed spam calls.
 - [ ] Direct integration with local state police APIs (where available).
