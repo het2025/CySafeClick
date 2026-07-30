@@ -184,6 +184,7 @@ npm run dev:frontend
 - [ ] Personalized Data Breach Notification Tracker alerting users if their credentials are compromised.
 - [ ] API rate limit monitoring dashboard for external community developers.
 - [ ] Corporate Social Responsibility (CSR) Partnership portal for NGO collaboration.
+- [ ] Integration with national cyber insurance providers to raise awareness about personal digital liability policies.
 - [ ] Porting the Phishing Guard browser extension to native Safari and Firefox environments.
 - [ ] Community Bug Bounty Program to incentivize responsible vulnerability disclosure.
 - [ ] Offline-first Android/iOS mobile app (via Ionic Capacitor) featuring biometric authentication for low-connectivity rural areas.
