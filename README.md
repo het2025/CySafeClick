@@ -167,6 +167,7 @@ npm run dev:frontend
 - [ ] Blockchain-based certificate issuance for verified "Cyber Champions".
 - [ ] Annual Cybersecurity Hackathon and Capture The Flag (CTF) competition for students to build awareness solutions.
 - [ ] Open-source intelligence (OSINT) gathering tools for advanced users.
+- [ ] Comprehensive open-source password manager integration tutorials.
 - [ ] Integration with smart home (IoT) vulnerability scanners to audit local networks.
 - [ ] Integration of WebAuthn for Hardware Security Key (FIDO2) setup tutorials.
 - [ ] Digital Forensics Basics module (including malware sandboxing tutorials) specifically designed for university students.
