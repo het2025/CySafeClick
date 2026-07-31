@@ -107,7 +107,7 @@ This project is intended as a public awareness resource.
 
 ### For Users / Learners
 - **No Registration Required:** You do not need to create an account or provide an email to use the tools.
-- **Browse the Site:** Simply open `index.html` (or the hosted URL) to access all awareness modules.
+- **Browse the Site:** Simply open `index.html` (or the hosted URL) to access all awareness modules. You can also "Add to Home Screen" on your mobile device to install it as a PWA for offline access.
 - **Install the CySafeClick Guard Extension:** Our custom browser extension runs quietly in the background to provide:
   - 🛑 Real-time blocking of known malicious URLs
   - 🔍 Visual indicators of safe vs fake government domains
