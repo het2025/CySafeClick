@@ -173,6 +173,7 @@ npm run dev:frontend
 - [ ] Digital Forensics Basics module (including malware sandboxing tutorials) specifically designed for university students.
 - [ ] Integration with DigiLocker for verified identity reporting of cybercrimes.
 - [ ] Integration with national telecom blocklists to automatically detect spoofed spam calls.
+- [ ] Strategic API partnerships with local banks for instant, integrated financial fraud reporting.
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
