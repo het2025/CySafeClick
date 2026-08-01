@@ -170,7 +170,7 @@ npm run dev:frontend
 - [ ] Comprehensive open-source password manager integration tutorials.
 - [ ] Integration with smart home (IoT) vulnerability scanners to audit local networks.
 - [ ] Integration of WebAuthn for Hardware Security Key (FIDO2) setup tutorials.
-- [ ] Digital Forensics Basics module (including malware sandboxing tutorials) specifically designed for university students.
+- [ ] Digital Forensics Basics module (including malware sandboxing and introductory memory dump analysis tutorials) specifically designed for university students.
 - [ ] Integration with DigiLocker for verified identity reporting of cybercrimes.
 - [ ] Integration with national telecom blocklists to automatically detect spoofed spam calls.
 - [ ] Strategic API partnerships with local banks for instant, integrated financial fraud reporting.
