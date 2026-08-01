@@ -187,6 +187,7 @@ npm run dev:frontend
 - [ ] Personalized Data Breach Notification Tracker alerting users if their credentials are compromised.
 - [ ] API rate limit monitoring dashboard for external community developers.
 - [ ] Migration to a federated GraphQL API for highly efficient mobile data fetching.
+- [ ] Implementation of Apache Kafka event streaming for real-time threat intelligence analytics.
 - [ ] Corporate Social Responsibility (CSR) Partnership portal for NGO collaboration.
 - [ ] Integration with national cyber insurance providers to raise awareness about personal digital liability policies.
 - [ ] Porting the Phishing Guard browser extension to native Safari and Firefox environments.
