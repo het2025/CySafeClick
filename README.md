@@ -174,6 +174,7 @@ npm run dev:frontend
 - [ ] Integration with DigiLocker for verified identity reporting of cybercrimes.
 - [ ] Integration with national telecom blocklists to automatically detect spoofed spam calls.
 - [ ] Strategic API partnerships with local banks for instant, integrated financial fraud reporting.
+- [ ] Integration with e-RUPI APIs for tracking and preventing digital voucher abuse.
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
