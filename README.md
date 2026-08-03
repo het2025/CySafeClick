@@ -176,6 +176,7 @@ npm run dev:frontend
 - [ ] Strategic API partnerships with local banks for instant, integrated financial fraud reporting.
 - [ ] Integration with e-RUPI APIs for tracking and preventing digital voucher abuse.
 - [ ] Integration with FASTag APIs to alert users about emerging highway toll fraud schemes.
+- [ ] Direct API integration with CERT-In (Computer Emergency Response Team - India) for real-time national threat advisories.
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
