@@ -91,7 +91,7 @@ This project is built using a modern, scalable, and serverless-ready full-stack 
 
 ### Backend (Node.js API)
 - **Runtime & Framework:** Node.js, Express.js
-- **Architecture:** Fully decoupled RESTful API design.
+- **Architecture:** Fully decoupled RESTful API design, future-proofed for gRPC microservice communication.
 - **Database:** MongoDB Atlas (Mongoose ODM) configured for high-throughput NoSQL scalability with strict schema validation and automated daily backups, paired with Redis for low-latency session caching.
 - **Security:** Zero-trust architecture using Helmet.js, Express Rate Limiter (to prevent DDoS and brute-force attacks), strict CORS policies, robust Content Security Policy (CSP), end-to-end payload encryption for sensitive reporting data, automated nightly vulnerability scanning, and zero telemetry collection.
 - **Environment:** Secure local `dotenv` configuration (keys excluded from VCS) and Docker containerization for consistent cross-platform deployment.
