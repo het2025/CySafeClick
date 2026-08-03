@@ -187,6 +187,7 @@ npm run dev:frontend
 - [ ] National Cybersecurity Awareness Month (October) special campaigns and interactive quizzes.
 - [ ] Live Cybersecurity News Feed integration localized for Indian users.
 - [ ] Personalized Data Breach Notification Tracker alerting users if their credentials are compromised.
+- [ ] Automated monthly transparency reports detailing the volume of blocked scam URLs and identified threats.
 - [ ] API rate limit monitoring dashboard for external community developers.
 - [ ] Migration to a federated GraphQL API for highly efficient mobile data fetching.
 - [ ] Implementation of Apache Kafka event streaming for real-time threat intelligence analytics.
