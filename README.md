@@ -82,7 +82,7 @@ This project is built using a modern, scalable, and serverless-ready full-stack 
 
 ### Frontend (Angular Workspace)
 - **Framework:** Angular 17 (TypeScript, SCSS, RxJS for reactive state management) with native Internationalization (i18n) support for seamless language switching.
-- **Styling:** TailwindCSS for rapid, utility-first styling.
+- **Styling:** TailwindCSS for rapid, utility-first styling, processed with PostCSS for automated cross-browser prefixing.
 - **Compatibility & QA:** Fully tested across Chrome, Firefox, Safari, and Edge, with End-to-End testing powered by Cypress.
 - **Performance:** Optimized with Angular AOT compilation, Server-Side Rendering (SSR) for improved SEO, Web Workers for heavy client-side calculations, Brotli compression for reduced payload size, and route-level lazy loading for fast initial paint, even on low-bandwidth 3G networks.
 - **Accessibility:** Built with strict WCAG 2.1 AAA standards in mind to flawlessly support screen readers, high-contrast modes, and full keyboard navigation.
