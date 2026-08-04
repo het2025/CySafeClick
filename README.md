@@ -175,6 +175,7 @@ npm run dev:frontend
 - [ ] Integration with national telecom blocklists to automatically detect spoofed spam calls.
 - [ ] Strategic API partnerships with local banks for instant, integrated financial fraud reporting.
 - [ ] Integration with e-RUPI APIs for tracking and preventing digital voucher abuse.
+- [ ] Integration with national courier APIs to track and verify parcel delivery status, preventing fake delivery scams.
 - [ ] Integration with FASTag APIs to alert users about emerging highway toll fraud schemes.
 - [ ] Direct API integration with CERT-In (Computer Emergency Response Team - India) for real-time national threat advisories.
 - [ ] Direct integration with local state police APIs (where available).
