@@ -212,7 +212,7 @@ CySafeClick operates on a **zero-trust data policy** built upon **Zero-Knowledge
 - **Local Storage Only:** User preferences (like theme and language) are saved locally on your device, not on our servers.
 - **Open Source Transparency:** All of our code is publicly available and subject to regular third-party security auditing by the community.
 - **Data Encryption:** Any data in transit between the client and our AI backend is secured via AES-256 encryption.
-- Threat reports and AI chat histories are processed securely and scrubbed of sensitive data.
+- Threat reports and AI chat histories are processed securely, scrubbed of sensitive data, and subject to automated 30-day log rotation and deletion.
 - **Responsible AI:** Our language models are strictly bound by guardrails to prevent hallucination of legal advice.
 - The platform is designed purely for education and awareness.
 
