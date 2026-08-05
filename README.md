@@ -174,6 +174,7 @@ npm run dev:frontend
 - [ ] Integration with DigiLocker for verified identity reporting of cybercrimes.
 - [ ] Integration with national telecom blocklists to automatically detect spoofed spam calls.
 - [ ] Strategic API partnerships with local banks for instant, integrated financial fraud reporting.
+- [ ] Integration with Truecaller Business API for verified caller ID education and detecting spoofed bank numbers.
 - [ ] Integration with e-RUPI APIs for tracking and preventing digital voucher abuse.
 - [ ] Integration with national courier APIs to track and verify parcel delivery status, preventing fake delivery scams.
 - [ ] Integration with FASTag APIs to alert users about emerging highway toll fraud schemes.
