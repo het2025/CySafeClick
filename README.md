@@ -177,6 +177,7 @@ npm run dev:frontend
 - [ ] Integration with Truecaller Business API for verified caller ID education and detecting spoofed bank numbers.
 - [ ] Integration with e-RUPI APIs for tracking and preventing digital voucher abuse.
 - [ ] Integration with NSDL and CDSL APIs to verify authentic stock trading platforms and prevent investment fraud.
+- [ ] Integration with SEBI APIs to instantly cross-check registered financial advisors against known scammers.
 - [ ] Integration with national courier APIs to track and verify parcel delivery status, preventing fake delivery scams.
 - [ ] Integration with FASTag APIs to alert users about emerging highway toll fraud schemes.
 - [ ] Direct API integration with CERT-In (Computer Emergency Response Team - India) for real-time national threat advisories.
