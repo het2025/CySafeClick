@@ -181,6 +181,7 @@ npm run dev:frontend
 - [ ] Integration with national courier APIs to track and verify parcel delivery status, preventing fake delivery scams.
 - [ ] Integration with FASTag APIs to alert users about emerging highway toll fraud schemes.
 - [ ] Direct API integration with CERT-In (Computer Emergency Response Team - India) for real-time national threat advisories.
+- [ ] Automated monthly sync with the TRAI (Telecom Regulatory Authority of India) spam caller database.
 - [ ] Automated daily sync with the RBI (Reserve Bank of India) unauthorized lending app blacklist.
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
