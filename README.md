@@ -74,7 +74,7 @@ All of our modules are designed to be highly interactive and beginner-friendly, 
 - **Cyber Glossary:** A searchable dictionary (with fuzzy-matching) of complex cyber terms broken down into simple, easy-to-understand definitions, including a slang dictionary for modern gaming, UPI, Digital Wallet, and cryptocurrency terms.
 - **Daily Cyber Tips:** Bite-sized, actionable security advice (including animated infographic summaries) curated by certified cybersecurity professionals and delivered in regional languages via audio-visual PWA web push notifications.
 - **Student Safety Module:** Specialized gamified curriculum focusing on social media hygiene, anti-doxxing training, interactive cyberbullying prevention scenarios, gaming safety, and digital parenting guides for guardians.
-- **State-Specific Helplines:** A comprehensive directory of localized cyber cell contact numbers across India, featuring auto-dial routing based on precise geolocation for mobile users.
+- **State-Specific Helplines:** A comprehensive directory of localized cyber cell contact numbers across India, featuring auto-dial routing based on precise geolocation and one-tap WhatsApp reporting links for mobile users.
 
 ## 💻 Tech Stack
 
