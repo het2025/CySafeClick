@@ -212,7 +212,7 @@ CySafeClick is a **100% free and open-source** initiative, constantly evolving t
 
 CySafeClick operates on a **zero-trust data policy** built upon **Zero-Knowledge Architecture principles**, fully compliant with India's **DPDP Act (2023)**. 
 - We do not store personal identifiable information (PII).
-- **No Registration Required:** You do not need to create an account, provide an email, or share a phone number to use the tools.
+- **No Registration Required & Right to be Forgotten:** You do not need to create an account, provide an email, or share a phone number to use the tools. Any voluntarily submitted feedback is governed by a strict, GDPR-inspired right to be forgotten upon request.
 - **No Ads, No Tracking:** We use zero third-party trackers, ad networks, tracking cookies, or third-party analytics suites.
 - **Local Storage Only:** User preferences (like theme and language) are saved locally on your device, not on our servers.
 - **Open Source Transparency:** All of our code is publicly available and subject to regular third-party security auditing by the community.
