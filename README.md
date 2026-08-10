@@ -179,6 +179,7 @@ npm run dev:frontend
 - [ ] Integration with e-RUPI APIs for tracking and preventing digital voucher abuse.
 - [ ] Integration with NSDL and CDSL APIs to verify authentic stock trading platforms and prevent investment fraud.
 - [ ] Integration with SEBI APIs to instantly cross-check registered financial advisors against known scammers.
+- [ ] Integration with EPFO (Employees' Provident Fund Organisation) APIs to detect and prevent pension withdrawal fraud.
 - [ ] Integration with IRCTC APIs to instantly detect fraudulent train ticket booking portals and apps.
 - [ ] Integration with NHA (National Health Authority) APIs to detect and prevent Ayushman Bharat health insurance fraud.
 - [ ] Integration with national courier APIs to track and verify parcel delivery status, preventing fake delivery scams.
