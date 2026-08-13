@@ -93,7 +93,7 @@ This project is built using a modern, scalable, and serverless-ready full-stack 
 - **Runtime & Framework:** Node.js, Express.js
 - **Architecture:** Fully decoupled RESTful and GraphQL API design, future-proofed for gRPC microservice communication and horizontal scaling via Kubernetes.
 - **Database:** MongoDB Atlas (Mongoose ODM) configured for high-throughput NoSQL scalability with strict schema validation, automated daily backups, and automated daily disaster recovery drills for data resilience, paired with Redis for low-latency session caching.
-- **Security:** Zero-trust architecture using Helmet.js, Express Rate Limiter (to prevent DDoS and brute-force attacks), strict CORS policies, robust Content Security Policy (CSP), end-to-end payload encryption for sensitive reporting data, automated nightly vulnerability scanning, and zero telemetry collection.
+- **Security:** Zero-trust architecture using Helmet.js, Express Rate Limiter and GraphQL query depth limiting (to prevent DDoS, brute-force attacks, and resource exhaustion), strict CORS policies, robust Content Security Policy (CSP), end-to-end payload encryption for sensitive reporting data, automated nightly vulnerability scanning, and zero telemetry collection.
 - **Environment:** Secure local `dotenv` configuration (keys excluded from VCS) and Docker containerization for consistent cross-platform deployment.
 - **AI Integration:** Groq API (for Cyber Mitra AI)
 
