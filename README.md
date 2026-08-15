@@ -51,7 +51,7 @@ CySafeClick is built for everyone, with special focus on:
 - **Senior Citizens:** A dedicated "Senior Safe Mode" with large text, high-contrast color themes, simple navigation, voice assistance, and special guides for UPI, simplified OTP and QR code verification, and WhatsApp safety.
 - **Students & Youth:** Gamified learning modules, interactive quizzes, and password labs that reward "Cyber Champion" badges to build strong digital habits early.
 - **Homemakers:** Practical, jargon-free guides on avoiding online shopping fraud, spotting fake social media giveaways, fake delivery scams, electricity bill fraud prevention, work-from-home job fraud, and OTP theft.
-- **Rural Internet Users:** Bilingual support (Hindi/English), low-bandwidth optimized images, SMS-based offline fallback for critical alerts, and offline PWA accessibility to break language and connectivity barriers in cyber education.
+- **Rural Internet Users:** Bilingual support (Hindi/English), regional voice-guided UI navigation, low-bandwidth optimized images, SMS-based offline fallback for critical alerts, and offline PWA accessibility to break language and connectivity barriers in cyber education.
 
 ## 🌍 Localization (Bilingual Platform)
 
