@@ -186,6 +186,7 @@ npm run dev:frontend
 - [ ] Integration with IRCTC APIs to instantly detect fraudulent train ticket booking portals and apps.
 - [ ] Integration with NHA (National Health Authority) APIs to detect and prevent Ayushman Bharat health insurance fraud.
 - [ ] Integration with national courier APIs to track and verify parcel delivery status, preventing fake delivery scams.
+- [ ] Integration with FSSAI APIs to instantly verify authentic food delivery and cloud kitchen platforms.
 - [ ] Integration with FASTag APIs to alert users about emerging highway toll fraud schemes.
 - [ ] Direct API integration with CERT-In (Computer Emergency Response Team - India) for real-time national threat advisories.
 - [ ] Direct API integration with NCSC (National Cyber Security Coordinator) for real-time critical infrastructure threat advisories.
