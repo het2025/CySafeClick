@@ -184,7 +184,7 @@ npm run dev:frontend
 - [ ] Integration with NSDL APIs for instantly verifying authentic PAN card details to prevent identity theft.
 - [ ] Integration with national RTO (Regional Transport Office) databases to prevent fake vehicle registration scams.
 - [ ] Integration with IRCTC APIs to instantly detect fraudulent train ticket booking portals and apps.
-- [ ] Integration with NHA (National Health Authority) APIs to detect and prevent Ayushman Bharat health insurance fraud.
+- [ ] Integration with NHA (National Health Authority) APIs to instantly verify e-Sanjeevani doctors and detect Ayushman Bharat health insurance fraud.
 - [ ] Integration with national courier APIs to track and verify parcel delivery status, preventing fake delivery scams.
 - [ ] Integration with FSSAI APIs to instantly verify authentic food delivery and cloud kitchen platforms.
 - [ ] Integration with MCA (Ministry of Corporate Affairs) APIs to instantly detect shell companies and investment frauds.
