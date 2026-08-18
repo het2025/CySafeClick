@@ -196,6 +196,7 @@ npm run dev:frontend
 - [ ] Automated daily sync with the RBI (Reserve Bank of India) unauthorized lending app blacklist.
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
+- [ ] Integration with Bhashini (National Language Translation Mission) APIs for advanced regional dialect support in the AI chatbot.
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
 - [ ] Voice-to-text input support for accessibility in the AI chat.
 - [ ] One-click shareable cybersecurity awareness badges for social media profiles.
