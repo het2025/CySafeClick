@@ -181,6 +181,7 @@ npm run dev:frontend
 - [ ] Integration with SEBI APIs to instantly cross-check registered financial advisors against known scammers.
 - [ ] Integration with EPFO (Employees' Provident Fund Organisation) APIs to detect and prevent pension withdrawal fraud.
 - [ ] Integration with Udyam Registration APIs to instantly verify MSME vendor authenticity and prevent B2B fraud.
+- [ ] Integration with CERSAI (Central Registry of Securitisation Asset Reconstruction and Security Interest of India) APIs to instantly detect and prevent fraudulent property transactions.
 - [ ] Integration with Aadhar e-KYC APIs to detect synthetic identity fraud and unauthorized SIM card issuance.
 - [ ] Integration with NSDL APIs for instantly verifying authentic PAN card details to prevent identity theft.
 - [ ] Integration with national RTO (Regional Transport Office) databases to prevent fake vehicle registration scams.
