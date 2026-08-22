@@ -180,6 +180,7 @@ npm run dev:frontend
 - [ ] Integration with NSDL and CDSL APIs to verify authentic stock trading platforms and prevent investment fraud.
 - [ ] Integration with SEBI APIs to instantly cross-check registered financial advisors against known scammers.
 - [ ] Integration with EPFO (Employees' Provident Fund Organisation) APIs to detect and prevent pension withdrawal fraud.
+- [ ] Integration with NCDEX (National Commodity and Derivatives Exchange) APIs to verify agricultural trading platforms and prevent farmer fraud.
 - [ ] Integration with Udyam Registration APIs to instantly verify MSME vendor authenticity and prevent B2B fraud.
 - [ ] Integration with CERSAI (Central Registry of Securitisation Asset Reconstruction and Security Interest of India) APIs to instantly detect and prevent fraudulent property transactions.
 - [ ] Integration with Aadhar e-KYC APIs to detect synthetic identity fraud and unauthorized SIM card issuance.
