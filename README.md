@@ -43,6 +43,7 @@ With India experiencing a rapid digital transformation, cybercriminals are const
 - India reported over **14 lakh cybercrime cases** registered on the national portal in a single year.
 - **UPI fraud** is the single most common type of digital crime targeting Indian citizens.
 - **Senior citizens** are disproportionately targeted for KYC and pension-related digital scams.
+- **Work-from-home job fraud** has surged by 300% post-pandemic, predominantly targeting young graduates.
 - Most victims are **first-time internet users** who lack basic digital literacy resources.
 
 ## 👥 Target Audience
