@@ -185,6 +185,7 @@ npm run dev:frontend
 - [ ] Integration with NCDEX (National Commodity and Derivatives Exchange) APIs to verify agricultural trading platforms and prevent farmer fraud.
 - [ ] Integration with PM-Kisan APIs to instantly verify beneficiary status and prevent agricultural subsidy theft.
 - [ ] Integration with Udyam Registration APIs to instantly verify MSME vendor authenticity and prevent B2B fraud.
+- [ ] Integration with RERA (Real Estate Regulatory Authority) APIs to instantly verify property registrations and prevent fake real estate investments.
 - [ ] Integration with CERSAI (Central Registry of Securitisation Asset Reconstruction and Security Interest of India) APIs to instantly detect and prevent fraudulent property transactions.
 - [ ] Integration with Aadhar e-KYC APIs to detect synthetic identity fraud and unauthorized SIM card issuance.
 - [ ] Integration with NSDL APIs for instantly verifying authentic PAN card details to prevent identity theft.
