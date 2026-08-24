@@ -180,6 +180,7 @@ npm run dev:frontend
 - [ ] Integration with e-RUPI APIs for tracking and preventing digital voucher abuse.
 - [ ] Integration with NSDL and CDSL APIs to verify authentic stock trading platforms and prevent investment fraud.
 - [ ] Integration with SEBI APIs to instantly cross-check registered financial advisors against known scammers.
+- [ ] Integration with NREGA APIs to instantly verify employment records and prevent rural wage theft and fake job card scams.
 - [ ] Integration with EPFO (Employees' Provident Fund Organisation) APIs to detect and prevent pension withdrawal fraud.
 - [ ] Integration with NCDEX (National Commodity and Derivatives Exchange) APIs to verify agricultural trading platforms and prevent farmer fraud.
 - [ ] Integration with PM-Kisan APIs to instantly verify beneficiary status and prevent agricultural subsidy theft.
