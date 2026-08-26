@@ -49,7 +49,7 @@ With India experiencing a rapid digital transformation, cybercriminals are const
 ## 👥 Target Audience
 
 CySafeClick is built for everyone, with special focus on:
-- **Senior Citizens:** A dedicated "Senior Safe Mode" with large text, high-contrast color themes, simple navigation, voice assistance, and special guides for UPI, simplified OTP and QR code verification, identifying fraudulent investment schemes targeted at retirees, and WhatsApp safety.
+- **Senior Citizens:** A dedicated "Senior Safe Mode" with large text, high-contrast color themes, simple navigation, voice assistance, and special guides for UPI, simplified OTP and QR code verification, identifying fraudulent investment schemes targeted at retirees, spotting fake medical bill reimbursement scams, and WhatsApp safety.
 - **Students & Youth:** Gamified learning modules, interactive quizzes, password labs that reward "Cyber Champion" badges to build strong digital habits early, and curated cybersecurity career pathways and resources for aspiring professionals.
 - **Homemakers:** Practical, jargon-free guides on avoiding online shopping fraud, spotting fake social media giveaways, fake delivery scams, electricity bill fraud prevention, work-from-home job fraud, identifying fake charity donation appeals, spotting fraudulent investment schemes, and OTP theft.
 - **Rural Internet Users:** Bilingual support (Hindi/English), regional voice-guided UI navigation, low-bandwidth optimized images, SMS-based offline fallback for critical alerts, regional agricultural and crop insurance scam awareness, and offline PWA accessibility to break language and connectivity barriers in cyber education.
