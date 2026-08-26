@@ -203,6 +203,7 @@ npm run dev:frontend
 - [ ] Direct API integration with NCSC (National Cyber Security Coordinator) for real-time critical infrastructure threat advisories.
 - [ ] Automated monthly sync with the TRAI (Telecom Regulatory Authority of India) spam caller database.
 - [ ] Automated daily sync with the RBI (Reserve Bank of India) unauthorized lending app blacklist.
+- [ ] Integration with Bhuvan (ISRO) APIs for hyper-local geofencing of threat map data.
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] Integration with Bhashini (National Language Translation Mission) APIs for advanced regional dialect support in the AI chatbot.
