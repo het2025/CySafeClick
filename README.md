@@ -189,6 +189,7 @@ npm run dev:frontend
 - [ ] Integration with RERA (Real Estate Regulatory Authority) APIs to instantly verify property registrations and prevent fake real estate investments.
 - [ ] Integration with CERSAI (Central Registry of Securitisation Asset Reconstruction and Security Interest of India) APIs to instantly detect and prevent fraudulent property transactions.
 - [ ] Integration with Aadhar e-KYC APIs to detect synthetic identity fraud and unauthorized SIM card issuance.
+- [ ] Integration with UMANG APIs to instantly cross-reference genuine government app downloads and prevent malicious APKs.
 - [ ] Integration with NSDL APIs for instantly verifying authentic PAN card details to prevent identity theft.
 - [ ] Integration with national RTO (Regional Transport Office) databases to prevent fake vehicle registration scams.
 - [ ] Integration with VAHAN APIs to instantly verify second-hand vehicle sales and prevent escrow frauds.
