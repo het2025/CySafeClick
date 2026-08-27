@@ -99,7 +99,7 @@ This project is built using a modern, scalable, and serverless-ready full-stack 
 - **AI Integration:** Groq API (for Cyber Mitra AI)
 
 ### Browser Extension
-- **Architecture:** Manifest V3 for enhanced security and privacy, utilizing local storage for offline phishing database caching to ensure low-latency lookups.
+- **Architecture:** Manifest V3 for enhanced security and privacy, utilizing local storage for offline phishing database caching to ensure low-latency lookups, and featuring a lightweight memory footprint optimized for low-end hardware.
 - **Functionality:** Real-time DOM scanning, cross-origin communication with background service workers, and automatic blocking of malicious hidden iframes and crypto-jacking scripts.
 
 ## 📖 How to Use This Platform
