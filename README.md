@@ -210,6 +210,7 @@ npm run dev:frontend
 - [ ] Direct integration with local state police APIs (where available).
 - [ ] Regional language expansion (Tamil, Telugu, Marathi).
 - [ ] Integration with Bhashini (National Language Translation Mission) APIs for advanced regional dialect support in the AI chatbot.
+- [ ] Integration with Bhashini APIs to automatically detect and alert users about AI-translated regional language scam calls.
 - [ ] WhatsApp bot integration for the Cyber Mitra AI.
 - [ ] Voice-to-text input support for accessibility in the AI chat.
 - [ ] One-click shareable cybersecurity awareness badges for social media profiles.
