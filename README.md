@@ -175,6 +175,7 @@ npm run dev:frontend
 - [ ] Integration with DigiLocker for verified identity reporting of cybercrimes.
 - [ ] Integration with national telecom blocklists to automatically detect spoofed spam calls.
 - [ ] Strategic API partnerships with local banks for instant, integrated financial fraud reporting.
+- [ ] Integration with CIBIL APIs to instantly detect and alert users about unauthorized hard credit inquiries.
 - [ ] Integration with NPCI (National Payments Corporation of India) APIs to instantly verify UPI merchant authenticity.
 - [ ] Integration with Truecaller Business API for verified caller ID education and detecting spoofed bank numbers.
 - [ ] Integration with e-RUPI APIs for tracking and preventing digital voucher abuse.
