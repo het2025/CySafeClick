@@ -198,6 +198,7 @@ npm run dev:frontend
 - [ ] Integration with VAHAN APIs to instantly verify second-hand vehicle sales and prevent escrow frauds.
 - [ ] Integration with IRCTC APIs to instantly detect fraudulent train ticket booking portals and apps.
 - [ ] Integration with NHA (National Health Authority) APIs to instantly verify e-Sanjeevani doctors and detect Ayushman Bharat health insurance fraud.
+- [ ] Integration with NHA (National Health Authority) ABDM APIs to detect and alert users about fake ABHA health ID creation portals.
 - [ ] Integration with Jan Aushadhi APIs to verify generic medicine portals and prevent fake medicine sales.
 - [ ] Integration with national courier APIs to track and verify parcel delivery status, preventing fake delivery scams.
 - [ ] Integration with FSSAI APIs to instantly verify authentic food delivery and cloud kitchen platforms.
