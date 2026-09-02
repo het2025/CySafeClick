@@ -194,6 +194,7 @@ npm run dev:frontend
 - [ ] Integration with NSDL APIs for instantly verifying authentic PAN card details to prevent identity theft.
 - [ ] Integration with national RTO (Regional Transport Office) databases to prevent fake vehicle registration scams.
 - [ ] Integration with mParivahan APIs to instantly detect and prevent fake e-challan payment scams.
+- [ ] Integration with NTA (National Testing Agency) APIs to detect and alert students about fake exam registration portals.
 - [ ] Integration with NCVT MIS APIs to detect and prevent fake ITI/vocational certificate issuance portals.
 - [ ] Integration with VAHAN APIs to instantly verify second-hand vehicle sales and prevent escrow frauds.
 - [ ] Integration with IRCTC APIs to instantly detect fraudulent train ticket booking portals and apps.
