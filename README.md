@@ -88,7 +88,7 @@ This project is built using a modern, scalable, and serverless-ready full-stack 
 - **Performance:** Optimized with Angular AOT compilation, Server-Side Rendering (SSR) for improved SEO, automated Critical Path CSS extraction, Web Workers for heavy client-side calculations, aggressive tree shaking for optimized bundle sizes, Brotli compression for reduced payload size, automated asset preloading, automated WebP image optimization, and route-level lazy loading for fast initial paint, even on low-bandwidth 3G networks.
 - **Accessibility:** Built with strict WCAG 2.1 AAA standards in mind to flawlessly support screen readers (including screen-reader optimized aria-labels for all interactive data charts), automated focus-trap management for modal dialogs, high-contrast modes, full keyboard navigation, color blindness simulation testing, and dyslexia-friendly font toggles.
 - **UI Architecture:** 100% Mobile-first responsive design featuring subtle haptic feedback on touch devices, micro-animations for enhanced engagement, and an automated OLED-friendly "true black" Dark Mode, built with a strict "no dark patterns" policy for honest user navigation.
-- **PWA Ready:** Configured with `ngsw-config.json` for offline caching and background sync for deferred FIR submissions — key awareness content remains accessible even without an internet connection.
+- **PWA Ready:** Configured with `ngsw-config.json` for offline caching and background sync for deferred FIR submissions, featuring an automated prompt for users to install the app when device storage allows — ensuring key awareness content remains accessible even without an internet connection.
 
 ### Backend (Node.js API)
 - **Runtime & Framework:** Node.js, Express.js
