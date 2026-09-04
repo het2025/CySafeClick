@@ -197,6 +197,7 @@ npm run dev:frontend
 - [ ] Integration with NTA (National Testing Agency) APIs to detect and alert students about fake exam registration portals.
 - [ ] Integration with AICTE (All India Council for Technical Education) APIs to instantly verify technical university affiliations and prevent fake degree scams.
 - [ ] Integration with NCVT MIS APIs to detect and prevent fake ITI/vocational certificate issuance portals.
+- [ ] Integration with National Consumer Helpline (NCH) APIs to instantly check consumer complaint histories of suspicious e-commerce platforms.
 - [ ] Integration with VAHAN APIs to instantly verify second-hand vehicle sales and prevent escrow frauds.
 - [ ] Integration with IRCTC APIs to instantly detect fraudulent train ticket booking portals and apps.
 - [ ] Integration with NHA (National Health Authority) APIs to instantly verify e-Sanjeevani doctors and detect Ayushman Bharat health insurance fraud.
