@@ -189,6 +189,7 @@ npm run dev:frontend
 - [ ] Integration with PM-Kisan APIs to instantly verify beneficiary status and prevent agricultural subsidy theft.
 - [ ] Integration with Udyam Registration APIs to instantly verify MSME vendor authenticity and prevent B2B fraud.
 - [ ] Integration with Directorate General of Foreign Trade (DGFT) APIs to verify export-import business licenses and prevent B2B trade fraud.
+- [ ] Integration with Central Pollution Control Board (CPCB) APIs to verify authorized e-waste recyclers and prevent data extraction scams.
 - [ ] Integration with Central Board of Indirect Taxes and Customs (CBIC) APIs to instantly verify customs duty payment links and prevent import parcel scams.
 - [ ] Integration with RERA (Real Estate Regulatory Authority) APIs to instantly verify property registrations and prevent fake real estate investments.
 - [ ] Integration with CERSAI (Central Registry of Securitisation Asset Reconstruction and Security Interest of India) APIs to instantly detect and prevent fraudulent property transactions.
