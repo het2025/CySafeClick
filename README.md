@@ -251,7 +251,7 @@ CySafeClick operates on a **zero-trust data policy** built upon **Zero-Knowledge
 - **No Ads, No Tracking & No Data Sales:** We use zero third-party trackers, ad networks, tracking cookies, or third-party analytics suites. We strictly guarantee no sale of anonymized telemetry data to third parties.
 - **Local Storage Only:** User preferences (like theme and language) are saved locally on your device, not on our servers.
 - **Open Source Transparency:** All of our code is publicly available and subject to regular third-party security auditing by the community, regular penetration testing by independent security researchers, independent bug bounty program audits to secure user data, and periodic independent SOC2 compliance audits.
-- **Data Encryption:** Any data in transit between the client and our AI backend is secured via AES-256 encryption and the TLS 1.3 protocol.
+- **Data Encryption:** Any data in transit between the client and our AI backend is secured via AES-256 encryption and the TLS 1.3 protocol, with automated rotation of cryptographic salt keys every 90 days.
 - Threat reports and AI chat histories are processed securely, undergo strict automated sanitization of all PII, are scrubbed of sensitive data (including automated hashing of IP addresses in access logs using Argon2), and subject to automated memory wiping for active sessions and automated 30-day log rotation and deletion.
 - **Responsible AI:** Our language models are strictly bound by guardrails to prevent hallucination of legal advice, with a strict prohibition on training third-party LLMs on user interaction data.
 - The platform is designed purely for education and awareness.
