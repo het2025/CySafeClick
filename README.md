@@ -206,6 +206,7 @@ npm run dev:frontend
 - [ ] Integration with National Consumer Helpline (NCH) APIs to instantly check consumer complaint histories of suspicious e-commerce platforms.
 - [ ] Integration with VAHAN APIs to instantly verify second-hand vehicle sales and prevent escrow frauds.
 - [ ] Integration with IRCTC APIs to instantly detect fraudulent train ticket booking portals and apps.
+- [ ] Integration with Central Board of Film Certification (CBFC) APIs to verify online movie ticket portals and prevent entertainment fraud.
 - [ ] Integration with NHA (National Health Authority) APIs to instantly verify e-Sanjeevani doctors and detect Ayushman Bharat health insurance fraud.
 - [ ] Integration with NHA (National Health Authority) ABDM APIs to detect and alert users about fake ABHA health ID creation portals.
 - [ ] Integration with Jan Aushadhi APIs to verify generic medicine portals and prevent fake medicine sales.
