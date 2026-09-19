@@ -203,6 +203,7 @@ npm run dev:frontend
 - [ ] Integration with Central Board of Secondary Education (CBSE) APIs to verify online board exam fee payment portals and prevent student fraud.
 - [ ] Integration with AICTE (All India Council for Technical Education) APIs to instantly verify technical university affiliations and prevent fake degree scams.
 - [ ] Integration with NCVT MIS APIs to detect and prevent fake ITI/vocational certificate issuance portals.
+- [ ] Integration with National Skill Development Corporation (NSDC) APIs to verify skill certification portals and prevent training scams.
 - [ ] Integration with National Consumer Helpline (NCH) APIs to instantly check consumer complaint histories of suspicious e-commerce platforms.
 - [ ] Integration with VAHAN APIs to instantly verify second-hand vehicle sales and prevent escrow frauds.
 - [ ] Integration with IRCTC APIs to instantly detect fraudulent train ticket booking portals and apps.
