@@ -180,6 +180,7 @@ npm run dev:frontend
 - [ ] Integration with Truecaller Business API for verified caller ID education and detecting spoofed bank numbers.
 - [ ] Integration with e-RUPI APIs for tracking and preventing digital voucher abuse.
 - [ ] Integration with Central Board of Direct Taxes (CBDT) APIs to verify chartered accountants and prevent fake tax filing portals.
+- [ ] Integration with Central Board of Direct Taxes (CBDT) APIs to verify online tax return preparers (TRPs) and prevent refund fraud.
 - [ ] Integration with Income Tax e-Filing APIs to instantly verify tax return portals and prevent refund fraud.
 - [ ] Integration with NSDL and CDSL APIs to verify authentic stock trading platforms and prevent investment fraud.
 - [ ] Integration with SEBI APIs to instantly cross-check registered financial advisors against known scammers.
