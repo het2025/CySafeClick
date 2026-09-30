@@ -213,6 +213,7 @@ npm run dev:frontend
 - [ ] Integration with Central Board of Film Certification (CBFC) APIs to verify online movie ticket portals and prevent entertainment fraud.
 - [ ] Integration with NHA (National Health Authority) APIs to instantly verify e-Sanjeevani doctors and detect Ayushman Bharat health insurance fraud.
 - [ ] Integration with NHA (National Health Authority) ABDM APIs to detect and alert users about fake ABHA health ID creation portals.
+- [ ] Integration with National Health Authority (NHA) APIs to verify online pharmacy licenses and prevent fake medicine sales.
 - [ ] Integration with Jan Aushadhi APIs to verify generic medicine portals and prevent fake medicine sales.
 - [ ] Integration with national courier APIs to track and verify parcel delivery status, preventing fake delivery scams.
 - [ ] Integration with FSSAI APIs to instantly verify authentic food delivery and cloud kitchen platforms.
