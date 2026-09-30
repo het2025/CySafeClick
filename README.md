@@ -195,6 +195,7 @@ npm run dev:frontend
 - [ ] Integration with Central Adoption Resource Authority (CARA) APIs to verify child adoption agency credentials and prevent donation fraud.
 - [ ] Integration with Central Pollution Control Board (CPCB) APIs to verify authorized e-waste recyclers and prevent data extraction scams.
 - [ ] Integration with Central Board of Indirect Taxes and Customs (CBIC) APIs to instantly verify customs duty payment links and prevent import parcel scams.
+- [ ] Integration with Central Board of Indirect Taxes and Customs (CBIC) APIs to instantly detect and alert users about fake customs clearance fee demands.
 - [ ] Integration with RERA (Real Estate Regulatory Authority) APIs to instantly verify property registrations and prevent fake real estate investments.
 - [ ] Integration with CERSAI (Central Registry of Securitisation Asset Reconstruction and Security Interest of India) APIs to instantly detect and prevent fraudulent property transactions.
 - [ ] Integration with Aadhar e-KYC APIs to detect synthetic identity fraud and unauthorized SIM card issuance.
